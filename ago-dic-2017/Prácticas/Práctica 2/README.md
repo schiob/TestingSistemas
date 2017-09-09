@@ -23,7 +23,7 @@ Hacer un archivo `test_practica2.py` que aplique los siguientes casos de prueba 
 
  - PrintFile
   - <path archivo que tenga escrito "hola tacos", "hola tacos">
-  - <path archivo que esté bacío "", "">
+  - <path archivo que esté vacío "", "">
   - <path archivo con saltos de línea "hola\nsalto\ntamal", "hola\nsalto\ntamal">
 
  - WriteFile
