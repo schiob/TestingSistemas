@@ -4,31 +4,41 @@ from practica2 import writeFile
 
 class TestPractica2(unittest.TestCase):
 
+    # metodo setUp() se invoca antes de cada test.
+    def setUp(self):
+        # Se abren dos archivo vacío.
+        fil = open("TestPrint.txt","w")
+        fil2 = open("TestWrite.txt","w")
+
     def test_printFile_caso1(self):
-        # printFile_caso1.txt tiene escrito "hola taco".
-        self.assertEqual(printFile("printFile_caso1.txt"),"hola taco")
+        # El archivo vacío se sobreescribe con 'hola taco'.
+        writeFile("TestPrint.txt","hola taco")
+        # test Equal.
+        self.assertEqual(printFile("TestPrint.txt"),"hola taco")
 
     def test_printFile_caso2(self):
-        # printFile_caso2.txt está vacío".
-        self.assertEqual(printFile("printFile_caso2.txt"), "")
+        # Test.txt.txt está vacío por defecto.
+        self.assertEqual(printFile("TestPrint.txt"), "")
 
     def test_printFile_caso3(self):
-        # printFile_caso3.txt tiene escrito "hola\ntaco\ntamal".
-        self.assertEqual(printFile("printFile_caso3.txt"),"hola\nsalto\ntamal")
+        # Test.txt se sobreescribe con 'hola\nsalto\ntamal'.
+        writeFile("TestPrint.txt","hola\nsalto\ntamal")
+        # test con saltos de línea".
+        self.assertEqual(printFile("TestPrint.txt"),"hola\nsalto\ntamal")
 
     def test_writeFile_caso1(self):
-        # Al no existir inicial.txt se crea el archivo y se escribe "charmander" en el.
-        writeFile("inicial.txt","charmander")
-        # Se usa printFile() para comparar contenido con charmander.txt
-        # el cual tiene escrito "charmander".
-        self.assertEqual(printFile("inicial.txt"), printFile("charmander.txt"))
+        # Se sobreescribe TestPrint.txt y TestWrite.txt con "charmander".
+        writeFile("TestPrint.txt","charmander")
+        writeFile("TestWrite.txt","charmander")
+        # Se usa printFile() para comparar contenido.
+        self.assertEqual(printFile("TestWrite.txt"), printFile("TestPrint.txt"))
 
     def test_writeFile_caso2(self):
-        # writeFile_caso2.txt está vacío y se escribe en el "Ya es viernes".
-        writeFile("writeFile_caso2.txt","Ya es viernes")
-        # Se usa printFile() para comparar contenido con Ya es viernes.txt
-        # el cual tiene escrito "Ya es viernes".
-        self.assertEqual(printFile("writeFile_caso2.txt"), printFile("Ya es viernes.txt"))
+        # Se sobreescribe TestPrint.txt y TestWrite.txt con "Ya es viernes".
+        writeFile("TestPrint.txt","Ya es viernes")
+        writeFile("TestWrite.txt","Ya es viernes")
+        # Se usa printFile() para comparar contenido.
+        self.assertEqual(printFile("TestWrite.txt"), printFile("TestPrint.txt"))
 
 
 if __name__ == '__main__':
