@@ -6,39 +6,36 @@ class TestPractica2(unittest.TestCase):
 
     # metodo setUp() se invoca antes de cada test.
     def setUp(self):
-        # Se abren dos archivo vacío.
-        fil = open("TestPrint.txt","w")
-        fil2 = open("TestWrite.txt","w")
+        # Se abre un archivo vacío.
+        fil = open("Test.txt","w")
 
     def test_printFile_caso1(self):
         # El archivo vacío se sobreescribe con 'hola taco'.
-        writeFile("TestPrint.txt","hola taco")
+        writeFile("Test.txt","hola taco")
         # test Equal.
-        self.assertEqual(printFile("TestPrint.txt"),"hola taco")
+        self.assertEqual(printFile("Test.txt"),"hola taco")
 
     def test_printFile_caso2(self):
-        # Test.txt.txt está vacío por defecto.
-        self.assertEqual(printFile("TestPrint.txt"), "")
+        # Test.txt está vacío por defecto.
+        self.assertEqual(printFile("Test.txt"), "")
 
     def test_printFile_caso3(self):
         # Test.txt se sobreescribe con 'hola\nsalto\ntamal'.
-        writeFile("TestPrint.txt","hola\nsalto\ntamal")
+        writeFile("Test.txt","hola\nsalto\ntamal")
         # test con saltos de línea".
-        self.assertEqual(printFile("TestPrint.txt"),"hola\nsalto\ntamal")
+        self.assertEqual(printFile("Test.txt"),"hola\nsalto\ntamal")
 
     def test_writeFile_caso1(self):
-        # Se sobreescribe TestPrint.txt y TestWrite.txt con "charmander".
+        # Se crea un archivo nuevo con 'charmander'
         writeFile("TestPrint.txt","charmander")
-        writeFile("TestWrite.txt","charmander")
         # Se usa printFile() para comparar contenido.
-        self.assertEqual(printFile("TestWrite.txt"), printFile("TestPrint.txt"))
+        self.assertEqual(printFile("TestPrint.txt"), "charmander")
 
     def test_writeFile_caso2(self):
-        # Se sobreescribe TestPrint.txt y TestWrite.txt con "Ya es viernes".
-        writeFile("TestPrint.txt","Ya es viernes")
-        writeFile("TestWrite.txt","Ya es viernes")
+        # Se sobreescribe TestPrint.txt con "Ya es viernes".
+        writeFile("Test.txt","Ya es viernes")
         # Se usa printFile() para comparar contenido.
-        self.assertEqual(printFile("TestWrite.txt"), printFile("TestPrint.txt"))
+        self.assertEqual(printFile("Test.txt"), "Ya es viernes")
 
 
 if __name__ == '__main__':
