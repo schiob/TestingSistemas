@@ -3,6 +3,12 @@ from practica2 import write_file, read_file
 
 class TestReadWrite(unittest.TestCase):
 
+    def set_up(self):
+        with open('lizard.txt', 'w') as f1:
+            f1.write('charmander')
+        with open('friday.txt', 'w') as f2:
+            f2.write('Ya es viernes')
+
     # Tests 1-3: Se aseguran de que el contenido del archivo coincida con el 2do parámetro.
 
     def test_1(self):

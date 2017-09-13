@@ -12,4 +12,4 @@ def read_file(path):
 
 
 if __name__ == '__main__':
-    print(print_file('testfile.txt'))
+    print(read_file('testfile.txt'))
