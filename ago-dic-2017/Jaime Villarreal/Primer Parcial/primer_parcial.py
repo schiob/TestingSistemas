@@ -32,10 +32,10 @@ def tri_from_file(path):
     if inequality_flag == False or len(side) > 3:
         result = 'No triangulo.'
     else:
-        # Si sólo hay un número único en la lista, es equilatero.
+        # Si hay 3 números iguales en la lista, es equilatero.
         if len(set(side)) == 1:
             result = 'Equilatero.'
-        # Si hay 2 números únicos en la lista, es isóceles.
+        # Si hay 2 números iguales en la lista, es isóceles.
         elif len(set(side)) == 2:
             result = 'Isoceles.'
         # Si ninguna de las anteriores se cumple, es escaleno.
