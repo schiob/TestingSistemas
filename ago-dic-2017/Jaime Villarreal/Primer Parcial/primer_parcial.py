@@ -5,6 +5,12 @@ def tri_from_file(path):
         # Leer archivo y almacenar en una lista.
         side = f.read().split()
 
+        # Test tres lados.
+        if len(side) != 3:
+            # Si hay más o menos de tres lados no es un triángulo.
+            result = 'No triangulo.'
+            return result
+
         # Test numérico.
         for x in side:
             # Si encuentra un caractér no numérico se determina que no es un triángulo.
@@ -29,7 +35,7 @@ def tri_from_file(path):
 
     # Si no pasa el test o está recibiendo más de 3 lados del archivo:
     # -> No es un triángulo.
-    if inequality_flag == False or len(side) > 3:
+    if inequality_flag == False:
         result = 'No triangulo.'
     else:
         # Si hay 3 números iguales en la lista, es equilatero.
