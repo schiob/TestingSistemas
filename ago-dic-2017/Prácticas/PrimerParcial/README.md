@@ -36,13 +36,18 @@ Los tres enteros que están en el archivo “test.txt” representan los lados d
 Casos de prueba:
 
 <(equi1.txt) ”3 3 3”), “Equilátero”>
+
 <(equi2.txt) ”5 5 5”), “Equilátero”>
 
+
 <(notri1.txt) ”0 0 0”, “No triángulo”>
+
 <(notri2.txt) ”0 5 7”, “No triángulo”>
+
 <(notri3.txt) ”1 2 3”, “No triángulo”>
 
 <(iso1.txt) ”10 7 7”, “Isóceles”>
+
 <(iso2.txt) ”4 5 4“, “Isóceles”>
 
 <(esca1.txt) ”8 6 5”, “Escaleno”>
