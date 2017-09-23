@@ -8,14 +8,14 @@ def tri_from_file(path):
         # Test tres lados.
         if len(side) != 3:
             # Si hay más o menos de tres lados no es un triángulo.
-            result = 'No triangulo.'
+            result = 'No triángulo.'
             return result
 
         # Test numérico.
         for x in side:
             # Si encuentra un caractér no numérico se determina que no es un triángulo.
             if x.isnumeric() == False:
-                result = 'No triangulo.'
+                result = 'No triángulo.'
                 return result
 
         # Los elementos de la lista se convierten a entero.
@@ -25,7 +25,7 @@ def tri_from_file(path):
     for x in side:
         # Si encuentra un cero o negativo se determina que no es un triángulo.
         if x < 1:
-            result = 'No triangulo.'
+            result = 'No triángulo.'
             return result
 
     # Test de desigualdad triangular.
@@ -36,14 +36,14 @@ def tri_from_file(path):
     # Si no pasa el test o está recibiendo más de 3 lados del archivo:
     # -> No es un triángulo.
     if inequality_flag == False:
-        result = 'No triangulo.'
+        result = 'No triángulo.'
     else:
         # Si hay 3 números iguales en la lista, es equilatero.
         if len(set(side)) == 1:
-            result = 'Equilatero.'
+            result = 'Equilátero.'
         # Si hay 2 números iguales en la lista, es isóceles.
         elif len(set(side)) == 2:
-            result = 'Isoceles.'
+            result = 'Isóceles.'
         # Si ninguna de las anteriores se cumple, es escaleno.
         else:
             result = 'Escaleno.'
