@@ -1,15 +1,3 @@
-def printFile(path):
-    f = open(path)
-    # f.read() lee todo lo restante del archivo, en este caso TODO el archivo.
-    return f.read()
-
-
-def writeFile(path, str):
-    # Se abre el archivo en modo escritura.
-    f = open(path,'w')
-    f.write(str)
-
-
 def tipo_triangulo(path):
     f = open(path)
     #return f.read()
@@ -50,5 +38,5 @@ def tipo_triangulo(path):
         return "No triángulo"
     f.close()
 
-
-print (tipo_triangulo("archivoP1.txt") )
+if __name__ == '__main__':
+    print (tipo_triangulo("archivoP1.txt") )
