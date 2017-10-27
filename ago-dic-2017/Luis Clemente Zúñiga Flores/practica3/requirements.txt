@@ -1,0 +1,5 @@
+requests
+feedparser
+beautifulsoup4
+sqlalchemy
+lxml
