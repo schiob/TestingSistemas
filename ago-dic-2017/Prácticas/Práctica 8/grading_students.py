@@ -20,6 +20,6 @@ if __name__ == '__main__':
     grades_i = 0
     for grades_i in range(n):
        grades_t = int(input().strip())
-       grades.append(grades_t)
+       grades.append(grades_t)  
     result = solve(grades)
     print ("\n".join(map(str, result)))
