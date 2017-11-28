@@ -1,4 +1,4 @@
-def timeconvertion(hora):
+def time_convertion(hora):
     hr=int(hora[0:2])
     min=(hora[3:5])
     seg=(hora[6:8])
@@ -13,7 +13,7 @@ def timeconvertion(hora):
     hora24= str(hr) + ":" + str(min) + ":" + str(seg)
     return hora24
 
-
-hora=input("Ingresa la hora (hh:mm:ssAM/PM): ")
-result = timeconvertion(hora)
-print(result)
+if __name__ == '__main__':
+    hora=input("Ingresa la hora (hh:mm:ssAM/PM): ")
+    result = time_convertion(hora)
+    print(result)

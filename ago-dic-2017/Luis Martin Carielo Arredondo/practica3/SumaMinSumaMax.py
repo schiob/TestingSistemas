@@ -28,9 +28,10 @@ def min_max(lista):
 	resultado = suma_min, suma_max
 	return resultado
 
-lista=[]
-for x in range(5):
-	lista.append(random.randint(1,10))
-print(lista)
-impresion = min_max(lista)
-print(impresion)
+if __name__ == '__main__':
+	lista=[]
+	for x in range(5):
+		lista.append(random.randint(1,10))
+	print(lista)
+	impresion = min_max(lista)
+	print(impresion)
