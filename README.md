@@ -17,4 +17,4 @@ Repositorio para las prácticas y proyectos de la materia de Calidad y Pruebas d
 
 ## Authors
 
-- Todos los que jalan en el repo `>:)` y AnhellO
+- Todos los que jalan en el repo `>:)` y **[@AnhellO](https://github.com/AnhellO)**
