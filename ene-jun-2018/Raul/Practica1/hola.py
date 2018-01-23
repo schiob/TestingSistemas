@@ -1,8 +1,3 @@
-a=0
-b=0
-c=0
-d=0
-e=0
 pares=0
 impares=0
 positivo=0
