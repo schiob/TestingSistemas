@@ -1,8 +1,3 @@
-pedido = [] 
-tacos = input()
-pedido = tacos.split(' ')
-a = len(pedido)
-        
 def cuenta(pedido):
     cachete = pedido.count('cachete')
     tcachete= cachete * 13
@@ -29,14 +24,19 @@ def cuenta(pedido):
     return suma
 
 
-
-ok = cuenta(pedido)
-
-if a <= 30:
-    print(ok)
+if __name__ == "__main__":
     
-else:
-    print("No puedes meter mas de 30 palabras....")
+    pedido = [] 
+    tacos = input()
+    pedido = tacos.split(' ')
+    a = len(pedido)
+    ok = cuenta(pedido)
+
+    if a <= 30:
+        print(ok)
+    
+    else:
+        print("No puedes meter mas de 30 palabras....")
 
 
 
