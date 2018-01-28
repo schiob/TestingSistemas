@@ -32,7 +32,7 @@ if __name__ == "__main__":
     a = len(pedido)
     ok = cuenta(pedido)
 
-    if a <= 30:
+    if 0 < a <= 30:
         print(ok)
     
     else:
