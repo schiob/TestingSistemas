@@ -1,3 +1,9 @@
+pos = 0
+neg = 0
+par = 0
+imp = 0
+
+
 a,b,c,d,e = input('Pon 5 numeros').split(' ')
 		
 if int(str(a)) > 0:
