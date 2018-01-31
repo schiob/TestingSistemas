@@ -1,31 +1,23 @@
-#creando una variable (string ) de tipo 'lista'
-Tacos=list((input("Ingresa la orden de tacos, separado por espacios solo puedes pedir 30 tacos: ").split()))
-#imprimiendo la lista 'tacos'
-print(Tacos)
-#declaracion de tacos
+#Imprimo letrero
+print ("Dame tu pedido")
+#metodo
+def cuenta(pedido):
+    cachete = pedido.count('cachete')
+    lengua = pedido.count('lengua')
+    tripas = pedido.count('tripas')
+    pastor = pedido.count('pastor')
+    machito = pedido.count('machito')
 
-#creando variables acumuladores
-cachete=0
-lengua=0
-tripas=0
-pastor=0
-machito=0
-#usando un ciclo para recorrer las palabras ingresados
-for x in Tacos:
-    if x == "cachete":
-        cachete+=1
-    elif x == "lengua":
-        lengua+=1
-    elif x == "tripas":
-        tripas+=1
-    elif x == "pastor":
-        pastor+=1
+    suma = cachete*13 + lengua*10 + tripas*9 + pastor*15 + machito*14
+    return suma
+#metodo
+if __name__ == "__main__":
+    pedido = []
+    tacos = input()
+    pedido = tacos.split(' ')
+    x = len(pedido)
+ #ciclo   
+    if 0 < x <= 30:
+       print(cuenta(pedido))
     else:
-        machito+=1
-
-#print(cachete,"cahete")
-#print(lengua,"lengua")
-#print(tripas,"tripas")
-#print(pastor,"pastor")
-#print(machito,"machito")
-print("total" , cachete*13 + lengua*10 + tripas*9 + pastor*15 + machito*14 )
+        print("No puedes pedir mas de 30 palabras....")
