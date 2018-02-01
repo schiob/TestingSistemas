@@ -1,4 +1,8 @@
 a,b,c,d,e = input('Pon 5 numeros').split(' ')
+pos = 0
+neg = 0
+par = 0
+imp = 0
 		
 if int(str(a)) > 0:
 	pos = pos + 1
@@ -43,7 +47,10 @@ if int(str(e))%2 == 0:
 else:
 	imp = imp + 1
 
-print (str(pos) + " nÃºmero(s) positivo(s)" )
-print (str(neg) + " nÃºmero(s) negativos(s)" )
-print (str(par) + " nÃºmero(s) par(es)" )
-print (str(imp) + " nÃºmero(s) impar(es)" )
+print (str(pos) + " n¨²mero(s) positivo(s)" )
+print (str(neg) + " n¨²mero(s) negativos(s)" )
+print (str(par) + " n¨²mero(s) par(es)" )
+print (str(imp) + " n¨²mero(s) impar(es)" )
+=======
+
+>>>>>>> 2dd99c514cf8ed99536dc5d8d8d5ca4bd29f6ab4
