@@ -1,19 +1,6 @@
-print('''¡Bienvenido!, teclee los taquitos que desee ordenar separados por espacio; cuando tu orden este lista, teclea enter.
-          MENÚ:\n
-		  cachete\n
-		  lengua\n
-		  tripitas\n
-		  pastor\n
-		  machito\n''' )
-print("Máximo 30 taquitos")
-taquitos = input()
-orden = taquitos.split(' ')
-#Parametro de entrada "orden"
-total = 0
-i = 0
 def totalizar(orden):
-	global i
-	global total
+	total = 0
+	i = 0
 	#len() me da el total de items en la lista
 	while len(orden) < 31 and i < len(orden) :
 		if orden[i] == 'cachete':
@@ -28,5 +15,16 @@ def totalizar(orden):
 			total = total + 14	
 		i+=1
 	return total
-x = totalizar(orden)
-print(x)
+if __name__ == '__main__':
+	print('''¡Bienvenido!, teclee los taquitos que desee ordenar separados por espacio; cuando tu orden este lista, teclea enter.
+          MENÚ:
+		  cachete
+		  lengua
+		  tripitas
+		  pastor
+		  machito''' )
+	print("Máximo 30 taquitos")
+	taquitos = input()
+	orden = taquitos.split(' ')
+	x = totalizar(orden)
+	print(x)
