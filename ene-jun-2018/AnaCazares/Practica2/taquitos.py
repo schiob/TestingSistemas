@@ -1,7 +1,7 @@
-#Imprimo letrero
-print ("Dame tu pedido")
+
 #metodo
 def cuenta(pedido):
+    
     cachete = pedido.count('cachete')
     lengua = pedido.count('lengua')
     tripas = pedido.count('tripas')
@@ -11,11 +11,14 @@ def cuenta(pedido):
     suma = cachete*13 + lengua*10 + tripas*9 + pastor*15 + machito*14
     return suma
 #metodo
+print ("Dame tu pedido")
 if __name__ == "__main__":
+    
     pedido = []
     tacos = input()
     pedido = tacos.split(' ')
     x = len(pedido)
+    
  #ciclo   
     if 0 < x <= 30:
        print(cuenta(pedido))

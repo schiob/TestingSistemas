@@ -9,7 +9,7 @@ pares=0
 impares=0
 #usando un ciclo para recorrer los 5 números ingresados
 for x in numeros:
-	if x>=0:
+	if x >=0:
 		positivos+=1
 		if x%2==0:
 			pares+=1
