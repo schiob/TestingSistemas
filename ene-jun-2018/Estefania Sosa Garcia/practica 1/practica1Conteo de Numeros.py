@@ -9,14 +9,14 @@ neg=0
 pos=0
 par=0
 imp=0
-for i in range(5):
-       if (int(cadena[i])<0 ):
+for i in cadena:
+       if (i<0):
                neg+=1
-       if (int(cadena[i])>0):
+       if (i>0):
                pos+=1
-       if ((int(cadena[i])%2)==0):
+       if ((i%2)==0):
                par+=1
-       if ((int(cadena[i])%2)!=0):
+       if ((i%2)!=0):
                imp+=1
  	
 
