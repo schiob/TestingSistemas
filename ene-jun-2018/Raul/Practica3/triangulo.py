@@ -8,27 +8,25 @@ def TipoTriangulo(a,b,c):
     
         if a == b == c:
             if a == 0 and b == 0 and c == 0:
-                print('No es triangulo')
+                return 'No es triangulo'
             else:
-                print('equilatero')
+                return 'equilatero'
 
         if a == 0 and b == 0 and c != 0 or a == 0 and b != 0 and c == 0 or a != 0 and b == 0 and c == 0:
-            print('No es triangulo')
+            return 'No es triangulo'
 
 
         if a != b != c != a:
             if ap == b and bp == c and c == c or am == b and bm == c and c ==c:
-                print('No es triangulo')
+                return 'No es triangulo'
             else:
-                print('escaleno')
+                return 'escaleno'
         
         if a == b != c or a != b == c or a == c != b:
             if a == 0 and b == 0 and c != 0 or  a == 0 and b != 0 and c == 0 or a != 0 and b == 0 and c == 0:
-                print("No es trinagulo")
+                return "No es trinagulo"
             else:
-                print('isoceles')
-
-        return ''    
+                return 'isoceles'
 
 
 if __name__== "__main__":
