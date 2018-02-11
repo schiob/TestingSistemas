@@ -18,7 +18,13 @@ class TestTriang(unittest.TestCase):
 
     def test_false(self):
         result = tipo_triang(0, 0, 0)
-        self.assertEqual(result, 'No es rectangulo')
+        self.assertEqual(result, 'No es triangulo')
+        result = tipo_triang(-10, -10, -10)
+        self.assertEqual(result, 'No es triangulo')
+        result = tipo_triang(1, 2, 3)
+        self.assertEqual(result, 'No es triangulo')
+        result = tipo_triang(50, 70, -85)
+        self.assertEqual(result, 'No es triangulo')
 
 if __name__ == '__main__':
     unittest.main()
