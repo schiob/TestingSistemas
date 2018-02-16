@@ -20,13 +20,13 @@ def cuenta(pedido):
 
     suma = tcachete + tlengua + ttripitas + tpastor + tmachito
 
-    
+
     return suma
 
 
 if __name__ == "__main__":
-    
-    pedido = [] 
+
+    pedido = []
     tacos = input()
     pedido = tacos.split(' ')
     a = len(pedido)
@@ -34,9 +34,6 @@ if __name__ == "__main__":
 
     if 0 < a <= 30:
         print(ok)
-    
+
     else:
         print("No puedes meter mas de 30 palabras....")
-
-
-
