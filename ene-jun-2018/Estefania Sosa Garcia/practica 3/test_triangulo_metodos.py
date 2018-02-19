@@ -1,6 +1,6 @@
 import unittest
-from triangulo import compruebaRango
-from triangulo import imprime
+from triangulo_Metodos import compruebaRango
+from triangulo_Metodos import imprime
 
 class TestingMethodsTriangulo(unittest.TestCase):
     """"teste de la clase triangulo"""
