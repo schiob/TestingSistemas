@@ -17,9 +17,10 @@ class TestFiles(unittest.TestCase):
             
 
     def test_Human(self):
-        Com = IMCFile(1.80, 73)
-        self.assertEqual(Com, "22.53")
-        
+        file = open("c:/test/imc.txt","r")
+        mensaje = file.read()
+        self.assertEqual(mensaje, "22.53")
+        file.close()
 
     def test_InHuman(self):
         Oli = IMCFile(3.40, 300)

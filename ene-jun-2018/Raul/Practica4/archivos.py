@@ -6,7 +6,7 @@ def IMCFile(a1,p1):
     file.write("{0:.2f}".format(c))
     file.close()
 
-    return ("{0:.2f}".format(c))
+
 
 
 
