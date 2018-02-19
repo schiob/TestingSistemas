@@ -19,7 +19,10 @@ class TestIMC(unittest.TestCase):
     def test_good(self):
 
         result = calcIMC(95, 1.83)
-        self.assertEqual(result, 'IMC=28.37')
+        f = open("IMC.txt", "r")
+        msj = f.read()
+        self.assertEqual(msj, "IMC=28.37")
+        f.close()
 
     def test_skyscrapper(self):
 

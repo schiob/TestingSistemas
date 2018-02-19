@@ -9,8 +9,6 @@ def calcIMC (peso, altura):
             f = open ('IMC.txt','w')
             f.write('IMC=%.2f' %res)
             f.close()
-            return ('IMC=%.2f' %res)
-
 
 
 if __name__ == '__main__':
