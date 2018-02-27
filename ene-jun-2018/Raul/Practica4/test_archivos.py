@@ -28,7 +28,7 @@ class TestFiles(unittest.TestCase):
         IMCFile(3.40, 300)
         file = open("c:/test/imc.txt","r")
         mensaje = file.read()
-        self.assertEqual(Oli, "25.95")
+        self.assertEqual(mensaje, "25.95")
         file.close()
 
     def tearDown(self):
