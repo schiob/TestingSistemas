@@ -29,4 +29,5 @@ if __name__ == '__main__':
     
     c=int(a)
     d=int(w)
+    y='hrs'
     hora(c,d,y)
