@@ -24,7 +24,7 @@ class TestIMC(unittest.TestCase):
         self.assertEqual(msj, "IMC=28.37")
         f.close()
 
-    def test_skyscrapper(self):
+    def test_skyscraper(self):
 
         result = calcIMC(95, 3)
         self.assertEqual(result, 'Seguro que eres humano?.')
