@@ -18,6 +18,7 @@ class Categoria():
     def __init__(self, id, nombre):
         self.Id = id
         self.Nombre = nombre
+    
 
 
 class AbstractRepo(ABC):
