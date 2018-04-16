@@ -18,33 +18,31 @@ def GuardarVideo(claseYoutube, anaRepo, url, categorias):
     # Mostrar el id con el que se guardó
     return new_video.Id
 
-def BuscarVideo(claseYoutube, anaRepo):
+def BuscarVideo(claseYoutube, anaRepo, id):
     # Mostrar lista
     lista = anaRepo.MostrarLista()
-    # Buscar Video en la lista por nombre
     print("Escriba para buscar video por id\n")
     id = input()
     if id in lista:
-        return claseYoutube.MostrarVideo
+        return anaRepo.MostrarVideo(id)
     else:
-        print("No se ha podido encontrar el video en la lista")
+        return "No se ha podido encontrar el video en la lista"
+    # Buscar Video en la lista por nombre
+
 
 def EditarVideo(claseYoutube, anaRepo, id, categorias, nombre, descripcion):
     # Mostrar lista
     lista = claseYoutube.MostrarLista()
     # Buscar el video a editar
-    print("Escriba para buscar video por id y editarlo\n")
+    print("Escriba el id del video para editarlo\n")
     id = input()
     if id in lista:
         print("¿Qué es lo que quiere editar?")
         editar = input()
         video = claseYoutube.InfoVideo(url)
         # Los demás elementos se actualizan directamente de Youtube
-        if editar == 'nombre':
-            print("Escriba nuevo nombre")
-            nombre = input()
-            video.Nombre = nombre
-        elif editar == 'categoria':
+
+        if editar == 'categoria':
             print("Escriba la categoria del video")
             categoria = input()
             video.Categorias = categoria
@@ -53,16 +51,15 @@ def EditarVideo(claseYoutube, anaRepo, id, categorias, nombre, descripcion):
             descripcion = input()
             video.Descripcion = descripcion
         edited_video = anaRepo.ModificarVideo(id)
-
     else:
         print("No se ha podido encontrar el video en la lista")
 
 
-def BorrarVideo():
+def BorrarVideo(id):
     # Mostrar lista
     lista = claseYoutube.MostrarLista()
     # Buscar el video a borrar
-    print("Escriba para buscar video por id y borrarlo\n")
+    print("Escriba el id del video para borrarlo\n")
     id = input()
     if id in lista:
         print("Está seguro que quiere borrar el video "+ anaRepo.Nombre(id) + ' ?')
@@ -70,9 +67,19 @@ def BorrarVideo():
         if resp == 'y':
             elim_video = anaRepo.BorrarVideo(id)
         elif resp == 'n':
-            print('No se eliminó el video')
+            return 'No se eliminó el video'
         else:
-            print('Comando invalido')
+            return 'Comando invalido'
+
+def menu():
+
+    print("Selecciona una de las siguientes opciones\n")
+    print("1 - Guardar Video\n")
+    print("2 - Buscar Video\n")
+    print("3 - Editar Video\n")
+    print("4 - Borrar Video\n")
+    print("0 - Salir\n")
+
 
 def main():
     inter_youtube = ChioYoutube('algo')
@@ -92,6 +99,57 @@ def main():
     id_video = GuardarVideo(inter_youtube, ana_repo, url, categorias_lista)
     print("se guardó el video con el id {}".format(id_video))
 
+    while True:
+
+    	# Mostramos el menu
+    	menu()
+
+    	opcionMenu = input("Inserta un número >> ")
+
+    	if opcionMenu=="1":
+
+    		print ("")
+    		input("Has pulsado la opción 1...\npulsa una tecla para continuar")
+            GuardarVideo()
+
+    	elif opcionMenu=="2":
+
+    		print ("")
+    		input("Has pulsado la opción 2...\npulsa una tecla para continuar")
+            BuscarVideo()
+
+
+    	elif opcionMenu=="3":
+
+    		print ("")
+    		input("Has pulsado la opción 3...\npulsa una tecla para continuar")
+            EditarVideo()
+
+
+        elif opcionMenu=="4":
+
+    		print ("")
+    		input("Has pulsado la opción 4...\npulsa una tecla para continuar")
+            BorrarVideo()
+
+
+    	elif opcionMenu=="0":
+
+    		break
+
+    	else:
+
+    		print ("")
+    		input("No has tecleado una opción valida...\npulsa una tecla para continuar")
+
+    """
+    anaRepo = SQLite()
+    Youtube = ChioYoutube()
+    Run(anaRepo, Youtube)
+
+    inversion de dependencia
+    inyeccion de dependencia
+    """
 
 if __name__ == '__main__':
-main()
+    main()
