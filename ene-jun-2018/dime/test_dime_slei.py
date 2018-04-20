@@ -101,46 +101,44 @@ def main():
 
     while True:
 
-    	# Mostramos el menu
-    	menu()
+        # Mostramos el menu
+        menu()
 
-    	opcionMenu = input("Inserta un número >> ")
+        opcionMenu = input("Inserta un número >> ")
 
-    	if opcionMenu=="1":
-
-    		print ("")
-    		input("Has pulsado la opción 1...\npulsa una tecla para continuar")
+        if opcionMenu=="1":
+            print ("")
+            input("Has pulsado la opción 1...\npulsa una tecla para continuar")
             GuardarVideo()
 
-    	elif opcionMenu=="2":
+        elif opcionMenu=="2":
 
-    		print ("")
-    		input("Has pulsado la opción 2...\npulsa una tecla para continuar")
+            print ("")
+            input("Has pulsado la opción 2...\npulsa una tecla para continuar")
             BuscarVideo()
 
+        elif opcionMenu=="3":
 
-    	elif opcionMenu=="3":
-
-    		print ("")
-    		input("Has pulsado la opción 3...\npulsa una tecla para continuar")
+            print ("")
+            input("Has pulsado la opción 3...\npulsa una tecla para continuar")
             EditarVideo()
 
 
         elif opcionMenu=="4":
 
-    		print ("")
-    		input("Has pulsado la opción 4...\npulsa una tecla para continuar")
+            print ("")
+            input("Has pulsado la opción 4...\npulsa una tecla para continuar")
             BorrarVideo()
 
 
-    	elif opcionMenu=="0":
+        elif opcionMenu=="0":
 
-    		break
+            break
 
-    	else:
+        else:
 
-    		print ("")
-    		input("No has tecleado una opción valida...\npulsa una tecla para continuar")
+            print ("")
+            input("No has tecleado una opción valida...\npulsa una tecla para continuar")
 
     """
     anaRepo = SQLite()
