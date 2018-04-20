@@ -1,4 +1,6 @@
 from dime import *
+from apiclient.discovery import build
+import emoji
 
 class AppYoutube(AbstractYoutube):
     def __init__(self, algo):
