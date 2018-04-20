@@ -30,6 +30,7 @@ class AppYoutube(AbstractYoutube):
             
         return Video(Titulo, NombreCanal, Descripcion, Publicacion, Likes, Vistas, Duracion)
 
+
 def GuardarVideo(claseYoutube, anaRepo, url, categorias):
     # Buscar video en youtube
     video = claseYoutube.InfoVideo(url)
