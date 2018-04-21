@@ -2,120 +2,89 @@ from dime import *
 
 class SQlite(AbstractSQlite):
    
-#conectar con bd
+	#conectar con bd
 
-conexion = sqlite3.connect('dime.db')
-cursor = conexion.cursor()
+	conexion = sqlite3.connect('dime.db')
+	cursor = conexion.cursor()
 
-def Guardar_VIDEOdime(self, video):
-    cursor.execute("INSERT INTO VIDEO (ID_VIDEO ,NOMBRE_VIDEO, DURACION,CANAL,CATEGORIA,FECHA,LIKES,VISITAS,DESCRIPCION)\ VALUES (https://www.youtube.com/watch?v=X9A1Ny6B310,video,123,youtube,musica,12/02/2018,344,34,video)")
-    conexion.commit()
-    print "se guardo correctamente"
+	def Guardar_VIDEOdime(self, id_video,nombre,duracion,canal_video,categoria_video,fecha_video,likes,visitas_video,descripcion):
+    	guardar_video=cursor.execute("INSERT INTO VIDEO VALUES (id_video,nombre,duracion,canal_video,categoria_video,fecha_video,likes,visitas_video,descripcion)")    	conexion.commit()
+    	return guardar_video
 
-def MostrarLista(self, id):
-    cursor.execute("SELECT ID_VIDEO,NOMBRE_VIDEO,CANAL,VISITAS,FECHA,CATEGORIA")
+	def MostrarLista(self, id):
+    	mostrar_lista=cursor.execute("SELECT * from VIDEO")
+    	conexion.commit()
+    	return mostrar_lista
+       	
+
+	def ModificarVideo(self, id_video, nombre, canal_video,visitas_video,fecha_video,categori_video ):
+    	modificar_video=cursor.execute("UPDATE VIDEO SET ID_VIDEO='id_video', NOMBRE_VIDEO='nombre', CANAL='canal_video', VISITAS=visitas_video, FECHA='fecha_video', CATEGORIA='categori_video' where NOMBRE_VIDEO='nombre'")
+    	conexion.commit()
+    	return modificar_video
+
+	def MostrarVideo(self, id_video):
+    	mostrar_video = cursor.execute("SELECT * from VIDEO where ID_VIDEO='id_video'")
+    	conexion.commit()
+    	return mostrar_video
     
-    for i in cursor:
-        print "ID_VIDEO=",i[0]
-        print "NOMBRE_VIDEO=",i[1]
-        print "CANAL=",i[2]
-        print "VISITAS=",i[3]
-        print "FECHA=",i[4]
-        print "CATEGORIA=",i[5],"\n"
+   
 
-    print "OPERACION EXITOSA"
+    	def BorrarVide(self, id_video):
+        	borrar_videocursor.execute("DELETE from VIDEO WHERE ID_VIDEO='id_video'", true)
+        	conexion.commit()
+        	return borrar_videocursor
 
-def Categoria(self, id, nombre):
-    cursor.execute("INSERT INTO CATEGORIA (ID_CATEGORIA, NOMBRE_CATEGORIA)\ VALUES (1,musica)")
-    conexion.commit()
-    print "se guardo correctamente"
-
-def MostrarVideo(self, id):
-    cursor.execute("SELECT ID_VIDEO,NOMBRE_VIDEO,CANAL,VISITAS,FECHA,CATEGORIA")
-    
-   ID_VIDEO=INT(input("INSERTE EL ID del VIDEO A ELIMINAR :"))
-   Buscar_VIDEOdime="SELECT VIDEOdime.ID_VIDEO from  ID_VIDEO=ID_VIDEO"
-   cursor.execute(Buscar_VIDEOdime)
-   busqueda_completa=cursor.fetchone()
-   if len(busqueda_completa)>0:
-    print("ID_VIDEO encontrado:{}".format(busqueda_completa[0]))
-     print("NOMBRE_VIDEO{}".format(busqueda_completa[1]))
-        print("DURACION{}".format(busqueda_completa[2]))
-        print("CANAL{}".format(busqueda_completa[3]))
-        print("CATEGORIA{}".format(busqueda_completa[4]))
-        print("FECHA{}".format(busqueda_completa[5]))
-        print("LIKES{}".format(busqueda_completa[6]))
-        print("VISITAS{}".format(busqueda_completa[7]))
-        print("DESCRIPCION{}".format(busqueda_completa[8]))
-
-    else:
-            print ("no existe")
-
-    def BorrarVide(self, id):
-        cursor.execute("DELET from VIDEOdime WHERE ID_VIDEO=0")
-        conexion.commit()
-        print "Borrado",conexion.commit.total_changes
-    cursor.execute("SELECT ID_VIDEO,NOMBRE_VIDEO,CANAL,VISITAS,FECHA,CATEGORIA")
-    
-    for i in cursor:
-        print "ID_VIDEO=",i[0]
-        print "NOMBRE_VIDEO=",i[1]
-        print "CANAL=",i[2]
-        print "VISITAS=",i[3]
-        print "FECHA=",i[4]
-        print "CATEGORIA=",i[5],"\n"
-
-    print "OPERACION EXITOSA"
-
+             
+    	
 
     conexion.close()
    
 if __name__ == '__main__':
     main()
-    conexion = SQlite()
-    conexion.agregar("ID_VIDEO")
+    """conexion = SQlite()
+    	conexion.agregar("id")
 
     idvideo = conexion SQlite
-    idvideo.ID_VIDEO("https://www.youtube.com/watch?v=X9A1Ny6B310")
+    	idvideo.ID_VIDEO("id")
 
-    video =conexion SQlite
-    video.NOMBRE_VIDEO("Video")
+    nombre =conexion SQlite
+    	nombre.NOMBRE_VIDEO("nombre")
 
     conexion = SQlite()
-    conexion.agregar("NOMBRE_VIDEO")
+    	conexion.agregar("nombre")
 
     duracion = conexion SQlite
-    duracion.DURACION("1123")
+    	duracion.DURACION("likes")
 
     conexion = SQlite()
-    conexion.agregar("DURACION")
+   		conexion.agregar("duracion")
 
     canal =conexion SQlite
-    canal.CANAL("werwber")
+    	canal.CANAL("canal")
 
     conexion = SQlite()
-    conexion.agregar("CANAL")
+   		conexion.agregar("canal")
   
     categoria= conexion SQlite
-    categoria.CATEGORIA("musica")
+    	categoria.CATEGORIA("categoria")
 
     conexion = SQlite()
-    conexion.agregar("CATEGORIA")
+    	conexion.agregar("categoria")
 
     visitas = conexion SQlite
-    visitas.VISITAS("1234")
+    	visitas.VISITAS("visitas")
 
     conexion = SQlite()
-    conexion.agregar("VISITAS")
+    	conexion.agregar("visitas")
 
     fechas = conexion SQlite
-    fechas.FECHA("12/02/2018")
+    	fechas.FECHA("fecha")
 
     conexion = SQlite()
-    conexion.agregar("FECHA")
+    	conexion.agregar("fecha")
 
     descripcion= conexion SQlite
-    descripcion.DESCRIPCION("video youtube")
+    	descripcion.DESCRIPCION("descripcion")
 
     conexion = SQlite()
-    conexion.agregar("DESCRIPCION")
+    conexion.agregar("DESCRIPCION")"""
