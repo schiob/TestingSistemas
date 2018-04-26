@@ -66,24 +66,7 @@ def opc1():
     ventana.mainloop()
 def main():
 
-    while True:
-        ventana = Tk()
-        ventana.geometry("600x600+0+0")
-        ventana.title("2 Parcial")
-        #barra de menus
-        barraMenu=Menu(ventana)
-        #creacion de menus
-        mnuBusqueda=Menu(barraMenu)
-        mnuOpciones=Menu(barraMenu)
-        mnuBusqueda.add_command(label="Busquedapor URL")
-        mnuOpciones.add_command(label="Guardar Video")
-        mnuOpciones.add_command(label="Mostrar Lista")
-        mnuOpciones.add_command(label="Mostrar Video")
-        mnuOpciones.add_command(label="Modificar Video")
-        mnuOpciones.add_command(label="Borrar Video")
-        barraMenu.add_cascade(label="busqueda youtube",menu=mnuBusqueda)
-        barraMenu.add_cascade(label="Opciones",menu=mnuOpciones)
-        ventana.config(menu=barraMenu)
+
 
 
 if __name__ == '__main__':
