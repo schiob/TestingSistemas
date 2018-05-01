@@ -19,6 +19,7 @@ def GuardarVideo(AppYoutube, anaRepo, url, categorias):
     return new_video.Id
 
 
+
 def MostrarLista(anaRepo):
     #regresar datos de ana_repo
     video = anaRepo.MostrarLista()
@@ -88,22 +89,27 @@ def main():
             for i in x:
                 print(i)
             g=input("teclea para continuar")
-            uu=int(input("ingrese id :"))
+            uu=int(input("ingrese url :"))
             print(AppYoutube.InfoVideo(uu)+"\n")
             ed=int(input("¡ Que te gustaria editar ?\n---descipcion ingresa 1\n---categoria ingresa 2\n"))
             #vd = Video()
             if ed == 1:
-                vd.Descripcion=str(input("ingresa la nueva descripcion :"))
+                youtube.Descripcion=str(input("ingresa la nueva descripcion :"))
                 print("descripcion editada")
             elif ed == 2:
                 f=str(input("ingresa nueva categoria"))
-                vd.Categorias = f
+                youtube.categorias = f
                 print("Categoria editada")
-                #vid_ed=anaRepo.ModificarVideo(vd)
+            t=AppYoutube.InfoVideo(uu)
+            ModificarVideo(youtube,ana,t)
+            sleep(3)
+            continue
 
 
         elif opcion == 5:
-            MostrarLista()
+            x=MostrarLista()
+            for i in x:
+                print(i)
             uu=int(input("ingrese id :"))
             vid = AppYoutube.InfoVideo(uu)
             u=int(input("ingrese id para confirmar que quieres borrar este video:"))
