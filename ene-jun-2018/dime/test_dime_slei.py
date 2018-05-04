@@ -1,153 +1,142 @@
 from dime import *
+from time import sleep
 
-class ChioYoutube(AbstractYoutube):
+class AppYoutube(AbstractYoutube):
+
     def __init__(self, algo):
         self.algo = algo
 
     def InfoVideo(self, url):
-        return Video("nombre", "1234", "canal", "today", 123, 42, "una descripcion")
 
-def GuardarVideo(claseYoutube, anaRepo, url, categorias):
+        API_KEY = 'AIzaSyAF3BIAdtEu6Y3NR_BtkhViMfOGRxCD84Q'
+        youtube = build('youtube', 'v3', developerKey=API_KEY)
+
+        ids = url[32:43]
+        results = youtube.videos().list(id=ids, part='snippet').execute()
+        for result in results.get('items', []):
+            NombreCanal = emoji.demojize(result['snippet']['channelTitle'])
+            Titulo = emoji.demojize(result['snippet']['title'])
+            Descripcion = emoji.demojize(result['snippet']['description'])
+            Publicacion = result['snippet']['publishedAt']
+
+
+        results1 = youtube.videos().list(id=ids, part='statistics').execute()
+        for result2 in results1.get('items', []):
+            Likes = result2['statistics']['likeCount']
+            Vistas = result2['statistics']['viewCount']
+
+
+        results4 = youtube.videos().list(id=ids, part='contentDetails').execute()
+        for result5 in results4.get('items', []):
+            Duracion = result5['contentDetails']['duration']
+
+        return Video(Titulo, NombreCanal, Descripcion, Publicacion, Likes, Vistas, Duracion)
+
+
+def GuardarVideo(AppYoutube, anaRepo, url, categorias):
     # Buscar video en youtube
-    video = claseYoutube.InfoVideo(url)
-    # Agregar las categorías
+    video = AppYoutube.InfoVideo(url)
+    # Agregar las categorias
     video.Categorias = categorias
     # Guardar
     new_video = anaRepo.GuardarVideo(video)
-
     # Mostrar el id con el que se guardó
     return new_video.Id
 
-def BuscarVideo(claseYoutube, anaRepo, id):
-    # Mostrar lista
+
+def MostrarLista(anaRepo):
+    #regresar datos de ana_repo
     lista = anaRepo.MostrarLista()
-    print("Escriba para buscar video por id\n")
-    id = input()
-    if id in lista:
-        return anaRepo.MostrarVideo(id)
-    else:
-        return "No se ha podido encontrar el video en la lista"
-    # Buscar Video en la lista por nombre
+    return lista
 
+def MostrarVideo(anaRepo,id):
+    # recibiendo el ID del video, te debe mostrar el video con sus demás datos
+    muestra_video=anaRepo.MostrarVideo(id)
+    return muestra_video
 
-def EditarVideo(claseYoutube, anaRepo, id, categorias, nombre, descripcion):
-    # Mostrar lista
-    lista = claseYoutube.MostrarLista()
-    # Buscar el video a editar
-    print("Escriba el id del video para editarlo\n")
-    id = input()
-    if id in lista:
-        print("¿Qué es lo que quiere editar?")
-        editar = input()
-        video = claseYoutube.InfoVideo(url)
-        # Los demás elementos se actualizan directamente de Youtube
+def ModificarVideo(anaRepo,id):
+    modificar = anaRepo.ModificarVideo(video)
+    return modificar
 
-        if editar == 'categoria':
-            print("Escriba la categoria del video")
-            categoria = input()
-            video.Categorias = categoria
-        elif editar == 'descripcion':
-            print("Editar la descripcion del video")
-            descripcion = input()
-            video.Descripcion = descripcion
-        edited_video = anaRepo.ModificarVideo(id)
-    else:
-        print("No se ha podido encontrar el video en la lista")
-
-
-def BorrarVideo(id):
-    # Mostrar lista
-    lista = claseYoutube.MostrarLista()
-    # Buscar el video a borrar
-    print("Escriba el id del video para borrarlo\n")
-    id = input()
-    if id in lista:
-        print("Está seguro que quiere borrar el video "+ anaRepo.Nombre(id) + ' ?')
-        resp = input('Escriba Y o N\n')
-        if resp == 'y':
-            elim_video = anaRepo.BorrarVideo(id)
-        elif resp == 'n':
-            return 'No se eliminó el video'
-        else:
-            return 'Comando invalido'
-
-def menu():
-
-    print("Selecciona una de las siguientes opciones\n")
-    print("1 - Guardar Video\n")
-    print("2 - Buscar Video\n")
-    print("3 - Editar Video\n")
-    print("4 - Borrar Video\n")
-    print("0 - Salir\n")
+def BorarVideo(anaRepo,id):
+    borrar = anaRepo.BorrarVideo(id)
+    return borrar
 
 
 def main():
-    inter_youtube = ChioYoutube('algo')
-    vi1 = inter_youtube.InfoVideo("https://www.youtube.com/watch?v=X9A1Ny6B310")
-    print(vi1.Duracion)
-    print(vi1.Categorias)
-
-    # Opcion 1
-    # Leer de la terminal la url
-    print("pasame la url:")
-    url = input()
-    # Mostrar la opcion de agregar categorias
-    print("quiere categoria primo?")
-    cat = input()
-    categorias_lista.append(cat)
-
-    id_video = GuardarVideo(inter_youtube, ana_repo, url, categorias_lista)
-    print("se guardó el video con el id {}".format(id_video))
-
+    BD = anaRepo()
+    YT= AppYoutube()
     while True:
+        bienvenido = "------------- Bienvenido ------------"
+        opcion = int(input("-----Menu----- 1... Guardar \n2... Ver Lista \n3... Ver Video \n4...  modificar \n5... Borrar \n0... Salir\n"))
+        if opcion == 1:
+            if MostrarLista() == None:
+                print("No hay videos guardados")
+            urll = int(input("Ingresa URL para guardar un video :"+"\n"))
+            categ = str(input("Ingresa CATEGORIA :"+"\n"))
+            print("Se creo el video con el ID: "+GuardarVideo(YT,BD,urll,x))
+            continue
 
-        # Mostramos el menu
-        menu()
-
-        opcionMenu = input("Inserta un número >> ")
-
-        if opcionMenu=="1":
-            print ("")
-            input("Has pulsado la opción 1...\npulsa una tecla para continuar")
-            GuardarVideo()
-
-        elif opcionMenu=="2":
-
-            print ("")
-            input("Has pulsado la opción 2...\npulsa una tecla para continuar")
-            BuscarVideo()
-
-        elif opcionMenu=="3":
-
-            print ("")
-            input("Has pulsado la opción 3...\npulsa una tecla para continuar")
-            EditarVideo()
-
-
-        elif opcionMenu=="4":
-
-            print ("")
-            input("Has pulsado la opción 4...\npulsa una tecla para continuar")
-            BorrarVideo()
+        elif opcion == 2:
+            if MostrarLista() == None:
+                print("No hay videos agregados, regresando al menú...")
+                sleep(1)
+                continue
+            else :
+                w=MostrarLista()
+                for x in w:
+                    print(x)
+                F=input("Presiona cualquier tecla para continuar...")
+                continue
 
 
-        elif opcionMenu=="0":
+        elif opcion == 3:
+            """Para no hacer lo mismo que en la opc 2, se recomienda haber ido
+            primero a la opc 2, copiar el id del video que quieres visualizar y
+            darlo como parametro en el input de 'preg'
+            """
+            preg=str(input("Para ver un VIDEO ingresa el ID:"))
+            print(MostrarVideo(preg))
+            F=input("Presiona cualquier tecla para continuar...")
+            continue
 
+        elif opcion == 4:
+
+            print("Escribe el ID del video a MODIFICAR \n\n")
+
+            mod=int(input())
+            print(AppYoutube.InfoVideo(mod)+"\n")
+            ed=int(input("¿ Qué te gustaria editar ?\n---Descripción, ingresa 1\n---Categoria, ingresa 2\n"))
+            #vd = Video()
+            if ed == 1:
+                vd.Descripcion=str(input("ingresa la nueva descripción :"))
+                print("descripción editada")
+            elif ed == 2:
+                f=str(input("ingresa nueva categoria"))
+                vd.Categorias = f
+                print("Categoria editada")
+                #vid_ed=anaRepo.ModificarVideo(vd)
+            else:
+                print("Teclea sólo 1 o 2, regresando al menú...")
+                sleep(1)
+            continue
+
+
+        elif opcion == 5:
+            MostrarLista()
+            eliminar1 = int(input("Ingrese el ID del video a eliminar: "))
+            vid = AppYoutube.InfoVideo(eliminar1)
+            eliminar2=int(input("Reingrese ID para confirmar que quieres borrar este video: "))
+            if eliminar2 == eliminar1:
+                BorrarVideo(eliminar2)
+            else :
+                print("Los ID no coinciden, regresando al menú...")
+                sleep(1)
+                continue
+        elif opcion == 0:
+            print("Saliendo del menú...")
+            sleep(1)
             break
-
-        else:
-
-            print ("")
-            input("No has tecleado una opción valida...\npulsa una tecla para continuar")
-
-    """
-    anaRepo = SQLite()
-    Youtube = ChioYoutube()
-    Run(anaRepo, Youtube)
-
-    inversion de dependencia
-    inyeccion de dependencia
-    """
 
 if __name__ == '__main__':
     main()
