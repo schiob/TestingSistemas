@@ -10,8 +10,8 @@ for n in (0, N):
     lista.append(x)
     if x>= 0:
         Pos= Pos + 1
-        if (x % 2) == 0: #me marca un error de sintaxis en esta parte, solo me marca que el erro esta en el "0"
-            Par= Par + 1 #ya use =0.0, ==0.0, (x%2) == 0 pero aun asi me marca ese error
+        if (x % 2) == 0:
+            Par= Par + 1 
         else:
             Impar= Impar + 1
     else:
