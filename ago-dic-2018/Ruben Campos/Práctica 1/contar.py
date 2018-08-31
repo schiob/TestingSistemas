@@ -1,4 +1,3 @@
-import sys
 positivos = 0
 negativos = 0
 impares = 0
