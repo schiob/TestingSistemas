@@ -1,0 +1,30 @@
+
+def calc(cantidad):
+    impar = 0 
+    pares = 0
+    negativos = 0
+    positivos = 0
+
+    for num in cantidad:
+        if num%2==0:
+            pares+=1
+        else:
+            impar+=1
+        if num<0:
+            negativos+=1
+        elif num>0:
+            positivos+=1
+
+    return pares, impar, negativos, positivos
+
+if __name__ == '__main__':
+
+    cantidad=int(input('Escribe el total de números para evaluar: '))
+    entrada=list(map(int, input('Escribe los números a evaluar (separados con un espacio entre ellos): ').split(" ")))
+
+    resultado=calc(entrada)
+
+    print("Pares = {}".format(resultado[0]))
+    print("Impares = {}".format(resultado[1]))
+    print("Negativos = {}".format(resultado[2]))
+    print("Positivos = {}".format(resultado[3]))
