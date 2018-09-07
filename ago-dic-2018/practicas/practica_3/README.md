@@ -39,7 +39,11 @@ Imprime una sola linea con el entero que es el **n** número triangular.
 
 ## Casos de pruebas
 <1, 1>
+
 <3, 6>
+
 <4, 10>
+
 <56, 1596>
+
 <400, 80200>
