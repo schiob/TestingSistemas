@@ -12,9 +12,11 @@ Recibirás una sola línea con un entero **n** representado la posición del nú
 `
 1
 `
+
 `
 3
 `
+
 `
 4
 `
@@ -26,9 +28,11 @@ Imprime una sola linea con el entero que es el **n** número triangular.
 `
 1
 `
+
 `
 6
 `
+
 `
 10
 `
