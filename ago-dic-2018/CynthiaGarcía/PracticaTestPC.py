@@ -21,16 +21,16 @@ class TestJuanita(unittest.TestCase):
 			self.assertEqual(res3[0],3)
 
 			res4=practicaenPC.calc([-4,0,11,7,9])
-			self.assertEqual(res4[1,]3)
+			self.assertEqual(res4[1],3)
 
 			res5=practicaenPC.calc([-7,-5,40,8,-3])
 			self.assertEqual(res5[1],2) #Debe ser fallo
+			self.assertEqual(res5[3],4)
 
 			res6=practicaenPC.calc([-7,-5,1,8,-3])
 			self.assertEqual(res6[2],2)
 
-			self.assertEqual(res5[3],2) #debe ser fallo
-			self.assertEqual(res[3],4)
+			
 
 if __name__ == '__main__':
 	unittest.main()			
