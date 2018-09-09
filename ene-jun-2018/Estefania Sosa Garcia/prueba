@@ -1,0 +1,8 @@
+import unittest
+from 12to24q import hora
+
+class Testing12to24(unittest.TestCase):
+    """"teste examen"""
+    def test_hora(self):
+        p1 = hora("02.23p.m","14.23hrs")
+        self.assertEqual( p1 , 0)
