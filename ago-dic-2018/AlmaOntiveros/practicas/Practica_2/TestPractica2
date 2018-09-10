@@ -2,7 +2,6 @@ import unittest
 import Practica2
 
 class TestPractica2 (unittest.TestCase):
-
     def test_numeros(self):
     total=Practica2.calc([5,-8,32,0,4])
     self.assertEqual(total[0], 3)
