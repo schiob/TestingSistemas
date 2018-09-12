@@ -27,6 +27,4 @@ print(str(positivos) + " Numero(s) Positivo(s)")
 print(str(negativos) + " Numero(s) Negativo(s)")
 print(str(par) + " Numero(s) Par(es)")
 print(str(impar) + " Numero(s) Impar(es)")
- 
-
 
