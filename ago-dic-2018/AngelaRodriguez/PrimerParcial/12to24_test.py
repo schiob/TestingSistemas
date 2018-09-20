@@ -12,13 +12,13 @@ class TestHora (unittest.TestCase):
 		res7=examen.conv_horas("11:59 P.M.")
 		
 
-		self.assertEqual('14:23hrs')
-		self.assertEqual('23:43hrs')
-		self.assertEqual('11:42hrs')
-		self.assertEqual('00:00hrs')
-		self.assertEqual('12:00hrs')
-		self.assertEqual('01:05hrs')
-		self.assertEqual('23:59hrs')
+		self.assertEqual(res, '14:23hrs')
+		self.assertEqual(res2, '23:43hrs')
+		self.assertEqual(res3, '11:42hrs')
+		self.assertEqual(res4, '00:00hrs')
+		self.assertEqual(res5,'12:00hrs')
+		self.assertEqual(res6, '01:05hrs')
+		self.assertEqual(res7, '23:59hrs')
 
 if __name__ =='__main__':
 	unittest.main() 
