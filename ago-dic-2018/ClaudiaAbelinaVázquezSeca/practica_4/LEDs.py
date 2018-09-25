@@ -31,7 +31,7 @@ def calcularLeds(entrada):
 
 if __name__ == '__main__':
 	#Recibir una entrada
-	entrada = str(input("Ingresa un número de entrada")).split(",")
+	entrada = input("Ingresa un número de entrada")
 	#iniciar la lista de strings
 	#leds = entrada [0]
 	salida = calcularLeds(entrada)
