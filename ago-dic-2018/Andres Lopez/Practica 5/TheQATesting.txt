@@ -1,0 +1,215 @@
+the Q testing chanel
+
+ing. Fernando Carrillo
+director de la empresa
+Instituto internacional de prueba de software
+
+piensa ¿donde estan las 60 empresas?
+la calidad es correr y ser mas rapido que otras personas, prepararte para tener las oportunidades que el mercado te demanda
+las grandes empresas nacen por el emprendimiento a temprana edad, emprender desde hoy.
+areas de pruebas
+pruebas movil
+automatizacion de pruebas
+pruebas de desempeño
+pruebas de seguridad
+pruebas manuales
+administracion de datos
+consultoria y prueba de software
+
+soluciones horizontalesy soluciones verticales
+la sengunda sirve para encontrar los tiempos y recursos que utilizamos, solucionar los cuellos de botella
+
+Carlos Carrillo
+fundador de testing chanel
+automatisacion de pruebas de software
+epistemologia: palabra griega que significa conocimiento
+(VISION + INGENIERIA SOCIAL= CONTACTOS)*(DIFERENCIADOR + EXPERIENCIA)= tiempo + competidores
+
+dimensiones de las pruebas de software
+probador de software
+cobertura
+actividades
+probabilidad de fallo
+evaluacion
+
+prueba de software
+validar y verificar un software
+validacion se divide en funcional o no funcional
+la funcional se usa manualmente
+no funcional funciona con un programa
+
+el tester necesita ser:
+un buen lider, ser negociador, enfoque al cambio, entendimiento rapido del negocio, base de datos, proactivo, programador, inovador
+
+
+enrique armenta
+fabrica de testing
+
+la gestion de pruebas
+es un elemento clave en las pruebas de software
+
+
+david gutierres
+instructor y conferencista
+
+erradicar el mito de que te dedicas al testing por que no sabes programar
+los defectos cuesta casi 60 billones de dolares por liberar software que no habia funcionado como querian
+se aplica metodos para aplicar las pruebas
+capacitar el personal reduce los costos 
+la calidad del software nos dice que tan rentable es el producto
+
+la no deteccion de errores trae consecuencias como:
+perdida de clientes y consecuencias de negocio
+problemas con las relaciones publicas
+atrasar la planificacion
+
+entre mas tarde se detecta el defecto mas costoso es arreglarlo y la marca del sistema se va para abajo
+el diseño y la escritura del codigo puede afectar al producto si no se detecta al tiempo
+se tiene que realizar un filtro cada cierto tiempo para que los errores sean menos
+
+hector barrera 
+responsable area comercial
+
+somos un grupo de consultores especializados en prueba de software y otras diciplinas localizados en diferentes paises como USA, MEXICO, ARGENTINA, PERU, ESPAÑA E INDIA
+
+desarrollan diversas faces de entranamiento partiendo del ejecutor y gestor de pruebas
+tienes pruebas enfocadas al desempeño y automatizacion
+realizan diplomados certificados por la UANL 
+
+se dedica a la automatizacion que valida cada proceso mediante un software
+
+
+
+conferencia parte 2
+
+ing. Fernando Carrillo
+fernando@theqatestingchannel.com
+datos reales
+	siempre usa datos lo mas parecido a los reales utilizados en produccion, en forma y tamaño.
+datos en el ambiente
+	gestiona que los datos de una prueba manuel no sean utilizados por el automatizador y viceversa
+	el script debe informar la ausencia de datos
+frameworks
+	record & playback
+	data driven
+	modular
+	hibrido
+	keyword driven
+	building block modular
+recomendado
+	keyword driven
+script
+	se graba R&PB
+	se extiende
+		se parametrizan los datos
+		se agregan validaciones vs texto o imagenes
+		manejo de errores
+		integracion con herramientas
+
+bulding block modular
+inicio	inicio 	inicio	inicio
+
+	login	login	login
+
+	logout	accesar 
+		cuenta
+
+		logout
+
+Carlos Carrillo
+carlos@theqatestingchannel.com
+no te gusta programar te puedes orientar a la especialidad de pruebas de sotware
+que es automatizacion de pruebas de software?
+es el proceso de automatizar y sistematizar todas las actividades que se llevan de una forma manual.
+automatizacion no es solo automatizar los casos de prueba
+
+cuando es apropiado automatizar?
+al tener el proceso y testware manual en orden y estable
+al seleccionar los casos de prueba que generan ROI, que dan informacion, y que aseguran el 80/20
+al tener un proceso para automatizar.
+al tener definida el area, roles y alcances.
+al seleccionar una herramienta para automatizar.
+al definir los tipos de prueba a automatizar
+al identificar los escenarios que le dan valor al ser automatizados
+recordar que es un proyecto en paralelo, no son carreritas
+
+razones para automatizar
+ahorrar tiempo
+	pruebas de regrecion
+	datos
+velocidad
+	2 a 1
+error humano
+
+roles y responsabilidades
+arquitecto de automatizacion
+	define los procesos de autoimatizacion
+analista automatizador
+	determina que casos de prueba se automatizan y cuales no
+lider automatizacion
+	estima
+	define el framework
+	mitiga riesgos
+scriper automatizador
+	reutiliza o diseña nuevos scripts
+	mantiene testware automatizado
+	genera datos
+ejecutor automatizador
+	ejecuta los scripts automatizados
+	monitorea se terminen
+soporte
+	da soporte en ambiente
+	herramientas
+lider de prueba manual
+	solicita una regresion automatizada
+	o datos automatizados
+
+enrique armenta
+herramienta t^2 Automation
+
+
+david gutierres
+tipos de prueba automatizada
+robots
+	prueba funcional 
+	regrecion
+	configuracion
+	apps moviles
+	generacion de datos
+procesos
+	administracion de defectos
+	testware
+	gestion
+	entre otros
+
+seleccion de una herramienta de automatizacion
+herramienta para tus procesos
+	se ajuste a mis procesos
+	la herramienta no es mi proceso
+	pide un POC!(prueba de concepto) 
+modulos
+	requerimientos
+	diseño de casos de prueba
+	administracion de defectos
+	testware
+	dashboard
+caracteristicas
+	reusabilidad
+	facil de usar
+	ROI efectivo y real
+soporte
+	capacitacion
+	automatizadores en el mercado
+	24x7
+otros
+	calendarizar ejecuciones
+	simuladores
+	soporte moviles,Desk y Web
+	tipo de licenciamiento
+
+
+hector barrera 
+facebook/thqatestingchannel
+#ya asisti a la conferencia
+#ya asisti a la anterior
+
