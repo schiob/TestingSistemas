@@ -5,7 +5,7 @@ from doceto24 import horario
 class TestHora(unittest.TestCase):
 
     def test_1(self):
-        hi = horario("02:23")
+        hi = horario("02:23 PM") 
         self.assertEqual(hi, "14:23:00")
 
     def test_2(self):
