@@ -1,5 +1,5 @@
 import unittest
-import 12to24 import reloj
+from 12to24 import reloj
 
 class Test_hora(unittest.TestCase):
     def test_prueba(self):
