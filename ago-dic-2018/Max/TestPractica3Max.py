@@ -22,5 +22,6 @@ class Test3Max(unittest.TestCase):
         res = Practica3Max.calc([400])
         self.assertEqual(res, 80200)
 
+
 if __name__ == '__main__':
     unittest.main()
