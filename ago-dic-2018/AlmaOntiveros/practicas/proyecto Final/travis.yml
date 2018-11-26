@@ -1,0 +1,11 @@
+language: python
+python:
+  - "3.6"
+
+
+install:
+  - pip install unittest2
+  - pip install --upgrade google-api-python-client
+
+script:
+  - python pruebas_youtube.py # or py.test for Python versions 3.5 and below
