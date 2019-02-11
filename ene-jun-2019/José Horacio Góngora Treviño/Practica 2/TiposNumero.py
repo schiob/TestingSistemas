@@ -12,7 +12,7 @@ def tipos_numeros(numeros):
             par+=1
         if i % 2 !=0:
             impar+=1
-    return (f"{pos} número(s) postivo(s)\n{neg} números negativo(s)\n{par} número(s) par(es)\n{impar} númeors impar(es)")
+    return (f"{pos} número(s) positivo(s)\n{neg} número(s) negativo(s)\n{par} número(s) par(es)\n{impar} número(s) impar(es)")
 
 if __name__ == '__main__':
     print("Introduce cuantos numeros quieres ordenar")
@@ -20,5 +20,4 @@ if __name__ == '__main__':
     print("Introduce los numeros deseados separados por un espacio")
     numeros = input()
     numeros = list(map(int, numeros.split()))
-    print(type((numeros)))
     print(tipos_numeros(numeros))
