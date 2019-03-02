@@ -158,7 +158,7 @@ tener diferentes nombres pero el propósito de cada uno es el mismo.
 En una organización de herramientas de prueba es importante que el **testware** esté bien organizado y
 bien configurado, los módulos a tomar en cuenta para administrar el testware son:
   - **Requerimientos:** de aquí se desprenden los casos de prueba o escenarios documentados en el testplan
-	 - **Test Plan:** se obtienen todos los casos de prueba que se van a bajar a la ejecución en el testlab
+	- **Test Plan:** se obtienen todos los casos de prueba que se van a bajar a la ejecución en el testlab
   - **TestLab:** Es importante que la trazabilidad del módulo de requerimientos, testplan y testlab
   esté bien gestionada.
 *Administra la trazabilidad de la materia de prueba de software*
