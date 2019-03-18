@@ -1,0 +1,86 @@
+Fundamentos del ejecutor de pruebas
+ Concepto básicos de Prueba
+	---Qué es una Prueba de Software---
+	Es la validacion y verificación de los requerimientos funcionales
+	Cuando hacemos validación, es cuando comparamos el caso de prueba y el requirimiento
+	Cuando hacemos verificación, cuando comparamos el caso de prueba contra el insumo inmediato
+	Las pruebas de software así como revisar la funcionalidad, también se verifica la parte no funcional
+	como la calidad de los atributos del sistema con la intención de encontrar errores mediante el uso de
+	procesos, procedimientos y herramientas
+	Tipos de Prueba
+	Funcional: 
+	Prueba manual: Ejecutando acciones del sistema con el mouse
+	"Lo que el sistema debe o no hacer"
+
+	Automatizada: Un software que con un solo click ejecuta y realiza lo que se hace en la manual
+	la diferencia es el tiempo 
+	-Rutas criticas
+
+	No funcional: Todo lo que se enfoca a los atributos de calidad del producto
+	Desempeño:Validar el uso de recursos de un aplicativo mientras se esta ejecutando con un cierto volumen de transacciones
+	o cientos usuarios concurrentes
+	-CPU
+	-Ancho de banda
+	-Tiempo de respuesta
+
+	Seguridad: Validar todas las vulnerabilidades de un sistema
+		
+
+	---Ciclo de vida de Prueba de Software---
+	1.Analisis: Validar la factibilidad de crear el sistema
+	¿Qué voy a hacer y cuánto me va a costar?
+
+	2.Planeación: Se elabora un plan de trabajo, un plan de pruebas
+	¿Qué cómo, cuándo y dónde?
+
+	3.Diseño: Diseñar los casos de prueba (TestWare)
+
+	4.Ambiente: que todo este listo en términos de hw y sw
+
+	5.Ejecución: ejecución de la parte de diseño -> pruebas dinámicas
+	
+
+	6.UAT - User Acceptance Test: Pruebas de aceptación de usuario, pruebas más puntuales
+	Se ejecutan solamente casos críticos 
+
+	7.Cierre: Se genera el certificado de prueba que avala el trabajo realizado
+	
+	---Qué es un Caso de Prueba---
+	-Entradas: Dato o evento externo que se inyectan al sistema
+	-Precondiciones: Estado en el que tiene que estar el sistema para capturar la entrada
+	-Salida: Dato que sale del sistema o mensaje de resultado
+	-Pos condiciones: Estado en el que queda del sistema despues de ejecutar la entrada y la precondición
+	Entradas + Precondiciones = Salidas + Poscondiciones
+
+
+	---Qué es un script o Procedimiento---
+	-Es el paso a paso que se necesitan para producir un caso de prueba
+	-Es el medio para validar un caso de pruebas
+	
+	Reglas de un Procedimiento de Pruebas 
+	*No debe contener datos duros(hardcode)
+	*Debe de tener 6 pasos básicos
+		1. Como acceder a la aplicación
+		2. Cómo colocar las precondiciones
+		3. Cómo ejecutar el caso 
+		4. Cómo validar el resultado esperado
+		5. Cómo validar las post-condiciones
+		6. Cómo salir del sistema
+	
+	
+	---Datos de Prueba---
+	Son aquellos datos que se requieres para ejecutar una prueba
+	Tipos de Datos:
+	-Estáticos: No se queman -> El número de una tarjeta de crédito, nunca cambia
+	-Dinámicos: Se queman -> El saldo de la cuenta, si ejecutas una prueba donde consumes saldo, se comienza a consumir el saldo
+
+	"Toda entrada que inyectamos en nuestros casos de prueba son datos"	
+
+	---Qué es un TestWare: Set de pruebas---
+	Conjunto de casos de prueba relacionados, que tienen características similares. El objetivo es integrarlos en los ciclos
+	de prueba para su ejecución
+	1.Proceso de Negocio: Seguros, Tarjetas de crédito
+	2.Requerimientos
+	3.Escenarios
+	4.Casos de Prueba
+	5.Procedimiento de Prueba
