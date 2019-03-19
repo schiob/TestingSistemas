@@ -1,0 +1,66 @@
+Ejecución Ágil
+  Inducción Métodos Ágiles 
+	¿Qué es un método ágil?
+		Es llevar un proyecto de forma rápida con dos puntos importantes: el ciclo de vida iterativo e incremental
+		esto permite al equipo del proyecto incorporar retroalimentación e ir incrementando la experiencia del equipo
+		Es periodos cortos basados en iteraciones de 2 a 4 semanas y dar un entregable muy rápido
+	Agile Mainifiesto
+		Individuos e iteraciones sobre Procesos y herramientas:
+		Nos importa mas la metodología, la interacción cara a cara, en lugar de estas utilizando procesos y herramientas para comunicarnos 
+		Software funcionando sobre Documentación exhaustiva
+		Sí se hace documentacion, pero solo lo necesario 
+		Colaboracion con el cliente sobre Negociación contractual
+		Respuesta ante el cambio sobre Seguir un plan
+	Ciclo de vida Incremental
+		Desarrollar por partes el producto del software para despues integrarlas a medida que se completan
+		EL agregar cada vez mas funcionalidades al sistema
+	Ciclo de vida Iterativo 
+		En cada iteración, se revisa y mejora el producto 
+		Es importante señalar que este ciclo no implica añadir funcionalidades en el producto, pero sí revisión y mejora
+	Ciclo de vida Iterativo e Incremental
+		Se consigue una versión más estable del software, de más calidad, y añadiendo además nuevas funcionalidades respecto a versiones anteriores
+	Concepto Iterativo e Incremental
+		El producto de desarrolla por incrementos en el que cada iteracion se obtiene una version funcional del producto
+		El sistema se desarrolla poco a poco
+		Entre cada iteracion se obtiene una retroalimentacion continua por parte del usuario
+	Ciclo Vida Ágil
+		Plan: se definen requirimientos del sistema y un plan de liberaciones
+		Colaboracion: desarrollo de productos entregables  
+		Entrega: Se revisa si los productos son entregables (entregas pequeñas)
+	Iteración Ágil 
+		Product Backlog: Lista de contro del proyecto se inserta un un proyecto ágil
+		------------ Sistema completo ----------------
+		Etapa de incialización: diseño de la iteración
+		Etapa de iteración: Modulo A, B y C y el Demo: etapa de review
+		 
+	Frameworks Ágiles
+		Métodos que se crearon para apoyar este modelo de trabajo: FRAMEWORKS
+		Centrados en ciclos iterativos e incrementales: SCRUM, DEVOPS, LSD, CP, CRISTAL, TDD
+		Centrados en el flujo: KANBAN
+		 
+  Pruebas Exploratorias 
+	¿Qué es un Exploratory Testing?
+		Pruebas exploratorias: proceso interactivo de exploración concurrente del producto, diseño de prueba y ejecución de prueba.
+		Extendiendo esto, la siguiente prueba que nosotros hacemos se verá influenciada por el resultado de la ultima prueba que realizamos haciendo 
+		Exploratory Testing
+		Ir aprendiendo entre una prueba y otra prueba para ampliar el aprendizaje
+	¿Que no es un Exploratory Testing?
+		Seguir un sript, guion o procedimiento de pruebas
+	Exploratory Testing vs Scripted Testing 
+		Scripted Testing: Es un examen secuencial de requisito, seguido por el diseño y la documentación de los casos
+		ET: es un método de prueba que es muy diferente de las pruebas con un script o procedimiento de prueba
+		La diferencia es muy clara para el Scripted Testing necesito hacer un pre diseño de los casos de prueba que voy a ejecutar 
+		y el ET no, en esta, voy diseñado, ejecutando y aprendiendo al mismo tiempo
+	Técnicas de Exploratory Testing
+		Freestyle: prueba exploratoria a la medida: no hay reglas, son buenas cuando te familiarizas por ti mismo con la aplicación
+		Scenario: Escenario de prueba, casos de uso y una lista de combinaciones para ejecutar
+		Feedback: Construyes tu histori, la historia te guia 
+		Strategy: Analisis de valores al limite, clases de particion equivalente, asegura que el tester tenga tips y trucos para detectar errores
+		Session: Metodo basado en metas: requerimientos del cliente, identifica riesgos, crear un charter, seleccion heuristica
+	Proceso Exploratory Testing
+		1. Crea un conjetura o modelo mental 
+		2. Crea una o dos pruebas que aprueban esa conjetura 
+		3. Ejecuta la prueba
+		4. Evalua la salida contra tu conjetura 
+		5. Repite el proceso hasta que la conjetura es aprobada o rechazada 
+		

@@ -1,0 +1,69 @@
+Defectos
+ Introducción al Defecto
+  ¿Qué es un defecto?
+	Es una diferencia entre el resultado esperado de tu caso de prueba contra el resultado actual qie muestra el sistema bajo prueba
+  ¿Qué no es un defecto?
+	Falla del sistema por causas de configuración en el ambiente
+	Falla de datos
+	Malentendido de las reglas de negocio
+ Defectos Accionables
+  ¿Cómo levantar un defecto?
+	Debes tener una plantilla con los datos a llenar, previamente te debieron capacitar como usarla
+	La plantilla puedes estar en EXCEL, WORD o en una herramienta de gestión de defectos
+	Se llena la plantilla y se envía al desarrollador
+  Datos de una plantilla de Defectos 
+	Paquete | Origen | No. de Errores | Clasificacion de Errores | Estatus | ID Bug | Prioridad | Severidad | Responsable de pruebas | Responsable solución 
+	Descripción del Bug | Ciclo encontrado | Ciclo cerrado | Resultados esperados en documentos de analisis o Ejecución de pruebas | Pasos para reprodcir el error
+  ¿Qué es un defecto Accionable? 
+	 Es enviar toda la informacion del defecto en forma clara y completa en la plantilla del defecto para que el desarrollador pueda con la información 
+	recibida, accionar contra el defecto.
+  Checklist para generar el Defecto
+	1. Asegurse que es un defecto funcional y no de ambiente 
+	2. Reprodcir el error
+	3. Tomar evidencia 
+	4. Documentar los pasos para reproducir el error 
+	5. Documentar el defecto en la herramienta
+	6. Asegurarse que el desarrollador este enterado de este registro de defectos, darle seguimiento hasta que se da la solución
+  Severidad vs Prioridad en un Defecto
+	Severidad: Se enfoca en el impacto absoluto, en desarrollo | Prioridad: Se enfoca en la importancia al cliente final
+	BAJA | el error es cosmetico o estetico, no impacto funcional | No es funcional y no se visualiza fácilmente 
+	MEDIA | La falla tiene un error menor y no perjudica la funcionalidad crítica | La solución implementada como camino alterno es aceptable para largo plazo
+	ALTA | La falla tiene un error en la ruta crítica, pero hay un camino alterno para continuar las pruebas | La solución implementada como camino alterno es aceptable para corto plazo
+	BLOQUEANTE | La falla detiene las pruebas | URGENTE | El proceso diario es severamente impactado o esta detenido
+	Para determinar el peso del defecto, tienes que multilplicar el peso de la severidad por el peso de la prioridad, es decir si el peso de 
+	la severidad es media (2) y el peso de la prioridad es media(2) el peso final es 2*2=4
+ Evidencias de los defectos
+  Formato de Evidencias 
+	Para cada caso de prueba se debe tomar evidencia con estos datos:
+	-Nombre del proyecto
+	-Ejecutor de pruebas
+	-Titulo del caso de prueba
+	-Ciclo de Prueba
+ 	-Caso de prueba
+	-Paso del caso de prueba
+	-Video, Log o imagen 
+	-Comentarios relevantes 
+ Ciclo de vida de un Defecto
+	Encontré una falla ¿qué sigue?
+	1. Ejecutor de pruebas encuentra un hallazgo:
+		Si ES un defecto entonces captura el caso de prueba en estado no pasado, registra el defecto y queda el estado de defecto en PRIVADO
+		Si NO es un defecto queda como PASADO
+ 	2. Al registrar el defecto se envía una notificación al Líder de Desarrollo y este asigna un responsable de desarrollo y este queda como ASIGNADO
+	3. El desarrollador que se le asigno el defecto, reproduce el defecto, valida que si sea:
+		Si ES un defecto, lo corrije y lo deja en estado CONTESTADO y notifica la solución del defecto
+		Si NO es un defecto lo rechaza y notifica que no es defecto
+	4. El ejecutor de pruebas valida que si realmente no es defecto, si así fue, cancela en el proceso y de notifica como PASADO, si sí es un defecto
+	   lo registra y lo reenvía al lider de desarrollo para que este defecto vuelva a ser revisado por el mismo u otro desarrollador 
+	5. El ejecutor de pruebas despues de que recibe la correción, lo valida, si esta bien entonces de cierra el defecto y queda en estado PASADO
+	   si el desarrollador no hace la correccion de manera correcta, se devuelve al Líder de desarrollo y queda en estado REINCIDENTE
+ Matriz o herramienta para los defectos 
+  Matriz de Defectos
+	Debe contener esta información: 
+	Nombre del proyecto | ID Defecto | Clasificación del defecto | Estado del defecto | Prioridad | Severidad | Tester | Desarrollador | Descripcion de la Falla 
+	Ciclo | Fecha en la que se detectó
+  Herramienta de Gestion de Defectos
+	Debe tener al menos estas opciones:
+	Consultar | Generar un nuevo defecto | Indicadores de los defectos | Filtros | ID Defecto único
+	Al registrar el defecto debemos tener una pantalla para registrar toda la informacion del defecto
+	En la parte de indicadores, debe tener métricas (graficos) 
+  
