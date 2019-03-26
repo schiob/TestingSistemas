@@ -1,0 +1,36 @@
+Fundamentos Del Ejecutor De Prueba.
+	-¿Qué es una prueba de software?
+		Es la validación y verificación de los requerimientos funcionales.
+	-Tipos de prueba
+		Funcional
+			*Manual: Es aquella que nosotros realizamos ejecutando acciones sobre el teclado.
+			*Automatizado: Es un software que ejecuta y realiza todas las acciones que hacemos de forma manual pero automaticamente.
+		No funcional
+			*Desempeño: Valida el uso de recursos de un apñicativo mientras se está ejecutando con ciertos usuarios concurrentes.
+			*Seguridad: Validar todas las vulnerabilidades de un sistema. 
+	-Ciclo de vida de un proyecto de prueba
+		Análisis -> Planeación -> Diseño -> Ambiente -> Ejecución -> UAT -> Cierre
+	-Caso de prueba
+		¿Qué es un caso de prueba?
+			-Entradas: Dato o evento externo que se inyectan al sistema
+			-Precondiciones: Estado en el que tiene que estar el sistema para capturar la entrada
+			-Salida: Dato que sale del sistema o mensaje de resultado
+			-Pos condiciones: Estado en el que queda del sistema despues de ejecutar la entrada y la precondición
+			Entradas + Precondiciones = Salidas + Poscondiciones
+	-Scripts de pruebas
+		Es el paso a paso o conjunto de pasos, para reproductir un caso de prueba.
+	-Datos de Prueba
+		Son aquellos datos que se requieres para ejecutar una prueba
+		Tipos de Datos:
+			-Estáticos: No se queman -> El número de una tarjeta de crédito, nunca cambia
+			-Dinámicos: Se queman -> El saldo de la cuenta, si ejecutas una prueba donde consumes saldo, se comienza a consumir el saldo
+
+	-Qué es un TestWare: Set de pruebas
+		Conjunto de casos de prueba relacionados, que tienen características similares. El objetivo es integrarlos en los ciclos
+		de prueba para su ejecución
+			1.Proceso de Negocio: Seguros, Tarjetas de crédito
+			2.Requerimientos
+			3.Escenarios
+			4.Casos de Prueba
+			5.Procedimiento de Prueba
+		
