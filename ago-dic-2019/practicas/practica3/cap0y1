@@ -1,0 +1,58 @@
+Capítulo 0
+QA Testing: Organización de consultores especializados en la diciplina de testing
+Aprendizaje:
+-	El día a día de un “test executor”
+-	La fundaciones de un test executor
+-	Habilidades requeridos en la industria de testeo
+
+
+Capitulo 1
+Habilidades:
+-	Ciclo de vida del testeo de software
+-	Entender el plan de testeo
+-	Seguir el plan de ejecución y ciclos de prueba
+-	Conocimiento en software de testeo
+-	Leer y entender diseños de casos de prueba
+-	Requiere datos de testeo
+-	Determina si el caso de prueba fallo, paso o se bloqueo durante su ejecución
+-	Entender indicadores y reportes
+-	Entender functional test, regresión y UAT
+Oportunidades
+-	Universidad
+-	Trabajo
+-	Tener entrenamiento
+-	Diferentes herramientas y enfoques
+-	Certificacion
+Mapa de trabajo:
+1-	
+-	Aprendiz
+-	Ejecutor de pruebas
+-	Ingeniero de pruebas
+-	Líder de testeo
+-	Test manager
+-	Consultor
+
+2-	
+-	Performance test
+-	Test automation
+-	Security Test
+-	Consultor
+Actividades de un ejecutor de pruebas:
+-	Obtener requerimientos de entrada y revisarlos
+-	Validar acceso a los casos de prueba y la aplicación
+-	Revisar el test data
+-	Revisar el plan de ejecución de prueba
+-	Hacer las pruebas de ejecución
+-	Documentar resultados
+-	Si se encuentra un error, infromarlo al desarollador. Si no, pasar el caso de prueba
+Entradas:
+-	Repositorio del proyecto de testeo
+-	Tipo de ciclo de testeo
+-	Direccion de las evidencias de testeo
+-	Plan de testeo
+-	Dirección de los casos de prueba en la matrix
+-	Aplicación
+Salidas:
+-	Evidencias de testo
+-	Estatus actualizado
+-	Documentos de defectos
