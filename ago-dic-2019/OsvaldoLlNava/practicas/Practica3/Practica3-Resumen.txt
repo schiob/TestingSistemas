@@ -1,0 +1,119 @@
+Que es Prueba de Software?
+	Es la validacion y verificacion de los requerimientos funcionales
+
+Hay que considerar los atributos de calidad de un sistema
+Todo se hace con la intencion de encontrar errores
+El proceso se hace mediante el uso de procesos, procedimientos y herramientas
+
+
+Tipos de Prueba de software
+	Funcional y No Funcional
+
+
+	Funcional
+		Manual: Lo que se hace con las manos, acciones con las manos, teclado, mouse, etc
+			Lo hacemos para validar que el sistema haga lo que tiene que hacer en funcion de los requerimientos funcionales del usuario
+
+		Automatizada: hacemos todo con un click, esta como su nombre lo dice, automatizado
+			Es lo que programamos con lenguajes de programacion asociados a FRAMEWORKS que permite automatizar las acciones manuales y reproducirlas "n" veces
+
+
+	No Funcional: Todo lo que se enfoca en la parte de calidad de un producto
+		Desempeño: Validar el uso de recursos
+			Valida que el servicio no se degrade durante las pruebas
+
+		Seguridad: Validar todas las vulnerabilidades de un sistema
+			Se corren una serie de algoritmos predefinidos de hackeo para identificar los huecos en los sistemas
+
+
+Ciclo de vida de pruebas de software
+
+	Analisis: Validar la factibilidad del sistema
+	Planeacion: poder identificar como se trabajara
+	Diseño: Se diseña la materia de prueba llamada TestWare
+	Ambiente: Todo este listo en perspectiva de hardware y software
+	Ejecucion: pruebas dinamicas
+	UAT: Pruebas de aceptacion de usuario (validacion de las cosas simples y comunes del usuario y eso)
+	Cierre: Se cierra todo y se entrega el proyecto
+
+Caso de prueba
+
+	Entradas: Dato o evento externo que se inyecta al sistema
+	Precondiciones: Estado en el que tiene que estar el sistema para capturar la entrada
+	Salida: Cualquier dato o evento que surge del sistema como mensaje de resultado
+	PosCondicion: Estado en el que queda el sistema despues de ejecutar la entrada y la precondicion
+
+Script de prueba
+	Paso a paso o conjunto de paso para reproducior un caso de prueba
+	Medio para validar un caso de prueba
+	Debe tener todos los detalles para ejecutarse sin ayuda del tester
+
+Datos de prueba
+	Son aquellos que se requieren para ejecutar una prueba
+	Cada Test Case requiere entradas
+	Tipos de Datos:
+		Estaticos (no se queman)
+		Dinamicos (Se queman)
+
+TestWare
+	Conjunto de casos de pruebas relacionados que tienen caracteristicas similares
+	El objetivo es integrarlos en ciclos de prueba para su ejecucion
+
+
+Ejecucion de prueba
+	Es tomar cada caso de prueba para reproducirlos
+	
+	La ejecucion de las pruebas se detonan entre la fase de siseño de pruebas y la fase UAT
+
+Conjunto de casoso de prueba
+	Conjunto de casos de pruebas relacionados con caracteristicas similares
+	
+ciclo de pruebas
+	Conjunto de SET de pruebas
+
+Estatus de un Caso de prueba
+	No ejecutado: No se ha iniciado su ejecucion (blanco)
+	Pasado: resultado esperado es igual al arrojado (verde)
+	Fallado: El resultado no es igual al esperado (rojo)
+	Detenido por error o bloqueado: No se puede ejecutar (amarillo)
+
+
+Tipos de proyectos de prueba
+	Nuevos: Desarrollos Grandes (largo tiempo)
+	Mantenimientos: Modificaciones a desarrollos existentes
+	Incidentes: Problemas productivos (Atencion inmediata)
+
+Estatus de proyectos
+	Pre-estimacion
+	Estimacion 
+	Planificacion
+	Linea base
+	Abierto
+	(Puede caer en estado cancelado
+	o suspendido)
+	Terminado
+
+Clasificacion de proyectos
+	Evolutivos: se requieren para operar la empresa
+	Normativos: regulaciones de entidades externas
+	Administrativos: proyectos internos para gestiones de la misma empresa
+
+
+Areas de Prueba (Manejado por un coordinador de prueba)
+	Funcionales: Valida los requerimientos funcionales del software
+			Valida lo que el sistema debe hacer y lo que no debe hacer
+		
+	No Funcionales: Responsable de validar los requerimientos de calidad de software
+			Valida todos los atriburos del sistema
+
+	Ambiente: Mantiene el ambiente de pruebas disponible para los proyectos
+		Proporciona datos para la prueba
+		Da soporte a la prueba
+		Cuida correlaciones y administra las ventanas de tiempo de prueba
+
+	Control: Monitorea el desempeño de las areas anteriores
+		Monitorea el uso de herramientas
+		Monitorea el apego a los procesos
+		Vigila el uso de los recursos
+		Lleva la facturacion
+		Ofrece indicadores
