@@ -1,0 +1,172 @@
+Perfil del Ejecutor de Pruebas:
+- Debe de conocer elo ciclo devida de una porueba
+- Segurir el pland ejecucion y ciclos de prueba
+- Tener conocimieto en herramientas de gestion tipo ALM
+- Debe solicitar datos para la prueba
+- Determinar si el caso de prueba es exitoso, fallido, bloqueado o detenido por error
+- Debe interpretar indicaciones y reportes de prueba
+- Escribir defectos y conocer el ciclo de vida de estos
+- Documentar evidencias de prueba
+- Seguir el proceso de prueba establecido por la compañia Agile o tradicional
+- Conocer sobre pruebas funcionales, de regresion y UAT
+- Conocer manejadores de base de datos y SQL simple
+- Entender el plan de prueba, que escribe el lider de prueba
+
+En el curso se vera un temario que contiene lo sig.:
+ 1) Perfil de ejecutor de casos de prueba
+ 2) Fundamentos del ejecutor de prueba
+ 3) Proceso de ejecucion de prueba
+ 4) Herramientas para la ejecucion
+ 5) Defectos
+ 6) Ejecucion Agile
+ 7) Indicadores en la ejecucion
+ 8) Planeacion
+ 9) Bases de datos-SQL
+
+Nos muestra lo que es la ruta de crecimiento donde nos indica los tiempos aproximados par ser lider de prueba o consultor
+
+Tambien nos habla de las actividades del ejecutor de prueba
+te asignan un proyecto, te dan los insumos y los revisas, validas los accesos a los casos de prueba y aplicativos a probar,
+revisas tener datos para la prueba, revisar el plan de ejecucion, esperas la señal del lider de pruba para empezar a probar,
+ejecutar los casos de prueba siguiendo los scripts, documentar resultados en herramienta o matriz de casos de prueba, grabar la evidencia(Video o blog) y la almacenas
+en ruta oficial del proyecto o herramienta, si hay un defecto lo registras y envias a desarrollo, de lo contrario pasas el caso de prueba,
+si hay dudas de ejecucion se revisan con el lider de prueba y por ultimo aseguras los entregables terminados
+
+reciber insumos, los cuales son:
+- Repositorio de ejecucion
+- Tipo de ciclo
+- Rutas de evidencias de ejecucion
+- planes de prueba
+- Rutas CP en herramienta o matrices de prueba
+- Rutas del aplicativo a ejecutar con usuarios y claves de acceso
+
+y lo que debes de enteregar son:
+- Evidencias de ejecucion
+- Casos de prueba acatualizados en herramienta o matrices de prueba
+- Defectos bien documentados ***
+
+
+Fundamentos del ejecutor de casos de prueba
+Se ve lo que es prueba de software(Validacion y verificacion de los requerimientos funcionales)
+Tambien debemos de considerar los atributos de calidad de un sistemas (recusos,capacidad)
+todo se hace con la intencion de encontrar errores(parte documental o parte del producto cuando se prueba de manera adecuada)
+todo es mediante procesos, procedimientos y herramientas(que ayuden a automatizar la prueba)
+
+tambien se ven diferentes tipos de prueba como lo son:
+Prueba funcional
+	-De forma manual (la hacemos para validar que el sistema haga lo que tiene que hacer en apego a los requerimientos del usuario)
+	-Automatizado (preuba funcional que programas con lenguajes de programacion asocioados a marcos de trabajo llamados FRAMEWORKS que permiten automatizar las acciones manuales que un ususario realiza en su aplicaon de sistema)
+Prueba no funcional (Calidad de producto)
+	-Desempeño (tiene enfoque a los atributos del sistema, buscando leer el uso de recursos que el aplicativo utiliza para operar y validando queno se degrade el servicio mientras se realiza este tipo de pruebas)
+	-Seguridad (es la que utilizamos para detectar las vulnerabilidades de los sistemas WEB, se corren algoritmos de hackeo para identificar los huecos en los sistemas)
+
+En el ciclo de vida de un proyecto de ve:
+- El analisis, donde se ve la factibilidad de crear el sistema
+- Planeacion, donde se elabora el plan de trabajo
+- Diseño, donde se trabaja cada diseño de prueba, construir los casos de prueba
+- Ambiente, que todo este listo para la prueba
+- Ejecucion, se hace la prueba dinamica
+- UAT, fase de pruebas de acceptacion de usuario, solo ejecuta casos basicos
+- Cierre, cerramos el proyeco, repositorios y herramientas y se entrega el proyecto 
+
+Vemos lo que es un caso de prueba
+ Donde hay entradas, precondiciones, salidas y pos condiciones
+
+Tambien vemos lo que es un Script de Pueba
+ es el paso a paso para reproducir un caso de prueba, este debe tener todos los detalles para poder ejecutarse sin la ayuda del sester que lo creo
+Para generarlo se necesita reglas:
+ - No contener datos duros(hardcode);
+ -Debe tener al menos 6 pasos basicos:
+   -como acceder a la aplicacion
+   -como colocar las precondiciones
+   -como ejecutar el caso
+   -como validar el resultado esperado
+   -como validar las port-condiciones
+   -como salir del sistema
+
+Tambien se ven los datos de prueba
+ que son aquellos datos que se requieren para ejecutar una prueba
+ los datos requeridos para el set de pruebas
+ cada test case requiere de entradas
+ tipos de datos:
+  -Estaticos (No se queman)
+  -Dianmicos (Se queman)
+
+Tambien se ve lo que es TestWare
+ El conjunto de casos de prueba relacionados tienen caracteristicas similares
+ y el obejtivo es integrarlos en ciclos de prueba para su ejecucion
+
+Ejecucion de prueba
+ Es tomar cada caso de prueba previamente diseñado por un tester analista o ingeniero de prueba
+ y seguir el guion del procedimiento de prueba  para reproducirlo con los datos requeridos en esa casustica.
+
+Si el resultado esperado es igual al actual, el caso es pasado, de lo contrario se falla y levanta un defecto al desarrollador
+
+siempre se documenta una evidencia de la ejecucion de la prueba
+
+la ejecucion de las pruebas se detona entre la planeacion de la prueba y el cierre de prueba
+
+El Test set es el conjunto de casos de prueba relacionados que tienen caracteristicas similares 
+ El objetivo es integrarlos en ciclos de prueba para su ejecucion
+
+El ciclo de prueba es un conjunto de set de pruebas, donde se ejecutan el 100% de los casos de pruebas programados
+
+El estatus de un caso de prueba:
+ Estados que puede tomar un caso de prueba durante su ejecucion
+ El tester ejecutor es quien va cambiando el estatus del caso de prueba durante su ejecucion,
+ este estatus se cambia en la herramienta de gerstion de prueba o matriz de pureba
+
+Los tipos de proyectos de prueba:
+ Nuevos: Donde se estima cuanto va durar el proyecto dependiendo de las necesidades del cliente
+ Mantenimientos: Son modificaciones y actualizaciones a desarrollos existentes
+ Indicentes: son problemas probelas productivos que se deben de atender de inmediatos
+
+El estatus de proyectcos:
+ -Pre-estimacion: Donde se hace una factibilidad del proyecto
+ -Estiamcion: donde se refina todo el detalle de esfuerso de prueba que se ponen en horas
+ -Planificaion: plan de trabajo
+ -Linea Base: para determinar que las horas sean las correctas
+ -Abierto: el proyecto ya esta en ejecucion
+ -Cancelado: ya no se requiere mas o ya no se puede patrocinar
+ -Suspendido: done el proyecto se suspende y se puede retomar en cualquier momento
+ -Terminado: ya se han completado todas las tareas
+
+Clasificaion de proyectos:
+ Evolutivos (Proyectos para operar la empresa)
+ Normativos (Regulaciones de unidaddes externas)
+ Adminstrativos (Proyectos internos para gestiones opreacionales de la misma empresa)
+
+Areas de pruebas funcionales
+ Cordinador de pruebas:
+ - Responsable de coordinar areas de pruebas  
+ - Definir las estrategias de cobertura anuales
+ - Responsable de la calidad de los productos
+ - Establece las policas de calidad en el area
+ - Define el plan de capacitacion anual
+ - Monitorea el desempeño de las sub-areas de prueba
+
+ Area de pruebas funcionales:
+ - Valida los requerimientos funcionales del software
+ - Valida lo que el sistema debe hacer y lo que no debe de hacer
+
+ Area de pruebas no funcionales:
+ - valida los requerimientos de calidad del software
+ - Valida todos los atributos del sistema
+
+ Area de ambiente de pruebas
+ - Mantiene el ambiebte de pruebas disponible para los proyectos
+ - Vigila la integridad del ambiente
+ - Proporciona datos para la prueba
+ - Da soporte de antes, durante y al final de la prueba
+ - Genera accesos y permiso especiales para acceder al ambiente
+ - Cuida correlaciones y administra las ventanas de tiempo de prueba
+
+ Area de control de pruebas
+ - Monitorea el desempeño de las areas
+ - Monitorea el uso de las herramientas
+ - Monitorea el apego a los permisos
+ - Vigila el uso de los recursos
+ - Lleva la facturacion
+ - Vigila SLas
+ - Ofrece indicadores para la toma de decisiones
+ - A veces es mentor
