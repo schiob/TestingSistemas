@@ -1,0 +1,126 @@
+En los videos se pueden ver pricipalmente las certificaciones con las que cuenta el programa, 
+tambien nos muestra el perfil que debe tener un ejecutor de pruebas de software como:
+	-Ciclo de vida de una Prueba.
+	-Seguir un plan en ejecucion y ciclos de Prueba.
+	-Conocimiento en herramientas de gestion de tipo ALM.
+	-Interpretar ripos de casos de diseños de prueba.
+	-etc.
+Otra cosa que se nos muestra en el video son los insumos que no es otra coas mas que lo que se va a
+utilizar en una prueba de software como:
+	-Repocitorio de ejecucion.
+	-Tipo de Ciclo.
+	-Ruta evidencias de ejecucion.
+	-Plan de Prueba:
+		-Proceso y procedimientos.
+		-Reglas del proyecto y ejecucion.
+	-Ruta CP en herramienta o Matices de prueba.
+	-Rutas del aplicativo a ejecutar con usuarios y claves de acceso.
+Ademas de mostrar lo que la persona que realiza la preuba de software debe entregar como:
+	-Evidencias de ejecucion.
+	-Casos de prueba actualizados en herramienta o matrices de prueba.
+	-Defectos Documentados.
+Tambien nos da el significado de lo que es una prueba de software que es la validacion y verificaion
+de los requerimientos funcionales, esto se hace mediante el uso de procesos, procedimientos, herramientas
+con el fin de encontrar errores en el sistema.
+Los tipos de prueba tambien son mencionados en los videos los cuales se dividen en Funcionales y No Funcionales
+los Funcionales a su vez se dividen en manueles y automatizados Mientras que los No Funcionales son los
+Atributos de calidad como el desempeño o la seguridad y nos explica cada uno de ellos:
+	-Funcional	
+		-Prueba Manual.
+			-Se valida lo que el sistema debe hacer y lo que no debe hacer en apego a los requerimientos del usuario.
+		-Prueba Automatizada.
+			-Es la prueba funcional que programamos con lenguajes de programacion asociados a marcos de trabajo llamados FRAMEWORKS.
+			-Frameworks: Permiten automatizar la pruebas manuales que un usuario aplica en su sistema y reproducirlas "n" veces.
+			-Se recomienda automatizar las rutas criticas y los ecenarios donde hay una complejidad de fallo.
+		-No Funcional
+			-Desempeño: Tiene un enfoque sobre los atributos del sistema, monitorea los recursos que se necesitan para poder operar.
+			-Seguridad: Se utiliza para detectar y encontrar vulnerabilidades en el sistema.
+Los ciclos de vida son:
+	-Analisis:
+		-Fase para identificar la estrategia y estimacion para la atencion del proyecto.
+		-Solo se idintifica el ¿Que?
+	-Planeacion:
+		-Fase para identificar el plan detallado para la atencion del proyecto. Este puede contener plan de trabajo, equipo, metodo, alcance entre otros.
+		-En esta fase se identifica el Que, como, donde, cuando, quien.
+	-Diseño:
+		-Ingeniero de Pruebas
+		-En esta fase se construye toda la materia de pruebas llamada TestWare: Casos de prueba, datos de prueba y defectos estaticos.
+	-Ambiente:
+		-Es la etapa final para tener listo todo el ambiente de prueba: instalar el software a probar, generar los datos para la prueba, y hacer pruebas de humo.
+		-Ambiente es todo lo relacionado a Hardware y Software para realizar la prueba.
+	-Ejecucion.
+		-En esta fase inicia la ejecucion de la prueba, tomamos todo el TestWare diseñado previamente y ejecutamos cada caso de prueba.
+		-Documentamos defectos y evidencias de prueba.
+	-UAT(Pruebas de Aceptacion de Usuario):
+		-Fase para ejecutar las pruebas con el usuario.
+		-Se ejecutan solamente los casos de prueba criticos.
+	-Cierre:
+		-Se cierra toda la documentacion del proyecto y se certifica la prueba que avala el trabajo en la ejecucion y UAT.
+Los casos de prueba son aquellos que nos dan una entrada es decir el dato que se insertara en el sistema, una 
+precondicion que es el estado del sistema antes de recibir la entrada, la salida que es el resultado de procesar la entrada y 
+la postcondicion que es el estado del sistema despues de la salida.
+Los scipts o procedimientos aqui se encuentran los pasos para realizar un procedimiento de prueba esta debe tener todos los
+detalles para poder ejecutarse sin la ayuda del tester que la creo y tambien debe tener las siguentes reglas:
+		-No contener datos duros(Hardcore).
+		-Debe tener al menos seis pasos basicos:
+			-Como acceder a la aplicacion.
+			-Como colocar las precondiciones.
+			-Como ejecutar el caso.
+			-Como validar el resultado esperado.
+			-Como validar las poscondiciones.
+			-Como salir de sistema.
+Tambien nos da los datos de prueba y cuales son estos tipos de datos:
+		-Datos Estaticos:
+			-No se queman.
+		-Datos Dinamicos:
+			-Se Queman.
+Nos da la definicion de la ejecucion de prueba que es tomar cada caso de prueba previamente escrito por un tester analista y 
+seguir el guion del procedimiento de prueba.
+Habla de los tipos de proyectos de prueba:
+	-Nuevos:
+		-Desarrollos grandes, se desarrolla un nuevo caso de prueba desde cero.
+	-Mantenimientos:
+		-Modificaciones y actualizaciones a desarrollos existentes.
+	-Incidentes:
+		-Problemas productivos, se tienen que atender de manera inmediata.
+Otra cosa que menciona es el estatus de proyectos:
+	-Preestimacion.
+	-Estimacion.
+	-Planificaion.
+	-Linea Base.
+	-Estado Abierto.
+	-Estado cancelado.
+	-Estado Suspendido.
+	-Estado Terminado.
+La clasificacion de Proyectos se divide en:
+	-Proyectos Evolutivos.
+	-Proyectos Administrativos.
+	-Proyectos Normativos.
+Las areas de Pruebas son:
+	-Coordinador de pruebas:
+		-Responsable de la calidad de los productos.
+		-Establece las politicas de calidad en el area.
+		-Define el plan de capacitacion anual.
+		-Monitorea el desempeño de las sub-areas de prueba.
+	-Funcionales:
+		-Valida los requerimientos funcionales de software.
+		-Se valida lo que el software tiene y no tiene que hacer.
+	-No Funcionales
+		-Valida los requerimientos de calidad de software.
+		-Valida los atributos del sistema.
+	-Ambiente:
+		-Mantiene el ambiente de pruebas disponible para los proyectos.
+		-Vigila la integridad del ambiente.
+		-Proporciona datos para la prueba.
+		-Da soporte de antes, durante, y al final de la prueba.
+		-Genera accesos y permisos especiales para acceder al ambiente.
+		-Cuida correlaciones y administra las ventanas de tiempo de prueba.
+	-Control:
+		-Monitorea el desempeño de las areas.
+		-Monotorea el uso de herramientas.
+		-Monitorea el apego a los procesos.
+		-Vigila el uso de los recursos.
+		-Lleva la facturacion.
+		-Vigila SLAs(Niveles de Servicio).
+		-Ofrece indicaciones para toma de decisiones.
+		-A veces es mentor.
