@@ -1,0 +1,286 @@
+Resumen del capitulo 1 y 2 del curso de ejecutor de pruebas de QATesting
+
+El contenido sera el siguiente:
+
+1._ Perfil del ejecutor de pruebas
+    1.1._ Perfil del ejeecutor de pruebas
+2.- Fundamentos del ejecutor de prueba
+    2.1_ Conceptos basicos de prueba
+        2.1.1_ Que es una prueba de software
+        2.1.2_ Tipos de prueba de software
+        2.1.3_ Ciclo de vida de una prueba de software
+        2.1.4_ Que es un script o procedimiento de prueba
+        2.1.5_ Que es un caso de prueba
+        2.1.6_ Que es un test ware
+    2.2_ Que es una ejecucion de prueba
+        2.2.1_ Que es
+        2.2.2_ Parte del proceso donde se detona
+        2.2.3_ Test sets o grupos de caso de prueba
+        2.2.4_ Que es un cico de prueba
+        2.2.4_ Estatus de un caso de prueba
+    2.3_ Proyectos de caso de prueba
+        2.3.1_ Tipos de proyectos de prueba
+        2.3.2_ Estatus de proyectos
+        2.3.3_ Clasificacion de proyectos de prueba
+    2.4_ Areas de prueba
+        2.4.1_ Funcionales
+        2.4.2_ No funcionales
+        2.4.3_ Ambiente
+        2.4.4_ Control
+
+    >>>> Capitulo 1
+
+1.1_ Perfil del ejecutor de pruebas
+
+Un ejecutor de pruebas debe... 
+
+    * Conocer ciclos de vida
+    * Seguir planes de ejecucion
+    * Conocer herramientas de gestion
+    * Interetar diseños de casos de prueba
+    * Solicitar datos para la prueba
+    * Determinar el exito de los casos de prueba
+    * Encuentrar defectos
+    * Documentar evidencia
+    * Seguir procesos de la compañia
+    * Realizar pruebas dinamicas
+    * Pruebas de aceptacion del usuario
+    * Saber manejar bases de datos
+
+El crecimiento dentro de la disciplina de testing es la siguiente... 
+    
+    1._ Ejecutor de pruebas
+    '-----> 2._ Ingeniero de pruebas
+            '-----> 3._ Lider de pruebas
+                    |
+                    '-----> Pruebas de desempeño      __
+                    '-----> Automatizacion de preubas -|
+                    '-----> Pruebas de seguridad      -|
+                                                       '-----> 4._ Gerente de prueba__
+                                                                                     '------> 5._ Consultor
+    
+    Para ser consultor es necesario haber pasado por todo lo anterior
+
+Actividades de un ejecutor de prueba...
+
+    1._  Se te asigna un nuevo proyecto
+    2._  Te dan los insumos y los revisas
+    3._  Validas accesos a casos de prueba y las aplicaciones de prueba
+    4._  Revisas tener datos para la prueba
+    5._  Plan de prueba
+    6._  Esperar señal del lider de prueba para comenzar las pruebas
+    7._  Ejecutar casos de prueba siguiendo los scripts
+    8._  Documentar resultados en herramientas o matriz de casos
+    9._  Grabas evidencias
+    10._ Mandar defectos al desarrollador
+    11._ Resolver dudas con el lider de pruebas
+    12._ Entregar los entregables y terminar
+
+Insumos vs Entregables
+
+    Los insumos es todo aquello necesario para llevar a cabo las pruebas ...
+    
+        * Repositorio de ejecucion
+        * Tipo de ciclo
+        * Ruta de evidencias de ejecucion
+        * Plan de prueba (procesos y procedimientos, y reglas del proyecto y ejecucion)
+        * Casos de prueba en las herramientas de pruebas
+        * Ruta del aplicativo a ejecutar con usuarios y accesos
+
+
+        >>>> Capitulo 2
+
+2.1_ Conceptos basicos de prueba
+
+Que es una prueba de software?
+
+    Es la validacion y verificacion de requerimientos funcionales, donde se compara cada caso de prueba
+    con el documento de requerimientos (esto es validacion) y lo mismo con los casos de uso (verificacion).
+    
+    En estas pruebas se revisan los atributos de calidad de un sistema (desempeño, seguridad, etc), para 
+    encontrar erres (para esto es necesario medir la calidad), y todo esto se hace mediante el uso de 
+    procesos, procedimientos y herramientas.
+
+Tipos de pruebas
+   
+    Los tipos de pruebas de software se dividen en funcionales y no funcionales: 
+        
+        Funcionales: Dentro de las fucnionales tenemos manuales y automatizadas.
+            
+            * Manuales: Se revisa que el programa haga lo que tiene que hacer y que no haga lo que no de manera manual,
+                        es decir, alguien tiene que llevar a cabo estas pruebas paso por paso.
+
+            * Automatizadas: A traves de frameworks se inyectan entradas y se obtienen las salidas para revisarlas, no hay
+                             intervencion de alguna persona mas que para iniciar la prueba.
+
+        No funcionales: Las pruebas no funcionales ya no se enfoca en que el programa funcione, si no en como lo hace....
+     
+            * Desempeño: Mide los atributos del sistema, es decir monitorea los recursos del sistema durante la operacion 
+                         del programa y como impacta sobre el CPU, ancho de banda, tiempos de respuesta, etc.
+
+            * Seguridad: Pone a prueba la aplicaion ante los ataques mas comunes, para ello se realizan pruebas que intentan
+                         encontrar esas vulnerabilidades. 
+
+Ciclo de vida de una prueba de software
+
+
+    ____________        _____________        __________        ____________        _____________        _______        __________
+   |            |      |             |      |          |      |            |      |             |      |       |      |          |         
+   |  Analisis  | ---> | Planeacion  | ---> |  Diseño  | ---> |  Ambiente  | ---> |  Ejecucion  | ---> |  UAT  | ---> |  Cierre  | 
+   |____________|      |_____________|      |__________|      |____________|      |_____________|      |_______|      |__________|
+
+
+    1._ Analisis: Se identifican estrategias, se hace la estimacion de tiempo para la atencion al proyecto, solo se identifica el ¿que?.
+    2._ Planeacion: El documento en la fase previa es insumo, aqui ya identificamos el plan detallado.
+    *_  Las 2 fases previas las lleva a cabo un lider de prueba
+    3._ Diseño: Se realizan los testWare que son los casos de pruebas, los datos, etc.
+    *_  El diseño lo hace el ingeniero de prueba
+    4._ Ambiente: La etapa final para tener todo listo para la ejecucion de pruebas. El software y hardware necesario.
+    5._ Ejecucion: Ejecutar los casos de pruebas y obtener los indicadores, se documentan los defectos y las evidencias de la prueba.
+    6._ UAT: Las pruebas que realiza el usuario final, solo se ejecutan casos criticos.
+    7._ Cierre: Cerramos la documentacion del proyecto y generamos el certificado de prueba.
+
+Que es un caso de prueba
+
+    Consiste de 4 partes, de dos de ellas dependen las otras dos... 
+
+      _________________________________          _______________________________
+      |  Precondicion:                |          | Salidas:                    |
+      |      Estado para capturar     |          |    Resultado del sistema    |
+      |      entrada.                 |          |    despues de la entrada.   |
+      |  _____________________________| =====>   |_____________________________|                       
+      |  Entradas:                    |          | Poscondicion:               |
+      |      Dato o evento externo    |          |    Estado al terminar la    |
+      |      que se inyecta en el     |          |    salida.                  |
+      |      sistema.                 |          |_____________________________|
+      |_______________________________|
+
+
+Que es un script de prueba
+
+    * Conjunto de scripts de prueba.
+    * Conjunto de casos de prueba.
+    * Detalles para ejecutar prueba.
+
+    - Reglas
+        
+        * No datos duros.
+        * 6 pasos basicos:
+            
+            1._ Como acceder a la aplicacion.
+            2._ Como colocar precondiciones.
+            3._ Como ejecutar cada paso.
+            4._ Como validar resultado esperado.
+            5._ Como validar las postcondiciones.
+            6._ Como salir del sistemas.
+
+Datos de prueba
+
+    Datos requeridos para set de pruebas.
+    Cada test case requiere entradas (datos).
+
+    Tipos de datos:
+        Estaticos: No se queman, nunca desaparecen y son reutilizables.
+        Dinamicos: Cambian cada ejecucion, como el saldo de una tarjeta.
+    
+    Es importante revisar los casos de prueba y asegurarte que tengas todos los datos necesarios.
+
+Que es TESTWARE
+
+    Proceso de negocio, constituido de requerimientos, escenarios, casos de pruebas, 
+    casos alternos, criticos o excepcionales, procedimientos de prueba, etc.
+
+2.2_ Que es una ejecucion de prueba
+
+Que es
+
+    Es tomar cada caso de pruebas y seguir el script manual para reproducirlo con los datos requeridos.
+    Comparas resultados con los esperados y si estan diferentes entonces levantas un defecto.
+    Si todo esta bien se continua con el siguiente.
+
+    Siempre se documenta la evidencia de la ejecucion de prueba (logs, videos, screenshots).
+    Se agrupan los casos de prueba y se ejecutan en ciclos.
+    Hay una linea de tiempo para cada ejecucion y ciclo de prueba.
+
+Donde se detona la ejecucion de pruebas 
+
+    Entre la fase de diseño de pruebas y la de pruebas de aceptacion de usuario, en ejecucion de pruebas.
+
+Test set o grupos de caso de prueba
+
+    Casos de prueba relacionados con caracteristicas similares, el objetivo es integraros en ciclos de prueba
+    para su ejecucion.
+
+Que es un ciclo de prueba 
+
+    Un conjunto de casos de prueba agrupados para poder ejecutarlos. Para cada ciclo se revisan varios casos
+    de pruebas y se ve que tanto exito se obtuvo en el progreso y en la calidad.
+
+Estatus de casos de prueba
+
+    NO EJECUTADO: Se representa con color blanco e indica que no se ha realizado ninguna accion.
+    PASADO: Se representa con verde e indica que el caso de prueba tuvo exito.
+    FALLADO: Se representa con rojo e indica que el caso de prueba no tuvo exito.
+    BLOQUEADO: Se representa con amarillo e indica que el programa se bloque o detuvo por error.
+
+    El tester ejecutor es el que va cambiando los estados del caso de prueba durante la ejecucion.
+
+2.3_ Proyectos de prueba
+
+Tipos de proyectos de prueba
+
+    * Nuevos: Una aplicacion desde 0.
+    * Mantenimientos: Modificaciones o actualizaciones a desarrollos existentes.
+    * Incidentes: Problemas con un proyecto ya existente, urgente.
+
+    Tambien es necesario un documento donde se da de alta el proyecto y tiene los datos
+    necesarios para su seguimiento.
+
+Estatus del proyecto
+
+    * Pre-esimacion
+    * Estimacion
+    * Planificacion
+    * Linea base
+    * Abierto
+    * Terminado
+
+    Existen otros 2 estados adicionales: "suspendido" y "cancelado", puede caer en cualquiera de ellos en 
+    cualquier momento.
+
+Clasificacion de proyectos
+    
+    1-_ Evolutivos: Necesarios para operar empresa.
+    2._ Normativos: Regulaciones impuestas por entidades externas a la empresa.
+    3._ Administrativos: Internos de la empresa.
+
+2.4_ Areas de prueba
+
+    Como area de pruebas tenemos el area de pruebas funcionales, no funcionales, el area de ambiente y la de 
+    control de pruebas. Todas coordinadas por el coordinador de pruebas quien define la estrategia de cobertura
+    anuales, es responsable de la calidad del producto, establece politicas de calidad en cada area, define planes
+    de capacitacion y monitorea desempeño de las subareas.
+
+    Area de pruebas funcionales.
+
+        Validan que los requerimientos funcionales de software se cumplan y que el sistema haga lo que debe hacer
+        y no haga lo que no debe hacer.
+ 
+    Area de pruebas no funcinales
+
+        Valida los requerimientos de calidad del software sobre los atributos del sistema (seguridad y desempeño).
+
+    Area de ambiente
+    
+        Mantiene el ambiente disponible, vigila la integridad del ambiente, proporciona datos de prueba, da soporte
+        antes, durante y despues de las pruebas, genera accesos y permisos especiales de acceso, cuida de las 
+        correlaciones y administra ventanas de tiempo.
+
+    Area de control de pruebas
+
+        Monitorea desempeño de las demas areas, monitorea el uso de herramientas, el apego a los procesos, el uso
+        de los recursos, lleva a cabo la facturacion, ofrece indicadores para decidir, aveces es mentor, etc...
+
+    
+
+
