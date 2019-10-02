@@ -1,0 +1,7 @@
+HOLA MUNDO
+ALGUNAS LINEAS ERAN MAYUSCULAS
+menos esta y la siguiente
+ahora probemos los simbolos...
+@!"#$%&/()=? se ven? estaban antes de mi
+por cierto!!! se guardaron los 
+espacio y saltos de lineas
