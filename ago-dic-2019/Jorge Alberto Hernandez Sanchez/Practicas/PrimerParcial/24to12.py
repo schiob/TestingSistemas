@@ -16,25 +16,25 @@ def convert_time(str24hrs):
 convert_time('12:23hrs')
 
 class Test_Convert_time(unittest.TestCase):
-    def prueba_uno(self):
+    def test_uno(self):
         convertir = convert_time('14:23hrs')
         self.assertEqual(convertir, '02:23pm')
-    def prueba_dos(self):
+    def test_dos(self):
         convertir = convert_time('23:43hrs')
         self.assertEqual(convertir, '11:43pm')
-    def prueba_tres(self):
+    def test_tres(self):
         convertir = convert_time('11:42hrs')
         self.assertEqual(convertir, '11:42am')
-    def prueba_cuatro(self):
+    def test_cuatro(self):
         convertir = convert_time('00:00hrs')
         self.assertEqual(convertir, '12:00am')
-    def prueba_cinco(self):
+    def test_cinco(self):
         convertir = convert_time('12:00hrs')
         self.assertEqual(convertir, '12:00pm')
-    def prueba_seis(self):
+    def test_seis(self):
         convertir = convert_time('01:05hrs')
         self.assertEqual(convertir, '01:05am')
-    def prueba_siete(self):
+    def test_siete(self):
         convertir = convert_time('23:59hrs')
         self.assertEqual(convertir, '11:59pm')
 if __name__== '__main__':
