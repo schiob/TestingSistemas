@@ -1,0 +1,136 @@
+Última conferencia de the QA testing channel
+
+Quien es the QA testing channel
+
+Somos un grupo de consultores especializados en prueba de software y otras disciplinas localizados en diferentes países como usa, México, Argentina,Perú, España e india
+
+Ruta de entrenamiento a
+
+CEPS
+Ejecutor de prueba
+CEPS diseñador de prueba
+Cgos 
+Gestor de prueba
+
+Cpm390
+Pruebas de mainframe
+
+Cdp pruebas de desempeño
+
+Caos
+Pruebas de automatizacion
+
+
+Epistemología
+Palabra griega conocimiento.
+
+Es el estudio de cómo sabes lo que tú sabes, en la estudio de la evidencia y razonamiento.
+
+
+Que es prueba de software
+
+Es validar u verificar un software
+Con la intencion de encontrar errores funcionales y no funcionales mediante el uso de herramientas 
+Procesos (tradicionales o agiles)
+
+Prácticas de testeo
+Prueba de software
+
+
+Área de prueba:
+
+Pruebas Móviles
+Pruebas de desempeño
+Automatizacion de pruebas
+Pruebas de seguridad
+Pruebas manuales (funcionales)
+Administración de datos
+Consultoría de QA y SW testing
+Cursos y certificaciones
+
+Mitos del perfil de pruebas
+
+Tú hacer pruebas porque no sabes programar!
+
+Realidades del perfil de pruebas
+
+Pruebas funcionales
+ - Gerente de pruebas
+ - Analista de pruebas
+ - Ejecutor de pruebas
+ - Agiles tester
+
+
+Automatizacion de pruebas
+ - desarrollador de automatizacion de pruebas
+ - automatizador se pruebas 
+ - arquitectura de automatizador de pruebas
+
+
+Pruebas no funcionales
+ - performance tester (load/stress)
+ - security tester
+
+Consultor de QA y SW testing
+ - instructor
+ - consultor
+ - auditor
+
+
+Entendimiento del negocio
+Enfoque al cambio
+Líder
+Negociador
+Base de datos
+Proactivo
+Programador
+Innovador
+Actitud
+
+Que es automatizacion de pruebas?
+
+Es el proceso de automatizar y sistematizar todas las actividades que se llevan de una forma manual
+
+Automatizacion no es sólo automatizar los casos de prueba, es automatizar todo el proceso
+
+Costo de calidad con pruebas de software
+
+Costo calidad filtro
+
+
+5 dimensiones de las pruebas de software
+
+Probador de software
+Cobertura
+Actividades
+Probabilidad de fallo
+Evaluación
+
+
+La gestión de pruebas es un elemento clave para las pruebas de software
+
+
+Flechas
+Métodos
+Madurez
+Personal
+
+
+Métodos ágiles
+Personal apropiado
+Procesos ligueros
+=
+Resultados rápidos
+
+Herramientas
+TC suites
+Watir
+Hp alm
+Apache jmeter
+Kira
+TC one
+Test link
+Selenium
+
+Nivel máximo
+Consultor

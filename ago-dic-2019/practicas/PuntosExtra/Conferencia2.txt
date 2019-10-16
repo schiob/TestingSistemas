@@ -1,0 +1,106 @@
+Centrados en el flujo
+Kanban
+
+
+Pruebas exploratorias 
+Las pruebas son procesos que tienen mucho que ver con las pruebas AD hoc o las pruebas intuitivas, pero a diferencia de ellas se basa en unas tareas específicas asociadas a unos objetivos
+
+
+Mapas mentales:
+Son forma lógica y creativa de tomar notas y expresar ideas que consiste, literalmente en cartografiar sus reflexiones sobre un tema
+
+Ciclo de vida iterativo
+En cada ciclo de iteracikn(en cascada) se revisa y mejora el producto
+Es importante señalar que este ciclo no implica añadir funcionalidades en el producto, pero su revisión y mejora
+
+Ciclo de vida incremental
+Desarrollar por partes el producto software, para después integrarlas a medida que se completan
+
+
+Como participa QA en métodos ágiles
+
+Explotador de testing
+Mapas mentales
+Automatizacion
+Iterativo e incrementar
+Daily scrum
+
+Modelo CI
+
+Continuous integration server
+-prueba unitaria
+-auditoria de código
+-prueba funciónal
+Prueba se seguridad
+-deploy
+
+Notify by sms/email
+
+
+Automatizacion
+Simular las acciones del usuario en el sistema, mediante robots
+
+
+Principios scrum
+Control de proceso empírico
+Auto organización
+Colaboración
+Priorización basada en valor
+Tiempo asignado
+Desarrollo iterativo
+
+Scrum
+Stakeholder consultation
+
+Project business case -> project Vision statement -> product backlog grooming->
+Release planning-> Sprint planning ->  
+Spring backlog -> crear entregables -> daily standup -> Sprint review -> entregables aceptados  -> spring retrospective
+
+
+Metodos agilea
+
+Enfoque 
+Tradicional : contratos, politicas, procesos
+
+Ágil : personas, trabajo en equipo, resultados en equipo
+
+Sea exitosa
+Personal apropiado
+Procesos ligueros
+=
+Resultados rápidos
+
+
+Contrastes
+Cambios
+T Administrador y controlado
+A el cambio es inevitable
+
+Planeación
+T diseñado ampliamente desde antes de iniciar
+A planea como tú vayas
+
+Colaboración
+T trabajas solo
+A trabajas con desarrolladores, analistas, usuarios
+
+Aceptación de fases entregables
+T criterios de entrada y salidas formalea
+A todo es colaboración, no hay relevos
+
+Automatizacion de prueba
+
+
+
+Testing manifesto
+
+Teateo durante teateo final
+Prevenir defectos sobre encontrar defectos
+Entender lo que se está testeando sobre verificar la funcionalidad
+
+
+Dando el mejor servicio no seremos los porteros de la calidad
+
+Aprendiendo Bel producto g continuamente informar en el estatus del pa prueba
+
+Probar lo ama pronto posible y evitar cuellos de botellas

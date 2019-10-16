@@ -1,0 +1,248 @@
+Automatización de prueba de software
+Let's talk
+www.tqatch.com
+
+Fernando Carrillo 
+21 años de experiencia
+
+Cobertura en automatización de prueba de software
+
+95% de los proyectos de automatización fracasan
+
+Factores para el éxito:
+Gestion de proyecto
+Técnico
+Capacitación en negocio
+Tecnología
+
+Línea de negocios 
+Pruebas de software
+Cursos y certificaciones
+Herramientas para gestionar pruebas
+
+
+Servicios:
+Pruebas Móviles
+Prueba automatizada
+Prueba de desempeño
+Prueba de seguridad
+Prueba manual
+Almacenamiento de datos
+Cursos y certificaciones
+
+
+Nuestras soluciones
+Metodologías
+J-QAV
+modelos de trabajo
+STDMM
+
+Modelos de servicios:
+
+Servicios a demanda
++Estimación de la prueba
+Diseño de caso de prueba
+Ambientación de pruebas
+Ejecución de caso de prueba
+Administración de prueba
+
+15% en sitio
+70% TCo México
+15% en sitio
+
+Graficación
+Estimacion-> ambiente de prueba, diseño de pruebas -> ejecución de pruebas
+
+Modelo de engagement
+
+Cliente -> administrador de pruebas /oficina cliente -> líder de pruebas -> pruebas manuales
+                                              -> pruebas automatizadas
+
+
+Administrador de fabrica
+Monitoreo de os's, capacidad, recursos, comunicación (int-ext), niveles de servicio, riesgos
+
+
+Software factory
+
+
+Jose A. Hernandez
+Líder de pruebas
+12 años de experiencia
+
+Automatizar con uft
+
+Conceptos de automatización:
+
+Que es?
+Es el proceso de automatiz y sistematizar todas las actividades que se llevan de una forma manual
+
+Pruebas manuales:
+Enfocadas a diferentes tipos de pruebas
+
+Pero realizadas de forma manual, es decir por SW tester
+
+
+Pruebas automatizadas:
+Pruebas: enfocadas a pruebas de regresión
+Son realizadas de forma automatizada, es decir a través del uso de una herramienta de automatización.
+
+
+Ventajas de automatizar:
+-Más rápidas
+-Menos recursos
+-Cobertura de pruebas
+-Efectivas
+-Libre de error humano
+-repetitibles, reutilizable
+
+
+Desventajas:
+-Inversion en herramientas
+-Contratar expertos
+-Retorno de inversión (después)(beneficios)
+-Entrenamiento en herramienta
+-Proceso de automatización
+-Buscar presupuesto
+
+Los datos en automatización
+Usar datos reales, lo más parecidos a los reales, en forma y tamaño
+->>>
+Datos en el ambiente
+-gestiona que los datos de una prueba manual no sean utilizados por el automatizador y viceversa
+
+Métricas en automatización:
+Métricas
+-Progreso
+-Defectos
+-Efectividad
+->>
+Informes
+-Dónde fallo?
+-Ciclo ejecutado
+-Hora de ejecución
+
+Cobertura en automatización:
+#bestpractice
+No solicites automátizar el 100% de los casos de prueba manuales
+
+
+Repetirivos-> representan alto riesgo para el negocio-> son complejos de ejecutar manualmente-> end to end -> requiera múltiples cantidades de dato -> diferentes plataformas, browsers,dispositivos -> aquellos que generan ROI (valor agregado)
+
+Carlos Carrillo
+COO y fundador de tqatch
+18 años de experiencia
+Consultor de automatización
+
+
+
+Método de automatización y trabajo:
+
+Si tienes un desorden en pruebas manuales, tendrás un desorden en pruebas automatizadas.
+
+Razones para automatizar:
+Ahorrar tiempo
+Velocidad de ejecutar (factor 2 a 1) (ejecutar y documentar)
+Libre de error humano
+
+Cuando es apropiado automatizar
+Al tener el proceso y testware manual en orden y estable
+
+Al seleccionar los casos de prueba que generan ROI, que dan información y que aseguran el 80/20
+
+Al tener un proceso para automatizar.
+
+Al tener definida el área, roles y alcances
+
+Al seleccionar una herramienta para automatizar
+
+Al definir los tipos de prueba a automatizar
+
+Al identificar los escenarios que le dan valor al ser automatizado
+
+
+Roles de prueba automatizada
+Arquitecto de automatización
+ Define los procesos de automatización
+Analista automatizado
+ Determina que casos de prueba se automatizan y cuáles no
+
+Líder automatizador
+ Define el framework
+ Estoma
+ Desarrolla plan de pruebas de auto
+ Mitiga riesgos
+ Ofrece avances y reportea
+Controla y monitorea
+
+Scripter automatizado
+
+Ejecutor automatizador
+
+Soporte
+ Da soporte en ambiente
+ Herramientas
+
+Líder de prueba manual
+
+Método de automay
+Gestion de proyecto -> análisis de script diseño de scripts -> tunning -> ejecución -> certificación
+
+Framework
+ Record y playback
+ Data driven
+ Modular.
+ Building block modular
+ Keyword driven
+ Hibrido
+
+
+Recomendado keyword driven
+
+Building block modular
+Inicio - login - logout 
+Inicio - login - logout - acceder cuenta - logout
+Inicio - login - logout - mover fondos - logout
+
+
+Luis Enrique Armenta
+Consultor comercial y de procesos QA
+Director de fábricas de TQATCH
+15 años de experiencia
+
+Las herramientas bde automatizacion de pruebas, no deben ser tu estrategia.
+
+Seleccion de herramienta
+Para procesos
+ Se ajuste a mis procesos
+
+Módulos 
+Requerimientos
+Diseño de caso de prueba
+Administración bde defectos
+Testware
+Dashboard
+
+Características
+Reusabilidad
+Fácil de usar
+ROI efectivo y real
+
+Soporte
+Capacitación
+Automatizadores en el mercado
+24/7
+
+Otros
+Calendarizar ejecuciónea
+Simuladores
+Soporte móviles, desk, web
+Tipo de licenciamiento
+
+Solución de TC suites
+
+Automatiza web móvil cliente servidor
+
+Beneficios de la solución tc2 tv suites
+No sé requieren habilidades de programación porque la solución es criptes.
+Usa framework amigable.
