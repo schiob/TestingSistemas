@@ -12,4 +12,4 @@ def joke(URL):
 
 if __name__ == '__main__':
     URL="https://sv443.net/jokeapi/category/Programming"
-    joke(URL)
+    print(joke(URL))

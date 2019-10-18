@@ -1,21 +1,13 @@
-from joke import joke
+def format(the_joke):
 
-def format(URL):
-   
-    r=joke(URL)
+    if 'delivery' in the_joke:
+        jokestr=""
+        jokestr=jokestr+(str(the_joke.get('setup')))
+        jokestr=jokestr+"\n"
+        jokestr=jokestr+(str(the_joke.get('delivery')))
+        return jokestr
+    elif 'joke' in the_joke:
+        return (str(the_joke.get('joke')))
 
-    print(type(r))
-
-    # if 'delivery' in r:
-    #     print('delivery: ',r.get('delivery'))
-    # elif 'joke' in r:
-    #     print('joke: ',r.get('joke'))
- 
-    # else:
-    #     print(r)
-
-if __name__ == '__main__':
-	URL="https://sv443.net/jokeapi/category/Programming"
-	format(URL)
-
-
+    else:
+        retrun(the_joke)
