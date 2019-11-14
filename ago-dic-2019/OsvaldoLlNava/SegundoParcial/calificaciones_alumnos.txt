@@ -1,0 +1,8 @@
+Juan Quimica 9.8
+Juan Matematicas 9.0
+Juan Letras 8.5
+Juan modificado 8.5
+Luis Matematicas 10
+Luis Quimica 9.6
+Enrique Letras 9.0
+Enrique Quimica 8.6
