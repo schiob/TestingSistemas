@@ -1,0 +1,10 @@
+Jose_Lopez quimica 89.00
+Jose_Lopez matematicas 85.34
+Maria_Martinez fisica 95.50
+Maria_Martinez español 90.00
+Carlos_Trejo sdjs 100.00
+Carlos_Trejo sdd 80.00
+Carlos_Trejo dfgf 50.00
+Carlos_Trejo trghfg 30.00
+Carlos_Trejo reigjfr 70.00
+Carlos_Trejo ss 10.00
