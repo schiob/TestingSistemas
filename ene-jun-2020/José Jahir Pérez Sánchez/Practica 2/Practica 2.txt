@@ -1,0 +1,14 @@
+En el capitulo 0 nos introduce de que trata the Qa Testing channel, sus certificaciones,idiomas, temas y costos.
+Todo lo que puedes aprender, el perfil que debes de tener y quien puede tomar el curso.
+
+En el capitulo 1 nos habla del perfil de un ejecutor de prueba, el temario que lleva, el tiempo que esta certificación
+tiene, la ruta de crecimiento, las actividades que hace el ejecutor y por último los insumos y entregables.
+
+En el capitulo 2 se ven primero los conceptos más basicos de prueba, como:
+-Que es un prueba de software
+-Que tipos tiene
+-Que es un caso de prueba
+-Los datos de la prueba
+entre otros. Tambien nos habla de la ejecución de la prueba y ahí se ven los pasos a seguir para esta, su estado, etc.
+Nos hablan de los proyectos de prueba, cuales son, en que estado estan, como se clasifican. Ya por último nos habla del área
+de pruebas, por quien esta constituido y que trabajo ejerce y nos da un pequeño resumen de cada área.
