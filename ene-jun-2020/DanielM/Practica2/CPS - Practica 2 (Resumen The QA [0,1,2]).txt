@@ -1,0 +1,193 @@
+Pequeño resumen de las cosas que vimos en The QA Testing Channel 
+Capítulos 0, 1 y 2 	:v
+
+En el capítulo de Inducción al curso principalmente nos mencionan que The QA Testing Channel es un
+grupo de consultores especializados en Prueba de Software localizados en diferentes países como 
+USA, México, España e India, etc. y luego nos dicen que cuentan con varias certificaciones y diplomados como lo son:
+* Ejecutor de pruebas
+* Analista de pruebas
+* Líder de pruebas
+* Prueba de Software Ágil
+* Pruebas en Mainframe
+
+También nos mencionan lo que se espera que aprenderemos, como:
+
+* Las tareas que realiza un Ejecutor de Prueba de Software
+* Las bases de prueba que debe de tener un ejecutor de prueba
+* Los puntos importantes requeridos en la industria para cubrir el perfil del Ejecutor de Prueba de Software
+
+Pasando al capítulo del Perfil del Ejecutor de Casos de Prueba, aquí lo que vimos fueron ejemplos de lo que
+se necesita para poder cubrir dicho perfil pero también es muy importante las ganas que le echa uno para poder seguir creciendo
+como se menciona aquí cuánto tardarías más o menos en pasar a un siguiente puesto pero si vas progresando más rápido
+obviamente reducirás el tiempo para pasar a estos siguientes puestos
+
+PERFIL DEL EJECUTOR DE CASOS DE PRUEBA
+
+- En la universidad tienes un entrenamiento
+- Luego pasas a Ejecutor de Prueba
+- A los 2 años pasas a Ingeniero de Prueba
+- Después de 2 años puedes ser Líder de Prueba
+- Y de 2 a 4 años ya puedes pasar a ser Gerente de Prueba
+
+* Cuando ya te encuentras en el nivel de Ingeniero o Líder de Prueba puedes desviar la especialización a otro perfil  como lo es Pruebas de
+Desempeño, Automatización o Pruebas de Seguridad, y también se puede ser un Consultor para que puedas ser un mentor  para cualquiera de las
+áreas pero es necesario que primero debemos pasar por todos estos puestos.
+
+
+-- ACTIVIDADES DEL EJECUTOR DE PRUEBA --
+
+* Ejecutor de Prueba
+* Se te asigna un nuevo proyecto  (Vas a participar validando los casos de pruebas contra el producto que se le instala)
+* Te dan los insumos y los revisas (Revisar que los insumos existan)
+* Validas accesos a los casos de prueba y aplicativos a probar
+* Revisas tener datos para la prueba
+* Revisas el Plan de Ejecución
+* Esperas señal del Líder de prueba para empezar a probar
+* Ejecutas los casos de prueba, siguiendo los scripts
+* Documentas resultados en herramienta o Matriz de Casos de Prueba
+* Grabas Evidencia y la almacenas en ruta oficial del proyecto o herramienta
+* Si hay defecto lo registras y envías a Desarrollo, de lo contrario pasas el caso de prueba
+* Si hay dudas en la ejecución las revisas con el Líder de Prueba
+* Aseguras los entregables que están terminados
+
+
+Y por último en el capítulo de los Fundamentos del Ejecutor de Prueba vimos...
+
+
+***** ¿Qué es prueba de software?
+
+Es la validación y la verificación de los requerimientos funcionales.
+
+* Atributos de calidad de un sistema.
+* Todo este trabajo se realiza con la intención de encontrar errores
+* Todo lo anterior se hace mediante el uso de procesos, procedimientos y herramientas
+
+
+***** Tipos de prueba de software
+
+- Prueba Funcional
+
+	* Prueba Manual: Es aquella que realizamos con nuestras manos ejecutando acciones sobre el teclado, con el mouse para tocar los objetos de la pantalla y revisar las reacciones del sistema
+
+	* Prueba Automatizada: Es un robot, es un software que con un solo click realiza todas las acciones que realizamos
+			      de manera manual  pero en forma automatizada (su ventaja es la velocidad que por lo menos debe de ser de 2 a 1)
+
+
+- Prueba No Funcional (Se refiere a todo lo que se enfoca a los atributos de calidad del producto)
+	
+	*Desempeño: En esta parte se debe de validar el uso de recursos de un aplicativo mientras se está ejecutando con un cierto volumen de transacciones o ciertos usuarios concurrentes
+
+	*Seguridad: Es validar todas las vulnerabilidades del sistema ( por ejemplo los huecos que un hacker podría utilizar para poder acceder a él)
+
+
+***** Ciclo de vida de un proyecto de prueba
+
+- Análisis
+	*Fase para identificar la estrategia y estimación para la atención del proyecto
+
+- Planeación
+	*Fase para identificar el plan detallado para la atención del proyecto. Este puede contener plan de trabajo,
+	equipo, método, alcance entre otros.
+	*Aquí identificamos el QUÉ, CÓMO, CUÁNDO, DÓNDE, QUIÉN?
+
+- Diseño
+	* En esta etapa se construye toda la materia de prueba llamada TestWare: Casos de prueba,
+	datos de prueba, defectos estáticos. (Los crea el ingeniero de pruebas, no el ejecutor de pruebas)
+
+- Ambiente
+	* Es la etapa final para tener listo todo el ambiente de prueba: instalar el software a probar,
+	generar los datos para la prueba, y hacer pruebas de humo.
+	*Ambiente es todo lo relacionado a hardware y software para realizar la prueba.
+
+- Ejecución
+	* En esta fase inicia la ejecución de la prueba, tomamos todo el testware diseñado previamente,
+	y ejecutamos cada caso de prueba.
+	* Documentamos defectos y evidencias de la prueba.
+
+- UAT (User Accpetance Test - Pruebas de aceptación de usuario) 
+	* Es la fase para ejecutar las pruebas con el usuario, en este momentos alcanzamos a tener el software estable.
+	* Se ejecutan solamente los casos de prueba críticos.
+
+- Cierre
+ 	*En estem momento cerramos toda documentación del proyecto y generamos el certificado de prueba que avala
+	  la el trabajo realizado durante la ejecución y UAT.
+
+***** ¿Qué es un caso de prueba?
+
+Es validar lo que el sistema debe de hacer y lo que no debe de hacer.
+
+	- Entradas: Dato o evento externo que se inyecta en el sistema
+	- Precondiciones: Estado en el que tiene que estar el sistema para capturar la entrada
+	- Salida: Dato que sale del sistema o mensaje de resultado
+	- Pos condición: Estado en el que queda el sistema después de ejecutar la entrada
+
+***** ¿Que es un Script?
+
+Es la fórmula para reproducir un caso de prueba que debe de ser legible para cualquier persona.
+		
+***** ¿Qué son los Datos de Prueba?
+			
+Son aquellos que se necesitan para ejecutar una prueba.
+ 
+            Existen estos tipos de datos:
+
+	- Datos Estáticos(No se queman , no cambian), 
+	- Datos Dinámicos (Se quemas, cambian).
+		
+***** ¿Qué es la ejecución de la prueba?
+
+Es tomar cada caso y seguir la receta para ver si funciona todo bien, y si no funciona proceder a levantar un reporte, siempre llevando evidencias
+		
+***** Parte del proceso donde se detona la prueba
+	
+Ésta se detona entre la fase de Diseño de Prueba y la UAT	
+
+***** Test Set o Grupo de Casos de Prueba
+
+Es un conjunto de casos de prueba similares, el objetivo es integrarlo en ciclos de prueba para la ejecucion.
+
+***** ¿Qué es un Ciclo de Pruebas?
+	
+Es un conjunto de set de Pruebas y la idea es ejecutar el 100% de los casos de prueba aunque no funcionen todos, la calidad es diferente al progreso [Lo realiza el Ejecutor de Pruebas]
+
+***** Estatus de un Caso de Prueba
+
+	- No-Ejecutado: No se a hecho nada ----> Blanco
+	- Pasado: El resultado es igual al esperado y se pasa al caso de prueba ----> Verde
+	- Fallado: El resultado no es el esperado y se levanta un reporte o bug ----> Rojo
+	- Detenido por Error o Bloqueado: No se puede ejecutar, por lo que se ejecuta en la siguiente ejecucion ---->Amarillo
+
+***** Tipos de proyectos de prueba
+
+Aquí tenemos 3 tipos de proyectos de prueba los cuales son:
+
+	- Nuevos: Desarrollos grandes se inicia de cero y varia segun lo que se pida el tiempo de realizacion.
+	- Mantenimiento: Se les da mantenimiento o actualizaciones que pueden durar semanas o menos.
+	- Incidentes:  Son problemas productivos se atienden de manera inmediata (en el mismo día).
+
+***** Estatus de Proyectos
+			
+	-Pre-Estimación: Estimación de la prueba o del proyecto en general
+	-Estimación: Se marcan las horas problables que se utilizaran
+	-Planificación: Se genera plan de prueba y de trabajo de nuestro proyecto
+	-Linea Base: Determina sI nuestra estimación de esfuerzo en horas se ha cerrado
+	-Abierto: El proyecto está en ejecución
+	-Terminado: Fin del proyecto
+	-Suspendido: El proyecto se detiene temporalmente pero en cualquier momento se puede reactivar
+	-Cancelado: No se puede patrocinar o ya no se requiere
+
+***** Clasificación de Pruebas
+
+	-Evolutivos: Son proyectos para operar la empresa
+	-Normativos: Proyectos que regulaciones de entidades externas gubernamentales
+	-Administrativos: Son proyectos internos
+
+***** Área de Pruebas
+	
+Áreas en las que el responsable es el Coordinador de Pruebas y genera la dirección en ellas
+Tipos de áreas de pruebas:
+
+	- Área de pruebas Funcionales: Valida los requerimientos del software y lo que el sistema debe y no debe de hacer
+	- Área de pruebas No Funcionales: Valida los requerimientos de calidad del software, mide la calidad, valida la seguridad de los sistemas
+	- Área de Ambiente de Pruebas: Vigila la integridad del ambiente, proporciona datos para la prueba, genera accesos y permisos especiales para acceder al ambiente
+	- Área de Control de Pruebas: Monitorea el desempeño de las áreas [Funcionales, No Funcionales, Ambientes], monitorea uso de herramientas, vigila el uso de los recursos, etc.
