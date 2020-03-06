@@ -12,7 +12,7 @@ class TestRequest(unittest.TestCase):
     def test_anime(self):
         tests = (
             {'input': "1", 'expect_out': "Cowboy Bebop", 'mock_json': {"title": "Cowboy Bebop"}},
-            {'input': "40852", 'expect_out': "Dr. Stone: Stone Wars", 'mock_json': {"title": "Dr. Stone: Stone Wars"}}
+            {'input': "4", 'expect_out': "Dr. Stone: Stone Wars", 'mock_json': {"title": "Dr. Stone: Stone Wars"}}
         )
 
         for tc in tests:
@@ -21,6 +21,6 @@ class TestRequest(unittest.TestCase):
 
             actual = getAnime(tc['input'], biblio_mock)
             self.assertEqual(tc['expect_out'], actual)
-
+            print(biblio_mock)
 if __name__ == "__main__":
     unittest.main()

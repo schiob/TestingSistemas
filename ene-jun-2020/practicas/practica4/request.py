@@ -17,7 +17,6 @@ def getAnime(id, bibliotec):
 
     return anime.Title
 
-
 class Jikan(BiblioAnime):
     def __init__(self, url_base):
         self.url = url_base
