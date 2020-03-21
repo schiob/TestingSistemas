@@ -1,0 +1,20 @@
+Caso de uso:
+    - Titulos disponibles para una plataforma
+    - Titulos mejor valorados segun metacritic
+    - Año de lanzamiento de un titulo
+    - Genero de un videojuego
+    - Desarrolladora de un titulo
+    - Publisher de un videojuego
+    - Clasificacion de un videojuego
+    - Titulos mejores valorados en cierto Año
+    - Titulos mejor valorados por plataforma
+    - Titulos exclusivos mejor 
+    - En caso de ser para pc, requerimentos minimos del sistema
+    - En caso de ser para pc, requerimentos recomendados del sistema
+    - website (En caso de existir) de un videojuego
+    - Imagenes/videos del juego (Dependiendo de la api)
+
+
+Idea:
+Listas de juego manejadas por usuario    
+
