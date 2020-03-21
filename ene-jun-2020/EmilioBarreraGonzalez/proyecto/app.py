@@ -1,7 +1,7 @@
 import requests
 
 def get_juegos(consola: str):
-    r=requests.get(f"https://api.rawg.io/api/platforms")
+    r=requests.get(f"https://api.rawg.io/api/platforms?={consola}")
     return r
 
 
