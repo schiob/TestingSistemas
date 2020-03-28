@@ -1,5 +1,5 @@
 import sqlite3
-    pass
+import 
 ##Crear Base o conectarse
 try:
     conexion = sqlite3.connect('YugiohDB.db')
