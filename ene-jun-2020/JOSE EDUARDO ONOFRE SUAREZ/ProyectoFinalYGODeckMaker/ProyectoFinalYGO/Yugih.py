@@ -3,17 +3,7 @@ import pprint
 from abc import ABC,abstractclassmethod
 
 
-#class Deck:
-#   def __init__(self,name,main,extra,side,price):
-#
- #       self.Name = name
-  #      self.Main = main
-   #     self.Extra = extra
-    #    self.Side = side
-     #   self.Price = price
-    
-    
-   
+
 def getDeck(name, bibliotec):
     baraja = bibliotec.Search(id)
         
