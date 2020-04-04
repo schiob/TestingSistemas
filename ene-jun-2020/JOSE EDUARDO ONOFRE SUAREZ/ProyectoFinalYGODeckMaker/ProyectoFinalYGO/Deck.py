@@ -41,7 +41,7 @@ class SideDeck:
         self.Nombre = nombre
         self.List_cartas2 = list()
 
-    def addCardToMain(self, carta, cantidad,card_to_add2):
+    def addCardToSide(self, carta, cantidad,card_to_add2):
         for i, car in enumerate(self.List_cartas):
             if car["carta"].nombre == carta.nombre:
                 self.List_cartas2[i]["cantidad"] += cantidad
@@ -66,7 +66,7 @@ class ExtraDeck:
         self.Nombre = nombre
         self.List_cartas3 = list()
 
-    def addCardToMain(self, carta, cantidad, card_to_add3):
+    def addCardToExtra(self, carta, cantidad, card_to_add3):
         for i, car in enumerate(self.List_cartas):
             if car["carta"].nombre == carta.nombre:
                 self.List_cartas3[i]["cantidad"] += cantidad

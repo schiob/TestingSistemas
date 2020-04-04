@@ -1,19 +1,15 @@
 import requests
 import pprint
+import DataBaseYGO
+import BDYGOInterface
 from abc import ABC,abstractclassmethod
-
-
-
-def getDeck(name, bibliotec):
-    baraja = bibliotec.Search(id)
-        
-    return baraja.name
+    
 
 
 
 class BiblioYugih(ABC):#Clase abstracta para que esta sea la interface 
     @abstractclassmethod
-    def Search(id):
+    def Search(name):
         pass
 
 
@@ -28,8 +24,7 @@ def RequestYGOAPICard():
     return Card(json['name'],json['atk'])
 
 
-
-class ApiYugihDeck(SearchInDeck):#Funcion de la clase que recibe como parametro la URL, para buscar un deck
+class ApiYugihDeck():#Funcion de la clase que recibe como parametro la URL, para buscar un deck
     def __init__(self, url_base):
         self.url = url_base
 
