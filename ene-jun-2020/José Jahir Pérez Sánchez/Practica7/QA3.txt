@@ -1,0 +1,26 @@
+El tercer capítulo de QA nos habla de los prerequisitos necesarios para las pruebas, por ejemplo:
+-Los casos de prueba tienen que estar creados en un programa de gestión de pruebas y
+tiene que tener una ruta oficial de proyecto.
+-Para realizar los casos de pruebas necesitamos datos estaticos y dinamicos, ya que necesitamos entradas.
+-Debe de tener ventana de prueba para que así no moleste y  no sea molestado por otros casos de prueba que 
+se puedan estar ejecutando.
+-Se debe tener un plan de ejecución, que va a ser quien y se debe tener una tabla para contener todos los datos
+necesarios.
+-Un aplicativo bajo prueba que va a validar los casos de prueba previamente diseñados.
+
+Tambien nos habla de los roles y las responsabilidades de el caso de pruebas, 
+en este caso quise resumir de manera simple cada rol
+Ejecutador de pruebas: Ejecuta la prueba obviamente pero tiene que conocer lo que esta ejecutando y usar el 
+software correspondiente.
+Lider de prueba:Basicamente es el que esta a cargo de la mayoria de cosas en la prueba.
+Lider No Funcional:Casi lo mismo que el anterior pero obviamente el se encarga de la prueba no funcional.
+Ingeniero en desempeño:Crea los scripts de las pruebas y las no funcionales, las procesa y compara.
+Lider de automatizacion:Es el que se encarga del equipo de las pruebas de automatizacion, muy parecido a los
+lideres anteriores.
+Ingeniero de automatizacion:Muy parecido al de desempeño pero obviamente es de automatizacion.
+Lider de ambiente:Es el que da seguimiento a las areas y monitorea su desempeño y ambiente.
+Dispatcher:Es el que atiende directamente a los ingenieros y lideres 
+que solictando datos,usuarios,etc.
+Resolutor:Recibe las solicitudes del dispatcher y es el que atiende, dando respuesta y atención.
+Desarrollador de Software:Es el responsable de corregir los defectos.
+
