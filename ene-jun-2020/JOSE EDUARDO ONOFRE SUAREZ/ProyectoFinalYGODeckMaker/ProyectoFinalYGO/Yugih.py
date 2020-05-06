@@ -21,7 +21,19 @@ class ApiYugihCard(BiblioYugih):#Funcion de la clase que recibe como parametro l
 def RequestYGOAPICard():
     res = requests.get("{}/{}".format(self.url, id))#Request a la Api
     json = res.json()
-    return Card(json['name'],json['atk'])
+
+    count = 0
+
+    for i in range(0,len(results)):
+    
+        #Bdeck = Card(results[i]['id'],results[i]['name'],results[i]['type'],results[i]['desc'],results[i]['atk'],results[i]['def'],results[i]['level'],results[i]['race'],results[i]['attribute'])
+        Bdeck = Card.Card(results[i]['id'],results[i]['name'],results[i]['type'],results[i]['desc'],results[i]['card_prices'][0]['ebay_price'])
+        #print(results[i]['name'])
+        count+= 1
+        print(Bdeck)
+
+
+    #return Card(json['name'],json['atk'])
 
 
 class ApiYugihDeck():#Funcion de la clase que recibe como parametro la URL, para buscar un deck
@@ -31,15 +43,15 @@ class ApiYugihDeck():#Funcion de la clase que recibe como parametro la URL, para
 def RequestYGOAPIDeck():
     res = requests.get("{}/{}".format(self.url, id))#Request a la Api
     json = res.json()
+    
     return Deck(json['name'],json['main'])
 
 
 
 if __name__ == "__main__":
+    
     biblio = ApiYugihCard("https://db.ygoprodeck.com/api/v6/cardinfo.php")
-    print(getcard("34541863", biblio))
-    biblio2 = ApiYugihDeck("https://db.ygoprodeck.com/api/v6/cardinfo.php")
-    print(getDeck("12340",biblio2))
+
 
 
 
