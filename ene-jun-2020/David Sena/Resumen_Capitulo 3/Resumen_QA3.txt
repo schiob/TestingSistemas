@@ -1,0 +1,52 @@
+Resumen Capítulo 3
+David Sena Martínez                 Calidad y Pruebas de Software
+
+En este resumen del capitulo 3 de QA Testing channel nos hablan de como procesar 
+la ejecución de pruebas que tenemos que hacerle al software.
+Como primer subtema nos muestran los modelos era o sea que su significado es estabilización,
+regresión y aceptación. En la etapa de estabilización si la efectividad es menor de 80% volvemos a
+realizar la estabilización. después viene la etapa de regresión, en esta etapa si tenemos la efectividad menor al 
+100% tendremos que aplicar la regresión.
+Y finalmente en la ultima fase que es la de aceptación debemos de tener el 100% y si no volvemos a a las pruebas de aceptación
+de usuario.
+Después de esto, nos presentan los roles los prerrequisitos en una prueba. Primeramente, están los casos de prueba. 
+Nos dicen específicamente como deben estar los casos de prueba, que podemos usar una plataforma como Word o Excel para así tener un mejor 
+control de los casos, estos deben de ser específicos y claros para que el tester no pregunte al ingeniero de pruebas como debe de 
+ejecutar las pruebas. Después vienen los datos de prueba, estos pueden ser estáticos o dinámicos, cada caso de pruebas requiere entradas,
+y los datos estáticos los crea el diseñador de la prueba y los dinámicos el área de ambiente y por ultimo los datos deben ser visible en las 
+bases de datos y debes de enmascarar los datos sensibles.
+En la fase de ventana funcionales debe de cuidar la correlación que tienen las pruebas, administrando correctamente las ventanas de prueba 
+funcional. Los requisitos que debe tener esta fase son: Casos de prueba listos, los datos generados el plan de ejecución y 
+por último aplicativo AUT instalado.
+El plan de ejecución debe ser claro ya que determinas cuando inicias y terminas las pruebas, revisar dependencias, fechas,
+otras pruebas y datos. Es común que el equipo sea entre 3 o más integrantes para realizar las pruebas. El plan lo genera el líder de prueba, 
+el plan cambia cada ciclo de vida y Se recomienda elaborar en una herramienta para llevar un control mejor.
+El aplicativo bajo prueba, si no lo tengo será imposible, ya que debes de validar los casos de prueba que te entreguen.
+Este tiene que estar instalado en tu ambiente de pruebas y este debe instalarlo el responsable del ambiente de pruebas y por 
+ultimo debes de recibir la ruta para acceder en este aplicativo, así como los usuarios y passwords respectivos.
+-------------Roles y Responsabilidades------------------
+Ejecutor de pruebas: El lidera todo el equipo, el realiza las pruebas siguiendo el script de pruebas, puede utilizar herramientas donde 
+están documentados los test cases y por último debe conocer el negocio de lo que va a probar.
+Ingeniero de pruebas: conoce el negocio, debe de entender todo el panorama de las pruebas, diseña especificaciones y casos de prueba 
+y por ultimo diseña procedimientos y scripts manuales para probar el software.
+El líder de pruebas: Yo creo que es el que tiene más trabajo, este conoce el negocio, conoce el contexto del proceso de los requerimientos, 
+análisis y define el esfuerzo en horas, así como el equipo de trabajo que le apoyaran. Diseña las estrategias y el plan de pruebas. 
+Puede suspender o reanudar la prueba. Creo que es el que hace todo el trabajo, determina si las pruebas van bien o mal.
+Lider no funcional: también conoce el negocio, el solo debe de entender las transacciones, define el esfuerzo de las horas de las pruebas
+no funcionales, determina el equipo de testers, monitorea el desempeño, un ejemplo los cuellos de botella, puede reanudar o suspender las
+pruebas no funcionales, consigue el apruebo de preproducción y por último cierra la prueba no funcional y genera su parte del certificado
+de liberación a producción.
+El ingeniero de desempeño: Debe de medir la calidad, mide el tiempo de respuesta. Interpreta las necesidades de calidad del proyecto y plan de 
+prueba no funcional. Diseña los escenarios no funcionales (Test de rendimiento, stress, etc.). Y finalmente obtiene las métricas con el líder.
+líder de automatización: Conoce el negocio, conoce arquitecturas de automatización y este conoce los frameworks de arquitectura, define el esfuerzo
+de horas y el equipo de trabajo. Y puede reanudar o suspender las pruebas de automatización.
+Ingeniero de automatización: Conoce el negocio, ejecuta los robots, automatiza los procedimientos, diseña sus scripts, utiliza herramientas de
+ open source. Conoce de frameworks.
+líder de ambiente: Define la arquitectura de prueba y da seguimiento a sus necesidades, monitorea el desempeño de prueba, tienen que gestionar 
+las herramientas. Monitorea el desempeño de cada área.
+Dispatcher: Atiende a los líderes de prueba que solicitan datos, usuarios. Canaliza a los resolutores específicos y monitorean el desempeño 
+de la solicitud.
+Ingeniero de datos: Recibe las solicitudes de ambiente asignadas por el Dispatcher. Ya sean datos, usuarios, soporte y accesos.
+Desarrollador de Software: Desarrolla el código relacionado al producto de software que se prueba, así a su vez es el responsable de corregir 
+los defectos.
+Matriz de escalamiento: Es como se manejan los pasos cuando se detecta 
