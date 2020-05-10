@@ -79,7 +79,7 @@ class test_contenedores(unittest.TestCase):
             actual = saving_strat(i['input'][0],i['input'][1],vol_calcmock)
             self.assertEqual(actual,i['expected'])
     
-    def test_savingstrat(self): ##INTEGRANDO AMBAS FUNCIONES
+    def test_savingstrat(self): ##INTEGRANDO FUNCIONES A USAR
         test_cases = [
             {
                 'name': 'cajas de 1, 2 y 3 para un volumen de 100',

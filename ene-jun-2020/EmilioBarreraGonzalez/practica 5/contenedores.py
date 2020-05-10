@@ -34,4 +34,4 @@ def saving_strat(side: list,vol: float, volume_calc: object) -> list:
 
 if __name__ == '__main__':
     side=[1,2,3]
-    print(saving_strat(side, 200, vol_calc))
+    print(saving_strat(side, 100, vol_calc))
