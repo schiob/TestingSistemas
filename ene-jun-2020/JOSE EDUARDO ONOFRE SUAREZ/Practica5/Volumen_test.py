@@ -1,6 +1,7 @@
 import unittest
 from Volumen import volumen
 from Contenedor import contenedor
+from Full import allinone
 
 
 
@@ -107,6 +108,45 @@ class TestVolumen(unittest.TestCase):
             volu = contenedor.volumencontenedor(tc["entradas"][0]["contenedores"],tc["entradas"][1]["volumenes"])
 
             self.assertEqual(volu,tc["salida_esperada"], msg = "Error dato invalido")
+
+
+
+
+    def test_calnecesario(self):
+        testcases = [
+
+            {
+                "nombre" : "calcular num de cajas necesarias",
+                "entradas": [
+                        
+                    {"lados": [4,3,2]},
+                    {"volumen": 100},
+                    
+
+                ],
+                "salida_esperada": ['(1,4)', '(1,3)', '(2,2)']
+            },
+            {
+                "nombre" : "Error en la salida",
+                "entradas": [
+                        
+                    {"lados": [4,3,2]},
+                    {"volumen": 100},
+                    
+
+                ],
+                "salida_esperada": ['(4,1)', '(3,1)', '(2,2)']
+            }
+            
+
+        ]
+
+        for tc in testcases:
+            resul = allinone.calnecesario(tc["entradas"][0]["lados"][0],tc["entradas"][0]["lados"][1],tc["entradas"][0]["lados"][2],tc["entradas"][1]["volumen"])
+
+            self.assertEqual(resul,tc["salida_esperada"])
+
+
 
 
 if __name__ == "__main__":

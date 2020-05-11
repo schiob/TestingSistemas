@@ -1,10 +1,7 @@
 
 class censura:
 
-    def __init__(self,palabra,texto,magicword):
-        self.pal = palabra
-        self.text = texto
-        self.mag = magicword
+   
 
 
     def censored(pal,text,mag):
