@@ -1,0 +1,149 @@
+			*-*-*-*-*-* Resumen Capítulo 3 - Proceso de Ejecución de Prueba *-*-*-*-*-*
+
+
+  	<*> PROCESO DE EJECUCIÓN ERA
+
+		- Modelo ERA:
+			* Estabilizacion: Ejecutamos el 100% de los casos de prueba. Si se alcanza menos del 80% se vuelve a iniciar el ciclo de estabilización
+			* Regresión: Cuando se alcanza mas del 80% en el ciclo de estabilización se inicia el ciclo de regresión 
+			* Aceptación: Si se alcanza el 100% del 20% se inicial la etapa de aceptación, que es el 100% de los casos de prueba de aceptación después se pasa UAT (pruebas de aceptación de usuario)
+
+* / * / * / * / * / * / * / * / * / * / * / * / * / * / * / * / * / * / * / * / * / * / * / * / * / * / * / * / * / * / * / * / * / * / * / * / * / * / * / * / * / * / * / * / * / * / * / * / * /* / * / * / * / * / * / * / * / * / * / * / * / * / * / * / * / * / * / * / * / * / * / * / * / * / * / * / * / * / * / * / * / * / * / * / * / * / * / * / * / * / * / *		
+   	
+   	<*> PRE-REQUISITOS PARA LA EJECUCIÓN
+	
+		- Casos de Prueba: 
+			* Deben estar creados en una herramienta de gestión de casos de prueba
+			* Deben tener al menos la trazabilidad de escenario(scripts de prueba)
+			* Debe indicarse donde estan almacenados las herramientas de gestión de pruebas(ruta)
+			* Los casos de prueba deben de tener un visto bueno de un experto de negocios y con el script  a detalle suficiente para la resuabilidad
+	
+		- Datos de Prueba
+			* Para ejecutar los casos de pruebas de requieren datos estáticos y dinámicos, hay que generarlos.
+			* Los datos estaticos los crea el diseñador de la prueba y los dinámicos el área de ambientes
+			* Los datos tienen que estar visibles en el AUT (aplicativo bajo prueba) o en la base de datos
+			* Los datos no pueden ser copias productivas, enmascarar los datos sensibles
+	
+		- Ventana funcional
+			* El area de ambientes, es responsable de cuidar el choque o la correlación de pruebas,es decir, que una prueba no tome los datos de otra prueba o altere los resultados de ésta.
+			* Se implementa la administracion de ventanas de prueba funcional.
+			* Para una ventana funcional debes de tener un checklist cumplido con los siguiente:
+				+ Casos de prueba listos
+				+ Datos generados
+				+ Plan de ejecución 
+				+ Aplicativo AUT instalado
+	
+		- Plan de Ejecución
+			* Es el plan a seguir por los ejecutores de prueba para determinar quien y cuando incian y terminan su prueba.
+			* Es comun que se utilice cuando hay 3 o mas ejecutores. 
+			* Lo debe de generar el líder de prueba.
+			* Cambia cada ciclo de prueba.
+	
+			** Se puede elaborar en MS o Excel
+				> ¿Qué es y qué contiene?
+					- Secuencia de ciclos de prueba
+					- Secuencia de casos de prueba 
+					- Responsable de ejecutar los casos de prueba
+					- Responsable de casos de prueba (TestWare)
+					- Repositorio de evidencias: pasados, fallados
+					- Centro de métricos 
+					- Mecanimos y modelo de administracion de defectos
+					- Estatus de casos de prueba
+					- Estatus de defectos de pruebas
+	
+		- AUT (Aplicativo bajo prueba)
+			* Es el aplicativo o producto de software que vas a validar con los casos de prueba previamente diseñados y asignados a ti como ejecutor de pruebas.
+			* Tiene que estar instalado en un ambiente de pruebas o QA.
+			* Debe instalarlo el responsable de ambiente de pruebas.
+			* Debes recibir la ruta para acceder a este aplicativo así como los usuarios y passwords.
+
+* / * / * / * / * / * / * / * / * / * / * / * / * / * / * / * / * / * / * / * / * / * / * / * / * / * / * / * / * / * / * / * / * / * / * / * / * / * / * / * / * / * / * / * / * / * / * / * / * /* / * / * / * / * / * / * / * / * / * / * / * / * / * / * / * / * / * / * / * / * / * / * / * / * / * / * / * / * / * / * / * / * / * / * / * / * / * / * / * / * / * / *	
+
+   	<*> ROLES Y RESPONSABILIDADES
+	
+		- Ejecutor de pruebas:
+			* Ejecuta la prueba siguiendo el script de prueba
+			* Puede utilizar donde esten documentados los test cases
+			* Debe conococer el negocio de lo que va a probar
+	
+		- Ingeniero de pruebas:
+			* Conoce el negocio
+			* Diseña especificaciones y casos de pruebas
+			* Diseña procedimientos/scripts de pruebas manuales
+	
+		- Líder de pruebas:
+			* Conoce el negocio adecuadamente
+			* Define el esfuerzo de horas
+			* Determina el equipo de trabajo (testers, ejecutores)
+			* Diseña las estrategias y el plan de pruebas
+			* Monitorea el desempeño e indicadores de la prueba
+			* Puede suspender y reanudar la prueba
+			* Cierra la prueba y genera el certificado de liberación a producción
+		
+		- Líder no funcional:
+			* Conoce el negocio a un nivel de abstraccion muy alto
+			* Define el esfuerzo de horas 
+			* Determina el equipo de trabajo 
+			* Diseña estrategias y plan de pruebas no funcionales
+			* Monitorea el desempeño e indicadores de la prueba no funcional
+			* Puede suspender o reanudar la prueba no funcional
+			* Consigue la aprobacion de [Pre - Producción] 
+			* Cierra la prueba no funcional y genera su parte de certificado de la liberacion de la parte no funcional
+
+		- Ingeniero de desempeño:
+			* Interpreta las necesidades cuantitativas de las calidad del proyecto y plan de prueba no funcional
+			* Diseña los escenarios no funcionales
+			* Diseña y construyo los scripts de prueba no funconales
+			* Ejecuta los escenarios diseñados
+			* Obtiene las métricas y las interpreta
+
+		- Líder de Automatización:
+			* Conoce el negocio
+			* Conoce arquitecturas de automatización
+			* Implementa framewokrks
+			* Define el esfuerzo de horas
+			* Determina el equipo de trabajo
+			* Diseña estrategias y plan de pruebas automatizadas
+			* Monitorea el desempeño e indicadores de la prueba automatizada
+
+		- Ingeniero de Automatización:
+			* Conoce el negocio
+			* Diseña scripts de automatización
+			* Ejecuta scrpits de automatización 
+			* Conoce frameworks
+
+		- Líder de Ambiente:
+			* Define la arquitectura de prueba
+			* Da seguimiento a las necesidades del area
+			* Monitorea el desempeño del area y ambiente de prueba
+			* Definel la periodicidad de actualización de datos y scrambling
+
+		- Dispatcher:
+			* Recibe las solicitud de ambiente de prueba
+			* Las canaliza a los resultores específicos
+			* Monitorea el desempeño de la solicitud y la atención a ésta.
+
+		- Ingeniero de datos o Resolutor:
+			* Recibe las solicitudes de ambiente de prueba asignadas por el dispatcher 
+			* Las atiende dando respuesta y atención, ya sea de datos, usuarios, soporte o accesos
+
+		- Desarrollador de software:
+			* Ingeniero que desarrolla el código relacionado con el producto de software que está probando 
+			* Responsable de corregir los defectos
+			* Conoce las reglas de negocio y estructuras internas del sistema
+
+		- Matriz de Escalamiento:
+			
+			Tester  --> 
+			
+				Ingeniero de Prueba  -->                    
+				   * Líder de prueba                      
+				   * Líder de Ambiente 
+				   * Líder de PNF [Pruebas No Funcionales]
+				   * Líder de automatización
+			
+						           Test Manager   --> 
+
+								         Director de QA   --> 
+
+										         Dirección General 
