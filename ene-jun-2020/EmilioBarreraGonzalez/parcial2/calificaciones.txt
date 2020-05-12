@@ -1,0 +1,9 @@
+Emilio_Barrera Matematicas 100
+Emilio_Barrera Espanol 100
+Emilio_Barrera Historia 100
+Fernando_Garcia Matematicas 100
+Fernando_Garcia Espanol 100
+Fernando_Garcia Historia 99
+Angela_Garcia Matematicas 100
+Angela_Garcia Espanol 100
+Angela_Garcia Historia 100
