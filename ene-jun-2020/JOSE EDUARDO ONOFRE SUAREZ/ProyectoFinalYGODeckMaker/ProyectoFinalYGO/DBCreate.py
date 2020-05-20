@@ -1,5 +1,24 @@
 import sqlite3
 import Card
+from abc import ABC,abstractclassmethod
+
+
+
+class ApiBD(ABC): # Clase Abstracta para la Interface de las funciones que trabajan con la info de la API hacia la Base de Datos
+    @abstractclassmethod
+    def CreateDatabase():
+        pass
+
+    def CreateTable():
+        pass
+
+    def insertarC():
+        pass
+
+    def Visualizar():
+        pass
+    
+
 
 
 class dataBase():
