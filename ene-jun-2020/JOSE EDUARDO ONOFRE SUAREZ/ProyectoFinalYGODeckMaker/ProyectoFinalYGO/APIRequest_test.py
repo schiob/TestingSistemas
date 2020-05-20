@@ -26,6 +26,10 @@ class TestRequest(unittest.TestCase):
             {
                 "entrada" : "Blue-Eyes White Dragon",
                 "salida_esperada" : "This legendary dragon is a powerful engine of destruction. Virtually invincible, very few have faced this awesome creature and lived to tell the tale."
+            },
+            {
+                "entrada" : "Dark Ruler No More",
+                "salida_esperada" : "Negate the effects of all face-up monsters your opponent currently controls, until the end of this turn, also, for the rest of this turn after this card resolves, your opponent takes no damage. Neither player can activate monster effects in response to this card's activation."
             }
 
 
