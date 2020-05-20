@@ -94,6 +94,12 @@ class dataBase():
         finally:
             if(conexion):
                 conexion.close()
+
+if __name__ == "__main__":
+    x = dataBase()
+
+    x.CreateDatabase()
+    x.Visualizar()
     
     ## Agregar Tabla Deck ##
     ## Insertar en Deck ##
