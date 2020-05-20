@@ -9,6 +9,9 @@ before_install:
         - pip install -U pytest
         - pip install codecov
 
+
+services:
+        - sqlite3
 instal:
         - pip install ".[test]". # install package + test dependencies
 
