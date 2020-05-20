@@ -21,8 +21,8 @@ class Index():
  
     while not salir:
  
-        print ("1. Checar efecto de carta")
-        print ("2. Exportar desde API")
+        print ("1. Checar efecto de una carta")
+        print ("2. Ver todas las cartas disponibles")
         print ("3. Crear Deck")
         print ("4. Ver Deck")
         print ("5. Valorar Deck")
@@ -33,13 +33,23 @@ class Index():
         opcion = pedirNumeroEntero()
  
         if opcion == 1:
-            print ("Ver descripción de la carta\n")
-            print("")
-            APIRequest.start()
-            print("")
-            print("----- End -----")
+            try:
+                print ("Ver descripción de la carta\n")
+                print("")
+                APIRequest.start()
+                print("")
+                print("----- End -----")
+            except:
+                print("Nombre incorrecto o caracteres no aceptados")
         elif opcion == 2:
-            print ("Opcion 2")
+            try:    
+                print ("Obtener todas las cartas\n")
+                print("")
+                APIRequest.getAllCards()
+                print("")
+                print("----- End -----")
+            except:
+                print("Parece ser que algo salió mal")
         elif opcion == 3:
             print("Opcion 3")
         elif opcion == 4:
