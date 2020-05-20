@@ -1,6 +1,7 @@
 import sqlite3
 import Card
 
+
 class dataBase():
 
     def CreateDatabase(self):
@@ -95,25 +96,8 @@ class dataBase():
             if(conexion):
                 conexion.close()
     
-    ## Agregar Tabla Deck ##
-    ## Insertar en Deck ##
-
-
-    #########################
-
-
-    ## Agregar Tabla ExtraDeck ##
-    ## Insertar en ExtraDeck ##
-
-
-    #########################
-
-
-    ## Agregar Tabla SideDeck ##
-    ## Insertar en SideDeck ##
-
-
-    #########################
-
+if __name__ == "__main__":
     
-    
+    a = dataBase()
+
+    a.Visualizar()
