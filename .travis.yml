@@ -11,7 +11,7 @@ before_install:
 
 
 services:
-        - sqlite3
+        - mysql
 install:
         - pip install ".[test]". # install package + test dependencies
 
