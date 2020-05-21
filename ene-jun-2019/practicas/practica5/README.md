@@ -1,2 +1,0 @@
-# Práctica 5
-Mira los capítulos 3 y 4 del curso de Ejecutor de Pruebas de The QA Testing Channel y sube un pequeño resumen en un .txt o en .md con tus notas para la siguiente clase poder discutirlo en clase.
