@@ -1,7 +1,0 @@
-version: '3'
-services:
-  webscraper:
-    build: ./
-    volumes:
-     - .:/code
-
