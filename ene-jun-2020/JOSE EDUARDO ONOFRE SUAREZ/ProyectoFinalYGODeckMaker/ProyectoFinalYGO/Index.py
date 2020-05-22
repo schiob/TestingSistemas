@@ -1,6 +1,8 @@
 from APIRequest import start
 import APIRequest
 import IndexCreateDecks
+import VisualizarFullDeck
+import time
 
 class Index():
 
@@ -52,6 +54,7 @@ class Index():
             try:    
                 print ("Obtener todas las cartas\n")
                 print("")
+                time.sleep(1)
                 APIRequest.getAllCards()
                 print("")
                 print("----- End -----")
@@ -67,7 +70,15 @@ class Index():
             except:
                 print("Parece ser que algo salió mal")
         elif opcion == 4:
-            print("Opcion 4")
+            try:    
+                print ("\n***************MOSTRANDO SU DECK COMPLETO***************\n")
+                print("")
+                time.sleep(1)
+                VisualizarFullDeck.RetrieveAll()
+                print("")
+                print("----- End -----")
+            except:
+                print("Parece ser que algo salió mal")
         elif opcion == 5:
             print("Opcion 5")
         elif opcion == 6:

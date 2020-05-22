@@ -5,31 +5,7 @@ class BuildDecksInterfaces(ABC):
     def createTableMain():
         pass
     
-    @abstractclassmethod
-    def insertarinMain():
-        pass 
-
-    @abstractclassmethod
-    def VisualizarinMain():
-        pass
-
-    @abstractclassmethod    
-    def insertarinExtra():
-        pass 
-        
-
-    @abstractclassmethod
-    def VisualizarinExtra():
-        pass 
-    
-    @abstractclassmethod
-    def insertarinSide():
-        pass 
-
-    @abstractclassmethod
-    def VisualizarinSide():
-        pass
-
+  
 
 
 class BuildDecks(BuildDecksInterfaces):
@@ -59,33 +35,6 @@ class BuildDecks(BuildDecksInterfaces):
         finally:
             if(conexion):
                 conexion.close()
-
-    
-    def insertarinMain():
-        new = "ALGO"
-        
-        return new
-    
-    
-    def VisualizarinMain():
-        pass
-
-       
-    def insertarinExtra():
-        pass 
-        
-
-    
-    def VisualizarinExtra():
-        pass 
-    
-   
-    def insertarinSide():
-        pass 
-
-    
-    def VisualizarinSide():
-        pass
 
 
 def llamada():

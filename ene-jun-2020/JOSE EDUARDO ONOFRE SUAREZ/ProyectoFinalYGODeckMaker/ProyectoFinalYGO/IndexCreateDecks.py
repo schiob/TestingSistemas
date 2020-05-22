@@ -1,5 +1,5 @@
 import DBDecks
-import MainDeck
+import MainDeck,ExtraDeck,SideDeck
 
 def opcionCrearDecks():
 
@@ -50,7 +50,7 @@ def opcionCrearDecks():
             try:    
                 print ("Insertar Cartas a ExtraDeck\n")
                 print("")
-                
+                ExtraDeck.InsertaExtraDeck()
                 print("")
                 print("----- End -----")
             except:
@@ -59,7 +59,7 @@ def opcionCrearDecks():
             try:    
                 print ("Insertar Cartas a SideDeck\n")
                 print("")
-               
+                SideDeck.InsertaSideDeck()
                 print("")
                 print("----- End -----")
             except:

@@ -1,49 +1,23 @@
 from abc import ABC,abstractclassmethod
 import DBCreate
-#import Card
+from MainDeck import CardinDeck
 import os
 import sqlite3
 import glob
 
-
-class CardinDeck:
-    def __init__(self, id, name, types, desc, price,quantity):
-
-        self._Id = id
-        self._Name = name
-        self._Type = types
-        self._Desc = desc
-        self._Price = price
-        self._Quantity = quantity
-    
-
-    def __str__(self):
-        return """
-        Id: {}
-        Name: {}
-        Type: {}
-        Desc: {}
-        Price: {}
-        Quantity: {}
-    
-        """.format(self._Id, self._Name, self._Type, self._Desc, self._Price, self._Quantity)
-
-
-
-
-class MainDeckInterface(ABC):
+class SideDeckInterface(ABC):
     @abstractclassmethod
-    def insertarMain(name):
+    def insertarSide(name):
         pass
 
     @abstractclassmethod
-    def savecardtoMain(CardObject):
+    def savecardtoSide(CardObject):
         pass
 
 
     
 
-def createlog(nombremain,bi): #Genera un archivo txt para tomar como referencia del deck creado
+def createlogSide(nombremain,bi): #Genera un archivo txt para tomar como referencia del deck creado
             
     nombre = nombremain
     path = r"C:\Users\Eduardo-PC\Desktop\8vo Semestre\CPS\ProyectoFinalYGO\Deck\{}".format(nombre)
@@ -54,13 +28,13 @@ def createlog(nombremain,bi): #Genera un archivo txt para tomar como referencia 
         
         Numero=len(glob.glob(r"C:\Users\Eduardo-PC\Desktop\8vo Semestre\CPS\ProyectoFinalYGO\Deck\*.txt"))
         
-        if Numero == 0:
-            bi.insertarMain()
+        if Numero >= 1 and Numero <=2:
+            bi.insertarSide()
             file = open(r"C:\Users\Eduardo-PC\Desktop\8vo Semestre\CPS\ProyectoFinalYGO\Deck\{}".format(nombre), "w")
             file.write(nombre + os.linesep)
             file.close()
             
-            limit = 3
+            limit = 3 # Tamaño del deck
             for i in range(0,limit):
                 cartita = input("Escriba el nombre de la carta a agregar:")
                 cord = bi.searchcardinDB(cartita)
@@ -69,31 +43,30 @@ def createlog(nombremain,bi): #Genera un archivo txt para tomar como referencia 
 
                 if seleccion == 1:
 
-                    print("Se agrego la carta al MainDeck")
-                    
-                    bi.savecardtoMain(cord)
+                    print("Se agrego la carta al SideDeck")
+                    bi.savecardtoSide(cord)
                 if seleccion == 2:
                     print("No se agrego la carta!!!")
-                
+
                 if i > limit:
                     print("Alcanzaste el Maximo de cartas permitidas!!!")
 
 
-        if Numero !=0:
+        if Numero >2:
             print("Solo se puede tener un deck para calcular!!!")
             
         
     
 
 
-class MainDeck(MainDeckInterface):
+class SideDeck(SideDeckInterface):
     
     def __init__(self,databasename):
         self.dbname = databasename
         
         
       
-    def insertarMain(self):
+    def insertarSide(self):
         
         try:
             global conexion
@@ -102,13 +75,14 @@ class MainDeck(MainDeckInterface):
             cursor = conexion.cursor()
             print('Conectado')
 
-            query = """CREATE TABLE IF NOT EXISTS Maindeck(
+            query = """CREATE TABLE IF NOT EXISTS SideDeck(
                     Id INTEGER PRIMARY KEY,
                     Name TEXT NOT NULL,
                     Type TEXT,
                     Desc TEXT,
                     Price FLOAT,
                     Quantity INTEGER
+                
                     );"""
             cursor.execute(query)
             conexion.commit()
@@ -128,7 +102,7 @@ class MainDeck(MainDeckInterface):
             conexion = sqlite3.connect('YugiohDB.db')
             cursor = conexion.cursor()
             print('Conectado')
-            cant = int(input("Escriba la cantidad de copias a agregar: "))
+            cant = int(input("Escriba la cantidad de copias a agregar en el Side Deck: "))
             if cant <=3:
                 query = "SELECT * FROM Cards where Name = '{}';".format(cardtoadd)
                 cursor.execute(query)
@@ -141,13 +115,11 @@ class MainDeck(MainDeckInterface):
                     print("-------------------------INFORMACION DE LA CARTA------------------------")
                     print('Id: {}\nName: {}\nType: {}\nDesc: {}\nPrice: {}' .format(*row))
                     print("---------------------------------------------------------------")
-                    cartota = CardinDeck(row[0],row[1],row[2],row[3],row[4],cant)
-                    return cartota
+                    cartotaS = CardinDeck(row[0],row[1],row[2],row[3],row[4],cant)
+                    return cartotaS
                     #print(cartota)
                     #MainDeck.savecardtoMain(cartota)
                 cursor.close()
-            else:
-                print("NO SE PUEDEN AGREGAR MAS DE 3 COPIAS EN EL DECK!!")
 
         except sqlite3.Error as error:
             print('Error con la conexion',error)
@@ -156,13 +128,13 @@ class MainDeck(MainDeckInterface):
             if(conexion):
                 conexion.close()
     
-    def savecardtoMain(self,Card):
+    def savecardtoSide(self,Card):
 
         try:
             conexion = sqlite3.connect(self.dbname)
             cursor = conexion.cursor()
             print('Conectado')
-            query = """INSERT INTO MainDeck VALUES 
+            query = """INSERT INTO SideDeck VALUES 
                     ('{}', '{}', '{}', '{}', '{}', '{}')""".format(Card._Id, Card._Name, Card._Type, Card._Desc, Card._Price, Card._Quantity)
             resultado = cursor.execute(query)
             conexion.commit()
@@ -179,14 +151,14 @@ class MainDeck(MainDeckInterface):
     
 
 
-def InsertaMainDeck():
+def InsertaSideDeck():
     
-    deckname = input("\nEscriba el nombre de su deck: ")
+    Maindeckname = input("\nEscriba el nombre del Main Deck a asignar Side Deck: ")
 
     
-    cosa = MainDeck("YugiohDB.db")
-    createlog('{}.txt'.format(deckname),cosa)
+    cosa = SideDeck("YugiohDB.db")
+    createlogSide('{}_Side.txt'.format(Maindeckname),cosa)
 
-#if __name__ == "__main__":
+if __name__ == "__main__":
     
-#    InsertaMainDeck()
+    InsertaSideDeck()
