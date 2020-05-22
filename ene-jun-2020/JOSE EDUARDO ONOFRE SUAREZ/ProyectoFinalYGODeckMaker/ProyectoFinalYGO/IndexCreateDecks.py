@@ -1,14 +1,12 @@
-from APIRequest import start
-import APIRequest
-import IndexCreateDecks
+import DBDecks
+import MainDeck
 
-class Index():
+def opcionCrearDecks():
 
-    print("\n****************************************")
-    print("**********BIENVENIDO AL SISTEMA**********")
-    print("**********MENU PRINCIPAL DE OPCIONES**********")
-    print("****************************************\n")
-
+    print("\n******************************")
+    print("*****BIENVENIDO AL SISTEMA*****")
+    print("*****DE CREACION DE DECKS*****")
+    print("******************************\n")
 
     def pedirNumeroEntero():
  
@@ -28,12 +26,12 @@ class Index():
  
     while not salir:
  
-        print ("1. Checar efecto de una carta")
-        print ("2. Ver todas las cartas disponibles")
-        print ("3. Crear Deck")
-        print ("4. Ver Deck")
-        print ("5. Valorar Deck")
-        print ("6. Salir de la App")
+        print ("1. Insertar Cartas a MainDeck")
+        print ("2. Insertar Cartas a ExtraDeck")
+        print ("3. Insertar Cartas a SideDeck")
+        print ("4. Salir al Menu Principal")
+        
+      
      
         print ("Elige una opcion")
 
@@ -41,39 +39,35 @@ class Index():
  
         if opcion == 1:
             try:
-                print ("Ver descripción de la carta\n")
+                print ("Insrtar Cartas al MainDeck\n")
                 print("")
-                APIRequest.start()
+                MainDeck.InsertaMainDeck()
                 print("")
                 print("----- End -----")
             except:
                 print("Nombre incorrecto o caracteres no aceptados")
         elif opcion == 2:
             try:    
-                print ("Obtener todas las cartas\n")
+                print ("Insertar Cartas a ExtraDeck\n")
                 print("")
-                APIRequest.getAllCards()
+                
                 print("")
                 print("----- End -----")
             except:
                 print("Parece ser que algo salió mal")
         elif opcion == 3:
             try:    
-                print ("Construir DECK\n")
+                print ("Insertar Cartas a SideDeck\n")
                 print("")
-                IndexCreateDecks.opcionCrearDecks()
+               
                 print("")
                 print("----- End -----")
             except:
                 print("Parece ser que algo salió mal")
         elif opcion == 4:
-            print("Opcion 4")
-        elif opcion == 5:
-            print("Opcion 5")
-        elif opcion == 6:
             salir = True
+        
         else:
             print ("Introduce un numero entre 1 y 4")
     
-    print("")
-    print ("Hasta pronto!")
+    print ("\nSalió de la construccion de Decks")
