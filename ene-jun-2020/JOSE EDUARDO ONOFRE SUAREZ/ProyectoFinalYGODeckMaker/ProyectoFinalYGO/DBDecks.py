@@ -1,71 +1,42 @@
-    ## Crear Tabla MainDeck ##
-    ## Insertar en MainDeck ##
+from abc import ABC,abstractclassmethod
 
-    ##AQUI VAN LOS METODOS PARA CREAR LA TABLA DEL MAIN DECK
-    ##EL METODO PARA INSERTAR EN EL MAINDECK
-    ##EL METODO PARA VISUALIZAR LAS CARTAS DEL MAINDECK
-    #NOTAAAAAA: RECORDAR QUE CADA FUNCION TIENE SU INTERFAZ PARA PODER HACER UN MOCK DE PRUEBAS
-    def insertarMain():
-        pass #AQUI DEBEMOS PONER EL METODO YA HECHO EN EL ARCHIVO "DataBaseYGO.py"
-
-
+class BuildDecksInterfaces(ABC):
+    @abstractclassmethod
+    def createTableMain():
+        pass
     
-    def VisualizarMain():
-        pass #AQUI DEBEMOS PONER EL METODO YA HECHO EN EL ARCHIVO "DataBaseYGO.py"
-            #DEBE DE RETORNAR UNA LISTA PARA PASAR AL OBJETO DECK
+  
+
+
+class BuildDecks(BuildDecksInterfaces):
+
+    def createTableMain():
+        try:
+            conexion = sqlite3.connect('YugiohDB.db')
+            cursor = conexion.cursor()
+            print('Conectado')
+
+            query = """CREATE TABLE IF NOT EXISTS Maindeck(
+                    Id INTEGER PRIMARY KEY,
+                    Name TEXT NOT NULL,
+                    Type TEXT,
+                    Desc TEXT,
+                    Price FLOAT
+                
+                    );"""
+            cursor.execute(query)
+            conexion.commit()
+            
+            cursor.close()
+            return ('Tabla creada con exito')
+        except sqlite3.Error as error:
+            return('Error con la conexion',error)
+
+        finally:
+            if(conexion):
+                conexion.close()
+
+
+def llamada():
     
-    #########################
-
-
-    ## Crear Tabla ExtraDeck ##
-    ## Insertar en ExtraDeck ##
-
-    ##AQUI VAN LOS METODOS PARA CREAR LA TABLA DEL EXTRA DECK
-    ##EL METODO PARA INSERTAR EN EL EXTRADECK
-    ##EL METODO PARA VISUALIZAR LAS CARTAS DEL EXTRADECK
-    #NOTAAAAAA: RECORDAR QUE CADA FUNCION TIENE SU INTERFAZ PARA PODER HACER UN MOCK DE PRUEBAS
-    def insertarExtra():
-        pass #AQUI DEBEMOS PONER EL METODO YA HECHO EN EL ARCHIVO "DataBaseYGO.py"
-        
-
-    
-    def VisualizarExtra():
-        pass #AQUI DEBEMOS PONER EL METODO YA HECHO EN EL ARCHIVO "DataBaseYGO.py"
-                #DEBE DE RETORNAR UNA LISTA PARA PASAR AL OBJETO DECK
-    
-    
-    #########################
-
-
-
-
-
-    #########################
-
-
-    ## Crear Tabla SideDeck ##
-    ## Insertar en SideDeck ##
-
-    ##AQUI VAN LOS METODOS PARA CREAR LA TABLA DEL MAIN DECK
-    ##EL METODO PARA INSERTAR EN EL MAINDECK
-    ##EL METODO PARA VISUALIZAR LAS CARTAS DEL MAINDECK
-    #NOTAAAAAA: RECORDAR QUE CADA FUNCION TIENE SU INTERFAZ PARA PODER HACER UN MOCK DE PRUEBAS
-    def insertarSide():
-        pass #AQUI DEBEMOS PONER EL METODO YA HECHO EN EL ARCHIVO "DataBaseYGO.py"
-        
-
-    
-    def VisualizarSide():
-        pass #AQUI DEBEMOS PONER EL METODO YA HECHO EN EL ARCHIVO "DataBaseYGO.py"
-                #DEBE DE RETORNAR UNA LISTA PARA PASAR AL OBJETO DECK
-    
-   
-    #########################
-
-
-
-
-    #########################
-
-    
-    
+    print(BuildDecks.insertarinMain())

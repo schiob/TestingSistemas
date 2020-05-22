@@ -41,6 +41,16 @@ class TestRequest(unittest.TestCase):
 
             actual = getCard(tc['entrada'], card_mock)
             self.assertEqual(tc['salida_esperada'], actual)
+    
+
+    def test_Allcards(self):
+        card_test = (
+
+
+
+        )
+
+    
 
 if __name__ == "__main__":
     unittest.main()
