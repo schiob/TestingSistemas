@@ -4,7 +4,7 @@ python:
         -3.6
         -3.5
 
-services:
-        - sqlite3
+#services:
+#        - sqlite3
 
 script: python APIRequest_test.py #run tests
