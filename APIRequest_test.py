@@ -43,12 +43,12 @@ class TestRequest(unittest.TestCase):
             self.assertEqual(tc['salida_esperada'], actual)
     
 
-    def test_Allcards(self):
-        card_test = (
+    #def test_Allcards(self):
+    #    card_test = (
 
 
 
-        )
+    #    )
 
     
 
