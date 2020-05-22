@@ -24,6 +24,7 @@ def getCard(name, biblio):# Metodo para obtener el nombre o algo en especifico
 def getAllCards(): # Metodo para obtener todas las cartas desde la BD
     
     AllCards = DBCreate.dataBase()
+    AllCards.CreateDatabase()
     AllCards.Visualizar()
 
 
