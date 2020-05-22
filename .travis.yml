@@ -1,10 +1,21 @@
+# Disable sudo to speed up the build
+sudo: false
+
+# Set the build language to Python
 language: python
-python:
-        -3.7
-        -3.6
-        -3.5
 
-#services:
-#        - sqlite3
+# Set the python version to 3.7
+python: 3.7
 
-script: python APIRequest_test.py #run tests
+# Install the codecov pip dependency
+install:
+  - pip install codecov
+
+# Run the unit test
+script:
+  - coverage run APIRequest_test.py
+
+# Push the results back to codecov
+after_success:
+  - codecov
+
