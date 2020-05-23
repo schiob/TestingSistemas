@@ -25,8 +25,9 @@ def getAllCards(): # Metodo para obtener todas las cartas desde la BD
     
     AllCards = DBCreate.dataBase()
     AllCards.CreateDatabase()
-    AllCards.Visualizar()
-
+    elementos = AllCards.Visualizar()
+    print("ACTUALMENTE EXISTEN {} CARTAS EN LA BASE DE DATOS".format(elementos))
+    return elementos
 
 class ApiYugih(BiblioYugih):#Funcion de la clase que recibe como parametro la URL
     def __init__(self, url_base):
