@@ -93,18 +93,18 @@ class dataBase():
         try:
             conexion = sqlite3.connect('YugiohDB.db')
             cursor = conexion.cursor()
-            print('Conectado')
+            #print('Conectado')
 
             query = 'SELECT * FROM Cards;'
             cursor.execute(query)
             rows = cursor.fetchall()
-            print('Total de registros: ', len(rows))
+            #print('Total de registros: ', len(rows))
 
-            print('------------Registros-------------')
+            #print('------------Registros-------------')
             count = 0
             for row in rows:
-                print('Id: {}\nName: {}\nType: {}\nDesc: {}\nPrice: {}' .format(*row))
-                print("---------------------------------------------------------------")
+                #print('Id: {}\nName: {}\nType: {}\nDesc: {}\nPrice: {}' .format(*row))
+                #print("---------------------------------------------------------------")
                 count+=1
             cursor.close()
             return count
