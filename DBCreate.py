@@ -101,13 +101,13 @@ class dataBase():
             print('Total de registros: ', len(rows))
 
             print('------------Registros-------------')
-
+            count = 0
             for row in rows:
                 print('Id: {}\nName: {}\nType: {}\nDesc: {}\nPrice: {}' .format(*row))
                 print("---------------------------------------------------------------")
-        
+                count+=1
             cursor.close()
-
+            return count
         except sqlite3.Error as error:
             print('Error con la conexion',error)
 

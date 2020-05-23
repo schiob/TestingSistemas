@@ -1,13 +1,13 @@
 import unittest
 from APIRequest import getAllCards
-
+import APIRequest
 class GetAllCards_test(unittest.TestCase):
 
     # Test para asegurar que nos regresa todas las cartas de la base de datos
     def setUp(self):
         print("Preparando el contexto...")
         self.opcion = 2
-        self.cards = 7016
+        self.cards = getAllCards()
         
     def test_file(self):
         entrada = self.opcion
