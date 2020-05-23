@@ -7,7 +7,7 @@ class GetAllCards_test(unittest.TestCase):
     def setUp(self):
         print("Preparando el contexto...")
         self.opcion = 2
-        self.cards = getAllCards()
+        self.cards = 12348
         
     def test_file(self):
         entrada = self.opcion
