@@ -15,6 +15,7 @@ install:
 script:
   - coverage run APIRequest_test.py
   - coverage run GetAllCards_test.py
+  - coverage run GetAllCards_test_fail.py
 
 # Push the results back to codecov
 after_success:
