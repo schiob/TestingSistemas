@@ -89,7 +89,7 @@ class SideDeck(SideDeckInterface):
             
             cursor.close()
         
-            print('Tabla creada con exito')
+            return('Tabla SideDeck creada con exito')
         except sqlite3.Error as error:
             return('Error con la conexion',error)
 
@@ -148,7 +148,13 @@ class SideDeck(SideDeckInterface):
             if(conexion):
                 conexion.close()
 
+
+def tableSideDeck():
+
+    side =  SideDeck("YugiohDB.db")
     
+    res = side.insertarSide()
+    return res
 
 
 def InsertaSideDeck():
@@ -161,4 +167,4 @@ def InsertaSideDeck():
 
 if __name__ == "__main__":
     
-    InsertaSideDeck()
+    print(tableSideDeck())

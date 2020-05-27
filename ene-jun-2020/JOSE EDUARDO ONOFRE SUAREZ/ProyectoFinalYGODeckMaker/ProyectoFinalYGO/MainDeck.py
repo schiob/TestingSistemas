@@ -100,9 +100,9 @@ class MainDeck(MainDeckInterface):
             conexion = ""
             conexion = sqlite3.connect(self.dbname)
             cursor = conexion.cursor()
-            print('Conectado')
+            #print('Conectado')
 
-            query = """CREATE TABLE IF NOT EXISTS Maindeck(
+            query = """CREATE TABLE IF NOT EXISTS MainDeck(
                     Id INTEGER PRIMARY KEY,
                     Name TEXT NOT NULL,
                     Type TEXT,
@@ -114,14 +114,15 @@ class MainDeck(MainDeckInterface):
             conexion.commit()
             
             cursor.close()
-        
-            print('Tabla creada con exito')
+            
+            return('Tabla MainDeck creada con exito')
         except sqlite3.Error as error:
             return('Error con la conexion',error)
 
         finally:
             if(conexion):
                 conexion.close()
+    
     
     def searchcardinDB(self,cardtoadd):
         try:
@@ -157,7 +158,7 @@ class MainDeck(MainDeckInterface):
                 conexion.close()
     
     def savecardtoMain(self,Card):
-
+        o = Card
         try:
             conexion = sqlite3.connect(self.dbname)
             cursor = conexion.cursor()
@@ -168,7 +169,7 @@ class MainDeck(MainDeckInterface):
             conexion.commit()
             print('Valor Insertado Correctamente', resultado)
             cursor.close()
-
+            return o
         except sqlite3.Error as error:
                 print('Error con la conexion',error)
 
@@ -177,16 +178,22 @@ class MainDeck(MainDeckInterface):
                 conexion.close()
 
     
+def tableMainDeck():
 
+    main = MainDeck("YugiohDB.db")
+    main.insertarMain()
+    res = main.insertarMain()
+    return res
+
+#def addCard():
+
+    #m = MainDeck("YugiohDB.db")
+    #res = m.savecardtoMain(CardinDeck(1234,"sad","tyoe2","desc",29.30,2))
+    #return res
 
 def InsertaMainDeck():
     
     deckname = input("\nEscriba el nombre de su deck: ")
-
-    
     cosa = MainDeck("YugiohDB.db")
     createlog('{}.txt'.format(deckname),cosa)
-
-#if __name__ == "__main__":
     
-#    InsertaMainDeck()

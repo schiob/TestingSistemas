@@ -89,7 +89,7 @@ class ExtraDeck(ExtraDeckInterface):
             
             cursor.close()
         
-            print('Tabla creada con exito')
+            return('Tabla ExtraDeck creada con exito')
         except sqlite3.Error as error:
             return('Error con la conexion',error)
 
@@ -148,7 +148,12 @@ class ExtraDeck(ExtraDeckInterface):
             if(conexion):
                 conexion.close()
 
+def tableExtraDeck():
 
+    extra =  ExtraDeck("YugiohDB.db")
+    
+    res = extra.insertarExtra()
+    return res
 
 def InsertaExtraDeck():
     
@@ -157,3 +162,6 @@ def InsertaExtraDeck():
     
     cosa = ExtraDeck("YugiohDB.db")
     createlogExtra('{}_Extra.txt'.format(Maindeckname),cosa)
+
+if __name__ == "__main__":
+    print(tableExtraDeck())
