@@ -9,8 +9,11 @@ class extraMock(ExtraDeckInterface):
     def setcard(self,id,name,types,desc,price,quantity):
         self.carta = CardinDeck(id,name,types,desc,price,quantity)
 
-    def savecardtoMain(self,Card):
+    def savecardtoExtra(self,Card):
         return carta
+    
+    def insertarExtra(self):
+        pass
 
 
 
@@ -30,7 +33,7 @@ class insertTest(unittest.TestCase):
         return self.extra
 
 
-    def inTables_test(self):
+    def test_inTables(self):
         test_cases = [
 
             {
@@ -64,7 +67,8 @@ class insertTest(unittest.TestCase):
                 tc["datos"]["Quantity"]
 
             )
-            obj = ExtraDeck("YugiohDB.db")
+            
+            obj = ExtraDeck.ExtraDeck("YugiohDB.db")
             actual = obj.savecardtoExtra(card_mock.carta)
             self.assertEqual(actual,tc["salida_esperada"])
 

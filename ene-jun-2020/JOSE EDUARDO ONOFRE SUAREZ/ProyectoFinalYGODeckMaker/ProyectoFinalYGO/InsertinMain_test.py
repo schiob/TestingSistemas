@@ -5,12 +5,18 @@ from MainDeck import MainDeck
 import sqlite3
 
 class mainMock(MainDeckInterface):
+    def __init__(self):
+        pass
+
+    def insertarMain(self,obj):
+        pass
 
     def setcard(self,id,name,types,desc,price,quantity):
         self.carta = CardinDeck(id,name,types,desc,price,quantity)
 
     def savecardtoMain(self,Card):
         return self.carta
+
 
 
 
@@ -29,7 +35,8 @@ class insertTest(unittest.TestCase):
                 )
 
 
-    def inTables_test(self):
+
+    def test_inTables(self):
         test_cases = [
 
             {

@@ -9,8 +9,11 @@ class sideMock(SideDeckInterface):
     def setcard(self,id,name,types,desc,price,quantity):
         self.carta = CardinDeck(id,name,types,desc,price,quantity)
 
-    def savecardtoMain(self,Card):
+    def savecardtoSide(self,Card):
         return carta
+    
+    def insertarSide(self):
+        pass    
 
 
 
@@ -27,10 +30,10 @@ class insertTest(unittest.TestCase):
                     4.43,
                     2
                 )
-        return self.extra
+        return self.side
 
 
-    def inTables_test(self):
+    def test_inTables(self):
         test_cases = [
 
             {
@@ -64,7 +67,7 @@ class insertTest(unittest.TestCase):
                 tc["datos"]["Quantity"]
 
             )
-            obj = SideDeck("YugiohDB.db")
+            obj = SideDeck.SideDeck("YugiohDB.db")
             actual = obj.savecardtoSide(card_mock.carta)
             self.assertEqual(actual,tc["salida_esperada"])
 
