@@ -1,0 +1,55 @@
+## Introduccion a los Modelos ERA/SRA
+
+Se refiere al modelo de ejecucion de ciclos de prueba con sus casos
+de prueba.
+Durante el proceso de Estabilizacion los casos de prueba tienen que 
+tener una efectividad del 80%, si es menor, se inicia nuevamente el
+proceso, si la efectividad es mayor del 80%, se empieza el ciclo de 
+regresion.
+En la etapa de regresion se requere obtener el 100% de efectividad, 
+y al alcanzar el 100% se realiza la etapa de Aceptacion, para finalmente 
+llegar a la fase de aceptacion del usuario
+
+### Pre-requisitos para la ejecucion
+    ## Casos de prueba
+    - Deben estar creados en una matriz de prueba o en una herramienta de gestión de prueba
+    - Deben tener al menos la trazabilidad del escenario.
+    - Deben indicarte en dónde están almacenados, ruta oficial del proyecto de prueba o ruta en la herramienta de gestión de prueba.
+    ## Datos de prueba
+    - Para ejecutar los casos de prueba se requieren datos estáticos y dinámicos.
+    - Los datos estáticos los crea el diseñador de la prueba y los dinámicos el área de ambientes.
+    - Cada Caso de prueba requiere entradas.
+    ## Ventana funcional
+    Se implementa la administración de ventanas de prueba funcional, para evitar  el choque o correlación de pruebas. 
+    Para una ventana funcional debes tener un checklist cumplido. 
+    - Casos de prueba listos
+    - Datos generados
+    - Plan de ejecución
+    - Aplicativo AUT instalado
+    
+### Plan de ejecucion
+Plan de ejecución.
+Es el plan a seguir por los ejecutores de prueba para determinar quién y cuándo inician y terminan su prueba, revisar dependencias con otras pruebas, fechas y datos.
+
+    - Es común en equipos de 3 o más ejecutores de prueba.
+    - Lo debe generar el líder de prueba.
+    - Generalmente el plan de ejecución cambia cada ciclo de prueba.
+    - Se puede elaorar en un documento de excel o en una herramienta de gestión de pruebas.
+    
+## ROLES Y RESPONSABILIDADES
+### Ejecutor de pruebas.
+Ejecuta la prueba siguiendo el script de prueba, puede utilizar herramientas donde estén documentados los
+casos de prueba y debe conocer del negocio de lo que va a probar.
+
+### Ingeniero de pruebas.
+Conoce el negocio, debe entender los flujos, escenarios y procesos de negocio para poder diseñar las
+especificaciones y casos de prueba. Diseña procedimientos para la prueba manual.
+
+### Líder de pruebas.
+Conoce el negocio. Entiende el contexto general del proceso. Define el esfuerzo de horas y determina el
+equipo de trabajo. Diseña estrategias y plan de pruebas. Monitorea el desempeño e indicadores de la
+prueba. Puede suspender y reanudar la prueba en cualquier momento. Cierra la prueba y genera el
+certificado de liberación a producción.
+
+
+
