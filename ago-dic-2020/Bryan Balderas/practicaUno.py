@@ -7,6 +7,6 @@ n=sys.stdin.readline()
 m=list(map(float,n.split()))
 if len(m) > 2:
     print('inserta solo dos numeros')
-else:
+    else:
         print(sum(m))
 
