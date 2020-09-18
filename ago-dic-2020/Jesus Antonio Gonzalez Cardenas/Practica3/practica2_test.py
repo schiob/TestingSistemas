@@ -1,3 +1,10 @@
+#Tomen el código de la práctica 2 y hagan las adecuaciones necesarias para poder correr pruebas unitarias sobre la lógica de su solución.
+
+#Probablemente sea necesario que tengan que modificar un poco el código original de su solución, encapsularlo en alguna función o separar la entrada e impresión de datos.
+
+#Pueden utilizar unittest o pytest para hacer las pruebas unitarias, y traten de seleccionar un buen número de casos de prueba para cubrir la mayor parte del domino del problema.
+
+
 import unittest
 from mainTestPy import vendePantalones, pantalon
 
@@ -31,3 +38,21 @@ class practica2PantalonesTest(unittest.TestCase):
                 ]
 
         self.assertEqual(vendePantalones(2,5,marcaInput),0)
+
+    def test_venderTodosPantalones(self):
+      marcaInput = [pantalon("Nike",100),
+              pantalon("Bike",110)
+              ]
+
+      self.assertEqual(vendePantalones(2,0,marcaInput),0)
+
+    def test_venderNingunPantalon(self):
+      marcaInput = [pantalon("Nike",100),
+              pantalon("Bike",110)
+              ]
+
+      self.assertEqual(vendePantalones(2,2,marcaInput),"0 0")
+
+if __name__=='__main__':
+  unittest.main()
+  
