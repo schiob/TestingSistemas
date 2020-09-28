@@ -39,5 +39,5 @@ def calcular_promedio_deCSV(filename: str) -> dict:
 
 
 if __name__ == "__main__":
-    for k,v in calcular_promedio_deCSV("practica4File2.csv").items():
+    for k,v in calcular_promedio_deCSV("practica4File.csv").items():
         print(k, v)
