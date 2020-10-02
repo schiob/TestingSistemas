@@ -10,7 +10,7 @@ class TestPractica4(unittest.TestCase):
     # test mock
     
     def test_read_file(self):
-        with mock.patch("__builtin__.open", mock.mock_open(read_data="MOCKED"), create=True) as mock_file:
+        with mock.patch("builtins.open", mock.mock_open(read_data="MOCKED"), create=True) as mock_file:
             result = Practica4.read_file("path")
         mock_file.assert_called_once_with("path", "r")
         assert result == "MOCKED"
