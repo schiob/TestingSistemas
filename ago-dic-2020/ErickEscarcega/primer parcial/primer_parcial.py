@@ -2,7 +2,7 @@ def tri_from_file(path):
 ### Reads file and saves the string in the file as a variable ###
     file = open(path)
     sides = file.read()
-    l1, l2, l3 = sides.split()
+    l1, l2, l3 = [int(i) for i in sides.split()]
 ### Process Content ###
     #Checks to see if its a triangle
     if (l1 + l2 ) > l3 and (l1 + l3) > l2 and (l2 + l3) > l1:
