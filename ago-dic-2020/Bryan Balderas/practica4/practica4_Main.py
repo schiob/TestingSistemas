@@ -60,7 +60,7 @@ def obtenerPromedios(archivoName:str)->dict:
 
 if __name__ == "__main__":
    #print(abrirArchivo('testtexto.csv'))
-   for k,v in obtenerPromedios('/home/bryan/TestingSistemas/ago-dic-2020/Bryan Balderas/practica4/testtexto.csv').items():
+   for k,v in obtenerPromedios('testdos.csv').items():
        print(k,v)
 
     
