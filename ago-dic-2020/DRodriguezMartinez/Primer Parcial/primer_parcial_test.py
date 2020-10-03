@@ -18,7 +18,7 @@ class Test_primer_parcial(TestCase):
         
         with mock.patch('primer_parcial.open') as mock_open:
             
-            for m in [i for i in self.mocks.values() if "equi" in i]:                  
+            for m in [v for i,v in self.mocks.items() if "equi" in i]:           
                 mock_open.return_value.__enter__.return_value.read.return_value = m
                 real = Tri_from_file("mock")
 
@@ -30,7 +30,7 @@ class Test_primer_parcial(TestCase):
 
         with mock.patch('primer_parcial.open') as mock_open:
             
-            for m in [i for i in self.mocks.values() if "notri" in i]:                  
+            for m in [v for i,v in self.mocks.items() if "notri" in i]:                  
                 mock_open.return_value.__enter__.return_value.read.return_value = m
                 real = Tri_from_file("mock")
 
@@ -42,7 +42,7 @@ class Test_primer_parcial(TestCase):
 
         with mock.patch('primer_parcial.open') as mock_open:
             
-            for m in [i for i in self.mocks.values() if "iso" in i]:                  
+            for m in [v for i,v in self.mocks.items() if "iso" in i]:                  
                 mock_open.return_value.__enter__.return_value.read.return_value = m
                 real = Tri_from_file("mock")
 
@@ -54,7 +54,7 @@ class Test_primer_parcial(TestCase):
 
         with mock.patch('primer_parcial.open') as mock_open:
             
-            for m in [i for i in self.mocks.values() if "esca" in i]:                  
+            for m in [v for i,v in self.mocks.items() if "esca" in i]:                  
                 mock_open.return_value.__enter__.return_value.read.return_value = m
                 real = Tri_from_file("mock")
 
