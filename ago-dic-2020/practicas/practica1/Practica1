@@ -1,7 +1,0 @@
-
-n1 = float (input("Introducir numero uno: "))
-n2 = float (input("Introducir numero dos: "))
-
-suma = n1 + n2
-
-print("La suma es : ",suma)
