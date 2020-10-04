@@ -39,6 +39,6 @@ def getAverages(fpath):
     
 
 if __name__ == "__main__":
-  #print(getAverages('MOCK_DATA.csv'))
-  print(getAverages('Practica4TData.csv'))          
+  print(getAverages('MOCK_DATA.csv'))
+#   print(getAverages('Practica4TData.csv'))          
 
