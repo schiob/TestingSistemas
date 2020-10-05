@@ -39,12 +39,6 @@ def getAverages(fpath):
     
 
 if __name__ == "__main__":
-<<<<<<< HEAD
 #   print(getAverages('MOCK_DATA.csv'))
     print(getAverages('Practica4TData.csv'))          
     # print(getDomains('Practica4TData.csv'))
-=======
-  print(getAverages('MOCK_DATA.csv'))
-#   print(getAverages('Practica4TData.csv'))          
-
->>>>>>> c151a235c5fc7360b9826adcf9ef8328ec7326a8
