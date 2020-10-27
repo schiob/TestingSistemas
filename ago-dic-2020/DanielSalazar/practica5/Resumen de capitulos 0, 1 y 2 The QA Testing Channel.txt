@@ -1,0 +1,128 @@
+Certificación en ejecución de pruebas de software
+
+Calidad y pruebas de software – Resumen de los capítulos 0, 1 y 2.
+
+Juan Daniel Salazar Coronado	Matricula: 17289193	Profesora: Chio Benavides Santiago
+
+Una persona que quiere aprender a ser un ejecutor de casos de prueba debe entender el ciclo de vida de una prueba, seguir un plan de ejecución y ciclos de prueba, tener un conocimiento en herramientas de gestión tipo ALM, poder interpretar diseños de casos de prueba, solicitar datos para la prueba, etc. Entre varias más aptitudes o habilidades.
+Es importante ir desarrollando todas estás habilidades y más mediante se cursa la universidad o antes de ser lanzado al mundo laboral, pues se aprovecha más el tiempo y te sientes aún más capacitado, la velocidad de aprendizaje de estas habilidades suele depender de uno mismo.
+
+* Conceptos básicos de prueba.
+
+¿Qué es prueba de software?
+Prueba de software es la validación y verificación de los requerimientos funcionales.
+La validación es por ejemplo cuando comparas un documento de requerimiento original con un caso de prueba.
+La verificación se da cuando comparas un caso de prueba contra un caso de uso.
+Las pruebas de software se realizan con la intención de encontrar errores o defectos en nuestros proyectos, estás suelen también realizarse con el uso de algunas herramientas que facilitan o nos ayudan a realizarlas, como por ejemplo alguna herramienta que ayude a generar pruebas automatizadas.
+
+Tipos de pruebas.
+	Funcional.
+Prueba manual: Son las que realizamos nosotros mismos ejecutando acciones sobre el teclado o ratón para revisar las acciones del sistema.
+Prueba automatizada: Es un software que ejecuta y realiza las acciones que nosotros realizamos de forma manual pero automatizada.
+La diferencia de estás es que la prueba automatizada es mucho más rápida.
+	No Funcional.
+Prueba de desempeño: Es validar el uso de recursos de un aplicativo mientras se ejecuta con un cierto numero de usuarios reaccionado a él.
+Prueba de seguridad: Es validar todas las vulnerabilidades de un sistema.
+
+Ciclo de vida de un proyecto de prueba.
+1.	Análisis: Se valida la factibilidad de crear el sistema en cuestión.
+2.	Planeación: Se elabora un plan de trabajo y plan de pruebas para el proyecto, en esta se identifica el qué, como, cuando, donde y por qué.
+Estás dos fases las realiza el líder de pruebas.
+3.	Diseño: Se diseñan todos los casos de prueba, datos de prueba, datos estadísticos, etc.
+4.	Ambiente: Se asegura que todo este listo para empezar a realizar las pruebas, estos pueden ser los softwares, los casos de prueba, los datos de prueba, etc. Todo lo relacionado a hardware y software para realizar las pruebas.
+5.	Ejecución: Se inicia todo el testware antes diseñado (casos de prueba, datos de prueba, datos estadísticos, etc.) y se documentan los defectos encontrados y las evidencias de las pruebas.
+6.	UAT (Pruebas de aceptación de usuario): En este momento se tiene un software ya estable, se realizan las pruebas con el usuario, pero solamente se ejecutan casos de prueba críticos.
+7.	Cierre: Se cierra toda la documentación del proyecto y se genera un certificado de prueba que avala el trabajo realizado durante la ejecución y el UAT.
+
+¿Qué es un caso de prueba?
+Entradas: Es un dato o evento externo que se introduce en el sistema.
+Precondiciones: Es el estado en el que tiene que estar el sistema para poder capturar la entrada que vamos a introducir.
+Las entradas y precondiciones pueden ser negativas o positivas, esto para saber cual es el resultado de nuestro sistema con los diferentes casos que podemos probar.
+Entradas + Precondiciones =
+Salidas: Es el dato que nos da el sistema o el resultado.
+Pos condición: Es el estado en el que termina nuestro sistema después de introducir la entrada y establecer las precondiciones.
+
+¿Qué es un script o procedimiento de pruebas?
+Es el paso a paso o conjunto de pasos para reproducir un caso de prueba. También se puede entender como el medio para validar un caso de prueba.
+Un script de pruebas debe tener todos los detalles para poder ejecutarse sin necesitar ayuda del tester que lo creo.
+Las reglas que tiene un procedimiento de pruebas son:
+1.	No contener datos duros (hardcore)
+2.	Tener al menos 6 pasos básicos:
+-	Es importante explicar como debe abrir o llegar a la aplicación.
+-	Explicar cómo colocar las precondiciones.
+-	Explicar como ejecutar el caso (esto debe hacerse muy bien explicado, no hay que obviar nada o suponer que el ejecutor de pruebas ya lo sabe).
+-	Explicar que es lo que esperamos que suceda en el sistema para poder validar el resultado esperado y saber si es bueno o malo.
+-	Explicar específicamente en que estado va a quedar el sistema después de realizar todos los pasos anteriores para poder validar las post condiciones.
+-	Explicar cuales son los caminos para poder salir del sistema en cuestión, tal como se explicó como poder abrirlo.
+
+Datos de prueba
+Son los datos que necesitamos para poder ejecutar las pruebas. Cada caso de prueba requiere entradas, ósea los datos para la prueba.
+Tipos de datos:
+-	Estáticos (no se queman), por ejemplo, el número de una tarjeta de crédito, no se quema, ósea no cambia, se puede reutilizar
+-	Dinámicos (se queman), aquí se ejemplifica con el saldo de la tarjeta de crédito, pues al usarse va bajando y se queman, no será siempre igual.
+Los datos deben ser muy parecidos a los que se usan en producción. 
+
+* Qué es ejecución de Prueba
+
+¿Qué es la ejecución de prueba?
+Es tomar cada caso de prueba previamente diseñado, y seguir el guion del procedimiento de prueba (Script manual) para reproducirlo con los datos requeridos en esa casuística. 
+Si el caso esperado es igual al actual el caso es pasado, si se presenta una falla se le informa al desarrollador que se encontró un defecto.
+Siempre hay que tener evidencias de que se ejecutó la prueba.
+Los casos de prueba se agrupan y se ejecutan en ciclos de prueba.
+Hay una línea de tiempo para realizar esta ejecución, así como una estimación de la duración de cada caso de prueba.
+
+¿Qué es un Test Set o un conjunto de casos de prueba?
+Es un conjunto de casos de prueba que están relacionados al tener características similares. El objetivo es integrarlos en ciclos de prueba para ejecutarlos.
+
+¿Qué es un ciclo de prueba?
+Es el conjunto de casos de prueba para poder ejecutarlos, ósea que estén listos para poder llevarlos a la etapa de ejecución, y se ejecuta el 100% de los casos de prueba programados en este ciclo. Esté te puede indicar la calidad del software al ver que porcentaje de casos de prueba fueron pasados y fallados. El responsable de esto es el Líder de pruebas.
+
+Estatus de los casos de prueba.
+No – Ejecutado: Quiere decir que el caso de prueba aún no se ha ejecutado.
+Pasado: Quiere decir que el resultado del caso de prueba es el esperado y se puede pasar al siguiente caso de prueba.
+Fallado: Quiere decir que el resultado del caso de prueba NO es el esperado y se debe levantar un defecto o un bug.
+Detenido por error o bloqueado: Quiere decir que hay un caso de prueba que fallo, entonces este caso de prueba no se puede ejecutar y se va a ejecutar hasta el siguiente ciclo de prueba.
+Proyectos de Prueba
+
+Tipos de proyectos de prueba.
+Nuevos: Es cuando empiezas a desarrollar un producto de software desde cero, esto puede llevar mucho tiempo.
+Mantenimientos: Estos son modificaciones o actualizaciones que se le hacen a los proyectos de software que ya existen. Esto puede llevar algunas semanas
+Incidentes: Son problemas productivos que se deben atender de forma inmediata. Esto debe llevar el menor tiempo posible.
+
+Alta de un proyecto de prueba.
+Para dar de alta un proyecto de prueba se debe tener:
+-	Nombre del proyecto.
+-	Tipo de proyecto.
+-	El estado del proyecto.
+-	A que unidad de negocios pertenece.
+-	Cuando inicia y cuando termina.
+-	Saber quien es el coordinador del área de negocios a la que pertenece.
+-	Saber quien es el desarrollador, el ejecutivo de pruebas, el ingeniero etc.
+-	El numero de cambio relacionado al proyecto.
+-	Si tiene un proyecto dependiente de el o si es dependiente de un proyecto y saber cuáles son.
+-	Cuantos ciclos de prueba tiene el proyecto.
+-	En qué país se ejecuta.
+-	El repositorio oficial del proyecto
+-	Descripción de la estrategia del proyecto.
+
+Estatus de proyectos de prueba.
+1.	Pre-Estimación: Validar que el proyecto tenga sentido y sea factible, esto es solamente de la estimación de la prueba no del proyecto en general.
+2.	Estimación: Es donde se refina los detalles de los esfuerzos de prueba y se hace en horas.
+3.	Planificación: Se genera el plan del trabajo del proyecto.
+4.	Línea Base: Se indica que el esfuerzo en horas se ha cerrado.
+5.	Abierto: Es cuando el proyecto ya se está trabajando.
+-	Cancelado: Puede caer en este estado si ya no se requiere o si no hay recursos para el.
+-	Suspendido: Se detiene temporalmente y se puede reactivar en cualquier momento.
+6.	Terminado: Es cuando ya se concluyo el proyecto y está listo para ir a producción.
+
+Clasificación de proyectos de prueba.
+Evolutivos: Proyectos que se requieren para operar la empresa.
+Normativos: Proyectos que son regulaciones externas gubernamentales que nos obligan a generar las acciones que se piden en nuestros sistemas y reportarlas a esas entidades gubernamentales.
+Administrativos: Son proyectos internos para gestiones operacionales de la misma empresa.
+
+Áreas de prueba.
+El responsable de las áreas de prueba es el coordinador de pruebas, esté tiene varias responsabilidades, como definir las estrategias de cobertura anuales, la calidad de los productos, establecer las políticas de calidad en el área, etc.
+Funcionales: Se validan los requerimientos para que funcione el software, también que el sistema haga lo que tiene que hacer y que no haga lo que no debe hacer.
+No funcionales: Se validan todos los requerimientos de calidad del software y todos sus atributos, como el tiempo de respuesta o su vulnerabilidad para que no sea hackeado, además de realizar pruebas de estrés, de volumen etc.
+Ambiente: Es el área responsable de todo lo relacionado a el ambiente donde se van a ejecutar las pruebas. Como la integridad del ambiente, proporcionar los datos para la prueba, dar soporte antes, durante y después de la prueba, etc.
+Control: Es el área responsable de monitorear el desempeño de las demás áreas, como que todo lo hagan en tiempo y forma, vigilar sus recursos tanto como monetarios o recursos humanos, ofrece indicadores para la toma de decisiones, etc. También a veces es mentor de las demás áreas.
