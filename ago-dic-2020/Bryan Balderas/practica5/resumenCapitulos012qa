@@ -1,0 +1,14 @@
+Resumen capitulos 0,1 y 2
+En estos capitulos al principio sobre todo, en los capitulos 0 y 1 se nos da una introduccion mas que nada, sobre como es el perfil del tester y que temas son los vistos en este curso.
+
+En el capitulo dos ya comienza explicandonos que es una prueba, cuales son sus tipos como por ejemplo las pruebas automaticas la cual se programa, la prueba no funcional o de desempeno la cual solo busca medir la cantidad de recursos se ocupan durante la prueba, aqui se mencionan las vistas en clase como pruebas de estres o equilibrio.
+
+Luego se nos explica el ciclo de vida de un proyecto de prueba comenzando con el analisis, luego la planeacion en base al analisis, se pasa al diseno donde ya se comienza a trabajar en los casos de prueba, tambien se pasa al ambiente, que sera donde se haran las pruebas y justo ahi comienza la ejecucion, ya despues de la ejecucion sigue la parte de UAT que es donde el usuario hace pruebas mas en general o mas especificas, y por ultimo esta la fase de cierre que es donde se entregan los resultados de la prueba.
+
+En el siguiente video se nos explica que es un caso de prueba, y lo definen como diferentes pasos a seguir, tomando como partida el que se tienen entradas con precondiciones para probar el sistema, y de etos se obtiene una salida que es la que nos dira si la prueba se llevo a cabo de manera correcta
+
+Despues de manera general nos platican sobre que es un script de pruebas que basicamente son los pasos a seguir en la realizacion de las pruebas, tambien se nos habla sobre los datos de prueba y el TestWare
+
+La ejecucion de prueba es ya tomar cada caso de prueba y llevar a cabo los pasos y procedimientos para comenzar a probar, cada caso y ejecucion tiene un resultado el cual sera comparado, teniendo el resultado actual contra el resultado esperado, y de no ser iguales, se tendra que notificar al desarrollador, de ser correctos solo se documenta el caso y se continua.
+
+Al final se nos habla de las areas de pruebas, teniendo el area de pruebas funcionales, el area funcional solo valida que el sistema haga lo que debe de hacer y que no haga lo que no debe de hacer, el area no funcional se encarga de validar todos los requerimientos y atributos de calidad del software como tiempos de respuesta, seguridad y el uso de recursos del sistema a probar, el area de ambiente de pruebas es como su nombre lo indica, es el area encargado de tener siempre listos los ambientes donde se realizaran las pruebas y por ultimo esta el area de control, esta area monitorea las demas areas, sus herramientas, los procesos que siguen, vigila el uso de recursos y en ocasiones es una area de mentores.
