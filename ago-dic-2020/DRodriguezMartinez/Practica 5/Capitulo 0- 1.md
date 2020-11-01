@@ -34,7 +34,8 @@ Un ejecutador de casos de prueba, debe de entender:
 
 
 El CEPS pretende generar dicho perfil mediante el temario en el curso
----
+
+------
 **Flujo de ejecucion normal de las actividades de un ejecutor de pruebas:**
 
 1. _Se le asigna un nuevo proyecto_ ---> Recibe y revisa los insumos
