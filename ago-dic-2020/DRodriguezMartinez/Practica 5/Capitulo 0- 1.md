@@ -32,8 +32,10 @@ Un ejecutador de casos de prueba, debe de entender:
 > - Manejadores de bases de datos y SQL basico
 > - Los planes de prueba de un proyecto de pruebas
 
+
 El CEPS pretende generar dicho perfil mediante el temario en el curso
-Flujo de ejecucion normal de las actividades de un ejecutor de pruebas:
+---
+**Flujo de ejecucion normal de las actividades de un ejecutor de pruebas:**
 
 1. _Se le asigna un nuevo proyecto_ ---> Recibe y revisa los insumos
 2. *Se validan los accesos a los casos de prueba y aplicacion a probar* ---> Revisa tener los suficientes datos de prueba
