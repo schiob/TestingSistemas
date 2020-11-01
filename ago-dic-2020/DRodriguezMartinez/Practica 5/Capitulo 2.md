@@ -39,7 +39,7 @@ Funcionales | No Funcionales
 
 <p align="center"><img src="images/Blank diagram.png" alt="Ciclo de vida de un proyecto de prueba" width="600" height="600"></p>
 
-### Test Cases
+#### Test Cases
 <p align="center"><img src="images/CodeCogsEqn.svg" alt="Test-Case"></p>
 
 
