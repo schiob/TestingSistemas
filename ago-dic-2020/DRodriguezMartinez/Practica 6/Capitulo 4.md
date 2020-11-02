@@ -5,7 +5,7 @@
   * [Herramientas de Gestion de Pruebas](#herramientas-de-gestion-de-pruebas)
     * [Organizacion de una Herramienta de Gestion](#organizacion-de-una-herramienta-de-gestion)
   * [Herramientas para Grabar Evidencia](#herramientas-para-grabar-evidencia)
-  * [Herramientas de Administracioan de Defectos](#herramientas-de-administracion-de-defectos)
+  * [Herramientas de Administracion de Defectos](#herramientas-de-administracion-de-defectos)
   * [Herramientas de Administracioan de Ambiente](#herramientas-de-administracion-de-ambiente)
   
 ---
