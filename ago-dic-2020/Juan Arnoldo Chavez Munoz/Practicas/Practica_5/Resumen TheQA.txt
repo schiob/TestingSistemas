@@ -1,0 +1,47 @@
+Resumen locochón sobre los primeros 3 temas (0,1,2)
+
+Se ve interesante ya que dice que aprenderemos:
+-Las tareas que realiza un ejecutor de prueba de software.
+-Las bases de prueba que debe tener un ejecutor de prueba.
+-Los puntos importantes requeridos en la industria para cubrir 
+ ese perfil.
+
+1.-Perfil Ejecutor de Prueba:
+No es fácil serlo, ya que debe cumplir con muchos requerimientos como:
+-conocer el ciclo de vida de una prueba
+-conoce un plan de ejecución y ciclos de prueba
+-Interpretar diseño de casos de prueba
+-Determina si el caso de prueba es exitoso, fallido,
+ bloqueado o detenido por error.
+-Escribir defectos y el ciclo de vida de estos...
+
+Viendo la evolución con el paso del tiempo acerca de un ejecutor de pruebas
+me parece bien, me refiero a digamos el perfil/tiempo ya que según comentan 
+aprox. de dos a cuatro años (siendo aún estudiante) si sigues enfocado en 
+testing y continúas aprendiendo por medio de certificaciones (o de otra manera)
+ya para esos cuatro años (o quizá menos) puedes convertirte en un gerente de pruebas
+lo cual pues suena bien... si es que quieres dedicarte al testing (que en mi caso
+sí me gusta, pero no tanto como para dedicarme sólo a ello :c )
+
+Tipos de pruebas:
+La Funcional - manual: que es donde se valida que el sistema haga lo que tiene que hacer
+o también lo que no debe hacer.
+
+Funcional - Automatizada:
+es donde se utiliza un framework para automatizar las acciones manuales y poderlas hacer 
+n veces de manera automática. 
+
+No funcional - Desempeño:
+se valida la capacidad del hardware, ya que se miden todos los recursos que la app
+necesita para poder operar.
+
+No funcional - seguridad:
+Se utilizan herramientas para detectar las vulnerabilidades de los sistemas WEB.
+
+Script de pruebas se define en 6 pasos básicos:
+1.-Como acceder a la aplicación
+2.-Como colocar las precondiciones
+3.-Como ejecutar el caso
+4.-Como validar el resultado esperado
+5.-Como validar las post-condiciones
+6.-Como salir del sistema
