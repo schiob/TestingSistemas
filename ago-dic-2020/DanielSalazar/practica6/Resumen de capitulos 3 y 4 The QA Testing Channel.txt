@@ -1,0 +1,83 @@
+Certificación en ejecución de pruebas de software
+Calidad y pruebas de software – Resumen de los capítulos 3 y 4.
+Juan Daniel Salazar Coronado	Matricula: 17289193	Profesor: Chio Benavides Santiago
+3 - Proceso de ejecución de prueba
+3.1-Proceso de ejecución ERA
+	3.1.1-Modelo ERA
+Estabilización: Se ejecutan el 100% de los casos de prueba, si se alcanza menos de 80% de efectividad se empieza a iniciar nuevamente el ciclo de estabilización, pero si se alcanza algo igual o mayor al 80% de efectividad se inicia el ciclo de regresión.
+Regresión: Se prueba el 20% de caos de prueba que tiene asociado un defecto, se debe lograr el 100% de estas pruebas mínimo para poder brincar al siguiente ciclo, si esto no se logra continuamente se va a estar reiniciando el ciclo de regresión, si del 20% de casos de prueba que tiene asociado un defecto se alcanza menos del 15% se regresa hasta la etapa de estabilización, si se llega al 100% se avanza al siguiente ciclo.
+Aceptación: Aquí se prueba el 20% de la etapa de regresión y el 80% de la estabilización, si hay defectos se regresa a la etapa de regresión, si no hay problemas se pasa a la siguiente etapa.
+UAT: Se hacen las pruebas de aceptación de usuario.
+
+3.2-Pre-requisitos para la ejecución
+	3.2.1-Casos de prueba
+Los CP deben estar creados en una matriz de prueba o en alguna herramienta de gestión de pruebas.
+Deben tener por lo menos la trazabilidad del escenario: esto es que los casos de prueba estén asociados a un escenario, además de tener su script y sus datos.
+Deben tener una indicación de donde están almacenados, los casos de prueba, los scripts y los datos. Si están en una herramienta de gestión de pruebas deben indicarte como poder llegar a estos casos de prueba.
+Los casos de prueba deben tener un visto bueno de el experto de negocio o de algún analista experimento que conozca como funciona lo que se va a probar, y que se entiendan fácilmente para no tener que preguntar como ejecutar los casos de prueba.
+	3.2.2-Datos de prueba
+Para poder ejecutar los casos de prueba se necesitan los datos dinámicos o estáticos, cada caso de prueba requiere entradas, estos datos deben estar visibles en tu aplicativo bajo prueba o en la base de datos. También no deben ser copias productivas, tienes que enmascarar los datos sensibles.
+
+	3.2.3-Ventana Funcional
+Una prueba no debe tomar los datos de otra prueba, para esto se implementan las ventanas de prueba funcional.
+Para una ventana funcional debes tener un checklist cumplido con lo siguiente:
+1. Casos de prueba listos
+2. Datos generados
+3. Plan de ejecución 
+4. Aplicativo AUT instalado.
+
+	3.2.4-Plan de ejecución
+Es el plan a seguir por los ejecutores de prueba para determinar quién, y cuando inician y termina su prueba, revisar independencias con otras pruebas y fechas de datos. Generalmente va a cambia cada que se ejecute un ciclo de prueba.
+El plan de ejecución consiste en:
+-	Secuencia de ciclos de prueba
+-	Secuencia de casos de prueba
+-	Responsables de ejecutar casos de prueba
+-	Repositorios de casos de prueba
+-	Repositorio de evidencias
+-	Centro de métricas - ¿Dónde reporto mi avance?
+-	Mecanismo y modelo de administración de defectos
+-	Estatus de casos de pruebas
+-	Estatus de defectos de prueba
+
+	3.2.5-AUT – Aplicativo Bajo prueba
+Es el aplicativo o producto de software que vas a validar con los casos de prueba previamente diseñados y asignados a ti como ejecutor de pruebas. Este debe estar instalado en tu ambiente de pruebas, y debes recibir el como acceder a este aplicativo así como los usuarios y las contraseñas.
+
+3.3-Roles y responsabilidades
+	3.3.1-Ejecutor de pruebas: Ejecuta la prueba siguiendo el script de prueba.
+	3.3.2-Ingeniero de pruebas: Diseña especificaciones y casos de prueba, también procedimientos/scripts de pruebas manuales.
+	3.3.3-Lider de pruebas: Define el esfuerzo de horas, determina el equipo de trabajo, diseña estrategias y plan de pruebas, monitorea el desempeño e indicadores de la prueba, puede suspender y reanudar la prueba, y cierra la prueba y genera la certificación de esta.
+	3.3.4-Lider no funcional: Realiza las mismas tareas que el líder de pruebas y algunas más, pero para las pruebas no funcionales.
+	3.3.5-Ingeniero de desempeño: Interpreta las necesidades cuantitativas de calidad de el proyecto y plan de prueba no funcional, también diseña los escenarios no funcionales, diseña y construye los scripts de prueba no funcionales, ejecuta los escenarios que diseño, obtiene las métricas e interpreta las métricas.
+	3.3.6-Lider de automatización: Implementa frameworks relacionados a arquitecturas de automatización, define el esfuerzo de horas y el equipo de trabajo relacionado a ese esfuerzo de horas, y define las estrategias y el plan de pruebas automatizadas, también monitorea su desempeño e indicadores, al final ofrece las métricas y los resultados de la prueba automatizada.
+	3.3.7-Ingeniero Automatización: Diseña los scripts de automatización, los ejecuta, y conoce los frameworks y todo lo relacionado a la ejecución de pruebas automatizadas.
+	3.3.8-Lider de ambiente: Define la arquitectura de prueba, da seguimiento a las necesidades del área, también monitorea el desempeño del área y ambiente de prueba. Y define la periodicidad de actualización de datos y scrambling.
+	3.3.9-Dispatcher: Recibe las solicitudes de ambiente de prueba, los canaliza a las personas que los pueden ayudar específicamente, monitorea el desempeño de la solicitud y que tenga la atención adecuada.
+	3.3.10-Ingeniero de datos o resolutor: Recibe las solicitudes de ambiente de prueba asignada por el dispatcher, las atiende, dando respuesta y atención.
+	3.3.11-Desarrollador de software: Es el ingeniero que desarrolla el código relacionado al producto de software que se esta probando, es el responsable de corregir los defectos de las pruebas, conoce las reglas del negocio y las estructuras internas del sistema.
+
+4 – Herramientas para la ejecución
+4.1-Organización de pruebas en herramientas ALM
+	4.1.1-Herramiente de gestión de pruebas
+Es una herramienta que se utiliza para automatizar los procesos de prueba, y te ayuda a gestionar todos los procedimientos para asegurar la calidad como testware, defectos, indicadores y requerimientos.
+
+	4.1.2-Organización de pruebas en herramientas ALM
+Una herramienta de gestión de pruebas debe tener por lo menos los siguientes módulos: - - Requirements: Administra los requerimientos del proyecto, puedes configurar procesos de negocio y aplicativos.
+- Test Plan: Administra los casos de prueba, puedes organizarlos en escenarios. Y mantener una trazabilidad al modulo de requerimientos con aplicativos o requerimientos.
+- Test Lab: Administra la ejecución de casos de prueba, construye tu plan de ejecución, asignas testers y casos de prueba.
+- Defects: Administra los defectos detectados durante la prueba, configuras el ciclo de vida de el defecto y las plantillas.
+- Dashboard: Administra los indicadores requeridos para la toma de decisiones en tiempo real y para los entregables de calidad.
+El testware esta conformado de los módulos requirements, test plan y test lab, es importante que su trazabilidad esté bien hecha.
+Es importante el buen uso y el enlace de los módulos requirements y test plan para garantizar una buena organización amigable para facilitar la reusabilidad.
+También es importante el bue uso de los módulos test lab y defects para obtener siempre métricas reales.
+
+4.2-Evidencias de prueba
+	4.2.1-Herramientas para grabar evidencias de prueba
+Este tipo de herramientas nos permiten grabar videos, fotos de las pantallas o imágenes para tener la evidencia de la prueba que estamos realizando, ya sea exitosa o fallida. Se deben dejar estas evidencias en el repositorio oficial del proyecto.
+
+4.3-Administración de defectos
+	4.3.1-Administración de defectos
+Es importante mantener el estar registrando los defectos, documentando las evidencias, generar y mantener el ciclo de vida de un defecto, los roles que están involucrados y los indicadores y métricas que están conectados a este defecto. También se tienen distintas herramientas de open source o paga que nos pueden ayudar a la administración de defectos.
+
+4.4-Administración de ambiente
+	4.4.1-Administración de ambiente
+Lo importante es mantener los datos siempre vivos y disponibles, mantener los diagramas de bd y servidores, así como los de aplicativos por servidor, también si hay batch y su hora de ejecución, se debe mantener en operación para tener algo lo más similar a lo real.
