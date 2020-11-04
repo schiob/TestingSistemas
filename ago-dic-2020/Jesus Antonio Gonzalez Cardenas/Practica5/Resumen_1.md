@@ -106,7 +106,7 @@ No funcionales:
 * Desempeño - Tiene un enfoque a los atributos del sistema, buscando leer el uso de recursos que el aplicativo utiliza para operar, CPU, ancho de banda, usuarios concurrentes, tiempos de respuesta, y validando que no se degrade el servicio mientras se realiza este tipo de pruebas.
 * Seguridad - Prueba que utilizamos para detectar las vulnerabilidades de los sistemas WEB. Se corren una serie de algoritmos predefinidos de hackeo para identificar los huecos en los sistemas.
 
-#### 3 Ciclo de vida de una prueba de software
+#### -3 Ciclo de vida de una prueba de software
 1. Análisis - Fase para identificar la estrategia y estimación para la atención del proyecto
 2. Planeación - Fase para identificar el plan detallado para la atención del proyecto. Este puede contener el plan de trabajo, equipo, método, alcance entre otros.
 3. Diseño -  En esta etapa se construye toda la materia de prueba llamada TestWare: Casos de prueba, datos de prueba, defectos estáticos.
