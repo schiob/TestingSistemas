@@ -15,7 +15,7 @@ def Tri_from_file(filepath: str) -> str:
     if triangleInequality(a,b,c):
         if a == b == c: return "Equilátero"
         if a == b or a == c or b == c: return "Isóceles"
-        if (a != b != c): return "BASURA PARA QUE NO PASE EL TEST"
+        if (a != b != c): return "Escaleno"
 
     return "No triángulo"
 
