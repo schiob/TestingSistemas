@@ -185,3 +185,79 @@ La línea de coordinaciones es esta:
 3. En el caso de que se haya escalado a cualquiera de los últimos cuatro, si estos aún tienen el problema, entonces lo escalan al Test Manager/Coordinador de la prueba.
 4. El Test Manager/Coordinador de la prueba si no puede resolver el problema y necesita escalarlo, lo escala al Director de QA y de prueba de software.
 5.  Si el Director de QA/Pruebas de software no puede resolver el problema, entonces, lo escala a la Dirección General de TI.
+
+## Capítulo 4 - Herramientas para la Ejecución
+### 4 - 1 Organización de pruebas en herramientas
+
+#### - 1 Herramientas de gestión de pruebas
+
+Es una herramienta que se utiliza para automatizar los procesos de prueba, y ayuda a gestionar todos los procedimientos para asegurar la calidad como:
+
+- Testware
+- Defectos
+- Indicadores
+- Requerimientos
+
+#### - 2 Organización de pruebas en herramientas ALM
+
+La herramienta a utilizar debe tener por lo menos estos módulos:
+
+- Requirements: Administra los requerimientos del proyecto, se puede configurar procesos de negocio y aplicativos.
+- Test Plan: Administra los casos de prueba, se puede organizar en escenarios y mantener una trazabilidad al módulo de requerimientos con aplicativos o requerimientos.
+- Test Lab: Administra la ejecución de casos de prueba, se construye el plan de ejecución, asigna testers y ciclos de prueba.
+- Defects: Administra los defectos detectados durante la prueba, configuras el ciclo de vida del defecto y plantillas.
+- Dashboard: Administra los indicadores requeridos para la toma de decisiones en tiempo real y para los entregables de calidad.
+
+Los módulos que hay que tener en cuenta para administrar las siguiente áreas son:
+- Testware: Administra la trazabilidad de la materia de prueba de software.
+   - Requirements.
+   - Test Plan.
+   - Test Lab.
+
+- Reusabilidad: Es importante monitorear el buen uso y enlace de estos módulos para garantizar una buena organización amigable para facilitar la reusabilidad.
+   - Requirements.
+   - Test Plan.
+
+- Métricas: Es importante monitorear el buen uso de estos dos módulos para obtener siempre métricas reales.
+   - Test Lab.
+   - Defects.
+
+### 4 - 2 Evidencias de prueba
+#### - 1 Herramientas para grabar evidencias de prueba
+Este tipo de herramientas nos permite grabar la evidencia de la prueba que estamos realizando, ya sea exitosa o fallida.
+- Grabar Video.
+- Tomar captura de pantalla (JPG, PNG, etc).
+
+### 4 - 3 Administración de defectos
+#### - 1 Administración de defectos
+
+Se debe mantener esta información y/o realizar estas actividades:
+- El registro de defectos.
+- Documentar evidencia.
+- Ciclo de vida de un defecto.
+- Roles:
+   - Desarrollador y tester.
+- Indicadores o métricas.
+
+Esta información mantiene con vida a un área de testing, ya que se tienen los indicadores para evidenciar el retorno de inversión y que se detectan defectos, además de que esto ayuda al líder con una mejor toma de decisiones.
+
+Algunas herramientas que se encargan de administrar el ciclo de vida de defectos:
+- Bugzilla
+- tC One
+- Compuware
+- HP Quality Control
+- Testlink
+- TFS
+
+### 4 - 4 Administración de ambiente
+#### - 1 Administración de ambiente
+
+Se debe mantener:
+- Datos.
+- Diagramas de base de datos.
+- Diagramas de servidores.
+- Diagrama de aplicativo por servidor.
+- Batch, hora de ejecución.
+
+EL siguiente diagrama muestra un ejemplo de cómo se gestiona un ambiente / el ciclo de vida de un ticket de una solicitud de modificación al ambiente.
+![image](diagrama.png "Diagrama")
