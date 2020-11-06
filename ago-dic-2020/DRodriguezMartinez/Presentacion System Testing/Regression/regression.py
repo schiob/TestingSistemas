@@ -1,4 +1,4 @@
-def Tri_from_file(filepath: str) -> str:
+def Tri_from_file(filepath: str, usuario: str = "") -> str:
     
     def triangleInequality(a,b,c):
 
@@ -13,6 +13,7 @@ def Tri_from_file(filepath: str) -> str:
 
     a,b,c = [int(i) for i in content.split()]
     if triangleInequality(a,b,c):
+        # if a == b == c: return f"Hola, {usuario}, tu triangulo es Equilátero"
         if a == b == c: return "Equilátero"
         if a == b or a == c or b == c: return "Isóceles"
         if (a != b != c): return "Escaleno"
@@ -22,3 +23,4 @@ def Tri_from_file(filepath: str) -> str:
 ###
 if __name__ == "__main__":
     print(Tri_from_file("triangulo.txt"))
+    # print(Tri_from_file("triangulo.txt"), "drdz")
