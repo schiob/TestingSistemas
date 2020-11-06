@@ -6,5 +6,5 @@ def program_example(sentence: str):
 if __name__ == "__main__":
     sentence = input()
 
-    print(program_example(sentence))
-    # print("Valid sentence:", sentence, "\n")
+    # print(program_example(sentence))
+    print("Valid sentence:", sentence, "\n")
