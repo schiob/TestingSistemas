@@ -1,0 +1,17 @@
+resumen unidad 3 y 4
+comienza hablandonos sobre el modelo ERA/SRA(Estabilizacion,regresion y aceptacion)
+Se nos muestra el diagrama de como funciona este modelo, iniciando con la estabilizacion,despues el ciclo de regresion que es donde se van midiendo porcentajes en cuanto defectos, si pasa la regresion,se pasa a la etapa de aceptacion donde todos los casos de prueba pasan, en caso de haber un defecto se regresa a regresion, de lo contrario se va a las pruebas de aceptacion del usuario.
+Despues se nos habla sobre los casos de prueba, estos deben estar creatos en una matriz de prueba o en una herramienta de gestion de prueba,tambien se debe tener la trazabilidad de escenario donde se nos dan descripciones del caso, tambien deben de darnos como seguir el proceso de las pruebas.
+Otro de los pre-requisitos para los casos de prueba es el de los datos ya que hay datos estaticos y dinamicos y estos datos deben de estar almacenados en AUT
+Despues se nos habla de la ventana de prueba,en donde el area de ambiente es la encargada de cuidar que una prueba no tome datos de otra,para una ventana se debe tener un checklist cumpliendo con:-casos de prueba,-datos generados,-plan de ejecucion y aplicativo AUT.
+Lo siguiente es el plan de ejecucion, este es el plan a seguir por los ejecutores de prueba para determinar quien y cuando inicia o termina su prueba, este es comun en equipos de 3 o mas ejecutores,tambien este plan lo genera el lider de prueba,este plan se puede elaborar en excel o en una herramienta aparte,el plan es una secuencia de casos de prueba donde se dicta quienes son los responsables,los repositorios,las metricas y los estatus de los casos de pueba.
+La unidad 3 termina con los roles y reponsabilidades en el area de pruebas,comienza mostrandonos la jerarquia del area de pruebas.
+El ingeniero de pruebas es quien conoce el negocio ya que entiende los flujos y escenarios para poder generar los procedimientos y casos de prueba.
+Luego esta el lider de pruebas que es quien conoce el negocio para definir las horas para poder garantizar todas las pruebas,determina el equipo de trabajo,disena estrategias y planes de prueba.
+
+La unidad 4 trata sobre herramientas para la ejecucion de pruebas,lo primero que nos comenta es sobre la organizacion de la herramienta de prueba y que debemos revisar al querer usar una, los puntos mas importantes son: requerimientos,test plan, test lab,defects y dashboard, que son los modulos mas utiles para gestionar las pruebas.
+El modulo de requerimientos es desde donde se administran los requerimientos del proyecto,el modulo de test plan es desde donde se disenan los casos de prueba y se administran,el modulo de test lab es donde se administran las ejecuciones de casos de prueba,se asignan a los tester, el modulo de defectos es donde se administran los defectos detectados y el modulo de dashboard es donde se muestran los resultados.
+
+Despues se nos hablan de las herramientas para grabar las evidencias de prueba,en el video en particular nos recomiendan una herramienta pero el fin de esta debe ser solo darnos la oportunidad de obtener capturas de video y de imagen de las pruebas.
+
+La unidad termina hablando de la gestion del ambiente, en donde debemos mantener los datos,diagramas de bd, diagramas de servidores, diagramas de aplicativos y hora de ejecucion.
