@@ -1,0 +1,150 @@
+Certificación en ejecución de pruebas de software
+
+Calidad y pruebas de software – Resumen de los capítulos 5 y 6.
+
+Juan Daniel Salazar Coronado	Matricula: 17289193	Profesor: Chio Benavides Santiago
+
+5 – Defectos
+5.1- Introducción al defecto
+	5.1.1- ¿Qué es un defecto?
+Es una diferencia entre el resultado que esperas de tu caso de prueba contra el resultado que muestra el sistema estando bajo prueba, también se define como un error funcional del código.
+	
+	5.1.2- ¿Qué no es un defecto?
+Falla del sistema causada por un ambiente que está mal configurado, también puede ser que no se aplicaron los datos adecuados o que realmente hay una falta de datos, de igual manera puede ser un desconocimiento de la operación del sistema o de cómo funciona el negocio, en otras ocasiones puede ser que el caso de prueba sea muy ambiguo.
+
+5.2- Defectos Accionables
+	5.2.1- ¿Como levantar un defecto?
+Es importante hacer accionable un defecto, esto para que el desarrollador pueda accionar el defecto y buscar su solución. Se debe llenar una plantilla con toda la información del defecto, la plantilla puede estar diseñada en distintos programas y al final enviársela al desarrollador.
+
+	5.2.2- Datos de una plantilla de defecto.
+		Los datos que debe llevar una plantilla de defectos son:
+-	Paquete
+-	Origen
+-	No. De Error
+-	Clasificación de errores
+-	Estatus
+-	ID Bug
+-	Prioridad
+-	Severidad
+-	Responsable Pruebas
+-	Responsable Solución
+-	Descripción del Bug
+-	Ciclo Encontrado
+-	Ciclo Cerrado
+-	Resultados esperados en documento de análisis o Ejecución de pruebas
+-	Pasos para reproducir el error
+-	Comentarios
+-	Como se solucionó el error
+-	Video Caso de Prueba
+-	Fecha del reporte
+-	Hora del reporte
+-	Fecha corrección del BUG
+-	Hora corrección del BUG
+-	Fecha Cierre
+-	Bug Impacto a Pruebas 
+-	Impacto en retrabajo
+
+	5.2.3- ¿Qué es un defecto accionable?
+Es enviar toda la información de el defecto que encontramos de una forma clara y lo mayormente completa para que el desarrollador pueda volver a reproducir el defecto y entienda como se pueda arreglar, cual es la falla, si se debió a una mala ejecución de la prueba, etc.
+
+	5.2.4- Checklist para documentar un defecto
+		1. Asegurarse que el defecto es funcional y no por el ambiente.
+		2. Reproduce el error
+		3. Tomar evidencias de el paso a paso que se hace para reproducir el defecto
+4. Documentar los pasos para reproducir el defecto
+5. Documentar el defecto en tu herramienta para la plantilla.
+6. Asegúrate de que el desarrollador esté enterado de el registro de este defecto.
+
+	5.2.5- Severidad vs Prioridad en un defecto
+		La severidad es el impacto absoluto en el desarrollo.
+Sus clasificaciones son:
+1.	Baja - Es un error cosmético o estético, no impacta en el funcionamiento
+2.	Media – La falla tiene un error menor y no perjudica la funcionalidad crítica
+3.	Alta - La falla tiene un error en la ruta crítica, pero hay un camino alterno para continuar las pruebas.
+4.	Bloqueante – La falla detiene las pruebas y es de la ruta crítica, se pierden datos, funcionalidades y no se puede continuar las pruebas.
+La prioridad es de importancia para el usuario o cliente.
+Sus clasificaciones son:
+1.	Baja – No es funcional, no se visualiza fácilmente.
+2.	Media – La solución implementada como camino alterno es aceptable para largo plazo.
+3.	Alta – La solución implementada como camino alterno es aceptable para largo plazo, no es muy buena.
+4.	Bloqueante – El proceso diario esta severamente impactado o está detenido.
+El defecto se mide multiplicando el valor de su clasificación en la severidad y la prioridad.
+
+5.3 – Evidencias de los defectos
+	5.3.1 – Formato de evidencias
+Cada caso de prueba debe llevar una evidencia por lo menos con los siguientes datos: a que proyecto está asociada, quien es el ejecutor de pruebas, titulo del caso de la prueba, ciclo de prueba que se esta ejecutando, caso de prueba que se esta ejecutando, el paso del caso de prueba que se esta ejecutando, el video o imagen asociada a la evidencia y comentarios relevantes sobre este.
+	
+5.4 – Ciclo de vida de un defecto
+	5.4.1 - Ciclo de vida de un defecto
+		1. Se reporta la falla por los medios definidos
+		2. Se envía al desarrollador
+		3. El desarrollador la reproduce y corrige
+		4. El tester vuelve a revisar que este bien aplicada la corrección
+		5. El tester aprueba o rechaza la corrección.
+
+5.5 – Matriz o herramienta para los defectos
+	5.5.1 – Matriz de defectos
+Una matriz de defectos debe llevar la siguiente información: Proyecto al que pertenece, ID Defecto, Clasificación, Estatus, Prioridad, Severidad, Tester, Desarrollador, Descripción de la falla, Ciclo y Fecha.
+	
+	5.5.2 – Herramienta de gestión de defectos
+Una herramienta de administración de defectos debe poder tener la opción de consultar los defectos encontrados, registrar un nuevo defecto, ver los indicadores que se han colectado con los defectos encontrados, y tener filtros para separar los defectos. También debe tener la posibilidad de poder registrar toda la información relevante de un defecto en una misma pantalla cuando se registra un nuevo defecto.  De igual manera se deben tener distintas métricas en la parte de los indicadores.
+
+6 – Ejecución Ágil
+6.1 – Inducción a métodos agiles
+	6.1.1 – ¿Qué es un método ágil?
+Es un tipo de ciclo de vida que permite al equipo del proyecto incorporar la retroalimentación e ir incrementando la experiencia del equipo durante el proyecto.
+
+	6.1.2 – Agile Manifiesto
+Nos interesa más la interacción cara a cara entre los profesionistas en lugar de estar utilizando métodos o procesos para poder comunicarnos.
+Se prefiere que el usuario tenga el software completo y funcional sobre estar creando documentación muy larga y extensa.
+Se le da más peso a empezar a desarrollar el software que a la parte conceptual, también que el cliente este colaborando con el equipo.
+Tener retroalimentación cada que se implementa una nueva versión, un cambio o una funcionalidad en lugar de estar siguiendo un plan.
+
+6.1.3 – Ciclo de vida incremental
+Desarrollar por partes el proyecto de software para después integrarlas a medida que se completan. Ósea agregar cada vez más funcionalidades al sistema. Un ejemplo de un desarrollo puramente incremental puede ser la agregación de módulos en diferentes fases. Esto sería que cada vez que se agrega un incremento este debe pasar por las fases de análisis, diseño, ejecución del código y pruebas.
+
+	6.1.4 – Ciclo de vida Iterativo
+En cada ciclo, iteración (en cascada), se revisa y se mejora el producto. Es importante añadir que este ciclo no implica añadir funcionalidades en el producto, pero si revisión y mejora. Un ejemplo de desarrollo iterativo es aquel basado en refactorizaciones, en el que cada ciclo mejora más la calidad del producto. Cada versión de esta pasa por las fases de análisis, diseño, ejecución del código y pruebas.
+
+	6.1.5 – Ciclo de Vida iterativo e incremental
+Cuando se juntan el ciclo de vida incremental y el iterativo da como resultado que al final de cada iteración se consigue una versión más estable del software, de más calidad y que añade nuevas versiones respecto a versiones anteriores.
+El ciclo de vida iterativo y el incremental se complementan, si falta alguno de los dos fracasa el proyecto de software aun queriendo ser agiles.
+
+	6.1.6 – Concepto de Iterativo e incremental
+El producto se desarrolla por incrementos en el que cada iteración obtiene una versión funcional del producto. El sistema se desarrolla poco a poco. Además, en cada iteración se obtiene una retroalimentación del usuario.
+	
+	6.1.7 – Ciclo de vida ágil
+Se tiene un plan donde existen “product owners” que definen los requerimientos del sistema y lo plasman en una lista de plan de liberaciones donde explican como van a ir liberando cada uno de los requerimientos, después se crean estos en la fase de colaboración, luego se entrega y se sabe si fue aceptado o no.  En si son tres fases, el plan, la colaboración y la entrega, la colaboración es donde trabajan todos los desarrolladores, analistas y testers para poder pasar a la fase de entrega.
+
+	6.1.8 – Iteración ágil
+		Cada iteración se tiene un producto backlog, este se inserta en un proceso ágil en un tiempo fijo de 2 a 4 semanas para desarrollar el sistema completo y funcional, la iteración tiene 3 etapas, la de inicialización donde se diseña la iteración, la de iteración donde se crean los distintos módulos del sistema y al final se hace un demo.
+
+	6.1.9 – Frameworks Agiles
+Los métodos que se crearon para apoyar este modelo de trabajo se llaman frameworks agiles, estos están centrados en ciclos iterativos e incrementales o en el flujo que es la concurrencia de las actividades. Algunos de los que están centrados en ciclos iterativos e incrementales son Scrum, Dev Ops, Learn Software Development, XP, Cristal y TDD, de los centrados en el flujo podemos mencionar a Kanban.
+
+6.2 – Pruebas Exploratorias
+	6.2.1 - ¿Qué es exploratory testing?
+Las pruebas exploratorias involucran el aprendizaje, planeación, ejecución de pruebas y reportar resultados de forma simultánea.
+
+	6.2.2 – ¿Qué no es exploratory testing?
+		Seguir un script, un guion o un procedimiento de pruebas.
+
+	6.2.3 – Exploratory testing VS Scripted testing
+El scripted testing es el procedimiento de prueba, el guion de prueba que nosotros diseñamos para poder ejecutar una prueba más adelante. 
+El exploratory testing es un método de prueba que es muy diferente de las pruebas por un script, en las pruebas exploratorias se debe ver que es un aprendizaje simultaneo, se diseña la prueba y se ejecuta la prueba al mismo tiempo.
+La diferencia es clara, para el scripted testing se debe tener todo diseñado antes de ejecutar las pruebas y en el exploratory testing no, en ese se diseña y ejecutan las pruebas simultáneamente.
+
+	6.2.4 – Técnicas de exploratory testing
+		Existen varias técnicas para poder hacer exploratory testing.
+Freestyle: se hace a la medida, no hay reglas, es buena cuando te familiarizas por ti mismo con la aplicación y para detectar problemas de usabilidad. El agile teste va a detectar al menos más del 80% de los defectos.
+Scenario based ET: Se definen escenarios de prueba y casos de uso y una lista de combinaciones que se van a ejecutar.
+Feedback ET: Es un derivado de la técnica del freestyle, construyes tu historia, la historia te guía en lo que sigue al futuro y usualmente se utilizan herramientas para ayudarte en esto.
+Strategy based: Utilizas el adhoc, ósea lo apropiado al contexto combinado con métodos estándar, se analizan los valores al limite y clases de partición equivalente, que son técnicas que te ayudan a definir una técnica aplicada al contexto que tú estás utilizando. Esto asegura que el tester pueda detectar defectos de forma más sencilla.
+Session based: Es un testeo basado en metas. Como los requerimientos del cliente o identificar riesgos.
+
+	6.2.5 – Proceso de el Exploratory Testing
+1. Crea una conjetura o modelo mental, algo que tu consideras que puede suceder pero no estás seguro.
+2. Crea una o dos pruebas que aprueben esa conjetura o modelo mental.
+3. Ejecuta la prueba y observa el resultado.
+4. Evalúa la salida contra tu conjetura, si fue cierto o falso, si el resultado esperado se dificulto o hubo una discrepancia.
+5. Repite el proceso hasta que la conjetura sea aprobada o rechazada.
