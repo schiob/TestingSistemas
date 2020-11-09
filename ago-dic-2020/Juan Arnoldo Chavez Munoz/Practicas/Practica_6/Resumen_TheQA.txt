@@ -1,0 +1,54 @@
+Resumen locochón de los temas 3 y 4 :D
+
+Modelo de ejecución ERA:
+Estabilización, regresión y aceptación.
+En la etapa de estabilización se ejecuta el 100% de los casos
+de prueba donde si se alcanza menos del 80 % de efectividad 
+entonces se realiza de nuevo, si no, se pasa al ciclo de 
+regresión donde sólo obteniendo el 100% de éxito es cuando se
+acepta esa etapa y se pasa a la etapa de aceptación.
+Si por el contrario en esta etapa se obtiene un porcentaje 
+menor al 15% se regresa a la etapa de estabilización y se 
+reestructura desde 0.
+
+Los Casos de Prueba (cp) deben:
+-Estar creados en una matriz de prueba o herramienta de prueba.
+-Deben tener la trazabilidad del escenario, o sea, que los CP 
+ estén asociados s los script y estos a los datos.
+-Se debe indicar en donde están almacenados los archivos de prueba.
+-Los CP deben estar validados por un experto y estos deben estar bien
+ detallados.
+
+Ventana de pruebas funcional:
+-El área de ambientes es el responsable de cuidar el choque o correlación
+ de pruebas (para evitar que 2 dif. pruebas que se ejecuten al mismo tiempo 
+ alteren los datos de otra prueba).
+
+-Requisitos:
+1.-Casos de prueba listos
+2.-Datos generados (estáticos y dinámicos)
+3.-Plan de ejecución
+4.-Aplicativo AUT instalado (application under test)
+
+Plan de ejecución:
+Básicamente es toda la planeación necesaria para la ejecución de pruebas
+los ciclos, casos, responsables, repositorios, evidencias, avances, defectos, etc.
+
+Herramienta de Gestión de pruebas:
+Es una herramienta que se utiliza para automatizar los procesos de prueba,
+y ayuda a gestionar todos los procedimientos para asegurar la calidad como:
+ -Testware
+ -Defectos
+ -Indicadores
+ -Requerimientos
+
+Gestión de defectos:
+Se registran los defectos, documenta la evidencia, se determina el ciclo de vida de
+un defecto y se muestran indicadores.
+
+Gestión de ambiente:
+Se trata de mantener los datos, diagrama de base de datos, diagrama de servidores,
+diagrama de aplicativos por servidor y tener un batch a la hora de ejecución.
+Aquí es donde se reciben ciertas solicitudes o fallas para procesar por medio de 
+diferentes personas para poder documentar correctamente la solicitud y ver si se aprueba
+o se rechaza y quién es el encargado de dicho proceso.
