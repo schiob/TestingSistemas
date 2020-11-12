@@ -1,0 +1,66 @@
+Capítulo 0. Inducción al curso
+En este capítulo se ve una introducción de lo que se va ver en el curso, como las ventajas, habilidades y conocimientos que vamos a adquirir.
+Se va aprender lo siguiente:
+•Las tareas que realiza un Ejecutor de Prueba de Software
+•Las bases de prueba que debe tener un ejecutor de prueba 
+•Los puntos importantes requeridos en la industria para cubrir 
+  el perfil del Ejecutor de Prueba de Software
+
+
+Capítulo 1. Perfil del Ejecutor de Casos de Prueba
+•Tiene que conocer sobre el ciclo de vida de una prueba, entender como funciona
+•Seguir un plan de ejecución y ciclos de prueba
+•Conocicmiento en herramientas de gestión tipo ALM
+•Intrepretar Diseño de Casos de Prueba 
+•Solicitar datos para la prueba
+•Determinar si el caso de prueba es exitoso, fallidos, bloqueado o detenido por error
+•Interpreta indicadores y reportes de Prueba
+•Escribir defectos y conoce el ciclo de vida de estos
+•Documentar evidencias de prueba
+•Seguir proceso de prueba establecido por la compañía Ágile o tradicional
+•Conocer sobre Pruebas Funcionales, de regresión y UAT
+•Conocer manejadores de base de datos y SQL simple
+•Entiende el plan de prueba
+
+Actividades de un Ejecutor de Prueba
+ 1.-Se te asigna en un nuevo proyecto
+ 2.-Te dan los insumos y los revisas
+	•Repositorio de Ejecución 
+	•Tipo de Ciclo
+	•Ruta de evidencias de ejecución
+	•Plan de Prueba
+	     •Proceso y procedimientos
+	     •Reglas del proyecto y ejecución
+	•Ruta CP en Herramienta o Matrices de Prueba
+	•Rutas del aplicativo a ejecutar con usuarios y claves de acceso
+ 3.-Validas accesos a los casos de prueba y aplicativos a probar
+ 4.-Revisas tener datos para la prueba
+ 5.-Revisas el plan de ejecución
+ 6.-Esperas la señal del lider para comenzar a probar 
+ 7.-Ejecutas los casos de prueba, siguiendo los scripts
+ 8.-Documentas los resultados en la herramienta o matriz de casos de prueba
+ 9.-Grabas evidencia y la almacenas en ruta oficial del proyecto o herramienta
+10.- Si hay defectos lo registras y envías a Desarrollo, de lo contrario pasas el caso de prueba
+11.-Si hay dudas en la ejecución las revisas con el Líder de Pruebas
+12.-Aseguras los entregables (evidencias de ejecución y casos de prueba actualizados en herramienta o matrices de prueba, Defectos documentados) están terminados 
+ 
+2 Fundamentos del Ejecutor de Prueba
+Conceptos básicos de Prueba
+  •Prueba de Software: Es la validación y verificación de los requerimientos funcinales
+  •Tipos de prueba: 
+         Funcional-Manual: Es la prueba funcional que hacemos para validar que el sistema haga lo qe tiene que hacer en apego a los requerimientos funcionales del usuario.
+         Funcional-Automaticzada: Es la prueba funcional que programamos con lenguajes de programción asociados a marcos de tranbajo llamados FRAMEWORKS.
+         No Funcional-Desempeño: Es la prueba con un enfoque a los atributos del sistema, buscando leer el uso de recursos que el aplicativo utiliza para operar, CPU, ancho de banda, usuarios concurrentes, tiempo de respuesta, y validando que no se degrade el servicio mientras se realiza este tipo de pruebas.
+         No funcional-Seguridad: Prueba que utilizamos para detectar las vulnerabilidades de los sistemas WEB. Se corren algoritmos predefinidos de hackeo para identificar los huecos en los sistemas.
+ •Ciclo de vida de un proyecto de prueba: Análisis, Planeación, Diseño, Ambiente, Ejecución, UAT y Cierre
+ •Caso de prueba: Es una pruena de lo que el sistema debe de hacer y lo que el sistema no debe hacer
+ •Script: Es el paso a paso o conjunto de pasos, para reproducir un caso de prueba. Este debe tener todos lo detalles para poder ejecutarse sin ayuda del tester que lo creo.
+ •Datos de prueba: Son aquellos datos que requieren para ejecutar una prueba. Hay dos tipos de datos, estáticos y dinámicos
+ •TestWare: Conjunto de Casos de Prueba relacionados que tienen características similares. El objetivo es integrarlos en ciclos de prueba paea su ejecución
+
+Ejecución de Prueba: Es tomar cada caso de prueba y seguir el guion del procedimiento de prueba para reproducirlo con los datos requeridos en esa casuística.
+
+Proyectos de Prueba
+    •Nuevos. Se empiezan desde cero
+    •Mantenimientos. Modificaciones y actualizaciones a desarrollos existentes
+    •Incidentes. Problemas que se deben atender ese mismo día

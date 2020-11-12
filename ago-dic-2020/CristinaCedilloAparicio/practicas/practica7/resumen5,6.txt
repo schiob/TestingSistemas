@@ -1,0 +1,54 @@
+5 Defectos
+	DEFECTO: Es una discrepancia o diferencia entre el resultado esperado de tu caso de prueba contra el resultado actual que muestra el sistema bajo prueba.
+		Es un error funcional del código.
+	NO DEFECTO: Falla del sistema por causas de configuración en el ambiente. Falta de datos. Malentendido de las reglas de negocio.
+
+	¿CÓMO REGISTRAR UN DEFECTO?
+		• Debes tener una plantilla con los datos a llenar, previamente te debieron capacitar en como usarla.
+		• La plantilla puede estar en un EXCEL, WORD o una herramienta de gestión de defectos.
+		• Llenas la plantilla con todos los datos solicitados y la envías al desarrollador.
+
+	DEFECTO ACCIONABLE: Es documentar claramente la información de la plantilla del defecto, para que el desarrollador responsable a corregirlo pueda accionar adecuadamente sobre la corrección
+
+	DOCUMENTAR UN DEFECTO:
+		1. Asegurarse que es un defecto funcional y no de ambiente.
+		2. Reproducir el error.
+		3. Tomar evidencia.
+		4. Documentar los pasos para reproducir el error.
+		5. Documentar el defecto en la herramienta o Excel.
+		6. Asegurarse que Desarrollo este enterado de este registro de defecto.
+
+	ClCLO DE VIDA DEL DEFECTO
+		• Reportar la falla por los medios definidos. 
+		• Enviarla al desarrollador
+		• El desarrollador la reproduce y corrige. 
+		• El tester vuelve a revisar que este bien aplicada la corrección. 
+		• El tester aprueba o rechaza la corrección.
+
+6 Ejecución Ágil
+	MÉTODO ÁGIL: Este tipo de ciclo de vida (iterativos e incrementales) permite al equipo del proyecto incorporar la retroalimentación
+	e ir incrementando la experiencia del equipo durante el proyecto.
+
+	CICLO DE VIDA INCREMENTAL: Desarrollar por partes el producto software, para después 
+	integrarlas a medida que se completan. El agregar cada vez más funcionalidad al sistema.
+
+	CICLO DE VIDA ITERATIVO: En cada ciclo, iteración (en cascada), se revisa y mejora el
+	producto. Es importante señalar que este ciclo no implica añadir funcionalidades en el producto, pero si revisión y mejora.
+
+	EXPLORATORY TESTING: Es un proceso interactivo de exploración concurrente del producto, diseño de prueba y ejecución de prueba.
+
+	¿QUÉ NO ES EXPLORATORY TESTING? Seguir un script
+
+	TÉCNICAS DE EXPLORATORY TESTING:
+		•FREESTYLE
+		•SCENARIO
+		•FEEDBACK
+		•STRATEGY
+		•SESSION
+
+	PROCESO EXPLORATORY TESTING:
+		•Crea una conjetura o modelo mental
+		•Crea una o dos pruebas que no aprueban esa conjetura
+		•Ejecuta la prueba y observa el resultado
+		•Evalúa la salida contra tu conjetura
+		•Repite el proceso hasta que la conjetura es aprobada y rechazada

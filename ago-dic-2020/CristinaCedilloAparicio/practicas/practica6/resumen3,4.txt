@@ -1,0 +1,63 @@
+3 Proceso de Ejecución de Prueba
+	3-2-1 Casos de Prueba
+	1. Los CP, deben estar creados en una matriz de prueba o en una herramienta de gestión de prueba.
+	2. Deben tener al menos la trazabilidad Escenario: CP: Script: Datos.
+	3. Deben indicarte en donde están almacenados, ruta oficial del proyecto de prueba o ruta en la herramienta de gestión de prueba.
+	4. Los CP deben estar con VoBo de un experto en el negocio y con el script a detalle suficiente para la reusabilidad
+
+	3-2-2 Datos de Prueba
+	1. Para ejecutar los casos de prueba se requieren datos estáticos y dinámicos.
+	2. Hay que generarlos. Cada CP requiere entradas.
+	3. Los datos estáticos los crea el diseñador de la prueba y los dinámicos el área de ambientes. Depende de tu organización.
+	4. Los datos tienen que estar visibles en tu AUT o en las bases de datos.
+	5. Los datos no pueden ser copias productivas, ejecuta Scrambling para protegerlos.
+
+	3-2-3 Ventana Funcional
+	1. El área de ambientes, es responsable de cuidar el choque o correlación de pruebas, es decir, que una prueba no tome los datos de otra prueba o altere los resultados de esta.
+	2. Para esto, se implementa la administración de ventanas de prueba funcional.
+	3. Para una ventana funcional debes tener un checklist cumplido con lo siguiente:
+		1. Casos de prueba listos
+		2. Datos generados
+		3. Plan de ejecución
+		4. Aplicativo AUT instalado.
+
+	3-2-4 Plan de ejecución
+	1. Es el plan a seguir por los ejecutores de prueba para determinar quién y cuando inician y terminan su prueba, revisar dependencias con otras pruebas, fechas y datos.
+	2. Es común en equipos de 3 o más ejecutores de prueba.
+	3. Lo debe generar el Líder de prueba.
+	4. Generalmente el Plan de ejecución cambia cada ciclo de prueba.
+
+	3-2-5 AUT - Aplicativo Bajo Prueba:  Es el aplicativo o producto de software que vas a validar con los casos de prueba previamente diseñados y asignados a ti como ejecutor de prueba.
+
+
+4 Herramientas para la Ejecución
+	4-1-1 Herramienta de gestión de Pruebas: Es una herramienta que se utiliza para automatizar los procesos de prueba, y te ayuda a gestionar todos los procedimientos para asegurar la calidad como:
+		• Testware
+		• Defectos
+		• Indicadores
+		• Requerimientos
+
+	4-1-2 Organización de Pruebas en herramientas ALM
+		•Requirements: Administra los requerimientos del proyecto, puedes configurar procesos de negocio y aplicativos.
+		•Test Plan: Administra los casos de prueba, puedes organizarlos en escenarios. Y mantener una trazabilidad al modulo de requerimientos con aplicativos o requerimientos.
+		•Test Lab: Administra la ejecución de casos de prueba, construyes tu plan de ejecución, asignas testers y ciclos de prueba.
+		•Defects: Administra los defectos detectados durante la prueba, configuras el ciclo de vida del defecto y plantillas.
+		•Dashboard: Administra los indicadores requeridos para la toma de decisiones en tiempo real y para los entregables de calidad.
+
+	4-2-1 Herramientas para grabar evidencias de prueba: Este tipo de herramientas nos permite grabar la evidencia de la prueba que estamos realizando, ya sea exitosa o fallida.
+
+	4-3-1 Administración de Defectos
+		• Mantener: 
+			• Registrar defectos
+			• Documentar evidencia
+			• Ciclo de vida de un defecto
+			• Roles 
+				• Desarrollador y tester
+			• Indicadores
+	4-4-1 Administración de Ambiente
+		• Mantener: 
+			• Datos
+			• Diagrama de Base de Datos
+			• Diagrama de Servidores
+			• Diagrama de Aplicativos por Servidor
+			• Batch, hora de ejecución.
