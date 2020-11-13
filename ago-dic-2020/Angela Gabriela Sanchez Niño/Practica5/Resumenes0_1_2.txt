@@ -10,7 +10,7 @@ cómo se desenlaza el ejecutor de pruebas en el ambiente laboral.
 Resumen 2 ----> FUNDAMENTOS DEL EJECUTOR DE PRUEBAS
 En este capitulo nos habla de las pruebas de software que en si es la validación y verificación de los requerimientos 
 funcionales, estas pruebas se dividen en dos tipos FUNCIONALES y NO FUNCIONALES. Las pruebas funcionales se dividen en 
-MANUAL y AUTOMATIZAD mientras que las pruebas no funcionales en Desempeño y SEGURIDAD. Un proyecto de prueba comienza 
+MANUAL y AUTOMATIZADO mientras que las pruebas no funcionales en Desempeño y SEGURIDAD. Un proyecto de prueba comienza 
 por la fase de ANALISIS donde se deberá validar el proyecto, fase de PLANEACIÓN dongde se detallara la manera en que se 
 trabajara, fase DISEÑO en esta fase se deberán trabajar los casos de pruebas, fase AMBIENTE se verifica que el hardware 
 y software se encuentren funcionales, fase EJECUCIÓN comienzan las pruebas dinámicas, fase UAT son las pruebas de 
