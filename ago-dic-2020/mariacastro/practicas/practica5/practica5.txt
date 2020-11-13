@@ -1,0 +1,20 @@
+Ejecutor de casos de prueba.
+Una de las principales funciones del ejecutor de casos de prueba es gestionar los ambientes de prueba, generar los datos de prueba, ejecutar y documentar pruebas, reportando y siguiendo los incidentes encontrados usando las herramientas apropiadas de acuerdo con los estándares de trabajo donde se desempeñe. 
+Entre las actividades del ejecutor de prueba encontramos las siguientes:
+1.	Validar accesos a los casos de prueba y aplicativos a probar
+2.	Revisar que los datos para la prueba se encuentren disponibles
+3.	Revisar el plan de ejecución 
+4.	Ejecutar los casos de prueba 
+5.	Documentar los resultados
+6.	En caso de encontrar defectos estos los debe registrar para enviarlos a desarrollo para su corrección 
+7.	Revisar que los entregables estén terminados (evidencias, casos de prueba ejecutados, etc.)
+
+Cuando hablamos de una prueba de software nos referimos a la validación y verificación de los requerimientos funcionales Considerando los atributos de calidad de un sistema ya que estos forman parte de la prueba de software. La validación y verificación se hacen mediante el uso de procesos, procedimientos y herramientas que nos ayuden a automatizar el tiempo de prueba. 
+Ciclos de vida de un proyecto de prueba.
+1.	Análisis es la fase para identificar la estrategia y estimación para la atención del proyecto.
+2.	Planeación es la fase para identificar el plan detallado para la atención del proyecto. Esta fase puede contener plan de trabajo, equipo, alcance, método, entre otros.
+3.	Diseño es la etapa donde se construye toda la materia de prueba llamada Testware.
+4.	Ambiente es la etapa final para tener listo todo el ambiente de prueba. Instalar el software a probar, generar los datos para la prueba y hacer pruebas de humo.
+5.	Ejecución, se inicia la ejecución de la prueba tomando todo el testware diseñado previamente y ejecutamos cada caso de prueba. En esta fase se documentan los defectos y evidencias de la prueba. 
+6.	UAT es la fase para ejecutar las pruebas con el usuario, en este momento alcanzamos a tener el software estable.
+7.	En la fase final se cierra toda documentación del proyecto y se genera el certificado de prueba.

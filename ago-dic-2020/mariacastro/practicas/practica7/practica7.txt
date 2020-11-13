@@ -1,0 +1,53 @@
+Defectos
+¿Qué es un defecto?
+•	Es una discrepancia o diferencia entre el resultado esperado de tu caso de prueba contra el resultado actual que muestra el sistema bajo prueba.
+•	Es un error funcional del código
+¿Qué no es un defecto?
+•	Falla del sistema por causas de configuraciones en el ambiente.
+•	Falta de datos.
+•	Malentendido de las reglas de negocio.
+
+Defectos accionables
+¿Cómo levantar un defecto?
+•	Debes tener una plantilla con los datos a llenar.
+•	La plantilla puede estar en EXCEL, WORD o una herramienta de gestión de defectos.
+•	Llenas la plantilla con todos los datos solicitados y la envías al desarrollador.
+
+Evidencias de los defectos
+Formato de evidencias:
+Por cada caso de prueba tomar evidencia con estos datos (proyecto, ejecutor de pruebas, título del caso de prueba, ciclo de prueba, caso de prueba, paso del caso de prueba, video, log o imagen, comentarios relevantes).
+Ciclo vida defecto
+Ciclo vida defecto:
+•	Reportar la falla por los medios definidos
+•	Enviarla al desarrollador
+•	El desarrollador la reproduce y corrige
+•	El tester vuelve a revisar que este bien aplicada la corrección
+•	El tester aprueba o rechaza la corrección
+
+
+
+
+MÉTODO ÁGIL: Este tipo de ciclo de vida (iterativos e incrementales) permite al equipo del proyecto incorporar la retroalimentación e ir incrementando la experiencia del equipo durante el proyecto.
+
+CICLO DE VIDA INCREMENTAL: Desarrollar por partes el producto software, para después 
+integrarlas a medida que se completan. El agregar cada vez más funcionalidad al sistema.
+
+CICLO DE VIDA ITERATIVO: En cada ciclo, iteración (en cascada), se revisa y mejora el producto. Es importante señalar que este ciclo no implica añadir funcionalidades en el producto, pero si revisión y mejora.
+
+EXPLORATORY TESTING: Es un proceso interactivo de exploración concurrente del producto, diseño de prueba y ejecución de prueba.
+
+¿QUÉ NO ES EXPLORATORY TESTING? Seguir un script
+
+TÉCNICAS DE EXPLORATORY TESTING:
+	•FREESTYLE
+	•SCENARIO
+	•FEEDBACK
+	•STRATEGY
+	•SESSION
+
+PROCESO EXPLORATORY TESTING:
+   •Crea una conjetura o modelo mental
+   •Crea una o dos pruebas que no aprueban esa conjetura
+   •Ejecuta la prueba y observa el resultado
+   •Evalúa la salida contra tu conjetura
+   •Repite el proceso hasta que la conjetura es aprobada y rechazada

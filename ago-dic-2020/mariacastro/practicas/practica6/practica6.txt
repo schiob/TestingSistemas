@@ -1,0 +1,72 @@
+Proceso ejecución ERA
+MODELO ERA/SRA
+Se comienza con el ciclo de estabilización, donde se ejecutan al 100% los casos de prueba, si se alcanza más del 80 % de efectividad se comienza con el ciclo de regresión aquí se lleva a cabo el 20% de los casos de prueba y si se logra el 100% de efectividad se brinca a la etapa de aceptación.
+
+Pre-requisitos para la ejecución
+DATOS DE PRUEBA
+1.	Para ejecutar los casos de prueba se requieren datos estáticos y dinámicos.
+2.	Hay que generarlos. Cada CP requiere entradas.
+3.	Los datos estáticos los crea el diseñador de la prueba y los dinámicos el área de ambientes.
+4.	Los datos tienen que estar visibles en tu AUT o en la base de datos.
+
+CASOS DE PRUEBA
+1.	Deben estar creados en una matriz de prueba o en una herramienta de gestión de prueba.
+2.	Deben tener al menos la trazabilidad escenario.
+3.	Deben indicarte en donde están almacenados, ruta oficial del proyecto de prueba o ruta en la herramienta de gestión de prueba.
+VENTANA FUNCIONAL
+1.	El área de ambientes, es responsable de cuidar el choque o correlación de pruebas, es decir, que una prueba no tome los datos de otra prueba o altere los resultados de esta.
+2.	Se implementa la administración de ventanas de prueba funcional.
+3.	Para una ventana funcional debes tener un checklist cumplido con lo siguiente: (casos de prueba listos, datos generados, plan de ejecución, aplicativo AUT instalado).
+
+PLAN DE EJECUCION
+1.	Es el plan a seguir por los ejecutores de prueba para determinar quién y cuándo inician y terminan su prueba, revisar dependencias con otras pruebas, fechas y datos.
+2.	Es común en equipos de 3 o más ejecutores de prueba.
+3.	Lo debe generar el líder de prueba.
+4.	Generalmente el plan de ejecución cambia cada ciclo de prueba.
+
+
+
+
+
+Roles y responsabilidades.
+
+Ejecutor de pruebas:
+1.	Ejecuta la prueba siguiendo el script de prueba.
+2.	Puede utilizar herramientas donde este documentados los test cases.
+3.	Debe conocer del negocio de lo que va a probar.
+             Ingeniero de pruebas:
+1.	Conoce el negocio
+2.	Diseña especificaciones y casos de prueba.
+3.	Diseña procedimientos de prueba manuales.
+             Líder de pruebas:
+1.	Conoce el negocio.
+2.	Define el esfuerzo de horas.
+3.	Determina el equipo de trabajo.
+4.	Diseña estrategias y plan de pruebas.
+5.	Monitorea el desempeño e indicadores de la prueba.
+6.	Puede suspender y reanudar la prueba.
+
+
+
+Herramientas para la ejecución
+Herramienta de gestión de prueba:
+Es una herramienta que se utiliza para automatizar los procesos de prueba, y te ayuda a gestionar todos los procedimientos para asegurar la calidad como: (testware, defectos, indicadores, requerimientos).
+Evidencias de prueba
+Herramientas para grabar evidencias:
+Este tipo de herramientas nos permite grabar la evidencia de la prueba que estamos realizando, ya sea exitosa o fallida (grabar pantalla a foto, grabar video). 
+Administración de defectos
+Administración de defectos:
+Mantener (registrar defectos, documentar evidencia, ciclo de vida de un defecto, roles, indicadores).
+
+
+Administración de ambiente
+Administración de ambiente:
+Mantener (datos, diagrama de base de datos, diagrama de servidores, diagrama de aplicativos por servidor, batch, hora de ejecucion).
+
+
+
+
+
+
+
+
