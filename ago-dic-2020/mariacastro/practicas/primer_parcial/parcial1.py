@@ -1,5 +1,6 @@
 def triangulo(path):
     f = open(path)
+    #return f.read()
     lados = list(map(int, f.read().strip().split(' ')))
 
     
