@@ -1,0 +1,19 @@
+Resumen 0 ----> INTRODUCCION AL CURSO
+En el primer capítulo nos muestra una breve introducción de lo que se trata el "The QA Testing Channel",
+sus certificaciones y los objetivos que se desean lograr mediante este curso.
+
+Resumen 1 ----> PERFIL DE EJECUTOR DE CASOS DE PRUEBAS
+En el siguiente capítulo nos muestra como debe ser un buen perfil para un ejecutor de pruebas, también habla 
+acerca de un temario donde se visualizan los conocimientos que este debe de adquirir y por supuesto nos muestra 
+cómo se desenlaza el ejecutor de pruebas en el ambiente laboral.
+
+Resumen 2 ----> FUNDAMENTOS DEL EJECUTOR DE PRUEBAS
+En este capitulo nos habla de las pruebas de software que en si es la validación y verificación de los requerimientos 
+funcionales, estas pruebas se dividen en dos tipos FUNCIONALES y NO FUNCIONALES. Las pruebas funcionales se dividen en 
+MANUAL y AUTOMATIZAD mientras que las pruebas no funcionales en Desempeño y SEGURIDAD. Un proyecto de prueba comienza 
+por la fase de ANALISIS donde se deberá validar el proyecto, fase de PLANEACIÓN dongde se detallara la manera en que se 
+trabajara, fase DISEÑO en esta fase se deberán trabajar los casos de pruebas, fase AMBIENTE se verifica que el hardware 
+y software se encuentren funcionales, fase EJECUCIÓN comienzan las pruebas dinámicas, fase UAT son las pruebas de 
+aceptación que son los casos de negocios, fase CIERRE se cierra el proyecto como los posibles repositorios usados y 
+se genera el certificado de prueba. El caso de prueba está integrado por entradas, precondiciones, salidas, poscondiciones.
+La ejecución de prueba es tomar cada caso de prueba realizados anteriormente y seguir el procedimiento de prueba.   

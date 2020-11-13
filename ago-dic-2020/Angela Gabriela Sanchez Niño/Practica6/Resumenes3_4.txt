@@ -1,0 +1,65 @@
+Resumen 3-----> PROCESO DE EJECUCIÓN DE PRUEBA
+
+MODELO ERA = ESTABILIZAICON REGRESION Y ACEPTACION
+
+Se refiere al modelo de ejecución de ciclos de pruebas con sus respectivos casos de pruebas.
+Durante el proceso de Estabilización los casos de prueba deben tener una efectividad del 80% si este llega a ser 
+menor se regresa a la etapa de estabilización y si no pasara a la etapa de regresión este deberá tener un 100% de 
+efectividad para poder pasar a la etapa de aceptación, si esta obtiene un 100% pasara a la etapa final aceptación 
+del usuario.
+
+=PRE-REQUISITOS PARA LA EJECUCION DE PRUEBA = 
+
+**CASOS DE PRUEBA**
+1.	Deben estar creados en una matriz de prueba o en una herramienta de gestión de prueba
+2.	Deben tener al menos la trazabilidad del escenario.
+3.	Deben indicarte en dónde están almacenados, ruta oficial del proyecto de prueba o ruta en la herramienta de
+gestión de prueba.
+**DATOS DE PRUEBA**
+1.	Para ejecutar los casos de prueba se requieren datos estáticos y dinámicos.
+2.	Los datos estáticos los crea el diseñador de la prueba y los dinámicos el área de ambientes.
+3.	Cada Caso de prueba requiere entradas.
+**VENTANA FUNCIONAL**
+Se implementa la administración de ventanas de prueba funcional, para evitar la correlación de pruebas. Para una 
+ventana funcional debes tener un checklist cumplido. 
+1.	Casos de prueba listos
+2.	Datos generados
+3.	Plan de ejecución
+4.	Aplicativo AUT instalado
+**PLAN DE EJECUCIÓN**
+Es el plan por seguir por los ejecutores de prueba para determinar quién y cuándo inician y terminan su prueba,
+revisar dependencias con otras pruebas, fechas y datos.
+1.	Es común en equipos de 3 o más ejecutores de prueba.
+2.	Lo debe generar el líder de prueba.
+3.	Generalmente el plan de ejecución cambia cada ciclo de prueba.
+4.	Se puede elaborar en un documento de Excel o en una herramienta de gestión de pruebas.
+**AUT-APLICATIVO BAJO PRUEBA**
+Es el aplicativo o producto de software que vas a validar con los casos de prueba previamente diseñados y 
+asignados a ti como ejecutor de prueba.
+
+
+=ROLES Y RESPONSABILIDADES=
+**EJECUTOR DE PRUEBAS**
+Ejecuta la prueba siguiendo el script de prueba, puede utilizar herramientas donde estén documentados los
+casos de prueba y debe conocer del negocio de lo que va a probar.
+***INGENIERO DE PRUEBAS*
+Conoce el negocio, debe entender los flujos, escenarios y procesos de negocio para poder diseñar las
+especificaciones y casos de prueba. Diseña procedimientos para la prueba manual.
+**LÍDER DE PRUEBAS**
+Conoce el negocio. Entiende el contexto general del proceso. Define el esfuerzo de horas y determina el
+equipo de trabajo. Diseña estrategias y plan de pruebas. Monitorea el desempeño e indicadores de la
+prueba. Puede suspender y reanudar la prueba en cualquier momento. Cierra la prueba y genera el
+certificado de liberación a producción.
+
+
+RESUMEN 4 ---> HERRAMIENTAS PARA LA EJECUCIÓN
+Una herramienta de gestión de pruebas se utiliza para automatizar los procesos de prueba, y esta te ayuda
+a gestionar todos los procedimientos para asegurar la calidad.
+
+La organización de herramientas de prueba debe de contener los siguientes módulos:
+1.	Requerimientos
+2.	Plan de pruebas
+3.	Pruebas de Laboratorio
+4.	Defectos
+5.	Indicadores
+

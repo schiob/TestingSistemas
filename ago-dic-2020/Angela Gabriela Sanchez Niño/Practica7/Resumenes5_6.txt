@@ -1,0 +1,55 @@
+Resumen 5 ----> DEFECTOS
+
+Para empezar un defecto es una discrepancia o diferencia entre el resultado actual que muestra el sistema bajo prueba.
+Es un error funcional del código.Lo que no se puede tomar como defecto es la falla del sistema por causas de 
+configuración en el ambiente, falta de datos y un malentendido de las reglas del negocio.
+Para poder registrar un defecto se debe tener una plantilla con los datos a llenar, enseguida se le envía al 
+desarrollador.Un defecto accionable es enviar toda la información de la plantilla del defecto, para que el 
+desarrollador pueda corregirlo. 
+Para esto se debe realizar un checklist que generara el defecto, este checklist consta de seis pasos:
+1.	Asegúrate que sea un defecto funcional.
+2.	Reproducir el error.
+3.	Tomar evidencia.
+4.	Documentar los pasos para reproducir el error.
+5.	Documentar el defecto en la herramienta.
+6.	Asegurarse que desarrollo este enterado de este registro de defecto.
+
+
+Resumen 6 ----> EJECUCIÓN ÁGIL
+
+**INTRODUCCIÓN MÉTODOS ÁGILES**
+Un método ágil es llevar un proyecto de manera rápida con dos puntos importantes: el ciclo de vida iterativo y
+el ciclo de vida incremental, esto permite al equipo del proyecto incorporar la retroalimentación continua del
+cliente sobre el producto e ir incrementando la experiencia del equipo durante el proyecto.
+Es hacer las cosas mediante un proceso delgado, los tiempos de respuestas son más ágiles.
+El ciclo de vida incremental es desarrollar por partes el producto software, para después integrarlas
+a medida que se completan, gracias a esto se agrega más funcionalidad al sistema.
+Un ciclo de vida iterativo, en cada ciclo se revisa y mejora el producto. Es importante señalar que en este
+ciclo no implica añadir funcionalidades en el producto, pero si revisión y mejora. 
+Uniendo estos ciclos se consigue una versión más estable del software, de más calidad añadiendo nuevas funcionalidades. 
+
+**PRUEBAS EXPLORATORIAS**
+
+Las pruebas exploratorias es un proceso interactivo de exploración concurrente del producto, diseño de prueba y 
+ejecución de prueba.
+g
+El scripted testing es un examen secuencial de los requisitos, seguido por el diseño y la documentación de los casos
+de prueba, seguido de la ejecución. Mientras que las pruebas exploratorias es aprendizaje simultáneo, diseño de pruebas
+y ejecución de pruebas.
+
+Existe técnicas para las pruebas exploratorias: 
+1.	Freestyle
+2.	Scenario based ET
+3.	FeedBack ET
+4.	Strategy based
+5.	Session based
+
+Proceso para pruebas exploratorias:
+1.	Crear una conjetura o modelo mental.
+2.	Crear una o dos pruebas que no aprueben esa conjetura.
+3.	Ejecuta la prueba y observa el resultado.
+4.	Evalúa la salida contra tu conjetura.
+5.	Repite el proceso hasta que la conjetura es aprobada o rechazada.
+
+
+
