@@ -54,5 +54,22 @@ class promedio_test(unittest.TestCase):
             # Se cierra y elimina el archivo temporal.
             archivo.close()
             os.remove(tc["ruta"])  
+
+    def testPromedioDatosIncompletos(self):
+        test_cases = (
+            {"ruta": "seccion_A.txt", "datos" : "Jose_Lopez quimica \nJose_Lopez matematicas á\nMaria_Martinez fisica 95.50\nMaria_Martinez español 90.00", "resultado" : "Faltan datos en el renglón"},
+            {"ruta": "seccion_B.txt", "datos" : "Jose_Lopez quimica \nMaria_Martinez fisica XD\nSudo_von español 90.00", "resultado" : "Faltan datos en el renglón"},
+        )
+        for tc in test_cases:
+            # Se crea el archivo temporal.
+            archivo = open(tc["ruta"], "w")
+            archivo.write(tc["datos"])
+            archivo.close()
+            # Se lee el archivo.
+            archivo = open(tc["ruta"], "r")
+            self.assertEqual(obtener_promedio(archivo), tc["resultado"])
+            # Se cierra y elimina el archivo temporal.
+            archivo.close()
+            os.remove(tc["ruta"])    
 if __name__ == "__main__":
     unittest.main()

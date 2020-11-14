@@ -13,9 +13,13 @@ def obtener_promedio(archivo):
     for alumno in lista_alumnos:
 
         datos = alumno.strip().split(' ')
+        # Se valida que los datos siempre vengan completos.
+        if len(datos) != 3:
+            return "Faltan datos en el renglón"
         # Se valida que la calificación sea un número, ya contempla que este puede ser decimal o negativo, sin embargo, sigue siendo un número.
-        if not datos[2].replace('.', '').replace('-', '').isdigit():
+        elif not datos[2].replace('.', '').replace('-', '').isdigit():
             return "No es una calificación válida"
+
         calificacion = float(datos[2])
 
         alumnos.update(
