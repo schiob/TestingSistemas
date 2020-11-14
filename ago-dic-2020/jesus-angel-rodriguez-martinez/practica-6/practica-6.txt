@@ -1,0 +1,17 @@
+Capítulo 3
+Proceso de ejecución de prueba
+En este capítulo se habla del proceso para ejecutar un caso de prueba (reglas que se deberían de seguir).
+Hablando de la parte de casos de prueba se mencionó que los casos de prueba deben ser creados en una herramienta de gestión de prueba
+y que el script debe proporcionar el suficiente detalle para ser reutilizado.
+En cuanto a datos de prueba se mencionan los datos estáticos/dinámicos y esto es más que nada para el tema de las entradas para esperar la salida deseada.
+La ventana funcional verifica que los datos estáticos/dinámicos correspondan a la prueba correcta, además de todo el ambiente que le rodea.
+Por útlimo el plan de ejecución cierra con que cada plan de ejecución cambiará dependiendo del ciclo de la prueba.
+
+Capítulo 4
+Herramientas para la ejecución
+Este capítulo abarca el tema de las herramientas necesarias para diferentes tipos de ejecuciones como:
+Gestión de pruebas (Facilita los procesos de prueba como los requerimientos y defectos).
+Organización de una herramienta de gestión
+Para grabar evidencia (Independientemente de que el resultado sea exitoso o fallido, se necesitan guardar las evidencias)
+Administración de defectos (Permite llevar un registro de los defectos encontrados)
+Administración de ambiente (Diagramas/estructuras y manejo de datos)

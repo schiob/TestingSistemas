@@ -1,0 +1,29 @@
+Capítulo 0
+Inducción al curso
+Se habla acerca del contenido del curso, hacia dónde se piensa llegar y hacia a quién va dirigido, además de las ventajas
+que el mismo ofrece.
+
+Capítulo 1
+Se habla acerca del perfil que debe tener la persona encargada de los casos de prueba como:
+Conocer el ciclo de vida de una prueba.
+Entender el plan de prueba.
+Seguir un plan de ejecución y ciclos de prueba. 
+Conocer sobre base de datos.
+Conocer herramientas de gestión ALM.
+Conocer sobre pruebas funcionales.
+Interpretar diseño de casos de prueba.
+Seguir el proceso de casos de prueba.
+Solicitar datos para la prueba. 
+Determinar cómo terminó el caso de prueba (éxito, fallido, bloqueado o detenido).
+Describir los defectos del caso de prueba. 
+Interpretar los indicadores/reportes. 
+Documentar las evidencias.
+También se mencionaron las actividades que este debe de seguir abarcando desde que se asigna un nuevo proyecto 
+hasta cuando aseguras las entregas (evidencias).
+
+Capítulo 2
+Fundamentos del ejecutor de prueba
+En este capítulo se habla acerca de los conceptos básicos (Teoría sobre las bases).
+Ejecuciones de prueba (Reproducción del caso de prueba mediante datos requeridos).
+Proyectos de prueba (Ya sean nuevos, de integración, actualización y los problemas que estos presentan).
+Áreas de prueba (Desde la parte más humana hasta la parte del código).
