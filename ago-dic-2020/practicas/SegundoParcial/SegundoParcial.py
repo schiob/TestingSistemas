@@ -3,8 +3,7 @@ def promedio():
     lineas = f.readlines()
 
     cal1 = 0.0
-    cal12 = 0.0
-    cal21 = 0.0
+    cal12 = 0.0    cal21 = 0.0
     cal22 = 0.0
     prom1 = 0.0
     prom2 = 0.0
