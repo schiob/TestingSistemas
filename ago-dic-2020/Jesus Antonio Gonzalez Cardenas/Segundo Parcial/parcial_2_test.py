@@ -62,9 +62,17 @@ class promedios_test(unittest.TestCase):
         self.assertEqual(test1,set_1)
         self.assertEqual(test2,set_2)
         self.assertEqual(test3,set_3)
-    
 
-        
+    def test_no_datos(self):
+        set_1 = {}
+        test1 = get_averages("")
+        self.assertEqual(test1,set_1)
+
+    def test_clases_repetidas(self):
+        set1 = {'Jose_Lopez': 87.17, 'Maria_Martinez': 92.75}
+        data = [['Jose_Lopez', 'quimica', '89.00'], ['Jose_Lopez', 'quimica', '85.34'], ['Maria_Martinez', 'fisica', '95.50'], ['Maria_Martinez', 'fisica', '90.00']]
+        test1 = get_averages(data)
+        self.assertEqual(set1,test1)
  
     def tearDown(self):
         os.remove("test_1.csv")
