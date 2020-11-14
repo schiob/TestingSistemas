@@ -1,0 +1,4 @@
+johnny_nazco quimica 75.00
+johnny_nazco matematicas 75.34
+luisillo_pillo fisica 95.50
+luisillo_pillo español 90.00
