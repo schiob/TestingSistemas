@@ -1,3 +1,4 @@
+#Mostrar el archivo de calificaciones
 def promedio():
     f = open("calificaciones.txt", "r")
     lineas = f.readlines()
@@ -29,7 +30,7 @@ def promedio():
         if iii[15] == "e":
             cal22 = iii[22]+iii[23]+iii[24]+iii[25]+iii[26]+iii[27]
 
-    #prom1 = cal1 + cal22
+    #Promedio
     cal12 = float(cal12)
     cal1 = float(cal1)
     prom1 = float(prom1)
