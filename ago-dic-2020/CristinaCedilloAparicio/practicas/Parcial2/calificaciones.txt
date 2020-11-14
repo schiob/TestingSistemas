@@ -1,0 +1,4 @@
+juan_cedillo quimica 89.00,juan_cedillo matematicas 85.34,mariana_martinez fisica 95.50,mariana_martinez espanol 90.00
+
+
+
