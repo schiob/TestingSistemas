@@ -1,0 +1,107 @@
+Modelos de ejecución ERA/SRA
+El modelo ERA significa “Estabilización, Regresión y Aceptación”, y SRA por sus siglas en ingles “Stabilization, Regretion and Aceptance”. Empezamos por el ciclo de estabilización donde se prueban el 100% de los casos de prueba, si alcanzamos una efectividad menor al 80% se repite el ciclo de estabilización, pero si alcanzamos más del 80% o exactamente el 80% de efectividad empezamos el ciclo de regresión. En este ciclo probamos el 20% o menos de casos restantes que tienen asociado un defecto, y al menos debemos de generar el 100% de esos 20% casos de prueba para poder pasar a el ciclo de aceptación, si del 20% se alcanzó el 15% o menos de éxito en casos de prueba debemos de regresar al proceso de estabilización para empezar el ciclo de estabilización desde cero.
+En la etapa de aceptación probamos todos los casos de prueba, si dentro de este proceso tenemos errores en algún caso podemos regresar al ciclo de regresión, de lo contrario pasamos al proceso de UAT que significa ”User Aceptance Test” o “Pruebas de aceptación de usuario”.
+
+Casos de Prueba (CP)
+Son requisitos para la ejecución.
+Deben estar creados en una matriz de prueba (Excel o documento de Word) o herramienta de gestión de prueba, deben de tener al menos la trazabilidad del escenario, que de un escenario se deriven los casos de prueba y estén asociados para las pruebas.
+Deben indicarte en donde están almacenados, no por ser una herramienta de gestión de prueba puede ser muy fácil dar con los casos de prueba almacenados, deben decirte la ruta de trazabilidad del caso de negocio, el líder de pruebas debe dar esta información. Deben tener el visto bueno de un experto de prueba o un usuario para darle reusabilidad al caso de prueba por otro ejecutor.
+Datos de Prueba
+Son pre-requisitos para la ejecución
+Uno de ellos son los datos de la prueba, para ejecutar los casos de prueba se requieren datos estáticos y dinámicos. Los estáticos los determina el diseñador durante el diseño de la prueba, pues determina que datos va a usar, son los datos que no se queman, y los dinámicos los genera el responsable del ambiente, son los datos que se queman.
+Los datos tienen que estar visibles en nuestro aplicativo de prueba que es el AUT (Aplication Under Test), navegas sobre el aplicativo para que los datos esten ahí o aplicas un query o un select.
+Los datos no deben ser copias productivas, se tienen que proteger o enmascarar los datos sensibles.
+Ventana Funcional
+El área de ambientes es responsable de cuidar la correlación de pruebas, es decir, que una prueba no tome los datos de otra, o altere los resultados. Es importante usar ventanas de prueba funcional para evitar el choque de pruebas. Para esto se implementa la administración de ventanas de prueba funcional y estas las administra el responsable del ambiente de pruebas.
+Para implementar la ventana funcional debes cumplir con lo siguiente:
+1.	Casos de prueba listos
+2.	Datos generados
+3.	Plan de ejecución
+4.	Aplicativo AUT instalado
+
+El plan de ejecución y el aplicativo es responsabilidad del líder de pruebas darle seguimiento a que se ejecute esa tarea.
+Plan de ejecución
+Es el plan de seguir por los ejecutores de prueba para determinar quien y cuando inician y terminan su prueba, revisar dependencias con otras fechas, pruebas y datos.
+
+Es común que se utilice con equipos de mas de e integrantes y lo genera el líder de prueba o puede estar dentro de una herramienta de gestión. Generalmente cambia el ciclo de prueba porque pueden cambiar los datos.
+Es una secuencia de ciclos de prueba, de casos de prueba, hay que dictar los responsables de prueaba, repositorios de casos de prueba, tener un repositorio de evidencias, métricas donde reporto mi avance y mecanismos de  administración de defectos.
+ 
+
+Aplicativo Bajo Prueba
+Es el aplicativo o producto de software que vas a validar con los casos de prueba previamente diseñados y asignados a ti como ejecutor de prueba.
+Si no tengo ese aplicativo o producto de software con el que vas a ejecutar el aplicativo bajo prueba. Tiene que estar instalado en tu ambiente de qa y ejecutado por el líder de pruebas.
+
+
+
+
+
+Roles en el área de Pruebas.
+ 
+Ejecutor de pruebas 
+Ejecuta la prueba siguiendo el script de prueba, puede utilizar herramientas donde este documentados los test y debe conocer del negocio de lo que va a probar.
+Ingeniero de Pruebas
+Conoce el negocio, Diseña especificaciones y casos de prueba. Diseña procedimientos paso a paso para reproducir los casos de prueba para la prueba manual.
+Lider de Pruebas
+Conoce el negocio, define el esfuerzo de horas para llevar a cabo el trabajo, determina el equipo de trabajo con el que va a ejecutar las pruebas, diseña estrategias y plan de pruebas. Monitorea el desempeño e indicadores de pruebas y puede suspender la prueba y reanudarla cuando ya todo este preparado. Cierra la prueba y genera el certificado de liberación a producción.
+Lider No Funcional 
+Conoce el negocio en un nivel de abstracción muy alto como por ejemplo enfocado en algún aplicativo o error. Define el esfuerzo de horas en el que se trabajara, determina el equipo de trabajo, diseña estrategias y plan de pruebas no funcionales. Monitorea el desempeño e indicadores de la prueba no funcional, puede suspender y reanudar la prueba no funcional, consigue la aprobación de pre-producción. Cierra la prueba no funcional y genera su parte del certificado de liberación a producción.
+Ingeniero de Desempeño
+Interpreta las necesidades cuantitativas de calidad del proyecto y plan de prueba no funcional. Diseña los escenarios no funcionales. Si no medimos la calidad no la podemos comparar, esta definición la hace con la ayuda de lideres de calidad de prueba y de proyecto.
+Diseña y construye los scripts de prueba no funcionales, ejecuta los escenarios diseñados y obtiene las métricas.
+Lider de Automatización
+Conoce el negocio porque tiene que entender que aplicativos tienen ciertas transacciones que van a ejecutarse frecuentemente. Conoce sobre arquitecturas de automatización y define cual será mejor de implementar.
+Implementa frameworks, define el esfuerzo de horas, determina el equipo de trabajo y diseña estrategias y plan de pruebas automatizadas.
+Puede suspender o reanudar en cualquier momento y ofrece las métricas y resultados de la prueba.
+Lider de Ambiente
+Test Manager liderea el área de ambientes.
+Necesitamos lideres de ambiente que conozcan de batch, herramientas, unix, mainframe y scamble.
+Da seguimiento a las necesidades del área, monitorea el desempeño del área y ambiente de prueba, define la periodicidad de actualización de datos y scrambling.
+
+Dispatcher
+Recibe las solicitudes de ambiente de prueba.
+Cuando reciben solicitudes de ambiente para modificarlas las envían a los resolutores que la modifican para generarle los datos a los líderes de pruebas.
+Monitorean el desempeño de la solicitud y la atención de esta.
+
+Ingeniero de Datos
+Recibe las solicitudes de ambiente de prueba asignadas por el Dispatcher, las atiende dando respuesta y atención, ya sea de 
+Datos
+Usuarios
+Soporte
+Accesos
+Desarrollador de Software
+Ingeniero que desarrolla el código relacionado al producto de software que estas probando y es responsable de corregir los defectos. Por ello conoce las reglas de negocio y estructuras internas del sistema.
+Matriz de Escalamiento
+El tester cuando tiene un problema y no puede continuar escala con el ingeniero de prueba, si el ing de prueba tiene un problema escala según el área del problema al líder de prueba, de ambientes, líder de pruebas no funcionales o líder de automatización.
+Si algún líder tiene problemas lo escala al test manager y si este no puede resolverlo lo escala al director de QA o de prueba de software, si no puede resolverlo lo tiene que estacalar al Director de TI.
+
+
+Herramientas para la ejecución
+Herramienta de gestión de pruebas
+Es una herramienta que se utiliza para automatizar todos los procesos de prueba, y ayuda a gestionar todos los procedimientos para asegurar la calidad como el testware, defectos, indicadores y requerimientos.
+Obtener indicadores de progreso nos los da esta herramienta para hacerlo de manera eficiente.
+
+Organización de pruebas en herramientas ALM
+Es muy importante definirla, debemos revisar que tenga los modulos de requerimientos, test plan, test lab para la ejecución de pruebas de laboratorio, de defectos y dashboard para analizar las métricas generadas.
+Requerimientos administra todos los requerimientos del proyecto, permite configurar los procesos y aplicativos de negocio.
+Test Plan administra los casos de prueba, puedes organizarlos en escenarios y mantener una trazabilidad al modulo de requerimientos con aplicativos o requerimientos.
+Test lab es para ejecutar los casos de prueba, construyes tu plan de ejecución, asigna testers y en que ciclos de prueba podrán comenzar ellos.
+Defectos administra los defectos detectados durante la prueba, configuras el ciclo de vida del defecto y plantillas.
+Dashboard administra los indicadores requeridos para la toma de decisiones en tiempo real y para los indicadores de calidad.
+
+Los primeros tres módulos son parte del TestWare, este tiene que estar bien configurado porque de requerimientos se desprenden los casos de prueba y su ejecución bien gestionada.
+Los primeros dos nos permiten tener reusabilidad, es importante monitorear el buen uso y enlace de estos dos puntos.
+El testlab y el modulo defectos trabajan para obtener métricas pues aquí se ejecutan los casos de prueba, para que el líder pueda tomar desiciones y el proyecto tenga un rumbo conforme al proceso con métricas funcionales y vaya viajando adecuadamente.
+
+Herramientas para grabar evidencias
+Existen diferentes tipos de herramientas que nos permiten grabar videos, fotos de pantallas en formatos compatibles ya sea que la evidencia de la prueba sea exitosa o fallida. Una de ellas se llama Greenshot.
+
+
+Administración de defectos
+Es importante registrar defectos, documentar evidencias, generar y mantener un ciclo de vida.
+El desarrollador y el tester están involucrados y deben denotar indicadores.
+Tenemos diferentes herramientas de opensource y de licenciemiento que permiten administrar el ciclo de vida de un defecto desde los estatus abierto, cerrado, corregido, etc.
+
+Administración de Ambiente
+Lo importante en la gestión del ambiente es mantener los datos vivos y disponibles, los diagramas de base de datos, diagramas de servidores y aplicativos por servidor y los batch a que hora se ejecutan, mantener esa operación corriendo como un productivo en ambiente de pruebas para que el área de testing tenga un ambiente muy real o similar al real.
+El tester detecta una solicitud de modificación del ambiente, la pone en estado privado, que crea una solicitud y la pone en estado registrado para que le llegue al ing. de ambiente. El ingeniero de ambiente toma la solicitud y la pone en estado diagnóstico, esta aún puede ser cancelada mientras aún se revisa y aquí ya se rechaza o se asigna a un resolutor. Si falta algo el resolutor la rechaza y al estar completa la atiende el se apoya del gestor para analizar y se valida cuando se soluciona. Cuando el tester o líder valida que todo esta bien cierra el ciclo.
+
