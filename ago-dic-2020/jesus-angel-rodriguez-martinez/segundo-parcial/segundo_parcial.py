@@ -2,16 +2,27 @@
 # Sorry, me la compliqué mucho, no había notado que decía: Todas las calificaciones de un alumno están siempre seguidas. De lo contrario no hubiera hecho tanto desmadre LOL sorry.
 def obtener_promedio(archivo):
     lista_alumnos = archivo.readlines()
+
+    # Lista de calificaciones/archivo vacío.
+    if len(lista_alumnos) == 0:
+        return "La lista de calificaciones está vacía"
+
     # Se genera un diccionario con el nombre de los estudiantes.
     alumnos = { alumno.strip().split(' ')[0] : { 'total' : 0, 'materias' : 0 } for alumno in lista_alumnos}
     # Se actualiza el diccionario. Cada estudiante tendrá otro diccionario con la cantidad de materias que cursa y el total de estas.
     for alumno in lista_alumnos:
+
         datos = alumno.strip().split(' ')
+        # Se valida que la calificación sea un número, ya contempla que este puede ser decimal o negativo, sin embargo, sigue siendo un número.
+        if not datos[2].replace('.', '').replace('-', '').isdigit():
+            return "No es una calificación válida"
+        calificacion = float(datos[2])
+
         alumnos.update(
             {
                 datos[0] : 
                     {
-                        'total' : alumnos[datos[0]]['total'] + float(datos[2]), 
+                        'total' : alumnos[datos[0]]['total'] + calificacion, 
                         'materias' : alumnos[datos[0]]['materias']+1
                     }
             }
