@@ -1,0 +1,62 @@
+Resumen de los capítulos 5 y 6 The QA Testing
+
+¿Qué es un defecto?
+Es una discrepancia o diferencia entre el resultado esperado de tu caso de prueba
+contra el resultado actual que muestra el sistema bajo prueba.
+Un error funcional del código.
+
+¿Qué no es un defecto?
+-Falla del sistema por causas de configuración en el ambiente.
+-Datos erroneos.
+-Malentendidos con las reglas de negocios.
+
+¿Como registrar un defecto?
+-Se debe tener una plantilla con los datos a llenar, esta puede ser un 
+excel o word o otra herramienta de gestión de defectos y esta debe estar
+llenada con todos los datos solicitados y enviarse al desarrollador.
+
+Checklist para documentar un defecto:
+-Asegurarse de que es un defecto funcional y no de ambiente.
+-Reproducir el error.
+-Tomar evidencia.
+-Documentar los pasos para reproducir el error.
+-Documentar el defecto en la herramienta o Excel.
+-Asegurarse que el área de Desarrollo esté enterado de este 
+registro de defecto.
+
+Severidad: se enfoca en el impacto absouluto en el desarrollo.
+Prioridad: ea la importancia al usuario/cliente.
+
+Formato de Evidencias:
+-Proyecto
+-Ejecutor de pruebas
+-Título de caso de prueba
+-Ciclo de caso de prueba
+-Caso de prueba
+-Paso del caso de prueba
+-Video, log o imagen
+-Comentarios relevantes
+
+¿Qué es un método ágil?
+Consiste de dos tipos (iterativo e incremental)
+permite al equipo del proyecto incorporar la retroalimentación
+e ir incrementando la experiencia del equipo durante el proyecto.
+
+Agile Manifiesto:
+-individuos e interacciones sobre procesos y herramientas
+-software funcionando sobre documentación exhaustiva
+-colaboración con el cliente sobre negociación contractual
+-respuesta ante el cambio sobre seguir un plan
+
+Ciclo incremental: se agrega nueva funcionalidad.
+Ciclo iterativo: se mejora la calidad de las funcionalidades en cada ciclo.
+
+Ciclo de vida ágil:
+plan -> colaboración -> Entrega 
+
+Exploratory testing:
+Es un proceso interactivo de exploración concurrente del producto, 
+diseño de prueba y ejecución de prueba donde se reportan resultados
+de manera simultánea.
+
+Allí se va probando y mejorando mientras se va creando.
