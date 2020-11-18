@@ -1,0 +1,200 @@
+Certificación Ejecución de Prueba de Software CEPS
+
+Ejecutor de Prueba de Software
+
+Perfil
+•	Ciclo de Vida de una prueba 
+•	Entiende el Plan de Prueba 
+•	Sigue un plan de ejecución y ciclos de Prueba 
+•	Conocimiento en herramientas de gestión tipo ALM 
+•	Interpreta Diseño de Casos de Prueba 
+•	Solicita datos para la prueba 
+•	Determina si el caso de prueba es exitoso, fallido, bloqueado o detenido por error 
+•	Interpreta indicadores y reportes de Prueba 
+•	Escribe defectos y conoce el ciclo de vida de estos 
+•	Conoce Manejadores de Base de datos y SQL simple 
+•	Documenta evidencias de prueba 
+•	Sigue proceso de prueba establecido por la compañía Ágile o tradicional 
+•	Conoce sobre Pruebas Funcionales, de Regresión y UAT
+
+Ruta de crecimiento
+      Universidad entrenamiento
+0.2 Ejecutor de prueba			Pruebas de desempeño
+2    Ingeniero de prueba		Automatización
+2    Líder de prueba			Seguridad
+2-4 Gerente de prueba			Consultor
+
+Actividades del Ejecutor de Prueba
+1.	Se te asigna en un nuevo proyecto. 
+2.	Te dan los insumos y los revisas
+3.	Validas accesos a los casos de prueba y aplicativos a probar.
+4.	Revisas tener datos para la prueba.
+5.	Revisas plan de ejecución.
+6.	Si hay dudas en la ejecución las revisas con el lider de prueba.
+7.	Si hay defecto lo registras y envias a Desarrollo, de lo contrario pasas el caso de prueba.
+8.	Grabas evidencia y la almacenas en ruta oficial del proyecto o herramienta.
+9.	Documentas resultados en herramienta o matriz de casos de prueba.
+10.	Ejecutas los casos de prueba, siguiendo los scripts.
+11.	Esperas señal del líder de prueba para empezar a probar.
+12.	Aseguras los entregables están terminados.
+
+
+Insumos vs Entregables
+ 
+Insumos:
+•	Repositorios de ejecución
+•	Tipo de ciclo
+•	Ruta evidencias de ejecución
+•	Ruta CP en herramientas o matrices de prueba
+•	Rutas del aplicativo a ejecutar con usuarios y claves de acceso.
+•	Plan de prueba
+	o	Proceso y procedimientos
+	o	Reglas del proyecto de ejecución.
+Entregables: 
+• Evidencias de ejecución 
+• Casos de Prueba actualizados en Herramienta o Matrices de Prueba. 
+• Defectos documentados
+
+¿Qué es la prueba de software?
+Es la validación de los requerimientos funcionales tales como atributos  de calidad de un sistema con la intención de encontrar errores, mediante el uso de procesos, procedimientos y herramientas.
+Tipos de prueba
+Funcional 
+•	Manual 
+Es la prueba que hacemos para validar que el sistema haga lo que tiene que hacer en apego a los requerimientos funcionales del sistema.
+•	Automatizado
+Es la prueba funcional que programamos con lenguajes de programación asociados a marcos de trabajo llamados FRAMEWORKS que permite automatizar las acciones manuales que un usuario realiza en su aplicación o sistema y reproducirlas “n” veces.
+No funcional
+•	Desempeño
+Es la prueba con un enfoque a los atributos del sistema, buscando leer el uso de recursos que el aplicativo utiliza para operar, CPU, ancho de banda, usuarios concurrentes, tiempos de respuesta, y validando que no se degrade el servicio mientras se realiza este tipo de pruebas.
+•	Seguridad
+Prueba que utilizamos para detectar las vulnerabilidades de los sistemas WEB. Se corren una serie de algoritmos predefinidos de hackeo para identificar los huecos en los sistemas.
+Ciclo de vida de un Proyecto de Prueba
+Análisis
+•	Fase para identificar la estrategia y estimación para la atención del proyecto.
+•	Solo se identifica el ¿qué?
+Planeación
+•	Fase para identificar el plan detallado para la atención del proyecto. Este puede contener plan de trabajo, equipo, método, alcance, entre otros.
+•	Aquí identificamos el Qué, como, cuando, donde, quien.
+Diseño
+•	En esta etapa se construye toda la materia de prueba llamada TestWare: Casos de prueba, datos de prueba, defectos estáticos.
+Ambiente
+•	Es la etapa final para tener listo todo el ambiente de prueba: instalar el software a probar, generar los datos para la prueba, y hacer prueba de humo.
+•	Ambiente es todo lo relacionado a hardware y software para realizar la prueba.
+Ejecución
+•	En esta fase inicia la ejecución de la prueba, tomamos todo el testware diseñado previamente, y ejecutamos cada caso de prueba.
+•	Documentamos defectos y evidencias de la prueba.
+UAT
+•	Fase para ejecutar las pruebas con el usuario, en este momento alcanzamos a tener el software estable.
+•	Se ejecutan solamente los casos de prueba críticos.
+Cierre
+•	En este momento cerramos toda documentación del proyecto y generamos el certificado de prueba que avala el trabajo realizado durante la ejecución y UAT.
+
+¿Qué es un caso de prueba?
+Entradas: Dato o evento externo que se inyecta en el sistema
+Pseudocondiciones: Estado en el que tiene que estar el sistema para capturar la entrada.
+Salida: Dato que sale del sistema o mensaje de resultado.
+Pos condición: Estado en el que queda el sistema después de ejecutar la entrada y precondición.
+
+Scripts de Pruebas
+Script/Procedimiento de pruebas
+•	Es el paso a paso o conjunto de pasos, para reproducir un caso de prueba.
+•	Es el medio para validar un caso de prueba.
+•	Este debe tener todos los detalles para poder ejecutarse sin ayuda del tester que lo creó.
+Reglas de un Procedimiento de Pruebas
+•	No contener datos duros (hardcode)
+•	Tener al menos 6 pasos básicos.
+1.	Como acceder a la aplicación
+2.	Como colocar las precondiciones
+3.	Como ejecutar el caso
+4.	Como validar el resultado esperado
+5.	Como validar las post-condiciones
+6.	Como salir del sistema
+Datos de prueba
+•	Son aquellos datos que se requieren para ejecutar una prueba.
+•	Datos requeridos para el set de prueba
+•	Cada Test Case requiere de Entradas
+•	Tipos de Datos:
+Estáticos
+Dinámicos
+
+Testware
+Conjunto de casos de prueba relacionados que tienen características similares. El objetivo es integrarlos en ciclos de prueba para su ejecución.
+Proceso del negocio
+Requerimientos
+Escenarios
+Casos de prueba
+Procedimiento de prueba
+
+
+
+
+¿Qué es la ejecución de prueba?
+•	Es tomar cada caso de prueba previamente diseñado por un tester analista o ingeniero de prueba y seguir el guión del procedimiento de prueba para reproducirlo con los datos requeridos en esa casuistica.
+•	Si el resultado esperado es igual al actual el caso es pasado, de lo contrario se falla y levanta un defecto al desarrollador.
+•	Siempre se documenta una evidencia de la ejecución de la prueba.
+•	Los casos de prueba se agrupan y se ejecutan en ciclos de prueba.
+•	Hay una línea de tiempo para realizar esta ejecución, asi como una duración estimada para cada caso de prueba.
+¿Cuándo se detona?
+Entre la fase de Diseño de pruebas y la fase de UAT
+Analisis de prueba
+Planeación de la prueba
+Diseño de prueba
+Ejecución de prueba
+UAT
+Cierre de prueba
+
+Set/Conjunto de Pruebas
+•	Conjunto de casos de prueba relacionados que tienen características similares.
+•	El objetivo es integrarlos en ciclos de prueba para ejecución.
+
+Ciclo de prueba
+•	Conjunto de SET de pruebas
+•	Se ejecuta el 100% de los casos de prueba programados.
+•	Ya tienen Tester Ejecutor asignado.
+•	El responsable de armar el ciclo de prueba es el líder de pruebas.
+
+Estatus de un caso de pruebas
+•	Estados que puede tomar un caso de prueba durante su ejecución.
+•	El Tester ejecutor es quien va cambiando el estatus del caso de prueba durante su ejecución.
+•	Este estatus se cambia en la herramienta de gestión de prueba o matriz de prueba.
+Tipos de proyectos de prueba
+Incidentes
+•	Problemas productivos
+Nuevos
+•	Desarrollos grandes
+Mantenimientos
+•	Modificaciones y actualizaciones a desarrollos existentes
+
+Clasificación
+Evolutivos
+Normativos
+Administrativos
+
+Áreas de prueba
+ Funcionales
+• Valida los requerimientos funcionales del software. 
+• Valida lo que el sistema debe hacer y lo que no debe hacer.
+
+No Funcionales
+• Valida los requerimientos de Calidad del software. 
+• Valida todos los atributos del sistema.
+
+Ambiente
+• Mantiene el ambiente de pruebas disponible para los proyectos. 
+• Vigila la integridad del ambiente. 
+• Proporciona datos para la prueba. 
+• Da soporte de antes, durante y al final de la prueba. 
+• Genera accesos y permisos especiales para acceder al ambiente. 
+• Cuida correlaciones y administra las ventanas de tiempo de prueba.
+
+
+Control
+• Monitorea el desempeño de las áreas 
+• Monitorea el uso de herramientas 
+• Monitorea el apego a los procesos 
+• Vigila el uso de los recursos 
+• Lleva la facturación 
+• Vigila SLAs 
+• Ofrece indicadores para toma de decisiones. 
+• A veces es mentor.
+
