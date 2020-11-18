@@ -1,4 +1,0 @@
-Jose_Lopez quimica 89.00
-Jose_Lopez matematicas 85.34
-Maria_Martinez fisica 95.50
-Maria_Martinez espanol 90.00
