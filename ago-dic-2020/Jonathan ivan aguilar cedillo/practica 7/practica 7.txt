@@ -1,0 +1,62 @@
+Capítulo 5: Defectos
+¿Qué es un defecto?
+Un defecto es una discrepancia o diferencia entre el resultado esperado de tu caso de prueba contra el resultado actual que muestra el sistema bajo prueba. Es un error funcional del código.
+¿Qué no es un defecto?
+Falla del sistema por causas de configuración en el ambiente.
+Falta de datos.
+Malos entendidos de las reglas de negocio.
+
+¿Cómo registrar un defecto?
+Al registrar un defecto es bueno que el desarrollador tenga toda la información necesaria. Debes tener una plantilla con los datos a llenar, puede estar en excel, word o en una herramienta de administración de defectos. La información en la plantilla debe estar completa.
+Datos de la plantilla de Defectos
+
+¿Qué es un defecto accionable?
+Un defecto accionable es enviar toda la información del defecto en forma clara, completa en la plantilla del defecto para que el desarrollador responsable a corregirlo pueda accionar adecuadamente sobre la corrección
+Checklist para documentar un defecto
+
+Para determinar el peso del defecto tienes que multiplicar el peso de la severidad contra el peso de la prioridad.
+Formato de Evidencias
+
+Ciclo de vida del defecto
+Reportar la falla por los medio definidos, enviarla al desarrollado, el desarrollador la reproduce y corrige, el tester vuelve a revisar que esté bien aplicada la correción y aprueba o rechaza la corrección.
+Debe tener las opciones para poder consultar los defectos, generar nuevos defectos, ver los indicadores de los defectos reportados. Ver descripciones de fallas. En los indicadores es importante tener métricas documentadas en gráficos, todos los tipos de defectos.
+
+capitulo 6: Ejecucion agil
+¿que es un metodo agil? es llevar un proyecto de forma rapida con dos puntos importantes ciclo de vida interativo y ciclo de vida incremental
+
+agiles manifiestos: 
+son individuos e interacciones sobre procesos y herramientas, 
+softwear funcionando sobre documentacion exhaustiva
+colaboracion con el cliente sobre negociacion contractual
+respuesta ante el cambio sobre seguir un plan
+
+¿Que es el ciclo de vida incremental? es desarrollar por partes el producto softwear para despues integrarlo a medida que se completan
+asi para agregar cada vex mas funcionalidades al sistema
+
+¿Que es el ciclo de vida interativo? se revisa y mejora el producto, es importante que el ciclo no implica añadir funcionalidades
+
+integracion agil 
+es un control de proyecto donde se inserta en un proceso agil en un tiempo fijo, para desarrollar el proyecto funcional
+
+pruebas exploatorias 
+Las pruebas exploratorias es un proceso interactivo de exploración concurrente del producto, diseño de prueba y 
+ejecución de prueba.
+
+El scripted testing
+es el procedimiento de prueba o guion de prueba que nosotros diseñamos para ejecutar una prueba, es un examen secuencial de los requisitos, seguido por el diseño y la documentación de los casos
+de prueba, seguido de la ejecución. Mientras que las pruebas exploratorias es aprendizaje simultáneo, diseño de pruebas
+y ejecución de pruebas.
+
+técnicas para las pruebas exploratoria
+Freestyle: prueba exploatorias a la medida no hay reglas
+Scenario based ET: esenario de prueba, casos de uso
+FeedBack ET: retoralimentacion del explora testing, usa herramientas
+Strategy based: usas el ADHOC combinado con metodos estandar, asegura al tester tenga tips o trucos para detectar defectos
+Session based: testeo basado en metas, requerimientos del cliente imformales 
+
+Proceso para pruebas exploratorias
+Crear una conjetura o modelo mental.
+Crear una o dos pruebas que no aprueben esa conjetura.
+Ejecuta la prueba y observa el resultado.
+Evalúa la salida contra tu conjetura.
+Repite el proceso hasta que la conjetura es aprobada o rechazada.
