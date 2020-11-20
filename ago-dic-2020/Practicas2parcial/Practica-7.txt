@@ -1,0 +1,81 @@
+5.1 Que es un defecto 
+	Discrepancia entre el resultado del test y esperado 
+	Es un error funcional de codigo 
+5.2 Que no es un defecto 
+	falla del sistema por causas por mala configuracion del ambiente 
+	falta de datos
+	malentendidos de las reglas de negocion 
+5.3 Como levantar un defecto 
+	debes tener una plantilla con los datos a llenar 
+	la plantilla puede estar en archivo o en una herramienta 
+	se llena la plantilla y la mandas a quien corresponda 
+5.4 datos de la plantilla
+	-paquete 
+	-origen
+	-no. de error
+	-clasificacion de errores 
+	-estatus 
+	-ID bug 	
+	-prioridad 
+	-severidad
+	-responsable de pruebas
+	-responsable de solucion	
+	-descripcion del bug 
+	-ciclo encontrado 
+	-ciclo cerrado 
+	-Resultados esperados
+	-pasos para reproducir el error
+	-comentarios
+	-como se soluciono
+	-video caso de prueb
+	-fecha y hora del reporte
+	-fecha y hora de correccion del bug
+	-fecha de cierre 
+	-bug impacto a pruebas
+	-impacto en retrabajo
+ 5.5 defecto accionable 
+	es enviar toda la informacion del defecto clara y concreta 
+5.6 formato de evidencias 
+	-proyecto	
+	-ejecutor
+	-titulo
+	-ciclo
+	-caso
+	-video
+	comentarios
+5.7 Ciclo de vida del defecto
+	-reporta la falla 
+	-envia al desarrollador
+	-se corrige
+	-tester vuelve a hacer la prueba 
+	-el tester aprueba o rechaza la correccion 
+6.1 ejecucion agil 
+	llevar el proyecto de manera rapida con dos puntos:
+	ciclo de vida iteratico 
+	ciclo de vida incremental
+6.2 ciclo de vida incremental
+	hacer el proyecto por partes y juntarlas al final, asi creando el programa con modulos y estando agragandoles al pasado 
+	pasa por las etapas de analisis diseño codigo y pruebas 
+6.3 ciclo de vida iterativo 
+	en cada ciclo se mejora y revisa el proyecto 
+	haciendo refactorizaciones mejorando la calidad de este 
+	en cada ciclo pasa por las etapas de analisis diseño codigo y pruebas 
+6.4 exploratory testing
+	involicra el aprendizaje,planeacion,ejecucion de pruebas y reportar resultados de forma simultanea
+6.5 que no es exploratory testing
+	seguir un script de pruebas 
+6.6 proceso exploratory testing
+	-crear una conjetura o modelo mental
+	-crear una o dos pruebas que aprueben 
+	-ejecuta la prueba
+	-evalua las salidas con la conjetura
+	-repetir hasta aceptar o rechazar la conjetura 
+	
+	
+	
+	
+
+
+	
+
+	

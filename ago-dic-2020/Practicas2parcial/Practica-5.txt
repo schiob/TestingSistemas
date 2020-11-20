@@ -1,0 +1,65 @@
+0. Quien es the QA Testing channel 
+	grupo de consultores especializados en Pruebas de Software 
+
+certificaciones y diplomados
+	-ejecutor de pruebas
+	-analista de pruebas
+	-lider de pruebas 
+	-pruebas de siftware agil
+	-pruebas en mainframe
+
+1.1 perfil del ejecutor de pruebas
+	ciclo de vida del software
+	sgue un plan de ejecucion y cicloss de pruebas 
+	conocimiento en herramientas de gestion tipo ALM
+	determinar si el caso de prueba es exitoso fallido, bloqueado o detenido por ellos
+	interpretar indicadores y reportes e pruebas 
+1.2 Que es prueba de software
+	escribir defectos y conocer el ciclo de vida de esotos
+	documentar evidencia de pruena 
+	seguir proceso de prueba establecidas
+	conocer sobre pruebas funcionales, de regresion y uat
+	conoce manejadores de base de datos y sql simple
+	entiende el plan de prueba 
+1.3 Perfil vs temario 
+	perfil es lo que debe saber el usuario
+	temario es todos los conocimientos del area de pruebas
+	
+2.0 que es prueba de software
+	verificacion y  validacion de los requerimetos funcionales
+	verificacion es comparar caso de prueba con caso de uso
+2.1 Atributos de calidad de un sistema 
+	 se hace para encontrar errores mediabte el uso de procesos, procedimientos y herramientas
+	 
+2.2 Tipos de pruebas de software 
+	Funcional 
+		Manual: el operario se encarga de la prueba
+				lo que es sistema debe de hacer o no debe de hacer
+
+		Automatizado: algoritmo que se dedica a hacer las pruebas
+				se utilizan Frameworks 
+	No Funcional
+		Desempeño: validar el uso de recursos de un programa con un cierto volumen de transacciones
+			se monitorea tidos los recursos que utiliza la maquina  
+		Seguridad: validar los puntos debiles del programa
+2.3 Ciclos de vuda de prueba de software
+	-análisis
+	-Planeación
+	-Diseño
+	-Ambiente
+	-Ejecución
+	-UAT
+	-Cierre
+2.3 Que es un caso de Prueba
+	Entradas: Dato o evento externo que se inyecta en el sistema
+	Precondiciones: Estado en que tiene que estar el sistema para capturar la entrada
+	Salida: Dato que sale del sistema o mensaje de resultado
+	Pos Condicion: Estado en que se queda el sistema despues de ejecutar la entraday precondicion
+2.4 Datos de prueba 
+	Son datos que se recquieren para hacer la prueba 
+	cada Test Case requiere datos de entrada 
+	Tipos de datos: 
+		Estaticos
+		Dinamicos
+	
+	

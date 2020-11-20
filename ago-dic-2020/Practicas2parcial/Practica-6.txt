@@ -1,0 +1,92 @@
+3.1 Modelo de ejecucion de ciclos de prueba 
+	estabilizacion <80% se vuelve a hacer las pruebas
+			=> se vuelve a Regresion 
+	Regresion <80% se vuelve a hacer las pruebas
+			=> se vuelve a Aceptacion
+	Aceptacion <80% se vuelve a hacer las pruebas
+			=> se vuelve a UAT
+
+3.2 Casos de prueba 
+	deben de estar en una matriz de prueba 
+	debe teber al menos la trazabilidad delEscenario
+	debe tener una ruta oficial 
+
+3.3 datos de Prueba 
+	Para ejecutar se requieren datos estaticos y dinamicos 
+	los datos deben estar visibles en el UAT 
+	deben estar en base de datos 
+	los datos no deben ser copias productivas
+3.4 Ventana prueba funcional 
+	el area de ambiente es responsables de cuidar choques o correlacion de pruebas 
+	por eso hay que crear ventanas de pruebas 
+	La ventan de prueba fincional debe tener 
+		-caso de pruebas listos
+		-datos generados
+		-plan de ejecucion 
+		-aplicativo UAT instalado
+3.5 plan de ejecucion 
+	es el plan a seguir para los operadores de la prueba determina fechas y ejecuciones 
+	es comun cuando hay mas de 3 operadores de prueba 
+	plan cambia ebn cada ciclo 
+	elaborar en un archivo o herramienta 
+	secuencia de ciclos de casos
+	responsables 
+	repositorios 
+	centro de metricas 
+	mecanismos y modelos 		
+	estatus de prueba 	
+	estatus de defecto 
+
+3.6 Aplicativo bajo prueba 
+	es el aplicativo o producto de software en donde se realizaran las pruebas 
+	tiene que estar instalado en QA
+	debe instalarlo el responsable de la prueba 
+3.7 Roles 
+	-Ejecutor de Pruebas
+	-ingeniero de Pruebas 
+	-Lider de Pruebas 
+	-Lider no Funcional
+	-Ingeniero desempeño
+	-Lider de Automatizacion
+	-Ingenueri de Automatizacion 
+	-Lider de Ambiente 
+	-Dispatcher 
+	-Ingenuero de Datos 
+	-Desarrollador de software 
+4.1 Herramienta de gestor de Pruebas 
+	Herramienta que Automatiza los casos de prueba 
+	-Testware
+	-Defectos
+	-Indicadores
+	-Requerimientos
+4.2 Organizacion de Pruebas en Herramientas de Prueba
+	-Requerimientos 
+	-Plan de Pruebas 
+	-Requerimientos
+	-Test lab
+	-Defectos
+	-Dashboard
+4.3 Herramientas para guardar evidencias 
+	permite guardad fotos o videos de las pantallas 
+	greenshot recomendada 
+
+4.4 Admisnistracion de defectos
+	Mantener:
+		Registrar defectos
+		Documentar evidencias
+		Ciclos de vida de un defecto 
+		Roles 
+		indicadores
+4.5 Adimistracion de Ambientes 
+	Mantener:
+		Datos vivos 
+		Diagramas de Base de datos 
+		Diagramas de servidores 
+		Diagrama de aplicativos 
+		Batch	
+
+	
+
+
+
+	
