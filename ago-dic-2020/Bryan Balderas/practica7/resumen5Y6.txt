@@ -1,0 +1,38 @@
+Resumen Capitulos 5 y 6
+El primer tema que nos habla es sobre que es un defecto y que no es un defecto, ya que un defecto no es una
+falla del sistema por configuracion en el ambiento o por no aplicar los datos de manera correcta.
+
+Para registrar un defecto se necesita una plantilla para llenarla y darle todos los datos
+sobre el defecto al desarrollador, una vez llena esta se le manda al desarrollador,
+una plantilla debe de tener varios datos, entre ellos, paquete,origen,No. de error, estatus, ciclos, resultados
+y pasos para reproducir el error.
+
+Lo siguiente que nos dicen es que es un defecto accionable,estos es enviar toda la informacion del defecto de 
+forma clara y completa para que el desarrollador entienda el error y lo pueda solucionar.
+
+Despues se nos da un pequeño checklist para generar el defecto,sus pasos son, asegurarse de que es un defecto
+funcional y no de ambiente,reproducir el error,tomar evidencia,documentar los pasos para reproducir el
+error,documentar el defecto y asegurarse de que desarrollo este enterado del defecto.
+
+Se nos explica la diferencia de severidad y prioridad,la severidad se enfoca en el desarrollo y la prioridad se
+enfoca en el cliente,tambien nos explican el ciclo de vida del defecto,este empieza cuando se reporta la falla,
+despues se envia al desarrollador,el desarrollador la corrige,el tester la vuelve a testear para verificar la 
+correcion y por ultimo el tester aprueba o rechaza.
+
+El siguiente tema es el metodo agil o ejecucion agil, el metodo agil es tener retroalimentacion
+de manera continua con un ciclo de vida que se maneja por medio de iteraciones,despues
+nos explica el ciclo de vida incremental que es desarrollar por partes el software para despues 
+integrarlas,y despues se nos explica el ciclo de vida iterativo, en este caso cada ciclo o iteracion
+se revisa y mejora el producto.
+
+El ciclo de vida agil es donde se tienen diferentes pasos o capas, el primer paso o capa es el 
+backlog que es donde se tienen los requerimientos que el cliente pide,despues se mete a un ciclo
+de iteracion agil y al final se entrega al cliente que es quien lo autoriza o rechaza.
+
+Y por ultimo se nos explica que es el exploratory testing, esto es un proceso de exploracion concurrente
+del producto,diseño y ejecucion de prueba,tambien se nos explica que no es exploratory testing que 
+este es no seguir un script o procedimiento de pruebas.
+
+Tambien se compara el exploratory testing vs el scripted testing, la principal diferencia es que
+el exploratory testing no cuenta con una lista de pasos a seguir si no que la prueba se diseña y
+ejecuta al mismo tiempo
