@@ -1,0 +1,102 @@
+CEPS - Certificacion en Ejecucion de Prueba de Software
+
+Introduccion
+Se habla de los diferentes certificados y diplomados con los que se cuenta como: Ejecutor de pruebas, Analista de pruebas, lider de pruebas, Pruebas de software agil, Pruebas en mainframe, entre otros...
+Se certifica el Rol y el Perfil para ejecutar las tareas del dia a dia en los proyectos de prueba de Software. Se otorgan herramientas para el trabajo de dia a dia, se aprenderan las tareas que realiza 
+el ejecutor de pruebas de software, las bases que debe tener un ejecutor de prueba, los puntos necesarios requeridos en la industria para cumplir el rol en pruebas de software.
+
+Perfil del Ejecutor de Casos de Prueba
+El ejecutor tiene que conocer sobre el ciclo de vida de una prueba, entender como funciona, seguir un plan de ejecucion y ciclos de prueba, conocimiento en tipos de prueba AML, interpretar dise;os de casos de prueba,
+determinar si el caso de prueba es exitoso, fallido bloqueado o detenido por error, interpreta indicadores de reportes de prueba, documentar, escribe defectos y conoce el ciclo de vida de una prueba, conoce los manejadores
+de SQL simple, entiende el plan de prueba, el ejecutor debe entender las reglas de juegos.
+
+Ejemplos de perfil de pruebas de software.
+Responsabilidades:
+Aseguramiento de calidad para sistemas informáticos
+Responsables llevar a cabo casos de pruebas unitarias regresiones de estudio funcional 
+Analizar diseñar y ejecutar casos de prueba
+Identificarlas posibles acciones de los usuarios y testear 
+Responsable de llevar un registro y seguimiento de defectos
+Llevar un registro y seguimiento de defectos
+Realizar las pruebas de las últimas versiones antes de ser enviadas a los clientes 
+Brindar soporte al área de ventas en cuanto a reparación y homologación 
+generación de casos de prueba y evidencias. Documentar resultados.
+
+Que es prueba de software?
+Es la validacion y verificacion de los requerimientos funcionales. Considerando los atributos de calidad de un sistema
+Todo este trabajo tiene la finalidad de encontrar errores, hacer validacion y verificacion funcional, buscando la calidad del sistema.
+
+Tipos de prueba de Software
+Funcional
+Manual: La realizamos ejecutando acciones con el teclado o mouse para revisar las acciones del sistema
+Automatico: Por medio de software, realiza las tareas manuales pero de forma automatizada.
+No funcional
+Desempe;o: Validar el uso de recursos de un aplicativo mientras se realiza con un volumen de transacciones.
+Seguridad: Validar todas las vulnerabilidades de un sistemas y encontrar huecos que un hacker pueda atacar.
+
+Ciclo de vida de un Proyecto de Software
+Un proyecto de prueba inicia con un analisis (conocimiento del negocio), pasamos a una planeacion para saber como trabajaremos en este sistema
+en la parte de dise;o empezamos a construir los casos de prueba, en la fase de ambiente esperemos que todo el ambiente este listo para pasar a la ejecucion.
+En la fase de ejecucion se ejecutan todas las horas de trabajo esperando un trabajo de calidad y obtener indicadores. 
+UAT es la fase en la que el usuario realiza pruebas mas generales o basicas.
+Cierre, cerramos indicadores, pruebas y cerramos el proyecto.
+
+Caso de prueba
+Lo vemos como una caja negra en la que inyectamos entradas precondicionadas para obtener una salida, dato o evento del sistema. Posteriormente el 
+sistema queda en un estado de pre condicion (Estado en el que queda el sistema despues de ejecutar la entrada y precondicion.
+
+Script de pruebas
+Son un conjunto de pasos, para producir un caso de prueba.
+Es el medio para validar un caso de prueba.
+Este debe tener todos los detalles para poder ejecutar sin ayuda del tester que lo creo.
+
+Para generar un script de pruebas que sea reusable y que genera un retorno de inversión
+necesitas reglas para poderlo crear
+no debe contener datos duros o hard code, porque un caso de prueba es una combinación de datos y el procedimiento de pruebas es lo que tú utilizas para
+ejecutar esos datos que vas a ingresar en el sistema, por lo que, no debe contener ningún dato duro, debe tener al menos seis pasos básicos.
+1. Cómo acceder a la aplicación es importante que expliques al ejecutor de pruebas qué aplicativo de abrir cómo lo debe abrir.
+2. Cómo colocar las precondiciones de que necesitamos para
+poder ejecutar los datos, es decir, cómo llegar al punto donde tenemos que inyectar los datos en el aplicativo.
+3. Cómo ejecutar el caso debemos llevarlo paso a paso, instrucción por instrucción, secuencia secuencia, sin obviar nada para que el
+ejecutor pueda conducir la prueba sin ningún problema.
+4 Como validar el resultado esperado tenemos que especificar cuál es la acción que esperamos o el evento del sistema como resultado esperado para poderla comparar contra un resultado
+actual y determinar si es válida o fallida de la transacción o el caso de prueba 
+5. Como validar las post condiciones tenemos que también determinar y ponerlo muy específico en el procedimiento de pruebas en qué estado va a quedar el sistema después de
+haber ejecutado todas las transacciones
+6. Cómo salir del sistema y describir a detalle al ejecutor como son los caminos adecuados para poder salir del sistema a qué botón tenemos que darle un clic para poder
+salir adecuadamente y cerrar la sesión del sistema sin ningún problema.
+
+Datos de prueba
+Son aquellos datos que se requieren para la ejecucion del caso de prueba. Se dividen en estaticos y dinamicos
+Los estaticos no se queman, por ejemplo algun numero reutilizable.
+Los dinamicos por ejemplo son numeros en los que los datos no son reutilizables.
+
+Que es TestWare
+Es un conjunto de casos de prueba relacionados con caracteristicas similares, el objetivo es relacionarlos para su ejecucion.
+
+Ejecucion de prueba
+Es tomar cada caso de prueba previamente dise;ado por un Tester analista o ingeniero de prueba y seguir el guion del procedimiento de prueba (Script Manual)
+para reproducirlo con los datos requeridos en esa causa.
+Si el resultado esperado es igual al actual el caso es pasado, de lo contrario se falla y levanta un defecto de desarrollador.
+Siempre se documenta una evidencia de la ejecucion de la prueba.
+
+Tipos de proyecto de prueba
+Nuevos: en los que desarrollamos un nuevo proyecto que puede llevarse a cabo de 3 meses a un a;o.
+Mantenimientos: son modificaciones o actualizaciones que se le hacen a los proyectos de software.
+incidentes: son problemas productivos que se tienen que atender de forma inmediata.
+
+Areas de prueba funcionales
+Valida los requerimientos funcionales del software
+Valida lo que el sistema debe hacer y lo que no debe hacer
+
+No funcionales
+Valida los requerimientos de calidad de software
+Valida todos los atributos del sistema
+
+Ambiente
+Mantiene el ambiente de preubas disponible para los proyectos
+Vigila la integradad del ambiente
+Proporciona datos para la prueba
+Da soporte de antes, durante y al final de la prueba
+Genera accesos y permisos especiales para acceder al ambiente
+Cuida correlaciones y administra las ventanas de tiempo de prueba.
