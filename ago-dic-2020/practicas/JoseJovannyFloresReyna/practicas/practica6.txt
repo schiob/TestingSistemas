@@ -1,0 +1,83 @@
+Proceso de ejecucion de prueba
+Modelo ERA: modelo de ejecucion de ciclos de prueba con sus casos de prueba
+
+Empezamos con el ciclo de estabilización donde ejecutamos el 100% de los casos de prueba aquí si alcanzamos una efectividad menor al 80% empezamos a
+iniciar nuevamente el ciclo de estabilización pero si alcanzamos más allá del 80% o al menos el 80 por ciento de efectividad empezamos el ciclo de regresión
+en este ciclo de regresión probamos ese 20% de casos de prueba que tienen asociado un defecto y que al menos debemos de generar el 100% de esos 20 por ciento 
+del ciclo de casos de prueba para poder brincar al siguiente ciclo si alcanzamos un menor al 100% de efectividad.
+
+Casos de prueba
+1. Los CP, deben estar creados en una matriz de prueba
+o en una herramienta de gestion de prueba.
+
+2. Deben tener al menos la trazabilidad Escenario:CP:Script:Datos.
+
+3. Deben indicarte en donde estan almacenados, ruta oficial 
+de proyecto de prueba o ruta en la herramienta de gestion de prueba.
+
+Datos de prueba
+los tres requisitos para la ejecución: uno de los pre requisitos son los datos de la prueba. Para ejecutar los casos de pruebas se requieren datos estáticos y datos dinámicos
+hay que generarlos, cada caso de prueba requiere entradas que son datos los datos estáticos. Durante el diseño de la prueba que determina cuáles son los los datos 
+que va a utilizar son los datos que no se queman y los dinámicos los genera el responsable del ambiente son los datos que se quema. 
+Depende de tu organización cómo se van a estructurar este tipo de datos, pero, tú como ejecutor de pruebas debes asegurarte de tener estos datos ya sea dinámicos no estáticos para ejecutar
+tu prueba los datos tienen que estar visibles en tu aplicativo bajo prueba.
+
+Ventana de preuba funcional
+1. El área de ambientes es responsable de cuidar el choque o correlación con otro tipo de pruebas funcionales que se están
+ejecutando al mismo tiempo
+2. Para esto, se implementa la administracion de ventanas de prueba funcional.
+3. Para una ventan funcional debes tener un checklist cumplido con lo siguiente:
+* Casos de prueba listos
+* Datos generados
+* Plan de ejecucion
+* Aplicativo AUT instalado.
+
+Plan de ejecucion
+Es el plan a seguir por los ejecutores de preuba para determinar quien y cuando inician y terminan su prueba, 
+revisar dependencias con otras pruebas, fechas y datos.
+
+Lo debe generar el lider de prueba.
+
+Es comun en equipos de 3 o mas ejecutores de preuba.
+
+Generalmente el plan de ejecucion cambia cada ciclo de prueba.
+
+Aplicativo bajo prueba - AUT
+Es el aplicativo o producto de software quye vas a validar con los casos de prueba previamente dise;ados y asignados a ti como
+ejecutor de preubas. Tiene que estar instalado en tu ambiente de pruebas o QA. Debe instalarlo el responsable del ambiente de pruebas,
+debes recibir la ruta para acceder a este aplicativo asi como los usuarios y passwords respectivos.
+
+Roles y responsabilidades
+-Test Manager
+-Lider de prueba
+-Lider no funcional
+-Lider de automatizacion
+-Tester
+-Ingeniero de prueba de desempe;o
+-Ingeniero de preuba de automatizacion
+-Ingeniero de preuba
+-Analista no funcional
+
+Herramientas para la ejecucion
+
+Herramienta de gestion de prueba: Es una herramienta que se utiliza para automatizar los procesos de prueba, y te ayuda a gestionar los procedidmientos para asegurar la calidad como:
+Testware
+Defectos
+indicadores
+Requerimientos
+
+Herramientas para grabar evidencias: Este tipo de herramientas nos permite grabar la evidencia de la preuba que estamos realizando, ya sea exitosa o fallida. 
+Grabar video
+Grabar pantalla a foto (JPG, PNG, etc.)
+
+Administracion de los defectos
+Es importante mantener el estar registrando los defectos, documentando las evidencias, el cilco de vida de un defecto, los roles (desarrollador y tester) y los indicadores. Son
+importante para evidenciar que detectamos defectos y generamos retorno de inversion.
+
+Administracion de amibiente
+MAntener:
+Datos
+Diagrama de BDD.
+Diagrama de servidores.
+Diagrama de aplicativos por servidor.
+Batch, hora de ejecucion.
