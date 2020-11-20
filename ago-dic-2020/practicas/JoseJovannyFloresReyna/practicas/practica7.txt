@@ -1,0 +1,89 @@
+Defectos accionables
+Como levantar un defecto: 
+Debes tener una plantilla con los datos a llenar, previamente de debieron capacitar en como usarla.
+La plantilla puede estar en un excell, word o una herramiente de gestion de defectos.
+Llenas la plantilla con todos los datos solicitados y la envias al desarrollador.
+
+Datos de una plantilla.
+Paquete.
+Origen.
+No. de error.
+Clasificacion de errores.
+Estatus.
+ID Bug.
+Prioridad.
+Serveridad.
+Responsable de preubas.
+Responsable solucion.
+Descripcion del Bug.
+Ciclo encontrado.
+Ciclo cerrado.
+Resultados esperados en documento de analisiso ejecucion de pruebas.
+Pasos para reproducir el error.
+Comentarios.
+Como se soluciono el error.
+Video caso de prueba.
+Fecha del reporte.
+Hora del reporte.
+Fecha correcion del BUG.
+Hore correcion del BUG.
+Fecha limite.
+Bug impacto de preubas
+Impacto en retrabajo.
+
+Evidencias de los defectos
+Por cada caso de prueba tomar evidencia con estos datos.
+Proyecto.
+Ejecutor de pruebas.
+Titulo del caso de prueba.
+Ciclo de prueba.
+Caso de prueba.
+paso del caso de prueba.
+Video, log o imagen.
+
+Ciclo de vida del defecto
+Tenemos que reportar la falla por los medios definidos, enviarla al desarrollador, el desarrollador la reproduce y corrige
+el tester vuelve a revisar que este bien aplicada la correcion, el tester aprueba o rechaza la correcion.
+
+Metodos agiles
+Este tipo de ciclo de vida (iterativos e incrementales) permite al equipo del proyecto incorporar la retroalimentación e ir incrementando la experiencia del equipo durante el proyecto.
+
+Ciclo de vida incremental
+Es desarrollar por partes el producto de software para después integrar las medidas que se completan, es el agregar cada vez más funcionalidad al sistema.
+Puede ser la agregación de módulos en diferentes fases.
+
+Ciclo de vida iterativo
+En cada ciclo la iteración en cascada se revisa y se mejora el producto, es importante señalar que este ciclo no implica añadir
+funcionalidades o incrementos en el producto, pero si hacer una revisión de este producto y hacer una mejora. Un ejemplo de desarrollo interactivo es
+aquel basado en actualizaciones en el que cada ciclo mejora más la calidad del producto.
+
+Pruebas exploratorias
+involucra el aprendizaje, planeación y ejecución de pruebas y reportar resultados de forma simultánea. Es un
+proceso interactivo de exploración concurrente del producto, diseño de prueba y ejecución de prueba. En términos generales exploratory
+testing es la combinación de hacer ejecución y diseño de prueba en forma concurrente, ir aprendiendo entre una prueba y otra para ampliar los
+diseños y ampliar el aprendizaje
+
+Proceso de exploratory testing
+1 crea una conjetura o un
+modelo mental algo que tú consideres que
+puede suceder pero no estás seguro.
+ 
+2 crea una o dos pruebas que
+aprueben esa conjetura o modelo mental 2
+casuísticas.
+ 
+3 ejecuta la prueba
+las que aprueban esa conjetura y observe
+el resultado.
+
+4 evalúa la salida contra tu
+conjetura si fue cierto o fue falso si
+el resultado esperado se ejecutó o una
+discrepancia.
+ 
+5 repite el proceso
+hasta que la conjetura es aprobada o
+rechazada este es un proceso para
+explorador y testing.
+
+
