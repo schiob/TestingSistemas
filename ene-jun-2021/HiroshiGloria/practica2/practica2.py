@@ -1,24 +1,23 @@
-lados=input("Escribe los lados del triangulo:").split()
-def triangulos(lados):
-    if lados[0]+lados[1]>lados[2] or lados[1]+lados[2]>lados[0] or lados[2]+lados[0]>lados[1]:
-        if lados[0].isalpha()==True or lados[1].isalpha()==True or lados[2].isalpha()==True :
-            print("No se admiten letras.")
-        elif lados[0]==lados[1] and lados[1]==lados[2]: 
-            print("Es equilatero")
-        elif int(lados[0])<=0 or int(lados[1])<=0 or int(lados[2])<=0:
-            print("No puedes poner ceros o negativos.")
-        elif lados[0]==lados[1] or lados[0]==lados[2] or lados[1]==lados[2]:
-            print("Es isoceles")
-        elif lados[0]!=lados[1] or lados[0]!=lados[2] or lados[1]!=lados[2]:
-            print("Es escaleno")
-        return
+def triangulos(l):
+    if (l[0]<l[1]+l[2] and l[1]<l[0]+l[2] and l[2]<l[0]+l[1]):
+    	if (l[0]<=0 or l[1]<=0 or l[2]<=0):
+    		return "No puedes poner ceros o negativos."
+    	elif (l[0]==l[1] and l[1]==l[2]):
+    		return "Es equilatero"
+    	elif (l[0]==l[1] or l[0]==l[2] or l[1]==l[2]):
+    		return "Es isoceles."
+    	elif (l[0]!=l[1] or l[0]!=l[2] or l[1]!=l[2]):
+    		return "Es escaleno."
     else:
-        print("No se puede contruír")
-triangulos(lados)
-
-
-triangulos(1,1,1)
-triangulos(0,2,1)
-triangulos(4,5,7)
-triangulos("a","b","c")
-triangulos(7,7,7)
+    	return "No se puede construír"
+        
+l = [1,1,2]
+print(triangulos(l))
+l = [3,3,3]
+print(triangulos(l))
+l = [1,3,3]
+print(triangulos(l))
+l = [2,3,4]
+print(triangulos(l))
+l = [0,3,2]
+print(triangulos(l))
