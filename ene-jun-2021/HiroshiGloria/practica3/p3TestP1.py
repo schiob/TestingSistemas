@@ -2,7 +2,7 @@ import unittest
 from practica1 import contador as conta
 
 class TestP1(unittest.TestCase):
-
+    ### solo para tener algo que hacer commit
     def test3p3i3pos3neg(self):
         linea = "3 3 3 -2 -2 -2"
         a = conta(linea)

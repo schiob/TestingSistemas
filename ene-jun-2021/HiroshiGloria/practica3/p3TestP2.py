@@ -2,7 +2,7 @@ import unittest
 from practica2 import triangulos as trian
 
 class practica2TestingMethods(unittest.TestCase):
-
+    ### solo para tener algo que hacer commit
     def testEquilatero(self):
         l = [3,3,3]
         a = trian(l)
