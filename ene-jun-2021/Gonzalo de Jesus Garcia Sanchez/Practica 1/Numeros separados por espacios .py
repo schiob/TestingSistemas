@@ -26,5 +26,5 @@ resultado = practica1(numeros) #SE LLAMA A LA FUNCION PRACTICA1 Y  LA [ASAMOS CO
 
 print('La Cantidad de Numeros Positivos son: %i' % resultado[2])  #INSPECCIONAMOS TERCERA POCICION DE RESULTADO POSITIVOS
 print('La Cantidad de Numeros Negativos son: %i' % resultado[3])  #INSPECCIONAMOS CUARTA  POCICION DE RESULTADO NEGATIVOS
-print('La Cantidad de Numeros Pares son: %i' % resultado[0])      #INSPECCIONAMOS PRIMERA POCICION DE RESULTADO PARES
-print('La Cantidad de Numeros Impares son: %i' % resultado[1])    #INSPECCIONAMOS SEGUNDA POCICION DE RESULTADO IMPARES
+print(    'La Cantidad de Numeros Pares son: %i' % resultado[0])      #INSPECCIONAMOS PRIMERA POCICION DE RESULTADO PARES
+print(  'La Cantidad de Numeros Impares son: %i' % resultado[1])    #INSPECCIONAMOS SEGUNDA POCICION DE RESULTADO IMPARES
