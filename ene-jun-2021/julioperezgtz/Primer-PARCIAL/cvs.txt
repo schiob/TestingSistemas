@@ -1,0 +1,6 @@
+Tom,tomas@hotmail.com,85
+Juan,juan@hotmail.com,75
+Maria,maria84@gmail.com,90
+Paco,paquito123@outlook.com,74
+Ana,anaa22@gmail.com,88
+Marcos,marcosss@hotmail.com,92
