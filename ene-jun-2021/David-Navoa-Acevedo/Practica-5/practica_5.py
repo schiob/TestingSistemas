@@ -12,10 +12,8 @@ def funcion_1(arreglo, texto:str ,reemplazar):
 def funcion_2(arreglo, texto: str, reemplazar, tamaño):
 
     new_texto = funcion_1(arreglo, texto, reemplazar)
-    
     #Funcion de censura
-    if (len(new_text) - len(text)) <= tamaño:
-        return "valido"
+    if abs(len(new_texto) - len(texto)) <= tamaño:
+        return "Valido"
     else: 
-        return "No valido"
-
+        return "No Valido"
