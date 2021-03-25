@@ -14,7 +14,8 @@ class Pruebas (unittest.TestCase):
             [(["popo", "sangre", "muerte", "maldito"], "El animal maldito se acercó con una mirada de muerte. Manchas de sangre cubrían el suelo", "potatooooo", 2), "No Valido"],
             [(["popo", "sangre", "muerte", "maldito"], "El animal maldito se acercó con una mirada de muerte. Manchas de sangre cubrían el suelo", "Rebecaaaaaaaaaaaaaaaaaaaaa", 10), "No Valido"],
             [(["popo", "sangre", "muerte", "maldito"], "El animal maldito se acercó con una mirada de muerte. Manchas de sangre cubrían el suelo", "pipi", 1), "Valido"],
-            [(["popo", "sangre", "muerte", "maldito"], "El animal maldito se acercó con una mirada de muerte. Manchas de sangre cubrían el suelo", "pedro", -2), "No Valido"]
+            [(["popo", "sangre", "muerte", "maldito"], "El animal maldito se acercó con una mirada de muerte. Manchas de sangre cubrían el suelo", "pedro", -2), "No Valido"],
+            [(["popo", "sangre", "muerte", "maldito"], "El animal maldito se acercó con una mirada de muerte. Manchas de sangre cubrían el suelo", "pedro", "numero"), "No Valido"]
         )
         for caso in tc:
             self.assertEquals(funcion_1(caso[0]),caso[1])
