@@ -1,0 +1,21 @@
+
+CRUD para Summoners Wars (SWARMFARM API)
+
+    La idea es mover la informacion de la cuenta de SWARMFARM (Junto a la
+    documentacion que esta pagina cuenta respecto al API) para llevar un mejor
+    tracking de los mounstros que usamos en PvP, las runas que llevan, la informacion
+    sobre sus skills, etc.
+    Ademas con esa informacion almacenarla en una BD local agregando una tabla adicional
+    en la cual llevemos un tracking de los Wins de cada mob usado.
+    De esta forma podemos ver la utilidad de cada mob, si x o y build gana mas 
+    o si es necesario replantearce las build. 
+    Se tratara de agregar una funcion que ayude a las decisiones del usuario para
+     así mostrarlo en una interfaz grafica al usuario final.
+
+     API Documentation: 
+        https://swarfarm.com/api/v2/docs/
+
+    SWARMFARM github repository:
+        https://github.com/PeteAndersen/swarfarm/
+
+    
