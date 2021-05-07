@@ -1,5 +1,5 @@
 
-def funcion_1(arreglo, texto:str ,reemplazar):
+def funcion_1(arreglo: list[str], texto:str ,reemplazar: str):
     
     #codigo de Censura
     new_text = texto
@@ -9,7 +9,7 @@ def funcion_1(arreglo, texto:str ,reemplazar):
     
     return new_text
 
-def funcion_2(arreglo, texto: str, reemplazar, tamaño):
+def funcion_2(arreglo: list[str], texto: str, reemplazar: str, tamaño):
 
     new_texto = funcion_1(arreglo, texto, reemplazar)
     #codigo de Validacion

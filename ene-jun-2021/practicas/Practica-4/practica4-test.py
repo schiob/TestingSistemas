@@ -21,7 +21,7 @@ class testRequests(unittest.TestCase):
             cosa_magica.text = pedido(1)
             mock_post.return_value = cosa_magica
 
-            self.assertEquals(pedido(0), pedido(1) )
+            self.assertEquals(pedido(0), pedido(1))
 
 if __name__ == "__main__":
     unittest.main()

@@ -22,5 +22,6 @@ class Pruebas (unittest.TestCase):
 
         for caso in tc_2:
             self.assertEquals(funcion_2(caso[0]),caso[1])
+            
 if __name__ == '__main__':
     unittest.main()
