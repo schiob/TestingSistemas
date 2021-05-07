@@ -8,6 +8,8 @@ class TestShouter(unittest.TestCase):
         cadena = "hola a todos"
         magick_response = MagicMock()
         magick_response.text = "HOLA A TODOS"
+
+        
         
         actual = Shouter(cadena)
         self.assertEqual(actual, "HOLA A TODOS")
