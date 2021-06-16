@@ -1,0 +1,5 @@
+controlRemoto 450.00
+hamburguesa 90.00
+Switch 6999.99
+tarjetaRegalo 500.00
+PixelCelular 15000.00

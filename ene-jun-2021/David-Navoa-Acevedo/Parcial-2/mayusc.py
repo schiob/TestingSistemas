@@ -33,7 +33,7 @@ class Conversor:
     #Funcion 2
     def conversor_a_mayusculas(self, a: str):
         b = requests.post("HTTP://API.SHOUTCLOUD.IO/V1/SHOUT",json={"INPUT": a})
-        return b.text
+        return b.text.split('"')[-2]
     #Funcion 1
     def funcion_principal(self):
         
