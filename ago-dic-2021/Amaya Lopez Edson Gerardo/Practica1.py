@@ -2,4 +2,4 @@ def suma(a,b):
     print(a+b)
 
 
-suma(5,7)
+suma(5,12)
