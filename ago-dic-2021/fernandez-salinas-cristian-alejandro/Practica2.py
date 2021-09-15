@@ -11,4 +11,4 @@ class TestSuma(unittest.TestCase):
         expected = 3
         self.assertEqual(actual,expected)
 
-#suma(1,2)
+#suma('a','b')
