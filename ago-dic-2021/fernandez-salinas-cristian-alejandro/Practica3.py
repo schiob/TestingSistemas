@@ -3,7 +3,6 @@ from unittest import result
 
 def contarNumeros(n,numeros):
     numeros = list(map(int,numeros.split()))
-    n = n-1
     positivos = 0
     negativos = 0
     pares = 0
@@ -22,8 +21,9 @@ def contarNumeros(n,numeros):
             impares += 1
 
     resultado = "{} número(s) positivo(s)\n{} número(s) negativo(s)\n{} número(s) par(es)\n{} número(s) impar(es)".format(positivos,negativos,pares,impares)
+    print(resultado)
     return resultado
-    print(resultado)    
+        
 
 if __name__ == '__main__':
     contarNumeros(5,"51 -12 -3 0 2")
