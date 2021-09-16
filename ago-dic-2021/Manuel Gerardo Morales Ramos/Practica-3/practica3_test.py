@@ -28,11 +28,23 @@ class TestPractica3(unittest.TestCase):
                 "expected_output": "0 número(s) positivo(s)\n0 número(s) negativo(s)\n1 número(s) par(es)\n0 número(s) impar(es)",
                 "expected_raise": False,
             },
+             {
+                "name": "Case 5 error",
+                "input": "aeiou",
+                "expected_output": "0 número(s) positivo(s)\n0 número(s) negativo(s)\n0 número(s) par(es)\n0 número(s) impar(es)",
+                "expected_raise": True,
+            },
+             {
+                "name": "Case 6 error",
+                "input": " ",
+                "expected_output": "0 número(s) positivo(s)\n0 número(s) negativo(s)\n0 número(s) par(es)\n0 número(s) impar(es)",
+                "expected_raise": True,
+            },
         ]
         
         for tc in test_cases:
             if tc["expected_raise"]:
-                self.assertRaises(Exception, sum, tc["input"][0], tc["input"][1])
+                self.assertRaises(Exception, numbers_summary, tc["input"])
             else:
                 input = str(tc["input"]).split(" ")
                 self.assertEqual(tc["expected_output"], numbers_summary(input))
