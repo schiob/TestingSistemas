@@ -1,5 +1,5 @@
 import unittest
-from practica3 import numbers_summary
+from practica3 import numbers_summary, str_list_to_int_list
 
 class TestPractica3(unittest.TestCase):
     def test_numbers(self):
@@ -46,7 +46,8 @@ class TestPractica3(unittest.TestCase):
             if tc["expected_raise"]:
                 self.assertRaises(Exception, numbers_summary, tc["input"])
             else:
-                input = str(tc["input"]).split(" ")
+                input = str_list_to_int_list(str(tc["input"]).split(" "))
+               
                 self.assertEqual(tc["expected_output"], numbers_summary(input))
 
 if __name__ == '__main__':

@@ -1,3 +1,8 @@
+import sys
+
+def str_list_to_int_list(str_list: list[str]) -> list[int]:
+    return list(map(int, str_list))
+
 def is_positive(number: int) -> bool:
     if number > 0:
         return True
@@ -10,12 +15,11 @@ def is_even(number: int) -> bool:
     else:
         return False
 
-def numbers_summary(numbers:list[str]) -> str:
+def numbers_summary(numbers: list[int]) -> str:
     positive = negative = even = odd = 0
 
     for number in numbers:
-        number = int(number)
-        
+
         if number != 0:
             if is_positive(number) and is_even(number):
                 positive += 1
@@ -40,11 +44,13 @@ def numbers_summary(numbers:list[str]) -> str:
 
 def main():
     n = int(input("Pon el número de números que quieras: "))
-    line = input("Coloca la cantidad de números que me dijiste separados por espacios:\n").split(" ")
+    line = str_list_to_int_list(input("Coloca la cantidad de números que me dijiste separados por espacios:\n").split(" "))
+    
     if 0 < len(line) <= n:
         print(numbers_summary(line))
     else:
         print("Has puesto más numeros de los que me dijiste al principio. :/")
+        sys.exit()
     
 if __name__ == '__main__':
     main()
