@@ -19,7 +19,7 @@ class PruebasDeJuanita(unittest.TestCase):
         self.assertEqual(
             prueba, '0 número(s) positivo(s)\n4 número(s) negativo(s)\n2 número(s) par(es)\n2 número(s) impar(es)')
 
-    def caso4(self):
+    def Caso4(self):
         prueba = ListaDeJuanita([0])
         self.assertEqual(prueba, '0 número(s) positivo(s)\n0 número(s) negativo(s)\n1 número(s) par(es)\n0 número(s) impar(es)')
 
