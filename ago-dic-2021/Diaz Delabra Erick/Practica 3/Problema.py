@@ -27,3 +27,4 @@ if __name__ == '__main__':
     for i in range(num):
         i = int(input("Ingrese el numero:"))
         esperado.append(i)
+        
