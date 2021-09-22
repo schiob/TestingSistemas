@@ -23,7 +23,7 @@ def taquitos(orden):
         elif orden[i] == "machito":
             machito += 1
         else:
-            continue
+            return("Hay un taquito que no existe en el menu")
     
     res = (cachete * 13 + lengua * 10 + tripitas * 9 + pastor * 15 + machito * 14)
     print(res)

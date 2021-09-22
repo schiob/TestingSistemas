@@ -15,7 +15,7 @@ class taquitosTest(unittest.TestCase):
 
     def tacoNoEnMenuTest(self):
         orden = "lengua cachete tripitas barbacoa machito"
-        resultado = 46
+        resultado = "Hay un taquito que no existe en el menu"
         self.assertEqual(resultado,orden)
 
     def separadosPorComasTest(self):
