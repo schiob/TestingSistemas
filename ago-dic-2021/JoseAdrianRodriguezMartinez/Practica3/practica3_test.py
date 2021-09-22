@@ -1,32 +1,52 @@
 import unittest
-from practica3 import numeros_lista
+import unittest.main as main
+from practica3 import crear_lista, positivos, negativos, pares, impares
 
-class TestNumeros(unittest.TestCase):
-    def positivos(self):
-        positivos = 0
-        for i in numeros_lista(5,'1 2 3 4 5'):    
-            if i > 0:
-                positivos += 1
-        self.assertEqual(positivos, 5)
-    def negativos(self):
-        negativos = 0
-        for i in numeros_lista(5, '1 2 3 4 5'):
-            if i < 0:
-                negativos += 1
-        self.assertEqual(negativos, 0)
-    def pares(self):
-        pares = 0
-        for i in numeros_lista(5, '1 2 3 4 5'):
-            if i % 2 == 0:
-                pares += 1
-        self.assertEqual(pares, 2)
+class Practica3_test(unittest.TestCase):
+    def primer_test(self):
+        entrada = [51, -12, -3, 0, 2]
+        #el orden en la lista es positivo, negativo, par e impar
+        salida_real=[]
+        salida_esperada = [2, 2, 3, 2]
+        
+        salida_real.append(positivos(entrada))
+        salida_real.append(negativos(entrada))
+        salida_real.append(pares(entrada))
+        salida_real.append(impares(entrada))
+       
+        self.assertEqual(salida_real, salida_esperada)
 
-    def impares(self):
-        impares = 0
-        for i in numeros_lista(5, '1 2 3 4 5'):
-            if i %  2!= 0:
-                impares += 1
-        self.assertEqual(impares, 3)
+    def segundo_test(self):
+        entrada = [0, 1, 2, 3, 4]
+        salida_real = []
+        salida_esperada = [4, 0, 3, 2]
+      
+        salida_real.append(positivos(entrada))
+        salida_real.append(negativos(entrada))
+        salida_real.append(pares(entrada))
+        salida_real.append(impares(entrada))
 
-if __name__ == '__main__':
-    unittest.main()
+        self.assertEqual(salida_real, salida_esperada)
+
+    def tercer_test(self):
+        entrada = [-1, -2, -3]
+        salida_real = []
+        salida_esperada = [0, 3, 1, 2]
+        
+        salida_real.append(positivos(entrada))
+        salida_real.append(negativos(entrada))
+        salida_real.append(pares(entrada))
+        salida_real.append(impares(entrada))
+        
+        self.assertEqual(salida_real, salida_esperada)
+
+    def cuarto_test(self):
+        entrada = [0]
+        salida_real = []
+        salida_esperada = [0, 0, 1, 0]
+
+        salida_real.append(positivos(entrada))
+        salida_real.append(negativos(entrada))
+        salida_real.append(pares(entrada))
+        salida_real.append(impares(entrada))
+        self.assertEqual(salida_real, salida_esperada)
