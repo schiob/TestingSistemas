@@ -10,7 +10,7 @@ class testJuanita(unittest.TestCase):
             prueba, '2 número(s) positivo(s)\n2 número(s) negativo(s)\n3 número(s) par(es)\n2 número(s) impar(es)')
 
     def test2(self):
-        prueba = juanitaList([1, 1, 2, 3, 4])
+        prueba = juanitaList([0, 1, 2, 3, 4])
         self.assertEqual(
             prueba, '4 número(s) positivo(s)\n0 número(s) negativo(s)\n3 número(s) par(es)\n2 número(s) impar(es)')
 
