@@ -1,6 +1,5 @@
 import unittest
-import unittest.main as main
-from practica3 import crear_lista, positivos, negativos, pares, impares
+from practica3 import *
 
 class Practica3_test(unittest.TestCase):
     def primer_test(self):
@@ -50,3 +49,7 @@ class Practica3_test(unittest.TestCase):
         salida_real.append(pares(entrada))
         salida_real.append(impares(entrada))
         self.assertEqual(salida_real, salida_esperada)
+
+if __name__ == '__main__':
+    unittest.main()
+    
