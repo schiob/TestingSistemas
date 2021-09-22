@@ -2,7 +2,7 @@ import unittest
 from practica3 import *
 
 class Practica3_test(unittest.TestCase):
-    def primer_test(self):
+    def test_1(self):
         entrada = [51, -12, -3, 0, 2]
         #el orden en la lista es positivo, negativo, par e impar
         salida_real=[]
@@ -15,7 +15,7 @@ class Practica3_test(unittest.TestCase):
        
         self.assertEqual(salida_real, salida_esperada)
 
-    def segundo_test(self):
+    def test_dos(self):
         entrada = [0, 1, 2, 3, 4]
         salida_real = []
         salida_esperada = [4, 0, 3, 2]
@@ -27,7 +27,7 @@ class Practica3_test(unittest.TestCase):
 
         self.assertEqual(salida_real, salida_esperada)
 
-    def tercer_test(self):
+    def test_tres(self):
         entrada = [-1, -2, -3]
         salida_real = []
         salida_esperada = [0, 3, 1, 2]
@@ -39,7 +39,7 @@ class Practica3_test(unittest.TestCase):
         
         self.assertEqual(salida_real, salida_esperada)
 
-    def cuarto_test(self):
+    def test_cuatro(self):
         entrada = [0]
         salida_real = []
         salida_esperada = [0, 0, 1, 0]
