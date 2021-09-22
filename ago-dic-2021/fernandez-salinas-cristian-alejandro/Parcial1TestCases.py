@@ -1,27 +1,27 @@
 import unittest
-from Parcial1 import *
+from Parcial1 import taquitos
 
 class taquitosTest(unittest.TestCase):
 
-    def githubEjemploPrueba(self):
+    def test_githubEjemploPrueba(self):
         orden = "cachete lengua cachete tripitas machito machito machito cachete lengua"
         resultado = 110
-        self.assertEqual(resultado,orden)
+        self.assertEqual(resultado,taquitos(orden))
 
-    def masDeTreintaTest(self):
+    def test_masDeTreintaTest(self):
         orden = "cachete lengua cachete tripitas machito machito machito cachete lengua cachete lengua cachete tripitas machito machito machito cachete lengua cachete lengua cachete tripitas machito machito machito cachete lengua cachete lengua cachete tripitas machito machito machito cachete lengua"
         resultado = "Error son demaciados taquitos"
-        self.assertEqual(resultado,orden)
+        self.assertEqual(resultado,taquitos(orden))
 
-    def tacoNoEnMenuTest(self):
+    def test_tacoNoEnMenuTest(self):
         orden = "lengua cachete tripitas barbacoa machito"
-        resultado = "Hay un taquito que no existe en el menu"
-        self.assertEqual(resultado,orden)
+        resultado = 46
+        self.assertEqual(resultado,taquitos(orden))
 
-    def separadosPorComasTest(self):
+    def test_separadosPorComasTest(self):
         orden = "cachete,lengua,cachete,tripitas,machito,machito,machito,cachete,lengua"
         resultado = 0
-        self.assertEqual(resultado,orden)
+        self.assertEqual(resultado,taquitos(orden))
 
         
 if __name__ == '__main__':
