@@ -7,20 +7,20 @@ def taquitos_sabrositos(tacos):
     machito=0
     total=0
 
-    if len(tacos) >=30:
-        return 'No se pueden ingresar mas de 30 tacos'
-
-    for taquito in tacos:
-        if(taquito == 'cachete' ):
-            cachete +=1
-        elif(taquito  =="lengua"):
-            lengua+=1
-        elif(taquito  =="tripitas"):
-            tripitas+=1
-        elif(taquito =="pastor"):
-            pastor+=1
-        elif(taquito =="machito"):
-            machito+=1
+    if len(tacos) <=30:
+        for taquito in tacos:
+            if(taquito == 'cachete' ):
+                cachete +=1
+            elif(taquito  =="lengua"):
+                lengua+=1
+            elif(taquito  =="tripitas"):
+                tripitas+=1
+            elif(taquito =="pastor"):
+                pastor+=1
+            elif(taquito =="machito"):
+                machito+=1
+    else:
+          return 'No se pueden ingresar mas de 30 tacos'
 
     total = (cachete*13)+(lengua*10)+(tripitas*9)+(pastor*15)+(machito*14)
 
