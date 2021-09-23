@@ -24,6 +24,7 @@ def total_pedido(pedido: list):
     return total_parcial
 
 if __name__ == '__main__':
+    #cachete lengua tripitas pastor machito
     lista = crear_lista(input('Pedido separado por espacios: '))
     total = total_pedido(lista)
     print(total)
