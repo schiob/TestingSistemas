@@ -6,17 +6,20 @@ def tacosCheco(menu):
     machito = 0
     total = 0
 
-    for taco in menu:
-        if(taco == "cachete"):
-            cachete += 1
-        elif(taco == "lengua"):
-            lengua += 1
-        elif(taco == "tripita"):
-            tripita += 1
-        elif(taco == "pastor"):
-            pastor += 1
-        elif(taco == "machito"):
-            machito += 1
+    if (len(menu) <= 30):
+        for taco in menu:
+            if(taco == "cachete"):
+                cachete += 1
+            elif(taco == "lengua"):
+                lengua += 1
+            elif(taco == "tripita"):
+                tripita += 1
+            elif(taco == "pastor"):
+                pastor += 1
+            elif(taco == "machito"):
+                machito += 1
+    else:
+        return("Solo se aceptan 30 tacos como maximo joven")
 
     total = (cachete*13)+(lengua*10)+(tripita*9)+(pastor*15)+(machito*14)
     print(f'{cachete} cachete, {lengua} lengua, {tripita} tripita, {pastor} pastor {machito} machito')
