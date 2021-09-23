@@ -7,6 +7,9 @@ def taquitos_sabrositos(tacos):
     machito=0
     total=0
 
+    if len(tacos) >=30:
+        return 'No se pueden ingresar mas de 30 tacos'
+
     for taquito in tacos:
         if(taquito == 'cachete' ):
             cachete +=1
