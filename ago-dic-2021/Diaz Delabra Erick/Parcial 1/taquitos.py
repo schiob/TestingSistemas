@@ -18,7 +18,8 @@ def taquitosClase(esperado):
 
             elif i == "machito":
                 total = total + 14
-
+    else:
+        total = ("solo se aceptan 30 tacos maximo")
     return (total)
 
 if __name__ == "__main__":

@@ -32,8 +32,19 @@ class testTacos(unittest.TestCase):
         lista = ["cachete", "lengua", "tripitas", "pastor", "machito"]
         entrada = taquitosClase(lista)
         self.assertEqual(entrada, 61)
-    
 
+    def test6(self):
+        '''sero'''
+        lista = []
+        entrada = taquitosClase(lista)
+        self.assertEqual(entrada, 0)
+    
+    def test7(self):
+        '''mas de 30 tacos'''
+        lista = ["lengua", "lengua", "lengua", "lengua", "lengua", "lengua", "lengua", "lengua", "lengua", "lengua", "lengua", "lengua", "lengua", "lengua", "lengua", "lengua", "lengua", "lengua", "lengua", "lengua", "lengua", "lengua", "lengua", "lengua", "lengua", "lengua", "lengua", "lengua", "lengua", "lengua", "lengua", "pastor"]
+        entrada = taquitosClase(lista)
+        self.assertEqual(entrada, "solo se aceptan 30 tacos maximo")
+    
 if __name__ == '__main__':
     unittest.main()
     
