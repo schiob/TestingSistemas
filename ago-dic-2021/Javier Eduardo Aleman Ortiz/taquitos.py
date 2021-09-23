@@ -1,9 +1,5 @@
 def tacos(t_tacos):
-    #cachete=0
-    #lengua=0
-    #tripitas=0
-    #pastor=0
-    #machito=0
+  
     cuenta=0
     for i in t_tacos:
         if i =="cachete":
@@ -16,7 +12,6 @@ def tacos(t_tacos):
             cuenta=cuenta+15
         elif i =='machito':
             cuenta=cuenta+14
-   #cuenta=0#cachete+lengua+tripitas+pastor+machito
     if len(t_tacos)<=30:
         return(cuenta)
     else:
