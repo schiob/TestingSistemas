@@ -37,7 +37,7 @@ class parcial1_test(unittest.TestCase):
 
             {
                 #Este caso se espera que de error porque el taco de "Serpiente" no existe en el menu.
-                'nombre': 'El raro: 4 tacos del menu y 1 raro',
+                'nombre': 'El rarito: 4 tacos del menu y 1 raro',
                 'entrada': ['Cachete', 'Lengua', 'Tripitas', 'Pastor', 'Serpiente'],
                 'salida_esperada': 'El/Un taco no existe',
                 'error_esperado': False
