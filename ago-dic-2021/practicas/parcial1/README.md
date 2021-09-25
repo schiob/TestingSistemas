@@ -1,4 +1,4 @@
-# Práctica 2
+# Primer parcial
 Escriban el siguiente programa tomando en cuenta los `Puntos Importantes` que se indican al final.
 
 ## taquitos.py
