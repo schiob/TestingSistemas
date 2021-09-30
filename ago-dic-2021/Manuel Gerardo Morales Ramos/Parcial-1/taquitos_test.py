@@ -42,13 +42,19 @@ class TestTaquitos(unittest.TestCase):
             },
              {
                 "name": "Case 7 fail",
-                "input": "cachete lengua cachete tripitas machito machito machito cachete lengua pastor machito cachete lengua cachete tripitas machito machito machito cachete lengua pastor machito cachete lengua cachete tripitas machito machito machito cachete lengua pastor machito",
+                "input": "cachete lengua cachete"*10,
                 "expected_output": 110,
                 "expected_raise": True,
             },
               {
                 "name": "Case 8 fail",
                 "input": "asdasdas",
+                "expected_output": 110,
+                "expected_raise": True,
+            },
+            {
+                "name": "Case 9 fail",
+                "input": "Cachete",
                 "expected_output": 110,
                 "expected_raise": True,
             },
