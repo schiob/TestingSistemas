@@ -11,7 +11,7 @@ class NuevoMock ():
 class TestMock(unittest.TestCase):         
     def test_mock(self):
         mi_mock = NuevoMock("1\n1") 
-        self.assertEqual(calc_prom(mi_mock), 2)
+        self.assertEqual(calc_prom(mi_mock), 1)
         
 if __name__ == "__main__":
     unittest.main()

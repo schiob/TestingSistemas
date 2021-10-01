@@ -5,10 +5,13 @@ class leer_archivo ():
 
 def calc_prom(entrada):
     total = 0
+    n = 0
     for linea in entrada.leer():
-        if linea.strip():
+        #if linea[0].isnumeric():
+        if linea.split():
             total += int(linea)
-    return total
+            n += 1
+    return total / n
 
 if __name__ == "__main__": 
     archivito = leer_archivo() 
