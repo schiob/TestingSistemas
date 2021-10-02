@@ -1,18 +1,17 @@
-import unittest
-from  unittest import mock
+import unittest, unittest.mock as mock
 from practica4 import calc_prom
 
 test_cases = [
             {
                 'name': 'Case 1 ok',
                 'input': '10\n20\n30',
-                'expected_output': 60,
+                'expected_output': 20,
                 'expected_raise': False,
             },
             {
                 'name': 'Case 2 ok',
                 'input': '10\n20\n30\n10',
-                'expected_output': 70,
+                'expected_output': 17.5,
                 'expected_raise': False,
             },
              {
@@ -27,8 +26,14 @@ test_cases = [
                 'expected_output': 0,
                 'expected_raise': False,
             },
-             {
-                'name': 'Case 5 error',
+            {
+                'name': 'Case 5 ok',
+                'input': '5\n6\n7\n8',
+                'expected_output': 6.5,
+                'expected_raise': False
+            },
+            {
+                'name': 'Case 6 error',
                 'input': 'refe',
                 'expected_output': 0,
                 'expected_raise': True,
