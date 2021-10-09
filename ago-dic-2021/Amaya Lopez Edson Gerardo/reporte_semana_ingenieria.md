@@ -14,55 +14,55 @@ costo de la calidad
 que
 
 > Consecuencia:
->* perdida de clientes y consecuencias de negocio
->* deterioro de relaciones publicas
->* atrasos en lo planificado
+>* Perdida de clientes y consecuencias de negocio
+>* Deterioro de relaciones publicas
+>* Atrasos en lo planificado
 
 costo de la calidad con pruebas sw
-* analisis
-* diseño
-* construccion
-* pruebas unitarias
-* pruebas sistemas
+* Analisis
+* Diseño
+* Construccion
+* Pruebas unitarias
+* Pruebas sistemas
 
 
 
-que es una prueba de sw
-- es validar y verificar un sw
-- con la interracion de encontrar errores
-- mediate el uso de una herramienta
-- procesos tradicionales o agiles
-- practicas de testeo
+¿Que es una prueba de sw?
+- Es validar y verificar un sw
+- Con la interracion de encontrar errores
+- Mediate el uso de una herramienta
+- Procesos tradicionales o agiles
+- Practicas de testeo
 
 ## Niveles de prueba
-* pruba unitaria: valida la infrastructura
-* prueba integral
-* prueba funcional
-* prueba de desempeño
-* automatizacion UAT
+* Pruba unitaria: valida la infrastructura
+* Prueba integral
+* Prueba funcional
+* Prueba de desempeño
+* Automatizacion UAT
 
 ### Los hace el programador
-* pruba unitaria: valida la infrastructura
-* prueba integral
+* Pruba unitaria: valida la infrastructura
+* Prueba integral
 
 ### Los hacen los tester
-* prueba funcional
-* prueba de desempeño
-* automatizacion UAT
+* Prueba funcional
+* Prueba de desempeño
+* Automatizacion UAT
 
 
-tecnicas de pruebas
+Tecnicas de pruebas
 
-prueba de caja blancaa
-utilizada en el area de desarrollo
-se profundica las clases, funciones
-pruebas unitarias, de integracion
-como funciona el codigo
+Prueba de caja blancaa
+Utilizada en el area de desarrollo
+Se profundica las clases, funciones
+Pruebas unitarias, de integracion
+Como funciona el codigo
 
 
-caja gris
-es un mix entre caja blanca y gris
-manejo de bd, codigo que permite entender la funcionalidad
+Caja gris
+Es un mix entre caja blanca y gris
+Manejo de bd, codigo que permite entender la funcionalidad
 
 caja negra
 pruebas funcionales
