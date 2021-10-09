@@ -24,7 +24,7 @@ class Test_suma(unittest.TestCase):
                 "name": "no tenemos pedido de taco",
                 "input":[""],
                 "output": 0
-            }
+            },
         ]
         for tc in test_cases:
             resultad = taquitos_sabrositos(tc["input"])
