@@ -7,10 +7,9 @@ from calcular_promedio import *
 
 
 class PromedioTest(TestCase):
-    @patch('__main__.open', create=True)
+    @patch('__main__.open')
     def test_archivito(self, mock_open):
-        mock_open.return_value = 10
-        salida_esperada = 2.5
+        salida_esperada = 3
         self.assertEqual(calc_prom(), salida_esperada)
 
 
