@@ -1,0 +1,39 @@
+Las pruebas tienen 4 campos especializados:
+	-Prueba funcional
+	-Prueba no funcional
+	-Automatización
+	-Seguridad
+Casos de prueba
+Cualidades de un tester:
+	-Innovador
+	-Proactivo
+	-Entendimiento rápido del negocio
+	-Líder
+	-Base de Datos
+	-Negociador
+	-Enfoque al cambio
+	-Programador
+	-Actitud
+Paralelismos entre el trabajo de un doctor y el de un tester
+Tipos de pruebas:
+	-Pruebas de Desempeño
+	-Pruebas móviles
+	-Automatización de Pruebas
+	-Pruebas de seguridad
+	-Pruebas Manuales (funcionales)
+	-Administración de Datos
+
+--------------------------------Parte 3
+
+Proceso de Pruebas
+--Proyectos tradicionales
+    -Pruebas estáticas
+    -Pruebas dinámicas
+La automatización es un complemento a las pruebas manuales
+
+Le Final
+
+Conclusiones:
+No recuerdo ver nada nuevo por lo tanto no recuerdo nada interesante, lo que vimos ya lo sabía, pero no me ponga cuestionario así de la nada porque probablemente no pueda contestarlo.
+
+Por favor a la siguiente semana de ingeniería mínimo que nos encuesten sobre qué queremos ver, muchas gracias.
