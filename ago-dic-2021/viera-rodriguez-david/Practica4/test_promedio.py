@@ -1,3 +1,4 @@
+
 import unittest
 from promedio import *
 from unittest import TestCase
@@ -7,7 +8,7 @@ from unittest.mock import patch
 
 
 class test_promedio(TestCase):
-    @patch('__main__.open', create=True)
+    @patch('builtins.open', create=True)
     def test_archivito(self, mock_open):
          mock_open.return_value = 10
          salida_esperada = 2
