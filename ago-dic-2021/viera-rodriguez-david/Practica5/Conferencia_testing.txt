@@ -1,0 +1,26 @@
+Conferencia de testing
+
+Áreas Principales:
+Funcional: validan que el software cumpla con lo requerido al igual lo que no
+No funcional: verifica que el software este disponible para un flujo de usuarios hasta un quiebre
+Automatización: Delivery de la prueba funcional
+Seguridad: se mide la vulnerabilidad del software.
+
+Técnicas de Prueba:
+Caja blanca : Pruebas inclusive a nivel código, utilizado más en desarrollo
+Gris:Pruebas de a nivel código, pero mas enfocado a base de datos.
+Negra: Test de software a interfaz.
+
+5 Dimensiones de las Pruebas de software:
+Evaluacion
+Probador de Software
+Cobertura
+Actividades
+Probabilidad de Fallo
+
+Factores de exito:
+Metodos
+Madurez
+Personal
+
+Esto en definitiva va muy relacionado a mi carrera e inclusive a la vida diaria ya que todo se basa en pruebas y  de estas mismas aprender y así poder progresar en todos los ambitos.
