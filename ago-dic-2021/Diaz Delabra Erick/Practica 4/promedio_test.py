@@ -4,11 +4,12 @@ from unittest import TestCase
 from unittest.mock import patch
 from promedio import calc_prom
 
+
 tracemalloc.start()
 class TestsPromedio(TestCase):
-    @patch('__main__.open', create = True)
+    @patch('builtins.open', create = True)
     def test1(self, mock_open):
-        mock_open.return_value = 3
+        #mock_open.return_value = 
         esperado = 3
         self.assertEqual(calc_prom(), esperado)
 
