@@ -2,6 +2,7 @@ import unittest
 from practica6 import Practica6
 from unittest.mock import patch
 
+# link diagrama: https://ibb.co/TgsyDpp
 
 class practica6_test(unittest.TestCase):
     
