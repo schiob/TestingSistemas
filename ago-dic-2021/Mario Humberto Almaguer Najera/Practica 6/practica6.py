@@ -10,6 +10,7 @@ class Practica6:
         self.viajes = {}
         self.resultados = []
 
+
     def funcion_principal(self, numero_viajes):
         # Repetimos numero_viajes, y agregamos a la lista el siguiente_usuario (el de mayor prioridad) con
         # el siguiente_viaje (el de menor tarifa)
