@@ -1,5 +1,0 @@
-Tom 4
-Susana 2
-Andres 10
-Pepe 3
-Luis 2

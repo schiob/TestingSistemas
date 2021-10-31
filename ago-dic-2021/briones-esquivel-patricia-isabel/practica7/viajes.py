@@ -32,7 +32,8 @@ class Practica_viajes():
         tarifa = 20 + (10 * antiguedad)
         return tarifa
 
-    def viajes_disponibles(self):
+
+    def viajes_disponibles(self) -> list:
         self.lista_conductores = self.extraer_conductores()
         lvd = []
         j = 0
@@ -42,7 +43,7 @@ class Practica_viajes():
         return lvd
 
 
-    def siguiente_usuario(self):
+    def siguiente_usuario(self) -> str:
         self.lista_usuarios.sort(reverse = True)
         cont = 0
         for i in range(len(self.lista_usuarios)):
@@ -56,7 +57,7 @@ class Practica_viajes():
             return 'No hay más usuarios'
 
 
-    def clase_principal(self):
+    def clase_principal(self) -> list:
         tarifa_minima = []
         viajes = []
         self.lista_viajes_disponibles = self.viajes_disponibles()
