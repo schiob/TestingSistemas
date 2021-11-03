@@ -17,7 +17,7 @@ def siguiente_usuario():
     user_priority.pop(next_user)
     return next_user
 
-def extrar_conductores():
+def extraer_conductores():
     return conductores
 
 def calcular_tarifa(conductor):
@@ -27,7 +27,7 @@ def calcular_tarifa(conductor):
 
 def viajes_disponibles():
     y=1
-    for x in extrar_conductores():
+    for x in extraer_conductores():
         tarifa= calcular_tarifa(x)
         viajes[y] =tarifa
         y +=1
@@ -49,5 +49,6 @@ def principal():
     return user_viaje
 
 print('='.center(50,"="))
+print(calcular_tarifa('Juan'))
 if __name__ == "__main__":
     principal()

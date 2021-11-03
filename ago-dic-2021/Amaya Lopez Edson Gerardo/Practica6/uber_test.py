@@ -1,36 +1,49 @@
-
 import unittest
+from unittest import mock
+from unittest.mock import patch
 from uber import (siguiente_usuario,
     calcular_tarifa,
-    extrar_conductores,
+    extraer_conductores,
     viajes_disponibles,
     principal
 )
-class test_usuario(unittest.TestCase):
-    def test_usuario_siguiente(self):
-        user = siguiente_usuario()
-        self.assertEqual(user,'Susana')
 
-        user = siguiente_usuario()
-        self.assertEqual(user,'Luis')
 
-        user = siguiente_usuario()
-        self.assertEqual(user,'Pepe')
 
-class test_conductor(unittest.TestCase):
-    def test_extraer_conductor(self):
-        conductores = extrar_conductores()
-        self.assertEqual(conductores,{'Juan': 3, 'Jesus': 2, 'Maria': 3, 'Toño': 1})
 
-class test_tarifa(unittest.TestCase):
-    def test_calculo_tarifa(self):
-        tarifa = calcular_tarifa("Juan")
-        self.assertEqual(tarifa,50)
+class test_principal(unittest.TestCase):
 
-class test_viajes(unittest.TestCase):
-    def test_lista_viajes_disponibles(self):
-        lista = viajes_disponibles()
-        self.assertEqual(lista,{1: 50, 2: 40, 3: 50, 4: 30})
+    @patch('uber.siguiente_usuario')
+    def test_funcion_principal_test1(self,mock_siguiente_usuario):
+
+        mock_siguiente_usuario.return_value = 'Susana'
+        self.assertEqual(principal(),{4: 'Susana', 2: 'Susana', 1: 'Susana', 3: 'Susana'} )
+
+    @patch('uber.viajes_disponibles')
+    def test_funcion_principal_test2(self,mock_viajes_disponibles):
+
+        mock_viajes_disponibles.return_value = '30'
+        print(str(mock_viajes_disponibles))
+        # {1: 50, 2: 40, 3: 50, 4: 30}
+
+        self.assertEqual(viajes_disponibles(),{1: 50, 2: 40, 3: 50, 4: 30})
+
+
+    @patch('uber.extraer_conductores')
+    def test_viajes_disponibles(self,mock_extraer_conductores):
+
+        mock_extraer_conductores.return_value = {'Juan' :  3}
+
+        self.assertEqual(viajes_disponibles(),{1: 50, 2: 40, 3: 50, 4: 30})
+
+    @patch('uber.calcular_tarifa')
+    def test_viajes_disponibles_test2(self,mock_calcular_tarifa):
+
+        mock_calcular_tarifa.return_value ='Juan'
+
+        self.assertEqual(calcular_tarifa('Juan'),50)
+
+
 
 
 
