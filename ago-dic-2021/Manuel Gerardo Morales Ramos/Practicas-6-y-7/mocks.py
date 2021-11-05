@@ -1,18 +1,8 @@
-from abc import ABC, abstractmethod
-
-# Interface for test ways to code this practice.
-class SingletonMeta(type):
-    _instances = {}
-
-    def __call__(cls, *args: any, **kwargs: any) -> any:
-        if cls not in cls._instances:
-            instance = super().__call__(*args, **kwargs)
-            cls._instances[cls] = instance
-        return cls._instances[cls]
+import abc
 
 # I/O interface.
-class IO(ABC):
-    @abstractmethod
+class IO(abc.ABC):
+    @abc.abstractmethod
     def Read(self) -> str:
         pass 
     """ @abstractmethod
@@ -36,3 +26,11 @@ class File(IO):
     """ def Write(self, data: str) -> None:
         with open(self.file_name, 'w') as f:
             return f.write(data) """
+
+
+class MockInput(IO):
+    def __init__(self, input_value: str) -> None:
+        self.input_value = input_value
+
+    def Read(self) -> str:
+        return self.input_value
