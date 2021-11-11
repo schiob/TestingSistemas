@@ -1,0 +1,14 @@
+Patricia_Briones 95.75
+-
+Jacob_Herrera 81.05
+Ruben_Vazquez 82.18
+-
+Sergio_Suarez 83.83
+Oscar_Nicolas 81.67
+-
+Patricia_Briones 87.84
+Sergio_Suarez 66.6
+Oscar_Nicolas 88.63
+Jacob_Herrera 58.18
+Ruben_Vazquez 60.39
+-
