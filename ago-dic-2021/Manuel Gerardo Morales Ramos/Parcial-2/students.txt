@@ -1,0 +1,11 @@
+Carla_Valdes probabilidad 70.00
+Carla_Valdes español 94.34
+Carla_Valdes geografia 85.00
+Estefanía_Gonzales calculo 85.00
+Estefanía_Gonzales fisica 76.50
+Estefanía_Gonzales quimica 89.49
+Tomas_Ordaz programación 70.00
+Tomas_Ordaz etica 97.60
+Tomas_Ordaz redes 97.60
+Jose_Lopez quimica 89.00
+Jose_Lopez matematicas 85.34
