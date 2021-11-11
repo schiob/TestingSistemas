@@ -3,7 +3,7 @@ from unittest.mock import patch
 from implementacion import Escribir
 
 
-class TestPromedio(unittest.TestCase):
+class TestPromedioVocales(unittest.TestCase):
     @patch('implementacion.Escribir.escribir_cantidad_vocales')
     def test_con_datos(self,mock_vocal):
         mock_vocal.return_value='2'
