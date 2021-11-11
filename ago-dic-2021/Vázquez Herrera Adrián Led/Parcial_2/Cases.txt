@@ -1,0 +1,29 @@
+Patricia_Briones historia 95.75
+-
+Jacob_Herrera matematicas 75.80
+Ruben_Vazquez espanol 68.39
+Jacob_Herrera historia 86.30
+Ruben_Vazquez Civica 95.97
+-
+Sergio_Suarez espanol 85.17
+Sergio_Suarez matematicas 97.85
+Sergio_Suarez civica 90.68
+Sergio_Suarez quimica 57.85
+Sergio_Suarez fisica 87.60
+Oscar_Nicolas espanol 100.00
+Oscar_Nicolas matematicas 54.76
+Oscar_Nicolas civica 80.57
+Oscar_Nicolas quimica 76.48
+Oscar_Nicolas fisica 96.54
+-
+Patricia_Briones espanol 75.69
+Patricia_Briones matematicas 100.00
+Sergio_Suarez espanol 67.45
+Sergio_Suarez matematicas 65.75
+Oscar_Nicolas espanol 98.67
+Oscar_Nicolas matematicas 78.60
+Jacob_Herrera espanol 45.67
+Jacob_Herrera matematicas 70.68
+Ruben_Vazquez espanol 90.57
+Ruben_Vazquez matematicas 30.21
+-
