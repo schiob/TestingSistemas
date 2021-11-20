@@ -1,0 +1,24 @@
+Semana de ingeniería
+
+Inteligengia artifical y el futro de la educacion:
+Como aún no llevo esta materia, esta conferencia me
+sirvió como un adelanto o preoaración en los temas
+que llevaré proximamente. Vimos conceptos básicos
+como lo que es IA, su uso y principalmente los
+algoritomos que hacen que estas funcionen.
+
+Pruebas de software, ayer, hoy y mañana:
+Esta conferencia fue bastante intereante pues fue un
+refuerzo a las claes que yo ya estoy tomando actualmente. Al
+ser desarrollador de software o cualquier cosa, hay que probar
+los productos y versiones en cada fase. Habló sobre su uso
+en la industria, las pruebas de automaticas y manuales.
+
+Industria 5.0:
+Si uno se dedica a la industria, es cuetión de
+tiempo para que esta verisón de manejar las cosas llegue.
+Desde hace años nos están intriduciendo a la industria
+4.0 pero hemos evolucionado más rapido las cosas. Por
+ello es importante saber como será su uso en la
+industria, la utomatización y en cómo todo se envuelve
+principalmente en internet.
