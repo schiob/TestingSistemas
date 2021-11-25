@@ -1,0 +1,37 @@
+Las pruebas de software son investigaciones realizadas en los programas cuyo objetivo es dar informacion sin bias sobre la calidad del producto a la persona interesada.
+
+----------------------------------------------------------------
+Existen distintas areas de pruebas:
+
+-Prueba funcional: Esta se encarga de validar casos especificos donde se comprueba que el programa esta haciendo lo que se requiere
+
+-Prueba no funcional: Esta se encarga de realizar una prueba de carga, que nos permite ver hasta que punto el programa crashea o se queda colgado
+
+-Automatizada: Este tipo de prueba es como las funcionales pero en vez de que un humano la supervise, un programa se encarga de verificar las salidas del programa automaticamente
+
+-Seguridad: Este tipo de prueba comprueban la vulnerabilidad del programa
+
+----------------------------------------------------------------
+Tipos de pruebas:
+
+-Caja Blanca: Estas son realizadas con un tester que tiene accesso al codigo fuente para probar las funciones
+
+-Caja Negra: Estas se realizan a travez de la interfaz del programa
+
+-Caja Gris: Esta es una mezcla entre las 2 anteriores
+
+-----------------------------------------------------------------
+Cualidades de un tester
+
+1. Actitud
+2. Innovador
+3. Proactivo
+4. Lider
+5. Negociador
+6. Base de datos
+
+-----------------------------------------------------------------
+Conclusiones
+
+Muchos de los temas que se vieron en la conferencia tuvimos la oportunidad de verlos antes en clase, pero uno de los puntos importantes que se tocaron fue el proceso de 
+automatizacion que se tocó en distintas partes de la conferencia.
