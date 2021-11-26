@@ -1,0 +1,25 @@
+Conferencia acerca de pruebas de software:
+"Las pruebas de software ayer, hoy y mañana."
+
+En esta conferencia vimos muchas cosas con temas que ya habiamos visto en clase.
+Tambien vimos cuales son las cualidades de las persoans qeu se dedican a ser testers y que es lo que realmente hacen.
+Vimos mucho acerca de los tipos y como se clasifican estas pruebas.
+Algo que me quedó mucho es sobre los tipos de pruebas y las tecnicas, que por ejemplo las tecnicas se clasifican asi:
+
+Caja negra: Pruebas a nivel de código.
+Caja blanca: Pruebas mas comunes a través del front end.
+Caja gris: Pruebas a nivel de codigo pero a funcion de entender la funcionabilidad del sistema.
+
+Las tecnicas y areas principales de software se dividen en 4:
+Pruebas funcioanles: Pruebas que comprueban el correcto fncionamiento del sistema.
+Pruebas no funcionales: Pruebas que sirven para ver los limites del sistema.
+Pruebas de automatización: Pruebas para medir los cambios y actualizaciones en el sistema y su reaccion.
+Pruebas de seguridad: Detectar las vulnerabilidades del software
+
+También vimos acerca de las pruebas estaticas y dinámicas:
+
+Estaticas: Pruebas que se hacen sin necesidad de ejecutar el codigo del sistema, simplemente observandolo y buscando defectos con o sin ayuda e terceros.
+
+Dinámicas: Necesitamos correr el codigo y el sistema para hacer estas pruebas, debido a que necesitamos probar el sistema a fondo.
+
+Me gusto mucho esta conferencia porque me vienen "flashbacks" de la clase y aparte siento que en semanas de ingeniería de semestres anteriores ya había entrado a una conferencia de este tipo. Pienso que las pruebas de software es una parte muy importante y debemos de saber mucho lo que estamos haciendo para no fallar en nuestras pruebas :).
