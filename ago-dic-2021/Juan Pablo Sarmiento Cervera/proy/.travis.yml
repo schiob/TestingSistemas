@@ -1,1 +1,2 @@
-print ("prueva 3 de travis")
+language: python
+script: pytest
