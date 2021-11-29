@@ -1,0 +1,6 @@
+pablo_valera fisica 77
+pablo_valera probabilidad 80
+pablo_valera estadistica 85
+isaac_cisneros fisica 70
+isaac_cisneros probabilidad 95
+isaac_cisneros estadistica 70
