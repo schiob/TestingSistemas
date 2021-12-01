@@ -1,0 +1,5 @@
+principal depende de (viajes_disponibles, siguiente_usuario)
+
+viajes_disponibles depende de (calcular_tarifa)
+
+calcular_tarifa depende de (extraer_conductores)
