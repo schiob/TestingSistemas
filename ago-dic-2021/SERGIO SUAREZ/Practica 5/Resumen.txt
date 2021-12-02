@@ -1,0 +1,30 @@
+Conferencia de testing
+
+AREAS PRINCIPALES
+Prueba funcional: Validar casos donde nos cercioramos que el software haga lo que tenga que hacer.
+Prueba no funcional: Pruebas de desempeño. ¿Hasta dónde opera mi software antes de caerse?
+Automatización: No sustituye a las pruebas funcionales. Si hago algún cambio, debo cerciorarme que eso no afecte alguna otra parte de mi programa.
+Seguridad: Donde se mide la vulnerabilidad del software.
+
+TECNICAS DE PRUEBA
+Caja negra: Nivel código.
+Caja gris: Nivel código, pero un poco más **encima**. Manejo de bases de datos y entender la funcionalidad.
+Caja blanca: Nivel API, a través del front. Son más comunes.
+
+CUALIDADES DE UN TESTER
+* Innovador
+* Proactivo
+* Entendimiento rápido del negocio
+* Líder
+* Base de Datos
+* Negociador
+* Enfoque al Cambio
+* Programador
+
+TIPOS DE PRUEBAS
+1. Pruebas de Desempeño
+2. Pruebas Móviles
+3. Automatización de Pruebas
+4. Pruebas de Seguridad
+5. Pruebas Manuales (Funcionales)
+6. Administración de Datos
