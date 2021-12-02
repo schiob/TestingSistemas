@@ -1,0 +1,12 @@
+def suma(n1, n2):
+    num1 = int(n1)
+    num2 = int(n2)
+    suma1 = (num1 + num2)
+    print(suma1)
+    return suma1
+
+def main():
+    pass
+
+if __name__ == "__main__":
+    main()
